@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スペイン語教室</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Navbar -->
+    <header class="navbar">
+      <div style="display:flex; align-items:center; gap:1.5rem;">
+        <div class="logo" onclick="appState.navigate('home')">🇪🇸 スペイン語教室</div>
+        <div id="nav-actions"></div>
+      </div>
+      <a href="#" onclick="openFeedbackModal()" class="feedback-link">💡 訂正や追加があればここへ</a>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="content"></main>
+
+    <!-- Audio Player (Hidden) -->
+    <div id="tts-status"></div>
+
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
