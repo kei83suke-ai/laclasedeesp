@@ -1,2 +1,0 @@
-# laclasedeesp
-Spanish Vocab
