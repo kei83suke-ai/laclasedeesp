@@ -95,23 +95,26 @@ function formatSpanishAudioText(text) {
 
 window.playAudio = function(text) {
   if (!text) return;
-  
   const cleanText = formatSpanishAudioText(text);
-  
-  // Google翻訳のAPIを利用してクリアなネイティブ音声を取得
-  const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=es&client=tw-ob`;
-  const audio = new Audio(url);
-  
-  audio.play().catch(e => {
-    // オフライン等の場合は標準の機械音声にフォールバック
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.lang = 'es-ES';
-      utterance.rate = 0.9;
-      window.speechSynthesis.speak(utterance);
-    }
-  });
+  if (!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const speak = () => {
+    const utterance = new SpeechSynthesisUtterance(cleanText);
+    utterance.lang = 'es-ES';
+    utterance.rate = 0.85;
+    utterance.pitch = 1.0;
+    const voices = window.speechSynthesis.getVoices();
+    const esVoice = voices.find(v => v.lang.startsWith('es') && v.name.toLowerCase().includes('google'))
+                 || voices.find(v => v.lang === 'es-ES')
+                 || voices.find(v => v.lang.startsWith('es'));
+    if (esVoice) utterance.voice = esVoice;
+    window.speechSynthesis.speak(utterance);
+  };
+  if (window.speechSynthesis.getVoices().length > 0) {
+    speak();
+  } else {
+    window.speechSynthesis.onvoiceschanged = speak;
+  }
 };
 
 window.playEffect = function(type) {
