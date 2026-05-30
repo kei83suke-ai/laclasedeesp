@@ -6,7 +6,7 @@
   <title>スペイン語教室</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/style.css?v=11">
+  <link rel="stylesheet" href="css/style.css?v=12">
   
   <style>
     /* 画面全体の強制フィット */
@@ -69,16 +69,21 @@
   <script src="js/app.js"></script>
 
   <script>
-    // iOS（iPhone/iPad）の鉄壁のセキュリティをすり抜ける唯一のプレイヤー
-    const googleAudioPlayer = new Audio();
-
+    // 外部サーバーを使わず、スマホ・PC内蔵の音声エンジンで100%鳴らす仕組み
     window.playAudio = function(text) {
       if (!text) return;
+      
+      // 他の音声が鳴っていたら強制停止してリセット
+      if (window.speechSynthesis) {
+        window.speechSynthesis.cancel();
+      } else {
+        return; 
+      }
       
       // 1. カッコ（文字）を綺麗に消去
       let cleanText = text.replace(/（.*?）/g, '').replace(/\(.*?\)/g, '').trim();
       
-      // 2. 「el/la chico/chica」のようなスラッシュ混じりの単語を分解・整形
+      // 2. 「el/la chico/chica」や「duro/dura」のようなスラッシュ混じりの単語を分解・整形
       if (cleanText.includes('/')) {
         cleanText = cleanText.replace(/\s*\/\s*/g, '/');
         const words = cleanText.split(' ');
@@ -117,38 +122,36 @@
         const fStr = sentenceF.join(' ');
         
         if (mStr !== fStr) {
-          const urlM = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(mStr)}&tl=es&client=tw-ob`;
-          const urlF = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(fStr)}&tl=es&client=tw-ob`;
+          // 1つ目（男性形）の発音設定
+          const utrM = new SpeechSynthesisUtterance(mStr);
+          utrM.lang = 'es-ES'; // スペイン語
+          utrM.rate = 0.9;     // 聴き取りやすい速度
           
-          // 再生状態をリセット
-          googleAudioPlayer.pause();
-          googleAudioPlayer.onended = null;
+          // 2つ目（女性形）の発音設定
+          const utrF = new SpeechSynthesisUtterance(fStr);
+          utrF.lang = 'es-ES';
+          utrF.rate = 0.9;
           
-          // 1つ目（男性形）をセットして即座に再生
-          googleAudioPlayer.src = urlM;
-          googleAudioPlayer.play().catch(e => console.log("iOS M-Play Blocked:", e));
-          
-          // 1つ目が終わったら、ユーザー操作の熱量が残っているうちにリレーで2つ目を再生
-          googleAudioPlayer.onended = function() {
+          // 1つ目が終わったら、0.2秒（200ms）待って2つ目を再生
+          utrM.onend = function() {
             setTimeout(() => {
-              googleAudioPlayer.onended = null; // ループ防止
-              googleAudioPlayer.src = urlF;
-              googleAudioPlayer.play().catch(e => console.log("iOS F-Play Blocked:", e));
-            }, 200); // 0.2秒の間隔
+              window.speechSynthesis.speak(utrF);
+            }, 200);
           };
-          return; 
+          
+          // 再生スタート
+          window.speechSynthesis.speak(utrM);
+          return;
         } else {
           cleanText = mStr;
         }
       }
 
-      // 単一の単語（普通の単語）の処理
-      const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=es&client=tw-ob`;
-      
-      googleAudioPlayer.pause();
-      googleAudioPlayer.onended = null;
-      googleAudioPlayer.src = googleTtsUrl;
-      googleAudioPlayer.play().catch(e => console.log("iOS Single-Play Blocked:", e));
+      // 単一の単語（スラッシュがない普通の単語）の処理
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.lang = 'es-ES';
+      utterance.rate = 0.9;
+      window.speechSynthesis.speak(utterance);
     };
   </script>
 </body>
