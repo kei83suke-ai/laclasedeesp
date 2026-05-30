@@ -9,7 +9,7 @@
   <title>スペイン語教室</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=8">
   
   <style>
     /* 画面全体の強制フィット */
@@ -57,7 +57,7 @@
         <a class="menu-item" id="menu-adverbs" href="#flashcards/adverbs">⏱️ 副詞</a>
         <a class="menu-item" id="menu-prepositions" href="#flashcards/prepositions">🔗 その他</a>
         <a class="menu-item" id="menu-conjugations" href="#conjugations">📊 活用表</a>
-        <a class="menu-item" id="menu-scorecard" href="#scorecard">📈 成績表</a>
+        <a class="menu-item" id="scorecard" href="#scorecard">📈 成績表</a>
         <a class="menu-item" id="menu-reviewlater" href="#reviewlater">📝 復習単語</a>
       </nav>
     </header>
@@ -72,15 +72,35 @@
   <script src="js/app.js"></script>
 
   <script>
-    // プレイヤーを1つに絞ることで、スマホのセキュリティを100%突破する
+    // ChromeおよびiOSアプリ版の「自動再生ポリシー」を完全攻略する音声エンジン
     const uniqueAudioPlayer = new Audio();
-    
-    // スマホ対応：最初のタップでプレイヤーの「再生権限」を完全に解放
-    document.addEventListener('click', () => {
-      if (uniqueAudioPlayer.src === '') {
-        uniqueAudioPlayer.play().catch(() => {});
+
+    // ユーザーが「画面のどこかを触った」そのタップの熱量をそのまま利用して音声を流す関数
+    function forcePlay(url, nextUrl = null) {
+      uniqueAudioPlayer.pause();
+      uniqueAudioPlayer.onended = null;
+      uniqueAudioPlayer.src = url;
+      
+      // Chromeのセキュリティに「これはユーザーが今手動で再生した音だよ」と直結させて伝える
+      const playPromise = uniqueAudioPlayer.play();
+      
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          // 1つ目が無事に再生開始できたら、終了時のタイマー（0.2秒後）を仕込む
+          if (nextUrl) {
+            uniqueAudioPlayer.onended = function() {
+              setTimeout(() => {
+                uniqueAudioPlayer.onended = null;
+                uniqueAudioPlayer.src = nextUrl;
+                uniqueAudioPlayer.play().catch(e => console.log("Chrome F-Play Blocked:", e));
+              }, 200); // 0.2秒の間隔
+            };
+          }
+        }).catch(e => {
+          console.log("Chrome Audio Activation Failed. Retry on next tap:", e);
+        });
       }
-    }, { once: true });
+    }
 
     window.playAudio = function(text) {
       if (!text) return;
@@ -88,7 +108,7 @@
       // 1. カッコ（文字）を綺麗に消去
       let cleanText = text.replace(/（.*?）/g, '').replace(/\(.*?\)/g, '').trim();
       
-      // 2. 「el/la chico/chica」や「duro/dura」のようなスラッシュ混じりの単語を分解・整形
+      // 2. スラッシュ混じりの単語（男性形/女性形）を分解・整形
       if (cleanText.includes('/')) {
         cleanText = cleanText.replace(/\s*\/\s*/g, '/');
         const words = cleanText.split(' ');
@@ -130,25 +150,7 @@
           const urlM = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(mStr)}&tl=es&client=tw-ob`;
           const urlF = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(fStr)}&tl=es&client=tw-ob`;
           
-          // 再生中なら即座に停止してリセット
-          uniqueAudioPlayer.pause();
-          uniqueAudioPlayer.onended = null;
-          
-          // 1つ目（男性形）をセットして再生
-          uniqueAudioPlayer.src = urlM;
-          uniqueAudioPlayer.load();
-          uniqueAudioPlayer.play().catch(e => console.log("M-play error:", e));
-          
-          // 1つ目が終わったら
-          uniqueAudioPlayer.onended = function() {
-            // 完全に地続きの処理として、0.2秒（200ms）後に2つ目（女性形）を同じプレイヤーで再生！
-            setTimeout(() => {
-              uniqueAudioPlayer.onended = null; // ループ防止
-              uniqueAudioPlayer.src = urlF;
-              uniqueAudioPlayer.load();
-              uniqueAudioPlayer.play().catch(e => console.log("F-play error:", e));
-            }, 200); 
-          };
+          forcePlay(urlM, urlF);
           return; 
         } else {
           cleanText = mStr;
@@ -157,13 +159,7 @@
 
       // 単一の単語（普通の単語）の処理
       const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=es&client=tw-ob`;
-      
-      uniqueAudioPlayer.pause();
-      uniqueAudioPlayer.onended = null;
-      
-      uniqueAudioPlayer.src = googleTtsUrl;
-      uniqueAudioPlayer.load();
-      uniqueAudioPlayer.play().catch(e => console.log("Single-play error:", e));
+      forcePlay(googleTtsUrl);
     };
   </script>
 </body>
