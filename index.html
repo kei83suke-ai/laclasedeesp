@@ -6,9 +6,10 @@
   <title>スペイン語教室</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=3">
   
   <style>
+    /* 画面全体の強制フィット */
     html, body, #app {
       width: 100% !important;
       max-width: 100% !important;
@@ -21,6 +22,18 @@
       max-width: 100% !important;
       min-width: 100% !important;
       display: block !important;
+    }
+
+    /* ↓↓ 【ボタン反転・位置ズレの解決】CSSによる強制補正 ↓↓ */
+    .flashcard {
+      position: relative !important;
+    }
+    /* 裏面がひっくり返った時に、中のボタンが文字反転するのを防ぐ */
+    .flashcard.flipped .card-face.back .card-review-btn {
+      transform: rotateY(180deg) !important; /* カードの回転を打ち消して文字を正常に戻す */
+      transform-origin: center !important;
+      left: auto !important;
+      right: 12px !important; /* 反転の裏返しを計算して、左下にピタッと固定 */
     }
   </style>
 </head>
@@ -55,16 +68,19 @@
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
 
-   <script>
+    <script>
+    // スマホ・PC共通で使う2つのオーディオプレイヤー（交互・連続再生用）
+    const audioPlayer1 = new Audio();
+    const audioPlayer2 = new Audio();
+
     window.playAudio = function(text) {
-      if (!text || !('speechSynthesis' in window)) return;
+      if (!text) return;
       
       // 1. カッコ（文字）を綺麗に消去
       let cleanText = text.replace(/（.*?）/g, '').replace(/\(.*?\)/g, '').trim();
       
-      // 2. 「el/la chico/chica」や「duro/dura」のようなスラッシュ混じりの単語を綺麗に並び替える処理
+      // 2. 「el/la chico/chica」や「duro/dura」のようなスラッシュ混じりの単語を分解・整形
       if (cleanText.includes('/')) {
-        // スペースのバラつきを整える
         cleanText = cleanText.replace(/\s*\/\s*/g, '/');
         const words = cleanText.split(' ');
         let sentenceM = [];
@@ -77,56 +93,64 @@
             const second = parts[1] || '';
 
             if (first === 'el' && second === 'la') {
-              sentenceM.push('el');
-              sentenceF.push('la');
+              sentenceM.push('el'); sentenceF.push('la');
             } else if (first === 'un' && second === 'una') {
-              sentenceM.push('un');
-              sentenceF.push('una');
+              sentenceM.push('un'); sentenceF.push('una');
             } else if (first === 'los' && second === 'las') {
-              sentenceM.push('los');
-              sentenceF.push('las');
+              sentenceM.push('los'); sentenceF.push('las');
             } else if (second.length === 1) {
-              // duro/dura のような語尾だけスラッシュの場合の処理
               if (first.endsWith('o')) {
-                sentenceM.push(first);
-                sentenceF.push(first.slice(0, -1) + second);
+                sentenceM.push(first); sentenceF.push(first.slice(0, -1) + second);
               } else if (first.endsWith('os')) {
-                sentenceM.push(first);
-                sentenceF.push(first.slice(0, -2) + second);
+                sentenceM.push(first); sentenceF.push(first.slice(0, -2) + second);
               } else {
-                sentenceM.push(first);
-                sentenceF.push(first);
+                sentenceM.push(first); sentenceF.push(first);
               }
             } else {
-              sentenceM.push(first);
-              sentenceF.push(second);
+              sentenceM.push(first); sentenceF.push(second);
             }
           } else {
-            sentenceM.push(w);
-            sentenceF.push(w);
+            sentenceM.push(w); sentenceF.push(w);
           }
         }
         
         const mStr = sentenceM.join(' ');
         const fStr = sentenceF.join(' ');
         
-        // 男性形と女性形を続けて綺麗に喋らせる（例：「el chico, la chica」）
-        cleanText = mStr === fStr ? mStr : `${mStr}, ${fStr}`;
+        if (mStr !== fStr) {
+          // 【超重要】男性形と女性形が違う場合、2ステップで時間差再生する
+          const urlM = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(mStr)}&tl=es&client=tw-ob`;
+          const urlF = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(fStr)}&tl=es&client=tw-ob`;
+          
+          // 再生中の音声をすべて強制停止
+          audioPlayer1.pause();
+          audioPlayer2.pause();
+          
+          // まず1つ目（男性形）を再生
+          audioPlayer1.src = urlM;
+          audioPlayer1.play().catch(e => console.log(e));
+          
+          // 1つ目の再生が「終わった瞬間」を検知する
+          audioPlayer1.onended = function() {
+            // 終わってから「200ミリ秒（0.2秒）」タイマーを作動させて、2つ目（女性形）を再生！
+            setTimeout(() => {
+              audioPlayer2.src = urlF;
+              audioPlayer2.play().catch(e => console.log(e));
+            }, 200); // ← ここを1000にすると1秒空けることも可能です
+          };
+          return; // ここで処理を終了
+        } else {
+          cleanText = mStr;
+        }
       }
 
-      // 3. 音声再生の実行
-      window.speechSynthesis.cancel(); 
-      const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.lang = 'es-ES'; 
-      utterance.rate = 0.8;    // 2単語連続でも聞き取りやすいように、少しだけゆっくりに調整
-
-      const voices = window.speechSynthesis.getVoices();
-      const esVoice = voices.find(v => v.lang.startsWith('es') && v.name.includes('Google')) 
-                   || voices.find(v => v.lang.startsWith('es'));
-      if (esVoice) utterance.voice = esVoice;
-
-      window.speechSynthesis.speak(utterance);
+      // 単一の単語（スラッシュがない普通の単語）は今まで通り一瞬で再生
+      const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=es&client=tw-ob`;
+      audioPlayer1.pause();
+      audioPlayer2.pause();
+      audioPlayer1.src = googleTtsUrl;
+      audioPlayer1.play().catch(e => console.log(e));
     };
   </script>
-  </body>
+</body>
 </html>
