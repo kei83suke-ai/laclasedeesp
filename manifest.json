@@ -1,0 +1,17 @@
+{
+  "name": "スペイン語教室",
+  "short_name": "エスパニョール",
+  "description": "海外派遣のための最強スペイン語特訓アプリ",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4a5568",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/197/197593.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
