@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>スペイン語教室</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="stylesheet" href="css/style.css?v=2">
   
   <style>
-    /* 画面全体の横幅をPC大画面でも100%に広げる */
     html, body, #app {
       width: 100% !important;
       max-width: 100% !important;
@@ -16,8 +16,6 @@
       margin: 0 !important;
       padding: 0 !important;
     }
-    
-    /* コンテンツの土台がスマホ幅（375pxなど）に固定されているのを強制解除する */
     #content {
       width: 100% !important;
       max-width: 100% !important;
@@ -25,7 +23,7 @@
       display: block !important;
     }
   </style>
-  </head>
+</head>
 <body>
   <div id="app">
     <header class="header-wrapper">
@@ -56,5 +54,30 @@
 
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
-</body>
+
+  <script>
+    window.playAudio = function(text) {
+      if (!text || !('speechSynthesis' in window)) return;
+      
+      // スペイン語のテキストを整形
+      let cleanText = text.replace(/（.*?）/g, '').replace(/\(.*?\)/g, '').replace(/\s*\/\s*/g, '/').trim();
+      if (cleanText.includes('/')) {
+        cleanText = cleanText.split('/')[0]; // スラッシュがある場合は最初の単語を優先
+      }
+
+      window.speechSynthesis.cancel(); // 前の音声をクリア
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.lang = 'es-ES'; // スペイン語（スペイン）に固定
+      utterance.rate = 0.85;    // 少し聞き取りやすいようにゆっくりに設定
+      
+      // スマホ内蔵の最高の音声エンジンを自動選択
+      const voices = window.speechSynthesis.getVoices();
+      const esVoice = voices.find(v => v.lang.startsWith('es') && v.name.includes('Google')) 
+                   || voices.find(v => v.lang.startsWith('es'));
+      if (esVoice) utterance.voice = esVoice;
+
+      window.speechSynthesis.speak(utterance);
+    };
+  </script>
+  </body>
 </html>
