@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <link rel="manifest" href="manifest.json">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>スペイン語教室</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/style.css?v=8">
+  <link rel="stylesheet" href="css/style.css?v=9">
   
   <style>
     /* 画面全体の強制フィット */
@@ -57,7 +54,7 @@
         <a class="menu-item" id="menu-adverbs" href="#flashcards/adverbs">⏱️ 副詞</a>
         <a class="menu-item" id="menu-prepositions" href="#flashcards/prepositions">🔗 その他</a>
         <a class="menu-item" id="menu-conjugations" href="#conjugations">📊 活用表</a>
-        <a class="menu-item" id="scorecard" href="#scorecard">📈 成績表</a>
+        <a class="menu-item" id="menu-scorecard" href="#scorecard">📈 成績表</a>
         <a class="menu-item" id="menu-reviewlater" href="#reviewlater">📝 復習単語</a>
       </nav>
     </header>
@@ -72,35 +69,9 @@
   <script src="js/app.js"></script>
 
   <script>
-    // ChromeおよびiOSアプリ版の「自動再生ポリシー」を完全攻略する音声エンジン
-    const uniqueAudioPlayer = new Audio();
-
-    // ユーザーが「画面のどこかを触った」そのタップの熱量をそのまま利用して音声を流す関数
-    function forcePlay(url, nextUrl = null) {
-      uniqueAudioPlayer.pause();
-      uniqueAudioPlayer.onended = null;
-      uniqueAudioPlayer.src = url;
-      
-      // Chromeのセキュリティに「これはユーザーが今手動で再生した音だよ」と直結させて伝える
-      const playPromise = uniqueAudioPlayer.play();
-      
-      if (playPromise !== undefined) {
-        playPromise.then(() => {
-          // 1つ目が無事に再生開始できたら、終了時のタイマー（0.2秒後）を仕込む
-          if (nextUrl) {
-            uniqueAudioPlayer.onended = function() {
-              setTimeout(() => {
-                uniqueAudioPlayer.onended = null;
-                uniqueAudioPlayer.src = nextUrl;
-                uniqueAudioPlayer.play().catch(e => console.log("Chrome F-Play Blocked:", e));
-              }, 200); // 0.2秒の間隔
-            };
-          }
-        }).catch(e => {
-          console.log("Chrome Audio Activation Failed. Retry on next tap:", e);
-        });
-      }
-    }
+    // ブラウザ環境で最も安定して時間差再生が動いていた2プレイヤー方式
+    const audioPlayer1 = new Audio();
+    const audioPlayer2 = new Audio();
 
     window.playAudio = function(text) {
       if (!text) return;
@@ -108,7 +79,7 @@
       // 1. カッコ（文字）を綺麗に消去
       let cleanText = text.replace(/（.*?）/g, '').replace(/\(.*?\)/g, '').trim();
       
-      // 2. スラッシュ混じりの単語（男性形/女性形）を分解・整形
+      // 2. 「el/la chico/chica」や「duro/dura」のようなスラッシュ混じりの単語を分解・整形
       if (cleanText.includes('/')) {
         cleanText = cleanText.replace(/\s*\/\s*/g, '/');
         const words = cleanText.split(' ');
@@ -147,19 +118,38 @@
         const fStr = sentenceF.join(' ');
         
         if (mStr !== fStr) {
+          // 男性形と女性形を2つの公式URLに生成
           const urlM = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(mStr)}&tl=es&client=tw-ob`;
           const urlF = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(fStr)}&tl=es&client=tw-ob`;
           
-          forcePlay(urlM, urlF);
+          // 再生中の音声をすべて強制停止
+          audioPlayer1.pause();
+          audioPlayer2.pause();
+          
+          // まず1つ目（男性形）を再生
+          audioPlayer1.src = urlM;
+          audioPlayer1.play().catch(e => console.log(e));
+          
+          // 1つ目の再生が「終わった瞬間」を検知する
+          audioPlayer1.onended = function() {
+            // ご要望通り、きっちり「0.2秒（200ミリ秒）」の間隔をあけて2つ目（女性形）を再生！
+            setTimeout(() => {
+              audioPlayer2.src = urlF;
+              audioPlayer2.play().catch(e => console.log(e));
+            }, 200); 
+          };
           return; 
         } else {
           cleanText = mStr;
         }
       }
 
-      // 単一の単語（普通の単語）の処理
+      // 単一の単語（スラッシュがない普通の単語）の処理
       const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=es&client=tw-ob`;
-      forcePlay(googleTtsUrl);
+      audioPlayer1.pause();
+      audioPlayer2.pause();
+      audioPlayer1.src = googleTtsUrl;
+      audioPlayer1.play().catch(e => console.log(e));
     };
   </script>
 </body>
