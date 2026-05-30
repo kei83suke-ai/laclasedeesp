@@ -9,13 +9,25 @@
 </head>
 <body>
   <div id="app">
-    <!-- Navbar -->
-    <header class="navbar">
-      <div style="display:flex; align-items:center; gap:1.5rem;">
-        <div class="logo" onclick="appState.navigate('home')">🇪🇸 スペイン語教室</div>
-        <div id="nav-actions"></div>
+    <!-- Sticky Header Wrapper -->
+    <header class="header-wrapper">
+      <div class="navbar-main">
+        <div class="logo-area">
+          <div class="logo" onclick="appState.navigate('home')">🇪🇸 スペイン語教室</div>
+          <a class="navbar-home-btn" href="#home">🏠 ホーム</a>
+        </div>
+        <a href="#" onclick="openFeedbackModal()" class="feedback-link">💡 訂正や追加があればここへ</a>
       </div>
-      <a href="#" onclick="openFeedbackModal()" class="feedback-link">💡 訂正や追加があればここへ</a>
+      <nav class="app-menu-bar" id="app-menu-bar">
+        <a class="menu-item" id="menu-nouns" href="#flashcards/nouns">🏷️ 名詞</a>
+        <a class="menu-item" id="menu-verbs" href="#flashcards/verbs">🏃 動詞</a>
+        <a class="menu-item" id="menu-adjectives" href="#flashcards/adjectives">✨ 形容詞</a>
+        <a class="menu-item" id="menu-adverbs" href="#flashcards/adverbs">⏱️ 副詞</a>
+        <a class="menu-item" id="menu-prepositions" href="#flashcards/prepositions">🔗 その他</a>
+        <a class="menu-item" id="menu-conjugations" href="#conjugations">📊 活用表</a>
+        <a class="menu-item" id="menu-scorecard" href="#scorecard">📈 成績表</a>
+        <a class="menu-item" id="menu-reviewlater" href="#reviewlater">📝 復習単語</a>
+      </nav>
     </header>
 
     <!-- Main Content Area -->
