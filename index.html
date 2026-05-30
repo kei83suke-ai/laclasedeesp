@@ -6,10 +6,28 @@
   <title>スペイン語教室</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-</head>
+  
+  <style>
+    /* 画面全体の横幅をPC大画面でも100%に広げる */
+    html, body, #app {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 100% !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    
+    /* コンテンツの土台がスマホ幅（375pxなど）に固定されているのを強制解除する */
+    #content {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-width: 100% !important;
+      display: block !important;
+    }
+  </style>
+  </head>
 <body>
   <div id="app">
-    <!-- Sticky Header Wrapper -->
     <header class="header-wrapper">
       <div class="navbar-main">
         <div class="logo-area">
@@ -30,10 +48,8 @@
       </nav>
     </header>
 
-    <!-- Main Content Area -->
     <main id="content"></main>
 
-    <!-- Audio Player (Hidden) -->
     <div id="tts-status"></div>
 
   </div>

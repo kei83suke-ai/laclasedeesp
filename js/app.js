@@ -1431,7 +1431,6 @@ function renderReviewLater() {
   return div;
 }
 
-let audioUnlocked = false;
 function unlockAudio() {
   if (!audioUnlocked) {
     const dummy = new Audio();
