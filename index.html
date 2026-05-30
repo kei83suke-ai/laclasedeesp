@@ -55,22 +55,71 @@
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
 
-  <script>
+   <script>
     window.playAudio = function(text) {
       if (!text || !('speechSynthesis' in window)) return;
       
-      // スペイン語のテキストを整形
-      let cleanText = text.replace(/（.*?）/g, '').replace(/\(.*?\)/g, '').replace(/\s*\/\s*/g, '/').trim();
+      // 1. カッコ（文字）を綺麗に消去
+      let cleanText = text.replace(/（.*?）/g, '').replace(/\(.*?\)/g, '').trim();
+      
+      // 2. 「el/la chico/chica」や「duro/dura」のようなスラッシュ混じりの単語を綺麗に並び替える処理
       if (cleanText.includes('/')) {
-        cleanText = cleanText.split('/')[0]; // スラッシュがある場合は最初の単語を優先
+        // スペースのバラつきを整える
+        cleanText = cleanText.replace(/\s*\/\s*/g, '/');
+        const words = cleanText.split(' ');
+        let sentenceM = [];
+        let sentenceF = [];
+
+        for (let w of words) {
+          if (w.includes('/')) {
+            const parts = w.split('/');
+            const first = parts[0];
+            const second = parts[1] || '';
+
+            if (first === 'el' && second === 'la') {
+              sentenceM.push('el');
+              sentenceF.push('la');
+            } else if (first === 'un' && second === 'una') {
+              sentenceM.push('un');
+              sentenceF.push('una');
+            } else if (first === 'los' && second === 'las') {
+              sentenceM.push('los');
+              sentenceF.push('las');
+            } else if (second.length === 1) {
+              // duro/dura のような語尾だけスラッシュの場合の処理
+              if (first.endsWith('o')) {
+                sentenceM.push(first);
+                sentenceF.push(first.slice(0, -1) + second);
+              } else if (first.endsWith('os')) {
+                sentenceM.push(first);
+                sentenceF.push(first.slice(0, -2) + second);
+              } else {
+                sentenceM.push(first);
+                sentenceF.push(first);
+              }
+            } else {
+              sentenceM.push(first);
+              sentenceF.push(second);
+            }
+          } else {
+            sentenceM.push(w);
+            sentenceF.push(w);
+          }
+        }
+        
+        const mStr = sentenceM.join(' ');
+        const fStr = sentenceF.join(' ');
+        
+        // 男性形と女性形を続けて綺麗に喋らせる（例：「el chico, la chica」）
+        cleanText = mStr === fStr ? mStr : `${mStr}, ${fStr}`;
       }
 
-      window.speechSynthesis.cancel(); // 前の音声をクリア
+      // 3. 音声再生の実行
+      window.speechSynthesis.cancel(); 
       const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.lang = 'es-ES'; // スペイン語（スペイン）に固定
-      utterance.rate = 0.85;    // 少し聞き取りやすいようにゆっくりに設定
-      
-      // スマホ内蔵の最高の音声エンジンを自動選択
+      utterance.lang = 'es-ES'; 
+      utterance.rate = 0.8;    // 2単語連続でも聞き取りやすいように、少しだけゆっくりに調整
+
       const voices = window.speechSynthesis.getVoices();
       const esVoice = voices.find(v => v.lang.startsWith('es') && v.name.includes('Google')) 
                    || voices.find(v => v.lang.startsWith('es'));
