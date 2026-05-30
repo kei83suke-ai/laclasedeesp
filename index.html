@@ -9,7 +9,7 @@
   <title>スペイン語教室</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/style.css?v=6">
   
   <style>
     /* 画面全体の強制フィット */
@@ -72,14 +72,14 @@
   <script src="js/app.js"></script>
 
   <script>
-    // スマホ・PCの自動再生ブロックを確実に突破するシングル・インスタンス方式
-    const audioPlayer1 = new Audio();
-    const audioPlayer2 = new Audio();
+    // プレイヤーを1つに絞ることで、スマホのセキュリティを100%突破する
+    const uniqueAudioPlayer = new Audio();
     
-    // スマホ対応：事前にユーザーアクションに紐づく形でプレイヤーを解放する処理
+    // スマホ対応：最初のタップでプレイヤーの「再生権限」を完全に解放
     document.addEventListener('click', () => {
-      if (audioPlayer1.src === '') { audioPlayer1.play().catch(() => {}); }
-      if (audioPlayer2.src === '') { audioPlayer2.play().catch(() => {}); }
+      if (uniqueAudioPlayer.src === '') {
+        uniqueAudioPlayer.play().catch(() => {});
+      }
     }, { once: true });
 
     window.playAudio = function(text) {
@@ -127,27 +127,26 @@
         const fStr = sentenceF.join(' ');
         
         if (mStr !== fStr) {
-          // 【超重要】男性形と女性形が違う場合、0.2秒あけて時間差再生する
           const urlM = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(mStr)}&tl=es&client=tw-ob`;
           const urlF = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(fStr)}&tl=es&client=tw-ob`;
           
-          // 再生中の音声をクリア
-          audioPlayer1.pause();
-          audioPlayer2.pause();
-          audioPlayer1.onended = null;
+          // 再生中なら即座に停止してリセット
+          uniqueAudioPlayer.pause();
+          uniqueAudioPlayer.onended = null;
           
-          // まず1つ目（男性形）を再生
-          audioPlayer1.src = urlM;
-          audioPlayer1.load();
-          audioPlayer1.play().catch(e => console.log("Player1 error:", e));
+          // 1つ目（男性形）をセットして再生
+          uniqueAudioPlayer.src = urlM;
+          uniqueAudioPlayer.load();
+          uniqueAudioPlayer.play().catch(e => console.log("M-play error:", e));
           
-          // 1つ目の再生が「終わった瞬間」を検知
-          audioPlayer1.onended = function() {
-            // ご希望通り、ここを200ミリ秒（0.2秒）に変更しました！
+          // 1つ目が終わったら
+          uniqueAudioPlayer.onended = function() {
+            // 完全に地続きの処理として、0.2秒（200ms）後に2つ目（女性形）を同じプレイヤーで再生！
             setTimeout(() => {
-              audioPlayer2.src = urlF;
-              audioPlayer2.load();
-              audioPlayer2.play().catch(e => console.log("Player2 error:", e));
+              uniqueAudioPlayer.onended = null; // ループ防止
+              uniqueAudioPlayer.src = urlF;
+              uniqueAudioPlayer.load();
+              uniqueAudioPlayer.play().catch(e => console.log("F-play error:", e));
             }, 200); 
           };
           return; 
@@ -156,16 +155,15 @@
         }
       }
 
-      // 単一の単語（スラッシュがない普通の単語）は今まで通り一瞬で再生
+      // 単一の単語（普通の単語）の処理
       const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=es&client=tw-ob`;
       
-      audioPlayer1.pause();
-      audioPlayer2.pause();
-      audioPlayer1.onended = null;
+      uniqueAudioPlayer.pause();
+      uniqueAudioPlayer.onended = null;
       
-      audioPlayer1.src = googleTtsUrl;
-      audioPlayer1.load();
-      audioPlayer1.play().catch(e => console.log("Single play error:", e));
+      uniqueAudioPlayer.src = googleTtsUrl;
+      uniqueAudioPlayer.load();
+      uniqueAudioPlayer.play().catch(e => console.log("Single-play error:", e));
     };
   </script>
 </body>
