@@ -223,45 +223,58 @@ function formatSpanishAudioText(text) {
   return `${mStr} ${fStr}`;
 }
 
+// グローバルなAudio要素（スマホでの音声再生制限を回避するための「いつものルール」）
+const globalAudio = new Audio();
+let audioUnlocked = false;
+
+// スマホの初回タッチ時にAudioコンテキストをアンロックする
+function unlockAudio() {
+  if (!audioUnlocked) {
+    globalAudio.play().catch(() => {}); // 無音を再生してロック解除
+    if ('speechSynthesis' in window) {
+      const u = new SpeechSynthesisUtterance('');
+      window.speechSynthesis.speak(u);
+    }
+    audioUnlocked = true;
+    document.removeEventListener('touchstart', unlockAudio);
+    document.removeEventListener('click', unlockAudio);
+  }
+}
+document.addEventListener('touchstart', unlockAudio, { once: true, passive: true });
+document.addEventListener('click', unlockAudio, { once: true, passive: true });
+
 window.playAudio = function(text) {
   if (!text) return;
   
   const cleanText = formatSpanishAudioText(text);
-
-  // iOSやスマホの仕様で、非同期（Promiseの中など）で音声を鳴らそうとするとブロックされるため、
-  // 必ず同期的に動作する Web Speech API (speechSynthesis) を優先して実行します。
-  if ('speechSynthesis' in window) {
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(cleanText);
-    utterance.lang = 'es-ES';
-    utterance.rate = 0.85;
-    utterance.pitch = 1.0;
-    
-    const voices = window.speechSynthesis.getVoices();
-    const esVoices = voices.filter(v => v.lang.startsWith('es'));
-    let esVoice = esVoices.find(v => v.name.toLowerCase().includes('premium'))
-               || esVoices.find(v => v.name.toLowerCase().includes('enhanced'))
-               || esVoices.find(v => v.name.toLowerCase().includes('google'))
-               || esVoices.find(v => v.lang === 'es-ES')
-               || esVoices[0];
-               
-    if (esVoice) utterance.voice = esVoice;
-    
-    // エラー時のフォールバックとしてGoogle TTSを利用
-    utterance.onerror = (e) => {
-      console.log('SpeechSynthesis failed, falling back to Google TTS');
-      const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=es&client=tw-ob`;
-      const audio = new Audio(url);
-      audio.play().catch(err => console.error(err));
-    };
-    
-    window.speechSynthesis.speak(utterance);
-  } else {
-    // speechSynthesis非対応ブラウザ用
-    const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=es&client=tw-ob`;
-    const audio = new Audio(url);
-    audio.play().catch(e => console.error(e));
-  }
+  
+  // Google翻訳APIからクリアな音声を再生
+  const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=es&client=tw-ob`;
+  
+  // 同じAudioインスタンスを使い回す（スマホでの再生エラーを防ぐため）
+  globalAudio.src = url;
+  globalAudio.play().catch(e => {
+    console.error('Audio playback failed, falling back to Web Speech API:', e);
+    // ネットワークエラー等で再生できない場合は SpeechSynthesis にフォールバック
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.lang = 'es-ES';
+      utterance.rate = 0.85;
+      utterance.pitch = 1.0;
+      
+      const voices = window.speechSynthesis.getVoices();
+      const esVoices = voices.filter(v => v.lang.startsWith('es'));
+      let esVoice = esVoices.find(v => v.name.toLowerCase().includes('premium'))
+                 || esVoices.find(v => v.name.toLowerCase().includes('enhanced'))
+                 || esVoices.find(v => v.name.toLowerCase().includes('google'))
+                 || esVoices.find(v => v.lang === 'es-ES')
+                 || esVoices[0];
+                 
+      if (esVoice) utterance.voice = esVoice;
+      window.speechSynthesis.speak(utterance);
+    }
+  });
 };
 
 window.playEffect = function(type) {
