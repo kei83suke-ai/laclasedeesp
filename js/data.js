@@ -1688,18 +1688,6 @@ const db = {
     },
     {
       "category": "日常生活",
-      "es": "el descanso",
-      "ja": "休憩、休み",
-      "en": "rest"
-    },
-    {
-      "category": "日常生活",
-      "es": "el sueño",
-      "ja": "睡眠、夢",
-      "en": "sleep; dream"
-    },
-    {
-      "category": "日常生活",
       "es": "la siesta",
       "ja": "昼寝",
       "en": "nap"
@@ -1709,12 +1697,6 @@ const db = {
       "es": "el paseo",
       "ja": "散歩",
       "en": "walk"
-    },
-    {
-      "category": "日常生活",
-      "es": "el deporte",
-      "ja": "スポーツ",
-      "en": "sport"
     },
     {
       "category": "日常生活",
@@ -2060,12 +2042,6 @@ const db = {
     },
     {
       "category": "家・住居",
-      "es": "la casa",
-      "ja": "家",
-      "en": "house"
-    },
-    {
-      "category": "家・住居",
       "es": "el apartamento",
       "ja": "アパート",
       "en": "apartment"
@@ -2129,12 +2105,6 @@ const db = {
       "es": "la sala de estar",
       "ja": "リビング",
       "en": "living room"
-    },
-    {
-      "category": "家・住居",
-      "es": "el baño",
-      "ja": "浴室、トイレ",
-      "en": "bathroom"
     },
     {
       "category": "家・住居",
@@ -2504,12 +2474,6 @@ const db = {
     },
     {
       "category": "学校・教育",
-      "es": "la música",
-      "ja": "音楽",
-      "en": "music"
-    },
-    {
-      "category": "学校・教育",
       "es": "el idioma",
       "ja": "言語",
       "en": "language"
@@ -2537,12 +2501,6 @@ const db = {
       "es": "el alemán",
       "ja": "ドイツ語",
       "en": "German"
-    },
-    {
-      "category": "学校・教育",
-      "es": "el japonés",
-      "ja": "日本語",
-      "en": "Japanese"
     },
     {
       "category": "学校・教育",
@@ -3002,12 +2960,6 @@ const db = {
     },
     {
       "category": "街・場所",
-      "es": "la escuela",
-      "ja": "学校",
-      "en": "school"
-    },
-    {
-      "category": "街・場所",
       "es": "la biblioteca",
       "ja": "図書館",
       "en": "library"
@@ -3077,12 +3029,6 @@ const db = {
       "es": "la parada",
       "ja": "停留所",
       "en": "stop"
-    },
-    {
-      "category": "街・場所",
-      "es": "el estadio",
-      "ja": "スタジアム",
-      "en": "stadium"
     },
     {
       "category": "街・場所",
@@ -3206,12 +3152,6 @@ const db = {
     },
     {
       "category": "交通・乗り物",
-      "es": "la bicicleta",
-      "ja": "自転車",
-      "en": "bicycle"
-    },
-    {
-      "category": "交通・乗り物",
       "es": "la moto",
       "ja": "バイク",
       "en": "motorbike"
@@ -3263,12 +3203,6 @@ const db = {
       "es": "el billete/boleto",
       "ja": "切符、チケット",
       "en": "ticket"
-    },
-    {
-      "category": "交通・乗り物",
-      "es": "el horario",
-      "ja": "時刻表",
-      "en": "schedule"
     },
     {
       "category": "交通・乗り物",
@@ -3374,12 +3308,6 @@ const db = {
     },
     {
       "category": "交通・乗り物",
-      "es": "el pasillo",
-      "ja": "通路",
-      "en": "aisle"
-    },
-    {
-      "category": "交通・乗り物",
       "es": "la maleta",
       "ja": "スーツケース",
       "en": "suitcase"
@@ -3389,12 +3317,6 @@ const db = {
       "es": "el equipaje",
       "ja": "荷物",
       "en": "luggage"
-    },
-    {
-      "category": "交通・乗り物",
-      "es": "la mochila",
-      "ja": "バックパック",
-      "en": "backpack"
     },
     {
       "category": "交通・乗り物",
@@ -3836,12 +3758,6 @@ const db = {
     },
     {
       "category": "食べ物・飲み物",
-      "es": "el café",
-      "ja": "コーヒー",
-      "en": "coffee"
-    },
-    {
-      "category": "食べ物・飲み物",
       "es": "el té",
       "ja": "お茶",
       "en": "tea"
@@ -3929,12 +3845,6 @@ const db = {
       "es": "el whisky",
       "ja": "ウイスキー",
       "en": "whiskey"
-    },
-    {
-      "category": "買い物・服",
-      "es": "la tienda",
-      "ja": "店",
-      "en": "store; shop"
     },
     {
       "category": "買い物・服",
@@ -4226,12 +4136,6 @@ const db = {
     },
     {
       "category": "買い物・服",
-      "es": "el guante",
-      "ja": "手袋",
-      "en": "glove"
-    },
-    {
-      "category": "買い物・服",
       "es": "el paraguas",
       "ja": "傘",
       "en": "umbrella"
@@ -4382,12 +4286,6 @@ const db = {
     },
     {
       "category": "ホテル・旅行",
-      "es": "el hotel",
-      "ja": "ホテル",
-      "en": "hotel"
-    },
-    {
-      "category": "ホテル・旅行",
       "es": "la recepción",
       "ja": "フロント",
       "en": "reception"
@@ -4403,12 +4301,6 @@ const db = {
       "es": "la recepcionista",
       "ja": "受付（女）",
       "en": "receptionist (f)"
-    },
-    {
-      "category": "ホテル・旅行",
-      "es": "la habitación",
-      "ja": "部屋",
-      "en": "room"
     },
     {
       "category": "ホテル・旅行",
@@ -4448,12 +4340,6 @@ const db = {
     },
     {
       "category": "ホテル・旅行",
-      "es": "el equipaje",
-      "ja": "荷物",
-      "en": "luggage"
-    },
-    {
-      "category": "ホテル・旅行",
       "es": "la llave",
       "ja": "鍵",
       "en": "key"
@@ -4472,12 +4358,6 @@ const db = {
     },
     {
       "category": "ホテル・旅行",
-      "es": "la piscina",
-      "ja": "プール",
-      "en": "pool"
-    },
-    {
-      "category": "ホテル・旅行",
       "es": "el spa",
       "ja": "スパ",
       "en": "spa"
@@ -4487,12 +4367,6 @@ const db = {
       "es": "el servicio de habitaciones",
       "ja": "ルームサービス",
       "en": "room service"
-    },
-    {
-      "category": "ホテル・旅行",
-      "es": "el aeropuerto",
-      "ja": "空港",
-      "en": "airport"
     },
     {
       "category": "ホテル・旅行",
@@ -4511,12 +4385,6 @@ const db = {
       "es": "la puerta de embarque",
       "ja": "搭乗口",
       "en": "gate"
-    },
-    {
-      "category": "ホテル・旅行",
-      "es": "el pasaporte",
-      "ja": "パスポート",
-      "en": "passport"
     },
     {
       "category": "ホテル・旅行",
@@ -4556,12 +4424,6 @@ const db = {
     },
     {
       "category": "銀行・郵便",
-      "es": "el banco",
-      "ja": "銀行",
-      "en": "bank"
-    },
-    {
-      "category": "銀行・郵便",
       "es": "la cuenta",
       "ja": "口座",
       "en": "account"
@@ -4592,12 +4454,6 @@ const db = {
     },
     {
       "category": "銀行・郵便",
-      "es": "el cambio",
-      "ja": "両替、為替",
-      "en": "exchange"
-    },
-    {
-      "category": "銀行・郵便",
       "es": "la moneda",
       "ja": "硬貨、通貨",
       "en": "coin; currency"
@@ -4607,12 +4463,6 @@ const db = {
       "es": "el billete",
       "ja": "紙幣",
       "en": "bill; note"
-    },
-    {
-      "category": "銀行・郵便",
-      "es": "el interés",
-      "ja": "利息",
-      "en": "interest"
     },
     {
       "category": "銀行・郵便",
@@ -4637,12 +4487,6 @@ const db = {
       "es": "la transferencia",
       "ja": "振込",
       "en": "transfer"
-    },
-    {
-      "category": "銀行・郵便",
-      "es": "la oficina de correos",
-      "ja": "郵便局",
-      "en": "post office"
     },
     {
       "category": "銀行・郵便",
@@ -4775,12 +4619,6 @@ const db = {
       "es": "el desierto",
       "ja": "砂漠",
       "en": "desert"
-    },
-    {
-      "category": "自然・地形",
-      "es": "la playa",
-      "ja": "浜辺、ビーチ",
-      "en": "beach"
     },
     {
       "category": "自然・地形",
@@ -4955,12 +4793,6 @@ const db = {
       "es": "el clima",
       "ja": "気候",
       "en": "climate"
-    },
-    {
-      "category": "天気・季節",
-      "es": "el tiempo",
-      "ja": "天気",
-      "en": "weather"
     },
     {
       "category": "天気・季節",
@@ -5258,12 +5090,6 @@ const db = {
     },
     {
       "category": "動物",
-      "es": "el pollo",
-      "ja": "ひよこ、鶏肉",
-      "en": "chicken"
-    },
-    {
-      "category": "動物",
       "es": "la gallina",
       "ja": "めんどり",
       "en": "hen"
@@ -5279,12 +5105,6 @@ const db = {
       "es": "el pato",
       "ja": "アヒル",
       "en": "duck"
-    },
-    {
-      "category": "動物",
-      "es": "el pavo",
-      "ja": "七面鳥",
-      "en": "turkey"
     },
     {
       "category": "動物",
@@ -5672,12 +5492,6 @@ const db = {
     },
     {
       "category": "時間・数量",
-      "es": "el tiempo",
-      "ja": "時間",
-      "en": "time"
-    },
-    {
-      "category": "時間・数量",
       "es": "la hora",
       "ja": "時間、～時",
       "en": "hour"
@@ -5813,12 +5627,6 @@ const db = {
       "es": "el mililitro",
       "ja": "ミリリットル",
       "en": "milliliter"
-    },
-    {
-      "category": "時間・数量",
-      "es": "el metro",
-      "ja": "メートル",
-      "en": "meter"
     },
     {
       "category": "時間・数量",
@@ -5966,21 +5774,9 @@ const db = {
     },
     {
       "category": "状況・出来事",
-      "es": "el resultado",
-      "ja": "結果",
-      "en": "result"
-    },
-    {
-      "category": "状況・出来事",
       "es": "la consecuencia",
       "ja": "結果、影響",
       "en": "consequence"
-    },
-    {
-      "category": "状況・出来事",
-      "es": "el cambio",
-      "ja": "変化",
-      "en": "change"
     },
     {
       "category": "状況・出来事",
@@ -6055,28 +5851,10 @@ const db = {
       "en": "example"
     },
     {
-      "category": "状況・出来事",
-      "es": "la historia",
-      "ja": "物語、歴史",
-      "en": "story; history"
-    },
-    {
-      "category": "抽象概念・価値観",
-      "es": "el amor",
-      "ja": "愛",
-      "en": "love"
-    },
-    {
       "category": "抽象概念・価値観",
       "es": "la amistad",
       "ja": "友情",
       "en": "friendship"
-    },
-    {
-      "category": "抽象概念・価値観",
-      "es": "la confianza",
-      "ja": "信頼",
-      "en": "trust"
     },
     {
       "category": "抽象概念・価値観",
@@ -6224,12 +6002,6 @@ const db = {
     },
     {
       "category": "抽象概念・価値観",
-      "es": "el interés",
-      "ja": "興味、関心、利害",
-      "en": "interest"
-    },
-    {
-      "category": "抽象概念・価値観",
       "es": "la curiosidad",
       "ja": "好奇心",
       "en": "curiosity"
@@ -6269,12 +6041,6 @@ const db = {
       "es": "la meta",
       "ja": "目標",
       "en": "goal"
-    },
-    {
-      "category": "抽象概念・価値観",
-      "es": "el sueño",
-      "ja": "夢",
-      "en": "dream"
     },
     {
       "category": "抽象概念・価値観",
@@ -6410,21 +6176,9 @@ const db = {
     },
     {
       "category": "社会・政治",
-      "es": "el derecho",
-      "ja": "権利、法",
-      "en": "right; law"
-    },
-    {
-      "category": "社会・政治",
       "es": "el partido político",
       "ja": "政党",
       "en": "political party"
-    },
-    {
-      "category": "社会・政治",
-      "es": "la elección",
-      "ja": "選挙",
-      "en": "election"
     },
     {
       "category": "社会・政治",
@@ -6512,12 +6266,6 @@ const db = {
     },
     {
       "category": "社会・政治",
-      "es": "el mercado",
-      "ja": "市場",
-      "en": "market"
-    },
-    {
-      "category": "社会・政治",
       "es": "la economía",
       "ja": "経済",
       "en": "economy"
@@ -6536,12 +6284,6 @@ const db = {
     },
     {
       "category": "社会・政治",
-      "es": "el salario",
-      "ja": "給与",
-      "en": "salary"
-    },
-    {
-      "category": "社会・政治",
       "es": "el sueldo mínimo",
       "ja": "最低賃金",
       "en": "minimum wage"
@@ -6551,12 +6293,6 @@ const db = {
       "es": "el desempleo",
       "ja": "失業",
       "en": "unemployment"
-    },
-    {
-      "category": "社会・政治",
-      "es": "el precio",
-      "ja": "価格",
-      "en": "price"
     },
     {
       "category": "社会・政治",
@@ -6710,21 +6446,9 @@ const db = {
     },
     {
       "category": "文化・娯楽",
-      "es": "el museo",
-      "ja": "博物館",
-      "en": "museum"
-    },
-    {
-      "category": "文化・娯楽",
       "es": "la exposición",
       "ja": "展覧会",
       "en": "exhibition"
-    },
-    {
-      "category": "文化・娯楽",
-      "es": "el arte",
-      "ja": "芸術",
-      "en": "art"
     },
     {
       "category": "文化・娯楽",
@@ -6743,12 +6467,6 @@ const db = {
       "es": "la fotografía",
       "ja": "写真",
       "en": "photography"
-    },
-    {
-      "category": "文化・娯楽",
-      "es": "la música",
-      "ja": "音楽",
-      "en": "music"
     },
     {
       "category": "文化・娯楽",
@@ -6806,12 +6524,6 @@ const db = {
     },
     {
       "category": "文化・娯楽",
-      "es": "el libro",
-      "ja": "本",
-      "en": "book"
-    },
-    {
-      "category": "文化・娯楽",
       "es": "la novela",
       "ja": "小説",
       "en": "novel"
@@ -6860,12 +6572,6 @@ const db = {
     },
     {
       "category": "メディア・テクノロジー",
-      "es": "el idioma",
-      "ja": "言語",
-      "en": "language"
-    },
-    {
-      "category": "メディア・テクノロジー",
       "es": "el periódico",
       "ja": "新聞",
       "en": "newspaper"
@@ -6887,18 +6593,6 @@ const db = {
       "es": "el canal",
       "ja": "チャンネル",
       "en": "channel"
-    },
-    {
-      "category": "メディア・テクノロジー",
-      "es": "el programa",
-      "ja": "番組",
-      "en": "program"
-    },
-    {
-      "category": "メディア・テクノロジー",
-      "es": "la serie",
-      "ja": "シリーズ",
-      "en": "series"
     },
     {
       "category": "メディア・テクノロジー",
@@ -6998,12 +6692,6 @@ const db = {
     },
     {
       "category": "メディア・テクノロジー",
-      "es": "la cuenta",
-      "ja": "アカウント",
-      "en": "account"
-    },
-    {
-      "category": "メディア・テクノロジー",
       "es": "el perfil",
       "ja": "プロフィール",
       "en": "profile"
@@ -7031,6 +6719,312 @@ const db = {
       "es": "el me gusta",
       "ja": "いいね",
       "en": "like"
+    },
+    {
+      "category": "食べ物・飲み物",
+      "es": "el licor",
+      "ja": "リキュール",
+      "en": "liquor"
+    },
+    {
+      "category": "食べ物・飲み物",
+      "es": "el postre",
+      "ja": "デザート",
+      "en": "dessert"
+    },
+    {
+      "category": "食べ物・飲み物",
+      "es": "la tarta",
+      "ja": "ケーキ、パイ",
+      "en": "cake, pie"
+    },
+    {
+      "category": "テクノロジー",
+      "es": "la configuración",
+      "ja": "設定",
+      "en": "settings"
+    },
+    {
+      "category": "テクノロジー",
+      "es": "la actualización",
+      "ja": "アップデート",
+      "en": "update"
+    },
+    {
+      "category": "テクノロジー",
+      "es": "la descarga",
+      "ja": "ダウンロード",
+      "en": "download"
+    },
+    {
+      "category": "テクノロジー",
+      "es": "la notificación",
+      "ja": "通知",
+      "en": "notification"
+    },
+    {
+      "category": "テクノロジー",
+      "es": "el enlace",
+      "ja": "リンク",
+      "en": "link"
+    },
+    {
+      "category": "テクノロジー",
+      "es": "la búsqueda",
+      "ja": "検索",
+      "en": "search"
+    },
+    {
+      "category": "テクノロジー",
+      "es": "el navegador",
+      "ja": "ブラウザ",
+      "en": "browser"
+    },
+    {
+      "category": "テクノロジー",
+      "es": "el servidor",
+      "ja": "サーバー",
+      "en": "server"
+    },
+    {
+      "category": "テクノロジー",
+      "es": "el almacenamiento",
+      "ja": "ストレージ",
+      "en": "storage"
+    },
+    {
+      "category": "テクノロジー",
+      "es": "la base de datos",
+      "ja": "データベース",
+      "en": "database"
+    },
+    {
+      "category": "テクノロジー",
+      "es": "el antivirus",
+      "ja": "ウイルス対策",
+      "en": "antivirus"
+    },
+    {
+      "category": "SNS",
+      "es": "el/la seguidor/a",
+      "ja": "フォロワー",
+      "en": "follower"
+    },
+    {
+      "category": "SNS",
+      "es": "el like",
+      "ja": "いいね",
+      "en": "like"
+    },
+    {
+      "category": "SNS",
+      "es": "el reel",
+      "ja": "リール",
+      "en": "reel"
+    },
+    {
+      "category": "SNS",
+      "es": "la tendencia",
+      "ja": "トレンド",
+      "en": "trend"
+    },
+    {
+      "category": "SNS",
+      "es": "el hashtag",
+      "ja": "ハッシュタグ",
+      "en": "hashtag"
+    },
+    {
+      "category": "SNS",
+      "es": "el meme",
+      "ja": "ミーム",
+      "en": "meme"
+    },
+    {
+      "category": "SNS",
+      "es": "la influencia",
+      "ja": "影響",
+      "en": "influence"
+    },
+    {
+      "category": "SNS",
+      "es": "el/la influencer",
+      "ja": "インフルエンサー",
+      "en": "influencer"
+    },
+    {
+      "category": "SNS",
+      "es": "el contenido",
+      "ja": "コンテンツ",
+      "en": "content"
+    },
+    {
+      "category": "SNS",
+      "es": "el algoritmo",
+      "ja": "アルゴリズム",
+      "en": "algorithm"
+    },
+    {
+      "category": "ビジネス",
+      "es": "la inversión",
+      "ja": "投資",
+      "en": "investment"
+    },
+    {
+      "category": "ビジネス",
+      "es": "el beneficio",
+      "ja": "利益",
+      "en": "profit"
+    },
+    {
+      "category": "ビジネス",
+      "es": "la pérdida",
+      "ja": "損失",
+      "en": "loss"
+    },
+    {
+      "category": "ビジネス",
+      "es": "el despido",
+      "ja": "解雇",
+      "en": "dismissal"
+    },
+    {
+      "category": "ビジネス",
+      "es": "la renuncia",
+      "ja": "辞職",
+      "en": "resignation"
+    },
+    {
+      "category": "感情",
+      "es": "la depresión",
+      "ja": "うつ",
+      "en": "depression"
+    },
+    {
+      "category": "健康",
+      "es": "el síntoma",
+      "ja": "症状",
+      "en": "symptom"
+    },
+    {
+      "category": "健康",
+      "es": "la medicina",
+      "ja": "薬",
+      "en": "medicine"
+    },
+    {
+      "category": "健康",
+      "es": "la cirugía",
+      "ja": "手術",
+      "en": "surgery"
+    },
+    {
+      "category": "健康",
+      "es": "el/la médico/a",
+      "ja": "医者",
+      "en": "doctor"
+    },
+    {
+      "category": "健康",
+      "es": "el/la enfermero/a",
+      "ja": "看護師",
+      "en": "nurse"
+    },
+    {
+      "category": "健康",
+      "es": "el/la paciente",
+      "ja": "患者",
+      "en": "patient"
+    },
+    {
+      "category": "環境",
+      "es": "el calentamiento global",
+      "ja": "地球温暖化",
+      "en": "global warming"
+    },
+    {
+      "category": "環境",
+      "es": "la sostenibilidad",
+      "ja": "持続可能性",
+      "en": "sustainability"
+    },
+    {
+      "category": "自然・物質",
+      "es": "el fuego",
+      "ja": "火",
+      "en": "fire"
+    },
+    {
+      "category": "自然・物質",
+      "es": "la piedra",
+      "ja": "石",
+      "en": "stone, rock"
+    },
+    {
+      "category": "自然・物質",
+      "es": "la arena",
+      "ja": "砂",
+      "en": "sand"
+    },
+    {
+      "category": "自然・物質",
+      "es": "la madera",
+      "ja": "木材",
+      "en": "wood"
+    },
+    {
+      "category": "自然・物質",
+      "es": "la ceniza",
+      "ja": "灰",
+      "en": "ash"
+    },
+    {
+      "category": "自然・物質",
+      "es": "el polvo",
+      "ja": "ほこり",
+      "en": "dust"
+    },
+    {
+      "category": "自然・物質",
+      "es": "la llama",
+      "ja": "炎",
+      "en": "flame"
+    },
+    {
+      "category": "自然・物質",
+      "es": "el barro",
+      "ja": "泥、粘土",
+      "en": "mud, clay"
+    },
+    {
+      "category": "自然・光",
+      "es": "la sombra",
+      "ja": "影、日陰",
+      "en": "shadow, shade"
+    },
+    {
+      "category": "自然・光",
+      "es": "la luz",
+      "ja": "光",
+      "en": "light"
+    },
+    {
+      "category": "自然・光",
+      "es": "el rayo",
+      "ja": "光線、稲妻",
+      "en": "ray, lightning"
+    },
+    {
+      "category": "天候",
+      "es": "el rocío",
+      "ja": "露",
+      "en": "dew"
+    },
+    {
+      "category": "天候",
+      "es": "la escarcha",
+      "ja": "霜",
+      "en": "frost"
     }
   ],
   "adjectives": [
@@ -8767,6 +8761,540 @@ const db = {
       "es": "orgulloso/orgullosa de sí mismo/a",
       "ja": "自分を誇りに思う",
       "en": "proud of oneself"
+    },
+    {
+      "category": "感情・心理状態",
+      "es": "asombrado/asombrada",
+      "ja": "驚いた",
+      "en": "astonished"
+    },
+    {
+      "category": "感情・心理状態",
+      "es": "preocupado/preocupada",
+      "ja": "心配した",
+      "en": "worried"
+    },
+    {
+      "category": "感情・心理状態",
+      "es": "emocionante",
+      "ja": "ワクワクする（物事）",
+      "en": "exciting"
+    },
+    {
+      "category": "感情・心理状態",
+      "es": "aburrido (cosa)",
+      "ja": "退屈な（物事）",
+      "en": "boring"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "impresionante",
+      "ja": "印象的な",
+      "en": "impressive"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "decepcionante",
+      "ja": "がっかりする",
+      "en": "disappointing"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "satisfactorio/satisfactoria",
+      "ja": "満足のいく",
+      "en": "satisfactory"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "excelente",
+      "ja": "素晴らしい",
+      "en": "excellent"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "perfecto/perfecta",
+      "ja": "完璧な",
+      "en": "perfect"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "horrible",
+      "ja": "ひどい",
+      "en": "horrible"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "terrible",
+      "ja": "恐ろしい、ひどい",
+      "en": "terrible"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "maravilloso/maravillosa",
+      "ja": "すばらしい",
+      "en": "wonderful"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "fantástico/fantástica",
+      "ja": "すごい",
+      "en": "fantastic"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "increíble",
+      "ja": "信じられない",
+      "en": "incredible"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "espectacular",
+      "ja": "壮観な",
+      "en": "spectacular"
+    },
+    {
+      "category": "評価・良し悪し",
+      "es": "mediocre",
+      "ja": "平凡な",
+      "en": "mediocre"
+    },
+    {
+      "category": "物理・抽象特性",
+      "es": "suave",
+      "ja": "柔らかい、なめらかな",
+      "en": "soft, smooth"
+    },
+    {
+      "category": "物理・抽象特性",
+      "es": "áspero/áspera",
+      "ja": "ざらざらした",
+      "en": "rough"
+    },
+    {
+      "category": "物理・抽象特性",
+      "es": "duro/dura",
+      "ja": "硬い",
+      "en": "hard"
+    },
+    {
+      "category": "物理・抽象特性",
+      "es": "blando/blanda",
+      "ja": "柔らかい",
+      "en": "soft"
+    },
+    {
+      "category": "物理・抽象特性",
+      "es": "húmedo/húmeda (cosa)",
+      "ja": "湿った",
+      "en": "damp"
+    },
+    {
+      "category": "物理・抽象特性",
+      "es": "mojado/mojada",
+      "ja": "濡れた",
+      "en": "wet"
+    },
+    {
+      "category": "物理・抽象特性",
+      "es": "seco/seca (cosa)",
+      "ja": "乾いた",
+      "en": "dry"
+    },
+    {
+      "category": "物理・抽象特性",
+      "es": "transparente",
+      "ja": "透明な",
+      "en": "transparent"
+    },
+    {
+      "category": "物理・抽象特性",
+      "es": "opaco/opaca",
+      "ja": "不透明な",
+      "en": "opaque"
+    },
+    {
+      "category": "形状",
+      "es": "redondo/redonda",
+      "ja": "丸い",
+      "en": "round"
+    },
+    {
+      "category": "形状",
+      "es": "cuadrado/cuadrada",
+      "ja": "四角い",
+      "en": "square"
+    },
+    {
+      "category": "形状",
+      "es": "rectangular",
+      "ja": "長方形の",
+      "en": "rectangular"
+    },
+    {
+      "category": "形状",
+      "es": "triangular",
+      "ja": "三角形の",
+      "en": "triangular"
+    },
+    {
+      "category": "形状",
+      "es": "ovalado/ovalada",
+      "ja": "楕円形の",
+      "en": "oval"
+    },
+    {
+      "category": "形状",
+      "es": "plano/plana",
+      "ja": "平らな",
+      "en": "flat"
+    },
+    {
+      "category": "形状",
+      "es": "curvo/curva",
+      "ja": "曲がった",
+      "en": "curved"
+    },
+    {
+      "category": "形状",
+      "es": "puntiagudo/puntiaguda",
+      "ja": "とがった",
+      "en": "pointed"
+    },
+    {
+      "category": "サイズ",
+      "es": "ancho/ancha",
+      "ja": "幅広い",
+      "en": "wide"
+    },
+    {
+      "category": "サイズ",
+      "es": "largo/larga",
+      "ja": "長い",
+      "en": "long"
+    },
+    {
+      "category": "サイズ",
+      "es": "corto/corta",
+      "ja": "短い",
+      "en": "short"
+    },
+    {
+      "category": "サイズ",
+      "es": "grande",
+      "ja": "大きい",
+      "en": "big, large"
+    },
+    {
+      "category": "サイズ",
+      "es": "pequeño/pequeña",
+      "ja": "小さい",
+      "en": "small"
+    },
+    {
+      "category": "サイズ",
+      "es": "enorme",
+      "ja": "巨大な",
+      "en": "enormous"
+    },
+    {
+      "category": "サイズ",
+      "es": "diminuto/diminuta",
+      "ja": "とても小さい",
+      "en": "tiny"
+    },
+    {
+      "category": "サイズ",
+      "es": "grueso/gruesa",
+      "ja": "厚い、太い",
+      "en": "thick"
+    },
+    {
+      "category": "サイズ",
+      "es": "fino/fina",
+      "ja": "細い、薄い",
+      "en": "thin, fine"
+    },
+    {
+      "category": "比較",
+      "es": "igual",
+      "ja": "同じ",
+      "en": "equal, same"
+    },
+    {
+      "category": "比較",
+      "es": "diferente",
+      "ja": "違う",
+      "en": "different"
+    },
+    {
+      "category": "比較",
+      "es": "similar",
+      "ja": "似ている",
+      "en": "similar"
+    },
+    {
+      "category": "比較",
+      "es": "opuesto/opuesta",
+      "ja": "反対の",
+      "en": "opposite"
+    },
+    {
+      "category": "比較",
+      "es": "único/única",
+      "ja": "唯一の、ユニークな",
+      "en": "unique, only"
+    },
+    {
+      "category": "比較",
+      "es": "común",
+      "ja": "共通の、一般的な",
+      "en": "common"
+    },
+    {
+      "category": "比較",
+      "es": "especial",
+      "ja": "特別な",
+      "en": "special"
+    },
+    {
+      "category": "比較",
+      "es": "ordinario/ordinaria",
+      "ja": "普通の",
+      "en": "ordinary"
+    },
+    {
+      "category": "真偽",
+      "es": "auténtico/auténtica",
+      "ja": "本物の",
+      "en": "authentic"
+    },
+    {
+      "category": "真偽",
+      "es": "falso/falsa",
+      "ja": "偽の",
+      "en": "false, fake"
+    },
+    {
+      "category": "真偽",
+      "es": "verdadero/verdadera",
+      "ja": "本当の",
+      "en": "true, real"
+    },
+    {
+      "category": "真偽",
+      "es": "artificial",
+      "ja": "人工の",
+      "en": "artificial"
+    },
+    {
+      "category": "真偽",
+      "es": "natural",
+      "ja": "自然な",
+      "en": "natural"
+    },
+    {
+      "category": "社会",
+      "es": "público/pública",
+      "ja": "公共の",
+      "en": "public"
+    },
+    {
+      "category": "社会",
+      "es": "privado/privada",
+      "ja": "私的な",
+      "en": "private"
+    },
+    {
+      "category": "社会",
+      "es": "nacional",
+      "ja": "国の",
+      "en": "national"
+    },
+    {
+      "category": "社会",
+      "es": "internacional",
+      "ja": "国際的な",
+      "en": "international"
+    },
+    {
+      "category": "社会",
+      "es": "local",
+      "ja": "地元の",
+      "en": "local"
+    },
+    {
+      "category": "社会",
+      "es": "global",
+      "ja": "世界的な",
+      "en": "global"
+    },
+    {
+      "category": "社会",
+      "es": "económico/económica",
+      "ja": "経済的な",
+      "en": "economic"
+    },
+    {
+      "category": "社会",
+      "es": "político/política",
+      "ja": "政治的な",
+      "en": "political"
+    },
+    {
+      "category": "社会",
+      "es": "social",
+      "ja": "社会的な",
+      "en": "social"
+    },
+    {
+      "category": "社会",
+      "es": "cultural",
+      "ja": "文化的な",
+      "en": "cultural"
+    },
+    {
+      "category": "社会",
+      "es": "religioso/religiosa",
+      "ja": "宗教的な",
+      "en": "religious"
+    },
+    {
+      "category": "社会",
+      "es": "histórico/histórica",
+      "ja": "歴史的な",
+      "en": "historical"
+    },
+    {
+      "category": "学問",
+      "es": "científico/científica",
+      "ja": "科学的な",
+      "en": "scientific"
+    },
+    {
+      "category": "学問",
+      "es": "tecnológico/tecnológica",
+      "ja": "技術的な",
+      "en": "technological"
+    },
+    {
+      "category": "学問",
+      "es": "médico/médica",
+      "ja": "医学の",
+      "en": "medical"
+    },
+    {
+      "category": "学問",
+      "es": "legal",
+      "ja": "法的な",
+      "en": "legal"
+    },
+    {
+      "category": "学問",
+      "es": "ilegal",
+      "ja": "違法な",
+      "en": "illegal"
+    },
+    {
+      "category": "価格",
+      "es": "gratuito/gratuita",
+      "ja": "無料の",
+      "en": "free (no cost)"
+    },
+    {
+      "category": "価格",
+      "es": "asequible",
+      "ja": "手頃な",
+      "en": "affordable"
+    },
+    {
+      "category": "価格",
+      "es": "valioso/valiosa",
+      "ja": "価値のある",
+      "en": "valuable"
+    },
+    {
+      "category": "状態",
+      "es": "disponible",
+      "ja": "利用可能な",
+      "en": "available"
+    },
+    {
+      "category": "状態",
+      "es": "ocupado (cosa)",
+      "ja": "使用中の",
+      "en": "occupied"
+    },
+    {
+      "category": "状態",
+      "es": "roto/rota",
+      "ja": "壊れた",
+      "en": "broken"
+    },
+    {
+      "category": "状態",
+      "es": "intacto/intacta",
+      "ja": "無傷の",
+      "en": "intact"
+    },
+    {
+      "category": "味覚",
+      "es": "agrio/agria",
+      "ja": "酸っぱい",
+      "en": "sour"
+    },
+    {
+      "category": "温度",
+      "es": "tibio/tibia",
+      "ja": "ぬるい",
+      "en": "lukewarm"
+    },
+    {
+      "category": "質感・表面",
+      "es": "liso/lisa",
+      "ja": "滑らかな、まっすぐな",
+      "en": "smooth, straight"
+    },
+    {
+      "category": "質感・表面",
+      "es": "rugoso/rugosa",
+      "ja": "ざらざらした、しわのある",
+      "en": "rough, wrinkled"
+    },
+    {
+      "category": "食べ物の状態",
+      "es": "crudo/cruda",
+      "ja": "生の",
+      "en": "raw"
+    },
+    {
+      "category": "食べ物の状態",
+      "es": "cocido/cocida",
+      "ja": "調理済みの",
+      "en": "cooked"
+    },
+    {
+      "category": "食べ物の状態",
+      "es": "congelado/congelada",
+      "ja": "冷凍の",
+      "en": "frozen"
+    },
+    {
+      "category": "状態",
+      "es": "derretido/derretida",
+      "ja": "溶けた",
+      "en": "melted"
+    },
+    {
+      "category": "状態",
+      "es": "encendido/encendida",
+      "ja": "ついている",
+      "en": "on, turned on"
+    },
+    {
+      "category": "音",
+      "es": "sonoro/sonora",
+      "ja": "響きのある",
+      "en": "sonorous"
     }
   ],
   "adverbs": [
@@ -9951,6 +10479,252 @@ const db = {
       "es": "originalmente",
       "ja": "もともと",
       "en": "originally"
+    },
+    {
+      "category": "時間・時点",
+      "es": "después",
+      "ja": "あとで、後に",
+      "en": "after, later"
+    },
+    {
+      "category": "時間・時点",
+      "es": "luego",
+      "ja": "それから、後で",
+      "en": "then, later"
+    },
+    {
+      "category": "時間・時点",
+      "es": "al final",
+      "ja": "最終的に",
+      "en": "finally, in the end"
+    },
+    {
+      "category": "時間・時点",
+      "es": "al principio",
+      "ja": "最初は",
+      "en": "at first"
+    },
+    {
+      "category": "時間・時点",
+      "es": "poco a poco",
+      "ja": "少しずつ",
+      "en": "little by little"
+    },
+    {
+      "category": "頻度・否定",
+      "es": "regularmente",
+      "ja": "定期的に",
+      "en": "regularly"
+    },
+    {
+      "category": "頻度・否定",
+      "es": "habitualmente",
+      "ja": "習慣的に",
+      "en": "usually"
+    },
+    {
+      "category": "程度・比較",
+      "es": "considerablemente",
+      "ja": "かなり",
+      "en": "considerably"
+    },
+    {
+      "category": "様態・方法",
+      "es": "rápidamente",
+      "ja": "速く",
+      "en": "quickly"
+    },
+    {
+      "category": "様態・方法",
+      "es": "lentamente",
+      "ja": "ゆっくり",
+      "en": "slowly"
+    },
+    {
+      "category": "様態・方法",
+      "es": "amablemente",
+      "ja": "親切に",
+      "en": "kindly"
+    },
+    {
+      "category": "様態・方法",
+      "es": "felizmente",
+      "ja": "幸せに",
+      "en": "happily"
+    },
+    {
+      "category": "様態・方法",
+      "es": "furiosamente",
+      "ja": "怒って",
+      "en": "furiously"
+    },
+    {
+      "category": "観点・視点",
+      "es": "profesionalmente",
+      "ja": "専門的に",
+      "en": "professionally"
+    },
+    {
+      "category": "観点・視点",
+      "es": "técnicamente",
+      "ja": "技術的に",
+      "en": "technically"
+    },
+    {
+      "category": "観点・視点",
+      "es": "económicamente",
+      "ja": "経済的に",
+      "en": "economically"
+    },
+    {
+      "category": "観点・視点",
+      "es": "políticamente",
+      "ja": "政治的に",
+      "en": "politically"
+    },
+    {
+      "category": "観点・視点",
+      "es": "socialmente",
+      "ja": "社会的に",
+      "en": "socially"
+    },
+    {
+      "category": "観点・視点",
+      "es": "culturalmente",
+      "ja": "文化的に",
+      "en": "culturally"
+    },
+    {
+      "category": "確信・推測",
+      "es": "supuestamente",
+      "ja": "おそらく、たぶん",
+      "en": "supposedly"
+    },
+    {
+      "category": "確信・推測",
+      "es": "quizás",
+      "ja": "たぶん",
+      "en": "perhaps"
+    },
+    {
+      "category": "態度・姿勢",
+      "es": "indirectamente",
+      "ja": "間接的に",
+      "en": "indirectly"
+    },
+    {
+      "category": "態度・姿勢",
+      "es": "abiertamente",
+      "ja": "公然と",
+      "en": "openly"
+    },
+    {
+      "category": "態度・姿勢",
+      "es": "secretamente",
+      "ja": "秘密に",
+      "en": "secretly"
+    },
+    {
+      "category": "態度・姿勢",
+      "es": "voluntariamente",
+      "ja": "自発的に",
+      "en": "voluntarily"
+    },
+    {
+      "category": "態度・姿勢",
+      "es": "involuntariamente",
+      "ja": "無意識に",
+      "en": "involuntarily"
+    },
+    {
+      "category": "態度・姿勢",
+      "es": "manualmente",
+      "ja": "手動で",
+      "en": "manually"
+    },
+    {
+      "category": "関係・順序",
+      "es": "separadamente",
+      "ja": "別々に",
+      "en": "separately"
+    },
+    {
+      "category": "関係・順序",
+      "es": "alternativamente",
+      "ja": "代わりに",
+      "en": "alternatively"
+    },
+    {
+      "category": "関係・順序",
+      "es": "respectivamente",
+      "ja": "それぞれ",
+      "en": "respectively"
+    },
+    {
+      "category": "関係・順序",
+      "es": "mutuamente",
+      "ja": "お互いに",
+      "en": "mutually"
+    },
+    {
+      "category": "重要度",
+      "es": "particularmente",
+      "ja": "とりわけ",
+      "en": "particularly"
+    },
+    {
+      "category": "場所",
+      "es": "detrás",
+      "ja": "後ろに",
+      "en": "behind"
+    },
+    {
+      "category": "場所",
+      "es": "encima",
+      "ja": "上に",
+      "en": "on top, above"
+    },
+    {
+      "category": "場所",
+      "es": "debajo",
+      "ja": "下に",
+      "en": "underneath, below"
+    },
+    {
+      "category": "比較",
+      "es": "peor",
+      "ja": "より悪く",
+      "en": "worse"
+    },
+    {
+      "category": "追加・包含",
+      "es": "también",
+      "ja": "～も",
+      "en": "also, too"
+    },
+    {
+      "category": "追加・包含",
+      "es": "además",
+      "ja": "さらに、その上",
+      "en": "besides, moreover"
+    },
+    {
+      "category": "限定",
+      "es": "solamente",
+      "ja": "～だけ",
+      "en": "only"
+    },
+    {
+      "category": "限定",
+      "es": "únicamente",
+      "ja": "唯一",
+      "en": "only, solely"
+    },
+    {
+      "category": "頻度・様態",
+      "es": "usualmente",
+      "ja": "通常",
+      "en": "usually"
     }
   ],
   "prepositions": [
@@ -10649,6 +11423,240 @@ const db = {
       "es": "cualquier(a)",
       "ja": "どんな～でも",
       "en": "any; whichever"
+    },
+    {
+      "category": "接続詞",
+      "es": "no obstante",
+      "ja": "それにもかかわらず",
+      "en": "nevertheless"
+    },
+    {
+      "category": "接続詞",
+      "es": "por consiguiente",
+      "ja": "その結果",
+      "en": "consequently"
+    },
+    {
+      "category": "接続詞",
+      "es": "de modo que",
+      "ja": "そのため",
+      "en": "so that"
+    },
+    {
+      "category": "接続詞",
+      "es": "de manera que",
+      "ja": "～するように",
+      "en": "in such a way that"
+    },
+    {
+      "category": "接続詞",
+      "es": "a pesar de que",
+      "ja": "～にもかかわらず",
+      "en": "despite that"
+    },
+    {
+      "category": "接続詞",
+      "es": "mientras que",
+      "ja": "～する一方で",
+      "en": "while"
+    },
+    {
+      "category": "接続詞",
+      "es": "por una parte",
+      "ja": "一方では",
+      "en": "on one hand"
+    },
+    {
+      "category": "接続詞",
+      "es": "por otra parte",
+      "ja": "他方では",
+      "en": "on the other hand"
+    },
+    {
+      "category": "接続詞",
+      "es": "en primer lugar",
+      "ja": "まず第一に",
+      "en": "first of all"
+    },
+    {
+      "category": "接続詞",
+      "es": "en segundo lugar",
+      "ja": "第二に",
+      "en": "secondly"
+    },
+    {
+      "category": "接続詞",
+      "es": "finalmente",
+      "ja": "最後に",
+      "en": "finally"
+    },
+    {
+      "category": "接続詞",
+      "es": "en conclusión",
+      "ja": "結論として",
+      "en": "in conclusion"
+    },
+    {
+      "category": "接続詞",
+      "es": "en resumen",
+      "ja": "要約すると",
+      "en": "in summary"
+    },
+    {
+      "category": "接続詞",
+      "es": "es decir",
+      "ja": "つまり",
+      "en": "that is to say"
+    },
+    {
+      "category": "接続詞",
+      "es": "o sea",
+      "ja": "つまり",
+      "en": "in other words"
+    },
+    {
+      "category": "接続詞",
+      "es": "por ejemplo",
+      "ja": "例えば",
+      "en": "for example"
+    },
+    {
+      "category": "接続詞",
+      "es": "tal como",
+      "ja": "～と同様に",
+      "en": "just as"
+    },
+    {
+      "category": "接続詞",
+      "es": "con tal de que",
+      "ja": "～という条件で",
+      "en": "provided that"
+    },
+    {
+      "category": "接続詞",
+      "es": "siempre que",
+      "ja": "～する限り",
+      "en": "whenever, as long as"
+    },
+    {
+      "category": "場所の前置詞句",
+      "es": "alrededor de",
+      "ja": "～の周りに",
+      "en": "around"
+    },
+    {
+      "category": "場所の前置詞句",
+      "es": "a través de",
+      "ja": "～を通って",
+      "en": "through"
+    },
+    {
+      "category": "場所の前置詞句",
+      "es": "frente a",
+      "ja": "～の正面に",
+      "en": "facing, opposite"
+    },
+    {
+      "category": "場所の前置詞句",
+      "es": "junto a",
+      "ja": "～のそばに",
+      "en": "next to"
+    },
+    {
+      "category": "時間の前置詞句",
+      "es": "a finales de",
+      "ja": "～の終わりに",
+      "en": "at the end of"
+    },
+    {
+      "category": "時間の前置詞句",
+      "es": "a principios de",
+      "ja": "～の初めに",
+      "en": "at the beginning of"
+    },
+    {
+      "category": "時間の前置詞句",
+      "es": "a mediados de",
+      "ja": "～の半ばに",
+      "en": "in the middle of"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "a favor de",
+      "ja": "～に賛成して",
+      "en": "in favor of"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "en contra de",
+      "ja": "～に反対して",
+      "en": "against"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "en lugar de",
+      "ja": "～の代わりに",
+      "en": "instead of"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "en vez de",
+      "ja": "～の代わりに",
+      "en": "instead of"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "gracias a",
+      "ja": "～のおかげで",
+      "en": "thanks to"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "debido a",
+      "ja": "～のために",
+      "en": "due to"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "a causa de",
+      "ja": "～のせいで",
+      "en": "because of"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "respecto a",
+      "ja": "～に関して",
+      "en": "regarding"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "en cuanto a",
+      "ja": "～に関しては",
+      "en": "as for"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "acerca de",
+      "ja": "～について",
+      "en": "about"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "a pesar de",
+      "ja": "～にもかかわらず",
+      "en": "despite"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "en medio de",
+      "ja": "～の真ん中に",
+      "en": "in the middle of"
+    },
+    {
+      "category": "その他の前置詞句",
+      "es": "por medio de",
+      "ja": "～を通じて",
+      "en": "by means of"
     }
   ],
   "verbs": [
@@ -13730,18 +14738,18 @@ const db = {
           "ellos": "oyeron"
         },
         "線過去 (Imperfecto)": {
-          "yo": "oír",
-          "tu": "oír",
-          "el/ella": "oír",
-          "nosotros": "oír",
-          "ellos": "oír"
+          "yo": "oía",
+          "tu": "oías",
+          "el/ella": "oía",
+          "nosotros": "oíamos",
+          "ellos": "oían"
         },
         "未来形 (Futuro)": {
-          "yo": "oíré",
-          "tu": "oírás",
-          "el/ella": "oírá",
-          "nosotros": "oíremos",
-          "ellos": "oírán"
+          "yo": "oiré",
+          "tu": "oirás",
+          "el/ella": "oirá",
+          "nosotros": "oiremos",
+          "ellos": "oirán"
         },
         "接続法現在 (Subjuntivo)": {
           "yo": "oiga",
@@ -15460,18 +16468,18 @@ const db = {
           "ellos": "rieron"
         },
         "線過去 (Imperfecto)": {
-          "yo": "reír",
-          "tu": "reír",
-          "el/ella": "reír",
-          "nosotros": "reír",
-          "ellos": "reír"
+          "yo": "reía",
+          "tu": "reías",
+          "el/ella": "reía",
+          "nosotros": "reíamos",
+          "ellos": "reían"
         },
         "未来形 (Futuro)": {
-          "yo": "reíré",
-          "tu": "reírás",
-          "el/ella": "reírá",
-          "nosotros": "reíremos",
-          "ellos": "reírán"
+          "yo": "reiré",
+          "tu": "reirás",
+          "el/ella": "reirá",
+          "nosotros": "reiremos",
+          "ellos": "reirán"
         },
         "接続法現在 (Subjuntivo)": {
           "yo": "ría",
@@ -15510,18 +16518,18 @@ const db = {
           "ellos": "sonrieron"
         },
         "線過去 (Imperfecto)": {
-          "yo": "sonreír",
-          "tu": "sonreír",
-          "el/ella": "sonreír",
-          "nosotros": "sonreír",
-          "ellos": "sonreír"
+          "yo": "sonreía",
+          "tu": "sonreías",
+          "el/ella": "sonreía",
+          "nosotros": "sonreíamos",
+          "ellos": "sonreían"
         },
         "未来形 (Futuro)": {
-          "yo": "sonreíré",
-          "tu": "sonreírás",
-          "el/ella": "sonreírá",
-          "nosotros": "sonreíremos",
-          "ellos": "sonreírán"
+          "yo": "sonreiré",
+          "tu": "sonreirás",
+          "el/ella": "sonreirá",
+          "nosotros": "sonreiremos",
+          "ellos": "sonreirán"
         },
         "接続法現在 (Subjuntivo)": {
           "yo": "sonría",
@@ -24341,14 +25349,4514 @@ const db = {
           "ellos": "mensajeen"
         }
       }
+    },
+    {
+      "category": "コミュニケーション",
+      "es": "disculpar",
+      "ja": "許す",
+      "en": "to excuse",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "disculpado",
+          "tu": "disculpando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "disculpo",
+          "tu": "disculpas",
+          "el/ella": "disculpa",
+          "nosotros": "disculpamos",
+          "ellos": "disculpan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "disculpé",
+          "tu": "disculpaste",
+          "el/ella": "disculpó",
+          "nosotros": "disculpamos",
+          "ellos": "disculparon"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "disculpaba",
+          "tu": "disculpabas",
+          "el/ella": "disculpaba",
+          "nosotros": "disculpábamos",
+          "ellos": "disculpaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "disculparé",
+          "tu": "disculparás",
+          "el/ella": "disculpará",
+          "nosotros": "disculparemos",
+          "ellos": "disculparán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "disculpe",
+          "tu": "disculpes",
+          "el/ella": "disculpe",
+          "nosotros": "disculpemos",
+          "ellos": "disculpen"
+        }
+      }
+    },
+    {
+      "category": "コミュニケーション",
+      "es": "aconsejar",
+      "ja": "アドバイスする",
+      "en": "to advise",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "aconsejado",
+          "tu": "aconsejando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "aconsejo",
+          "tu": "aconsejas",
+          "el/ella": "aconseja",
+          "nosotros": "aconsejamos",
+          "ellos": "aconsejan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "aconsejé",
+          "tu": "aconsejaste",
+          "el/ella": "aconsejó",
+          "nosotros": "aconsejamos",
+          "ellos": "aconsejaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "aconsejaba",
+          "tu": "aconsejabas",
+          "el/ella": "aconsejaba",
+          "nosotros": "aconsejábamos",
+          "ellos": "aconsejaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "aconsejaré",
+          "tu": "aconsejarás",
+          "el/ella": "aconsejará",
+          "nosotros": "aconsejaremos",
+          "ellos": "aconsejarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "aconseje",
+          "tu": "aconsejes",
+          "el/ella": "aconseje",
+          "nosotros": "aconsejemos",
+          "ellos": "aconsejen"
+        }
+      }
+    },
+    {
+      "category": "コミュニケーション",
+      "es": "sugerir",
+      "ja": "提案する",
+      "en": "to suggest",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "sugerido",
+          "tu": "sugiriendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "sugiero",
+          "tu": "sugieres",
+          "el/ella": "sugiere",
+          "nosotros": "sugerimos",
+          "ellos": "sugieren"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "sugerí",
+          "tu": "sugeriste",
+          "el/ella": "sugirió",
+          "nosotros": "sugerimos",
+          "ellos": "sugirieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "sugería",
+          "tu": "sugerías",
+          "el/ella": "sugería",
+          "nosotros": "sugeríamos",
+          "ellos": "sugerían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "sugeriré",
+          "tu": "sugerirás",
+          "el/ella": "sugerirá",
+          "nosotros": "sugeriremos",
+          "ellos": "sugerirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "sugiera",
+          "tu": "sugieras",
+          "el/ella": "sugiera",
+          "nosotros": "sugiramos",
+          "ellos": "sugieran"
+        }
+      }
+    },
+    {
+      "category": "コミュニケーション",
+      "es": "proponer",
+      "ja": "提案する",
+      "en": "to propose",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "propuesto",
+          "tu": "proponiendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "propongo",
+          "tu": "propones",
+          "el/ella": "propone",
+          "nosotros": "proponemos",
+          "ellos": "proponen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "propuse",
+          "tu": "propusiste",
+          "el/ella": "propuso",
+          "nosotros": "propusimos",
+          "ellos": "propusieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "proponía",
+          "tu": "proponías",
+          "el/ella": "proponía",
+          "nosotros": "proponíamos",
+          "ellos": "proponían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "propondré",
+          "tu": "propondrás",
+          "el/ella": "propondrá",
+          "nosotros": "propondremos",
+          "ellos": "propondrán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "proponga",
+          "tu": "propongas",
+          "el/ella": "proponga",
+          "nosotros": "propongamos",
+          "ellos": "propongan"
+        }
+      }
+    },
+    {
+      "category": "コミュニケーション",
+      "es": "negar",
+      "ja": "否定する",
+      "en": "to deny",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "negado",
+          "tu": "negando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "niego",
+          "tu": "niegas",
+          "el/ella": "niega",
+          "nosotros": "negamos",
+          "ellos": "niegan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "negué",
+          "tu": "negaste",
+          "el/ella": "negó",
+          "nosotros": "negamos",
+          "ellos": "negaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "negaba",
+          "tu": "negabas",
+          "el/ella": "negaba",
+          "nosotros": "negábamos",
+          "ellos": "negaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "negaré",
+          "tu": "negarás",
+          "el/ella": "negará",
+          "nosotros": "negaremos",
+          "ellos": "negarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "niegue",
+          "tu": "niegues",
+          "el/ella": "niegue",
+          "nosotros": "neguemos",
+          "ellos": "nieguen"
+        }
+      }
+    },
+    {
+      "category": "コミュニケーション",
+      "es": "confirmar",
+      "ja": "確認する",
+      "en": "to confirm",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "confirmado",
+          "tu": "confirmando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "confirmo",
+          "tu": "confirmas",
+          "el/ella": "confirma",
+          "nosotros": "confirmamos",
+          "ellos": "confirman"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "confirmé",
+          "tu": "confirmaste",
+          "el/ella": "confirmó",
+          "nosotros": "confirmamos",
+          "ellos": "confirmaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "confirmaba",
+          "tu": "confirmabas",
+          "el/ella": "confirmaba",
+          "nosotros": "confirmábamos",
+          "ellos": "confirmaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "confirmaré",
+          "tu": "confirmarás",
+          "el/ella": "confirmará",
+          "nosotros": "confirmaremos",
+          "ellos": "confirmarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "confirme",
+          "tu": "confirmes",
+          "el/ella": "confirme",
+          "nosotros": "confirmemos",
+          "ellos": "confirmen"
+        }
+      }
+    },
+    {
+      "category": "コミュニケーション",
+      "es": "demostrar",
+      "ja": "実演する、証明する",
+      "en": "to demonstrate",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "demostrado",
+          "tu": "demostrando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "demuestro",
+          "tu": "demuestras",
+          "el/ella": "demuestra",
+          "nosotros": "demostramos",
+          "ellos": "demuestran"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "demostré",
+          "tu": "demostraste",
+          "el/ella": "demostró",
+          "nosotros": "demostramos",
+          "ellos": "demostraron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "demostraba",
+          "tu": "demostrabas",
+          "el/ella": "demostraba",
+          "nosotros": "demostrábamos",
+          "ellos": "demostraban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "demostraré",
+          "tu": "demostrarás",
+          "el/ella": "demostrará",
+          "nosotros": "demostraremos",
+          "ellos": "demostrarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "demuestre",
+          "tu": "demuestres",
+          "el/ella": "demuestre",
+          "nosotros": "demostremos",
+          "ellos": "demuestren"
+        }
+      }
+    },
+    {
+      "category": "コミュニケーション",
+      "es": "mencionar",
+      "ja": "言及する",
+      "en": "to mention",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "mencionado",
+          "tu": "mencionando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "menciono",
+          "tu": "mencionas",
+          "el/ella": "menciona",
+          "nosotros": "mencionamos",
+          "ellos": "mencionan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "mencioné",
+          "tu": "mencionaste",
+          "el/ella": "mencionó",
+          "nosotros": "mencionamos",
+          "ellos": "mencionaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "mencionaba",
+          "tu": "mencionabas",
+          "el/ella": "mencionaba",
+          "nosotros": "mencionábamos",
+          "ellos": "mencionaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "mencionaré",
+          "tu": "mencionarás",
+          "el/ella": "mencionará",
+          "nosotros": "mencionaremos",
+          "ellos": "mencionarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "mencione",
+          "tu": "menciones",
+          "el/ella": "mencione",
+          "nosotros": "mencionemos",
+          "ellos": "mencionen"
+        }
+      }
+    },
+    {
+      "category": "コミュニケーション",
+      "es": "expresar",
+      "ja": "表現する",
+      "en": "to express",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "expresado",
+          "tu": "expresando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "expreso",
+          "tu": "expresas",
+          "el/ella": "expresa",
+          "nosotros": "expresamos",
+          "ellos": "expresan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "expresé",
+          "tu": "expresaste",
+          "el/ella": "expresó",
+          "nosotros": "expresamos",
+          "ellos": "expresaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "expresaba",
+          "tu": "expresabas",
+          "el/ella": "expresaba",
+          "nosotros": "expresábamos",
+          "ellos": "expresaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "expresaré",
+          "tu": "expresarás",
+          "el/ella": "expresará",
+          "nosotros": "expresaremos",
+          "ellos": "expresarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "exprese",
+          "tu": "expreses",
+          "el/ella": "exprese",
+          "nosotros": "expresemos",
+          "ellos": "expresen"
+        }
+      }
+    },
+    {
+      "category": "コミュニケーション",
+      "es": "describir",
+      "ja": "描写する",
+      "en": "to describe",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "descrito",
+          "tu": "describiendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "describo",
+          "tu": "describes",
+          "el/ella": "describe",
+          "nosotros": "describimos",
+          "ellos": "describen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "describí",
+          "tu": "describiste",
+          "el/ella": "describió",
+          "nosotros": "describimos",
+          "ellos": "describieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "describía",
+          "tu": "describías",
+          "el/ella": "describía",
+          "nosotros": "describíamos",
+          "ellos": "describían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "describiré",
+          "tu": "describirás",
+          "el/ella": "describirá",
+          "nosotros": "describiremos",
+          "ellos": "describirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "describa",
+          "tu": "describas",
+          "el/ella": "describa",
+          "nosotros": "describamos",
+          "ellos": "describan"
+        }
+      }
+    },
+    {
+      "category": "コミュニケーション",
+      "es": "narrar",
+      "ja": "語る",
+      "en": "to narrate",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "narrado",
+          "tu": "narrando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "narro",
+          "tu": "narras",
+          "el/ella": "narra",
+          "nosotros": "narramos",
+          "ellos": "narran"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "narré",
+          "tu": "narraste",
+          "el/ella": "narró",
+          "nosotros": "narramos",
+          "ellos": "narraron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "narraba",
+          "tu": "narrabas",
+          "el/ella": "narraba",
+          "nosotros": "narrábamos",
+          "ellos": "narraban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "narraré",
+          "tu": "narrarás",
+          "el/ella": "narrará",
+          "nosotros": "narraremos",
+          "ellos": "narrarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "narre",
+          "tu": "narres",
+          "el/ella": "narre",
+          "nosotros": "narremos",
+          "ellos": "narren"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "analizar",
+      "ja": "分析する",
+      "en": "to analyze",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "analizado",
+          "tu": "analizando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "analizo",
+          "tu": "analizas",
+          "el/ella": "analiza",
+          "nosotros": "analizamos",
+          "ellos": "analizan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "analicé",
+          "tu": "analizaste",
+          "el/ella": "analizó",
+          "nosotros": "analizamos",
+          "ellos": "analizaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "analizaba",
+          "tu": "analizabas",
+          "el/ella": "analizaba",
+          "nosotros": "analizábamos",
+          "ellos": "analizaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "analizaré",
+          "tu": "analizarás",
+          "el/ella": "analizará",
+          "nosotros": "analizaremos",
+          "ellos": "analizarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "analice",
+          "tu": "analices",
+          "el/ella": "analice",
+          "nosotros": "analicemos",
+          "ellos": "analicen"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "evaluar",
+      "ja": "評価する",
+      "en": "to evaluate",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "evaluado",
+          "tu": "evaluando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "evalúo",
+          "tu": "evalúas",
+          "el/ella": "evalúa",
+          "nosotros": "evaluamos",
+          "ellos": "evalúan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "evalué",
+          "tu": "evaluaste",
+          "el/ella": "evaluó",
+          "nosotros": "evaluamos",
+          "ellos": "evaluaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "evaluaba",
+          "tu": "evaluabas",
+          "el/ella": "evaluaba",
+          "nosotros": "evaluábamos",
+          "ellos": "evaluaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "evaluaré",
+          "tu": "evaluarás",
+          "el/ella": "evaluará",
+          "nosotros": "evaluaremos",
+          "ellos": "evaluarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "evalúe",
+          "tu": "evalúes",
+          "el/ella": "evalúe",
+          "nosotros": "evaluemos",
+          "ellos": "evalúen"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "comparar",
+      "ja": "比較する",
+      "en": "to compare",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "comparado",
+          "tu": "comparando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "comparo",
+          "tu": "comparas",
+          "el/ella": "compara",
+          "nosotros": "comparamos",
+          "ellos": "comparan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "comparé",
+          "tu": "comparaste",
+          "el/ella": "comparó",
+          "nosotros": "comparamos",
+          "ellos": "compararon"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "comparaba",
+          "tu": "comparabas",
+          "el/ella": "comparaba",
+          "nosotros": "comparábamos",
+          "ellos": "comparaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "compararé",
+          "tu": "compararás",
+          "el/ella": "comparará",
+          "nosotros": "compararemos",
+          "ellos": "compararán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "compare",
+          "tu": "compares",
+          "el/ella": "compare",
+          "nosotros": "comparemos",
+          "ellos": "comparen"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "distinguir",
+      "ja": "区別する",
+      "en": "to distinguish",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "distinguido",
+          "tu": "distinguiendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "distingo",
+          "tu": "distingues",
+          "el/ella": "distingue",
+          "nosotros": "distinguimos",
+          "ellos": "distinguen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "distinguí",
+          "tu": "distinguiste",
+          "el/ella": "distinguió",
+          "nosotros": "distinguimos",
+          "ellos": "distinguieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "distinguía",
+          "tu": "distinguías",
+          "el/ella": "distinguía",
+          "nosotros": "distinguíamos",
+          "ellos": "distinguían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "distinguiré",
+          "tu": "distinguirás",
+          "el/ella": "distinguirá",
+          "nosotros": "distinguiremos",
+          "ellos": "distinguirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "distinga",
+          "tu": "distingas",
+          "el/ella": "distinga",
+          "nosotros": "distingamos",
+          "ellos": "distingan"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "identificar",
+      "ja": "特定する",
+      "en": "to identify",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "identificado",
+          "tu": "identificando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "identifico",
+          "tu": "identificas",
+          "el/ella": "identifica",
+          "nosotros": "identificamos",
+          "ellos": "identifican"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "identifiqué",
+          "tu": "identificaste",
+          "el/ella": "identificó",
+          "nosotros": "identificamos",
+          "ellos": "identificaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "identificaba",
+          "tu": "identificabas",
+          "el/ella": "identificaba",
+          "nosotros": "identificábamos",
+          "ellos": "identificaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "identificaré",
+          "tu": "identificarás",
+          "el/ella": "identificará",
+          "nosotros": "identificaremos",
+          "ellos": "identificarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "identifique",
+          "tu": "identifiques",
+          "el/ella": "identifique",
+          "nosotros": "identifiquemos",
+          "ellos": "identifiquen"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "clasificar",
+      "ja": "分類する",
+      "en": "to classify",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "clasificado",
+          "tu": "clasificando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "clasifico",
+          "tu": "clasificas",
+          "el/ella": "clasifica",
+          "nosotros": "clasificamos",
+          "ellos": "clasifican"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "clasifiqué",
+          "tu": "clasificaste",
+          "el/ella": "clasificó",
+          "nosotros": "clasificamos",
+          "ellos": "clasificaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "clasificaba",
+          "tu": "clasificabas",
+          "el/ella": "clasificaba",
+          "nosotros": "clasificábamos",
+          "ellos": "clasificaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "clasificaré",
+          "tu": "clasificarás",
+          "el/ella": "clasificará",
+          "nosotros": "clasificaremos",
+          "ellos": "clasificarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "clasifique",
+          "tu": "clasifiques",
+          "el/ella": "clasifique",
+          "nosotros": "clasifiquemos",
+          "ellos": "clasifiquen"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "planificar",
+      "ja": "計画する",
+      "en": "to plan",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "planificado",
+          "tu": "planificando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "planifico",
+          "tu": "planificas",
+          "el/ella": "planifica",
+          "nosotros": "planificamos",
+          "ellos": "planifican"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "planifiqué",
+          "tu": "planificaste",
+          "el/ella": "planificó",
+          "nosotros": "planificamos",
+          "ellos": "planificaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "planificaba",
+          "tu": "planificabas",
+          "el/ella": "planificaba",
+          "nosotros": "planificábamos",
+          "ellos": "planificaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "planificaré",
+          "tu": "planificarás",
+          "el/ella": "planificará",
+          "nosotros": "planificaremos",
+          "ellos": "planificarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "planifique",
+          "tu": "planifiques",
+          "el/ella": "planifique",
+          "nosotros": "planifiquemos",
+          "ellos": "planifiquen"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "desarrollar",
+      "ja": "発展させる",
+      "en": "to develop",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "desarrollado",
+          "tu": "desarrollando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "desarrollo",
+          "tu": "desarrollas",
+          "el/ella": "desarrolla",
+          "nosotros": "desarrollamos",
+          "ellos": "desarrollan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "desarrollé",
+          "tu": "desarrollaste",
+          "el/ella": "desarrolló",
+          "nosotros": "desarrollamos",
+          "ellos": "desarrollaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "desarrollaba",
+          "tu": "desarrollabas",
+          "el/ella": "desarrollaba",
+          "nosotros": "desarrollábamos",
+          "ellos": "desarrollaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "desarrollaré",
+          "tu": "desarrollarás",
+          "el/ella": "desarrollará",
+          "nosotros": "desarrollaremos",
+          "ellos": "desarrollarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "desarrolle",
+          "tu": "desarrolles",
+          "el/ella": "desarrolle",
+          "nosotros": "desarrollemos",
+          "ellos": "desarrollen"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "mejorar",
+      "ja": "改善する",
+      "en": "to improve",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "mejorado",
+          "tu": "mejorando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "mejoro",
+          "tu": "mejoras",
+          "el/ella": "mejora",
+          "nosotros": "mejoramos",
+          "ellos": "mejoran"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "mejoré",
+          "tu": "mejoraste",
+          "el/ella": "mejoró",
+          "nosotros": "mejoramos",
+          "ellos": "mejoraron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "mejoraba",
+          "tu": "mejorabas",
+          "el/ella": "mejoraba",
+          "nosotros": "mejorábamos",
+          "ellos": "mejoraban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "mejoraré",
+          "tu": "mejorarás",
+          "el/ella": "mejorará",
+          "nosotros": "mejoraremos",
+          "ellos": "mejorarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "mejore",
+          "tu": "mejores",
+          "el/ella": "mejore",
+          "nosotros": "mejoremos",
+          "ellos": "mejoren"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "empeorar",
+      "ja": "悪化させる",
+      "en": "to worsen",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "empeorado",
+          "tu": "empeorando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "empeoro",
+          "tu": "empeoras",
+          "el/ella": "empeora",
+          "nosotros": "empeoramos",
+          "ellos": "empeoran"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "empeoré",
+          "tu": "empeoraste",
+          "el/ella": "empeoró",
+          "nosotros": "empeoramos",
+          "ellos": "empeoraron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "empeoraba",
+          "tu": "empeorabas",
+          "el/ella": "empeoraba",
+          "nosotros": "empeorábamos",
+          "ellos": "empeoraban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "empeoraré",
+          "tu": "empeorarás",
+          "el/ella": "empeorará",
+          "nosotros": "empeoraremos",
+          "ellos": "empeorarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "empeore",
+          "tu": "empeores",
+          "el/ella": "empeore",
+          "nosotros": "empeoremos",
+          "ellos": "empeoren"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "resolver",
+      "ja": "解決する",
+      "en": "to solve",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "resuelto",
+          "tu": "resolviendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "resuelvo",
+          "tu": "resuelves",
+          "el/ella": "resuelve",
+          "nosotros": "resolvemos",
+          "ellos": "resuelven"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "resolví",
+          "tu": "resolviste",
+          "el/ella": "resolvió",
+          "nosotros": "resolvimos",
+          "ellos": "resolvieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "resolvía",
+          "tu": "resolvías",
+          "el/ella": "resolvía",
+          "nosotros": "resolvíamos",
+          "ellos": "resolvían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "resolveré",
+          "tu": "resolverás",
+          "el/ella": "resolverá",
+          "nosotros": "resolveremos",
+          "ellos": "resolverán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "resuelva",
+          "tu": "resuelvas",
+          "el/ella": "resuelva",
+          "nosotros": "resolvamos",
+          "ellos": "resuelvan"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "descubrir",
+      "ja": "発見する",
+      "en": "to discover",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "descubierto",
+          "tu": "descubriendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "descubro",
+          "tu": "descubres",
+          "el/ella": "descubre",
+          "nosotros": "descubrimos",
+          "ellos": "descubren"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "descubrí",
+          "tu": "descubriste",
+          "el/ella": "descubrió",
+          "nosotros": "descubrimos",
+          "ellos": "descubrieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "descubría",
+          "tu": "descubrías",
+          "el/ella": "descubría",
+          "nosotros": "descubríamos",
+          "ellos": "descubrían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "descubriré",
+          "tu": "descubrirás",
+          "el/ella": "descubrirá",
+          "nosotros": "descubriremos",
+          "ellos": "descubrirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "descubra",
+          "tu": "descubras",
+          "el/ella": "descubra",
+          "nosotros": "descubramos",
+          "ellos": "descubran"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "inventar",
+      "ja": "発明する",
+      "en": "to invent",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "inventado",
+          "tu": "inventando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "invento",
+          "tu": "inventas",
+          "el/ella": "inventa",
+          "nosotros": "inventamos",
+          "ellos": "inventan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "inventé",
+          "tu": "inventaste",
+          "el/ella": "inventó",
+          "nosotros": "inventamos",
+          "ellos": "inventaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "inventaba",
+          "tu": "inventabas",
+          "el/ella": "inventaba",
+          "nosotros": "inventábamos",
+          "ellos": "inventaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "inventaré",
+          "tu": "inventarás",
+          "el/ella": "inventará",
+          "nosotros": "inventaremos",
+          "ellos": "inventarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "invente",
+          "tu": "inventes",
+          "el/ella": "invente",
+          "nosotros": "inventemos",
+          "ellos": "inventen"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "crear",
+      "ja": "創造する",
+      "en": "to create",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "creado",
+          "tu": "creando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "creo",
+          "tu": "creas",
+          "el/ella": "crea",
+          "nosotros": "creamos",
+          "ellos": "crean"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "creé",
+          "tu": "creaste",
+          "el/ella": "creó",
+          "nosotros": "creamos",
+          "ellos": "crearon"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "creaba",
+          "tu": "creabas",
+          "el/ella": "creaba",
+          "nosotros": "creábamos",
+          "ellos": "creaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "crearé",
+          "tu": "crearás",
+          "el/ella": "creará",
+          "nosotros": "crearemos",
+          "ellos": "crearán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "cree",
+          "tu": "crees",
+          "el/ella": "cree",
+          "nosotros": "creemos",
+          "ellos": "creen"
+        }
+      }
+    },
+    {
+      "category": "思考・学習",
+      "es": "diseñar",
+      "ja": "デザインする",
+      "en": "to design",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "diseñado",
+          "tu": "diseñando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "diseño",
+          "tu": "diseñas",
+          "el/ella": "diseña",
+          "nosotros": "diseñamos",
+          "ellos": "diseñan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "diseñé",
+          "tu": "diseñaste",
+          "el/ella": "diseñó",
+          "nosotros": "diseñamos",
+          "ellos": "diseñaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "diseñaba",
+          "tu": "diseñabas",
+          "el/ella": "diseñaba",
+          "nosotros": "diseñábamos",
+          "ellos": "diseñaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "diseñaré",
+          "tu": "diseñarás",
+          "el/ella": "diseñará",
+          "nosotros": "diseñaremos",
+          "ellos": "diseñarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "diseñe",
+          "tu": "diseñes",
+          "el/ella": "diseñe",
+          "nosotros": "diseñemos",
+          "ellos": "diseñen"
+        }
+      }
+    },
+    {
+      "category": "作業",
+      "es": "construir",
+      "ja": "建設する",
+      "en": "to build",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "construido",
+          "tu": "construyendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "construyo",
+          "tu": "construyes",
+          "el/ella": "construye",
+          "nosotros": "construimos",
+          "ellos": "construyen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "construí",
+          "tu": "construiste",
+          "el/ella": "construyó",
+          "nosotros": "construimos",
+          "ellos": "construyeron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "construía",
+          "tu": "construías",
+          "el/ella": "construía",
+          "nosotros": "construíamos",
+          "ellos": "construían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "construiré",
+          "tu": "construirás",
+          "el/ella": "construirá",
+          "nosotros": "construiremos",
+          "ellos": "construirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "construya",
+          "tu": "construyas",
+          "el/ella": "construya",
+          "nosotros": "construyamos",
+          "ellos": "construyan"
+        }
+      }
+    },
+    {
+      "category": "作業",
+      "es": "destruir",
+      "ja": "破壊する",
+      "en": "to destroy",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "destruido",
+          "tu": "destruyendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "destruyo",
+          "tu": "destruyes",
+          "el/ella": "destruye",
+          "nosotros": "destruimos",
+          "ellos": "destruyen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "destruí",
+          "tu": "destruiste",
+          "el/ella": "destruyó",
+          "nosotros": "destruimos",
+          "ellos": "destruyeron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "destruía",
+          "tu": "destruías",
+          "el/ella": "destruía",
+          "nosotros": "destruíamos",
+          "ellos": "destruían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "destruiré",
+          "tu": "destruirás",
+          "el/ella": "destruirá",
+          "nosotros": "destruiremos",
+          "ellos": "destruirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "destruya",
+          "tu": "destruyas",
+          "el/ella": "destruya",
+          "nosotros": "destruyamos",
+          "ellos": "destruyan"
+        }
+      }
+    },
+    {
+      "category": "作業",
+      "es": "reparar",
+      "ja": "修理する",
+      "en": "to repair",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "reparado",
+          "tu": "reparando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "reparo",
+          "tu": "reparas",
+          "el/ella": "repara",
+          "nosotros": "reparamos",
+          "ellos": "reparan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "reparé",
+          "tu": "reparaste",
+          "el/ella": "reparó",
+          "nosotros": "reparamos",
+          "ellos": "repararon"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "reparaba",
+          "tu": "reparabas",
+          "el/ella": "reparaba",
+          "nosotros": "reparábamos",
+          "ellos": "reparaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "repararé",
+          "tu": "repararás",
+          "el/ella": "reparará",
+          "nosotros": "repararemos",
+          "ellos": "repararán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "repare",
+          "tu": "repares",
+          "el/ella": "repare",
+          "nosotros": "reparemos",
+          "ellos": "reparen"
+        }
+      }
+    },
+    {
+      "category": "作業",
+      "es": "instalar",
+      "ja": "設置する",
+      "en": "to install",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "instalado",
+          "tu": "instalando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "instalo",
+          "tu": "instalas",
+          "el/ella": "instala",
+          "nosotros": "instalamos",
+          "ellos": "instalan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "instalé",
+          "tu": "instalaste",
+          "el/ella": "instaló",
+          "nosotros": "instalamos",
+          "ellos": "instalaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "instalaba",
+          "tu": "instalabas",
+          "el/ella": "instalaba",
+          "nosotros": "instalábamos",
+          "ellos": "instalaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "instalaré",
+          "tu": "instalarás",
+          "el/ella": "instalará",
+          "nosotros": "instalaremos",
+          "ellos": "instalarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "instale",
+          "tu": "instales",
+          "el/ella": "instale",
+          "nosotros": "instalemos",
+          "ellos": "instalen"
+        }
+      }
+    },
+    {
+      "category": "作業",
+      "es": "eliminar",
+      "ja": "削除する",
+      "en": "to eliminate",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "eliminado",
+          "tu": "eliminando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "elimino",
+          "tu": "eliminas",
+          "el/ella": "elimina",
+          "nosotros": "eliminamos",
+          "ellos": "eliminan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "eliminé",
+          "tu": "eliminaste",
+          "el/ella": "eliminó",
+          "nosotros": "eliminamos",
+          "ellos": "eliminaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "eliminaba",
+          "tu": "eliminabas",
+          "el/ella": "eliminaba",
+          "nosotros": "eliminábamos",
+          "ellos": "eliminaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "eliminaré",
+          "tu": "eliminarás",
+          "el/ella": "eliminará",
+          "nosotros": "eliminaremos",
+          "ellos": "eliminarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "elimine",
+          "tu": "elimines",
+          "el/ella": "elimine",
+          "nosotros": "eliminemos",
+          "ellos": "eliminen"
+        }
+      }
+    },
+    {
+      "category": "変化",
+      "es": "reducir",
+      "ja": "減らす",
+      "en": "to reduce",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "reducido",
+          "tu": "reduciendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "reduzco",
+          "tu": "reduces",
+          "el/ella": "reduce",
+          "nosotros": "reducimos",
+          "ellos": "reducen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "reduje",
+          "tu": "redujiste",
+          "el/ella": "redujo",
+          "nosotros": "redujimos",
+          "ellos": "redujeron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "reducía",
+          "tu": "reducías",
+          "el/ella": "reducía",
+          "nosotros": "reducíamos",
+          "ellos": "reducían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "reduciré",
+          "tu": "reducirás",
+          "el/ella": "reducirá",
+          "nosotros": "reduciremos",
+          "ellos": "reducirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "reduzca",
+          "tu": "reduzcas",
+          "el/ella": "reduzca",
+          "nosotros": "reduzcamos",
+          "ellos": "reduzcan"
+        }
+      }
+    },
+    {
+      "category": "変化",
+      "es": "aumentar",
+      "ja": "増やす",
+      "en": "to increase",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "aumentado",
+          "tu": "aumentando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "aumento",
+          "tu": "aumentas",
+          "el/ella": "aumenta",
+          "nosotros": "aumentamos",
+          "ellos": "aumentan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "aumenté",
+          "tu": "aumentaste",
+          "el/ella": "aumentó",
+          "nosotros": "aumentamos",
+          "ellos": "aumentaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "aumentaba",
+          "tu": "aumentabas",
+          "el/ella": "aumentaba",
+          "nosotros": "aumentábamos",
+          "ellos": "aumentaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "aumentaré",
+          "tu": "aumentarás",
+          "el/ella": "aumentará",
+          "nosotros": "aumentaremos",
+          "ellos": "aumentarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "aumente",
+          "tu": "aumentes",
+          "el/ella": "aumente",
+          "nosotros": "aumentemos",
+          "ellos": "aumenten"
+        }
+      }
+    },
+    {
+      "category": "変化",
+      "es": "mantener",
+      "ja": "維持する",
+      "en": "to maintain",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "mantenido",
+          "tu": "manteniendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "mantengo",
+          "tu": "mantienes",
+          "el/ella": "mantiene",
+          "nosotros": "mantenemos",
+          "ellos": "mantienen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "mantuve",
+          "tu": "mantuviste",
+          "el/ella": "mantuvo",
+          "nosotros": "mantuvimos",
+          "ellos": "mantuvieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "mantenía",
+          "tu": "mantenías",
+          "el/ella": "mantenía",
+          "nosotros": "manteníamos",
+          "ellos": "mantenían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "mantendré",
+          "tu": "mantendrás",
+          "el/ella": "mantendrá",
+          "nosotros": "mantendremos",
+          "ellos": "mantendrán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "mantenga",
+          "tu": "mantengas",
+          "el/ella": "mantenga",
+          "nosotros": "mantengamos",
+          "ellos": "mantengan"
+        }
+      }
+    },
+    {
+      "category": "変化",
+      "es": "modificar",
+      "ja": "修正する",
+      "en": "to modify",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "modificado",
+          "tu": "modificando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "modifico",
+          "tu": "modificas",
+          "el/ella": "modifica",
+          "nosotros": "modificamos",
+          "ellos": "modifican"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "modifiqué",
+          "tu": "modificaste",
+          "el/ella": "modificó",
+          "nosotros": "modificamos",
+          "ellos": "modificaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "modificaba",
+          "tu": "modificabas",
+          "el/ella": "modificaba",
+          "nosotros": "modificábamos",
+          "ellos": "modificaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "modificaré",
+          "tu": "modificarás",
+          "el/ella": "modificará",
+          "nosotros": "modificaremos",
+          "ellos": "modificarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "modifique",
+          "tu": "modifiques",
+          "el/ella": "modifique",
+          "nosotros": "modifiquemos",
+          "ellos": "modifiquen"
+        }
+      }
+    },
+    {
+      "category": "変化",
+      "es": "transformar",
+      "ja": "変形する",
+      "en": "to transform",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "transformado",
+          "tu": "transformando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "transformo",
+          "tu": "transformas",
+          "el/ella": "transforma",
+          "nosotros": "transformamos",
+          "ellos": "transforman"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "transformé",
+          "tu": "transformaste",
+          "el/ella": "transformó",
+          "nosotros": "transformamos",
+          "ellos": "transformaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "transformaba",
+          "tu": "transformabas",
+          "el/ella": "transformaba",
+          "nosotros": "transformábamos",
+          "ellos": "transformaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "transformaré",
+          "tu": "transformarás",
+          "el/ella": "transformará",
+          "nosotros": "transformaremos",
+          "ellos": "transformarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "transforme",
+          "tu": "transformes",
+          "el/ella": "transforme",
+          "nosotros": "transformemos",
+          "ellos": "transformen"
+        }
+      }
+    },
+    {
+      "category": "変化",
+      "es": "convertir",
+      "ja": "変換する",
+      "en": "to convert",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "convertido",
+          "tu": "convirtiendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "convierto",
+          "tu": "conviertes",
+          "el/ella": "convierte",
+          "nosotros": "convertimos",
+          "ellos": "convierten"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "convertí",
+          "tu": "convertiste",
+          "el/ella": "convirtió",
+          "nosotros": "convertimos",
+          "ellos": "convirtieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "convertía",
+          "tu": "convertías",
+          "el/ella": "convertía",
+          "nosotros": "convertíamos",
+          "ellos": "convertían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "convertiré",
+          "tu": "convertirás",
+          "el/ella": "convertirá",
+          "nosotros": "convertiremos",
+          "ellos": "convertirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "convierta",
+          "tu": "conviertas",
+          "el/ella": "convierta",
+          "nosotros": "convirtamos",
+          "ellos": "conviertan"
+        }
+      }
+    },
+    {
+      "category": "変化",
+      "es": "adaptar",
+      "ja": "適応させる",
+      "en": "to adapt",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "adaptado",
+          "tu": "adaptando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "adapto",
+          "tu": "adaptas",
+          "el/ella": "adapta",
+          "nosotros": "adaptamos",
+          "ellos": "adaptan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "adapté",
+          "tu": "adaptaste",
+          "el/ella": "adaptó",
+          "nosotros": "adaptamos",
+          "ellos": "adaptaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "adaptaba",
+          "tu": "adaptabas",
+          "el/ella": "adaptaba",
+          "nosotros": "adaptábamos",
+          "ellos": "adaptaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "adaptaré",
+          "tu": "adaptarás",
+          "el/ella": "adaptará",
+          "nosotros": "adaptaremos",
+          "ellos": "adaptarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "adapte",
+          "tu": "adaptes",
+          "el/ella": "adapte",
+          "nosotros": "adaptemos",
+          "ellos": "adapten"
+        }
+      }
+    },
+    {
+      "category": "変化",
+      "es": "ajustar",
+      "ja": "調整する",
+      "en": "to adjust",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "ajustado",
+          "tu": "ajustando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "ajusto",
+          "tu": "ajustas",
+          "el/ella": "ajusta",
+          "nosotros": "ajustamos",
+          "ellos": "ajustan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "ajusté",
+          "tu": "ajustaste",
+          "el/ella": "ajustó",
+          "nosotros": "ajustamos",
+          "ellos": "ajustaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "ajustaba",
+          "tu": "ajustabas",
+          "el/ella": "ajustaba",
+          "nosotros": "ajustábamos",
+          "ellos": "ajustaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "ajustaré",
+          "tu": "ajustarás",
+          "el/ella": "ajustará",
+          "nosotros": "ajustaremos",
+          "ellos": "ajustarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "ajuste",
+          "tu": "ajustes",
+          "el/ella": "ajuste",
+          "nosotros": "ajustemos",
+          "ellos": "ajusten"
+        }
+      }
+    },
+    {
+      "category": "管理",
+      "es": "controlar",
+      "ja": "制御する",
+      "en": "to control",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "controlado",
+          "tu": "controlando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "controlo",
+          "tu": "controlas",
+          "el/ella": "controla",
+          "nosotros": "controlamos",
+          "ellos": "controlan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "controlé",
+          "tu": "controlaste",
+          "el/ella": "controló",
+          "nosotros": "controlamos",
+          "ellos": "controlaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "controlaba",
+          "tu": "controlabas",
+          "el/ella": "controlaba",
+          "nosotros": "controlábamos",
+          "ellos": "controlaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "controlaré",
+          "tu": "controlarás",
+          "el/ella": "controlará",
+          "nosotros": "controlaremos",
+          "ellos": "controlarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "controle",
+          "tu": "controles",
+          "el/ella": "controle",
+          "nosotros": "controlemos",
+          "ellos": "controlen"
+        }
+      }
+    },
+    {
+      "category": "管理",
+      "es": "administrar",
+      "ja": "管理する",
+      "en": "to manage",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "administrado",
+          "tu": "administrando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "administro",
+          "tu": "administras",
+          "el/ella": "administra",
+          "nosotros": "administramos",
+          "ellos": "administran"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "administré",
+          "tu": "administraste",
+          "el/ella": "administró",
+          "nosotros": "administramos",
+          "ellos": "administraron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "administraba",
+          "tu": "administrabas",
+          "el/ella": "administraba",
+          "nosotros": "administrábamos",
+          "ellos": "administraban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "administraré",
+          "tu": "administrarás",
+          "el/ella": "administrará",
+          "nosotros": "administraremos",
+          "ellos": "administrarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "administre",
+          "tu": "administres",
+          "el/ella": "administre",
+          "nosotros": "administremos",
+          "ellos": "administren"
+        }
+      }
+    },
+    {
+      "category": "管理",
+      "es": "manejar",
+      "ja": "取り扱う",
+      "en": "to handle",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "manejado",
+          "tu": "manejando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "manejo",
+          "tu": "manejas",
+          "el/ella": "maneja",
+          "nosotros": "manejamos",
+          "ellos": "manejan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "manejé",
+          "tu": "manejaste",
+          "el/ella": "manejó",
+          "nosotros": "manejamos",
+          "ellos": "manejaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "manejaba",
+          "tu": "manejabas",
+          "el/ella": "manejaba",
+          "nosotros": "manejábamos",
+          "ellos": "manejaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "manejaré",
+          "tu": "manejarás",
+          "el/ella": "manejará",
+          "nosotros": "manejaremos",
+          "ellos": "manejarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "maneje",
+          "tu": "manejes",
+          "el/ella": "maneje",
+          "nosotros": "manejemos",
+          "ellos": "manejen"
+        }
+      }
+    },
+    {
+      "category": "管理",
+      "es": "gestionar",
+      "ja": "運営する",
+      "en": "to manage",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "gestionado",
+          "tu": "gestionando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "gestiono",
+          "tu": "gestionas",
+          "el/ella": "gestiona",
+          "nosotros": "gestionamos",
+          "ellos": "gestionan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "gestioné",
+          "tu": "gestionaste",
+          "el/ella": "gestionó",
+          "nosotros": "gestionamos",
+          "ellos": "gestionaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "gestionaba",
+          "tu": "gestionabas",
+          "el/ella": "gestionaba",
+          "nosotros": "gestionábamos",
+          "ellos": "gestionaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "gestionaré",
+          "tu": "gestionarás",
+          "el/ella": "gestionará",
+          "nosotros": "gestionaremos",
+          "ellos": "gestionarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "gestione",
+          "tu": "gestiones",
+          "el/ella": "gestione",
+          "nosotros": "gestionemos",
+          "ellos": "gestionen"
+        }
+      }
+    },
+    {
+      "category": "趣味・娯楽",
+      "es": "cantar",
+      "ja": "歌う",
+      "en": "to sing",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "cantado",
+          "tu": "cantando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "canto",
+          "tu": "cantas",
+          "el/ella": "canta",
+          "nosotros": "cantamos",
+          "ellos": "cantan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "canté",
+          "tu": "cantaste",
+          "el/ella": "cantó",
+          "nosotros": "cantamos",
+          "ellos": "cantaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "cantaba",
+          "tu": "cantabas",
+          "el/ella": "cantaba",
+          "nosotros": "cantábamos",
+          "ellos": "cantaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "cantaré",
+          "tu": "cantarás",
+          "el/ella": "cantará",
+          "nosotros": "cantaremos",
+          "ellos": "cantarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "cante",
+          "tu": "cantes",
+          "el/ella": "cante",
+          "nosotros": "cantemos",
+          "ellos": "canten"
+        }
+      }
+    },
+    {
+      "category": "趣味・娯楽",
+      "es": "bailar",
+      "ja": "踊る",
+      "en": "to dance",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "bailado",
+          "tu": "bailando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "bailo",
+          "tu": "bailas",
+          "el/ella": "baila",
+          "nosotros": "bailamos",
+          "ellos": "bailan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "bailé",
+          "tu": "bailaste",
+          "el/ella": "bailó",
+          "nosotros": "bailamos",
+          "ellos": "bailaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "bailaba",
+          "tu": "bailabas",
+          "el/ella": "bailaba",
+          "nosotros": "bailábamos",
+          "ellos": "bailaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "bailaré",
+          "tu": "bailarás",
+          "el/ella": "bailará",
+          "nosotros": "bailaremos",
+          "ellos": "bailarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "baile",
+          "tu": "bailes",
+          "el/ella": "baile",
+          "nosotros": "bailemos",
+          "ellos": "bailen"
+        }
+      }
+    },
+    {
+      "category": "趣味・娯楽",
+      "es": "jugar",
+      "ja": "遊ぶ、（スポーツを）する",
+      "en": "to play",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "jugado",
+          "tu": "jugando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "juego",
+          "tu": "juegas",
+          "el/ella": "juega",
+          "nosotros": "jugamos",
+          "ellos": "juegan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "jugué",
+          "tu": "jugaste",
+          "el/ella": "jugó",
+          "nosotros": "jugamos",
+          "ellos": "jugaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "jugaba",
+          "tu": "jugabas",
+          "el/ella": "jugaba",
+          "nosotros": "jugábamos",
+          "ellos": "jugaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "jugaré",
+          "tu": "jugarás",
+          "el/ella": "jugará",
+          "nosotros": "jugaremos",
+          "ellos": "jugarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "juegue",
+          "tu": "juegues",
+          "el/ella": "juegue",
+          "nosotros": "juguemos",
+          "ellos": "jueguen"
+        }
+      }
+    },
+    {
+      "category": "買い物・商取引",
+      "es": "comprar",
+      "ja": "買う",
+      "en": "to buy",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "comprado",
+          "tu": "comprando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "compro",
+          "tu": "compras",
+          "el/ella": "compra",
+          "nosotros": "compramos",
+          "ellos": "compran"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "compré",
+          "tu": "compraste",
+          "el/ella": "compró",
+          "nosotros": "compramos",
+          "ellos": "compraron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "compraba",
+          "tu": "comprabas",
+          "el/ella": "compraba",
+          "nosotros": "comprábamos",
+          "ellos": "compraban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "compraré",
+          "tu": "comprarás",
+          "el/ella": "comprará",
+          "nosotros": "compraremos",
+          "ellos": "comprarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "compre",
+          "tu": "compres",
+          "el/ella": "compre",
+          "nosotros": "compremos",
+          "ellos": "compren"
+        }
+      }
+    },
+    {
+      "category": "買い物・商取引",
+      "es": "vender",
+      "ja": "売る",
+      "en": "to sell",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "vendido",
+          "tu": "vendiendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "vendo",
+          "tu": "vendes",
+          "el/ella": "vende",
+          "nosotros": "vendemos",
+          "ellos": "venden"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "vendí",
+          "tu": "vendiste",
+          "el/ella": "vendió",
+          "nosotros": "vendimos",
+          "ellos": "vendieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "vendía",
+          "tu": "vendías",
+          "el/ella": "vendía",
+          "nosotros": "vendíamos",
+          "ellos": "vendían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "venderé",
+          "tu": "venderás",
+          "el/ella": "venderá",
+          "nosotros": "venderemos",
+          "ellos": "venderán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "venda",
+          "tu": "vendas",
+          "el/ella": "venda",
+          "nosotros": "vendamos",
+          "ellos": "vendan"
+        }
+      }
+    },
+    {
+      "category": "買い物・商取引",
+      "es": "pagar",
+      "ja": "払う",
+      "en": "to pay",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "pagado",
+          "tu": "pagando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "pago",
+          "tu": "pagas",
+          "el/ella": "paga",
+          "nosotros": "pagamos",
+          "ellos": "pagan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "pagué",
+          "tu": "pagaste",
+          "el/ella": "pagó",
+          "nosotros": "pagamos",
+          "ellos": "pagaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "pagaba",
+          "tu": "pagabas",
+          "el/ella": "pagaba",
+          "nosotros": "pagábamos",
+          "ellos": "pagaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "pagaré",
+          "tu": "pagarás",
+          "el/ella": "pagará",
+          "nosotros": "pagaremos",
+          "ellos": "pagarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "pague",
+          "tu": "pagues",
+          "el/ella": "pague",
+          "nosotros": "paguemos",
+          "ellos": "paguen"
+        }
+      }
+    },
+    {
+      "category": "知覚・認識",
+      "es": "mirar",
+      "ja": "見る、眺める",
+      "en": "to look at, to watch",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "mirado",
+          "tu": "mirando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "miro",
+          "tu": "miras",
+          "el/ella": "mira",
+          "nosotros": "miramos",
+          "ellos": "miran"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "miré",
+          "tu": "miraste",
+          "el/ella": "miró",
+          "nosotros": "miramos",
+          "ellos": "miraron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "miraba",
+          "tu": "mirabas",
+          "el/ella": "miraba",
+          "nosotros": "mirábamos",
+          "ellos": "miraban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "miraré",
+          "tu": "mirarás",
+          "el/ella": "mirará",
+          "nosotros": "miraremos",
+          "ellos": "mirarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "mire",
+          "tu": "mires",
+          "el/ella": "mire",
+          "nosotros": "miremos",
+          "ellos": "miren"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "tocar",
+      "ja": "触る、（楽器を）弾く",
+      "en": "to touch, to play (instrument)",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "tocado",
+          "tu": "tocando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "toco",
+          "tu": "tocas",
+          "el/ella": "toca",
+          "nosotros": "tocamos",
+          "ellos": "tocan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "toqué",
+          "tu": "tocaste",
+          "el/ella": "tocó",
+          "nosotros": "tocamos",
+          "ellos": "tocaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "tocaba",
+          "tu": "tocabas",
+          "el/ella": "tocaba",
+          "nosotros": "tocábamos",
+          "ellos": "tocaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "tocaré",
+          "tu": "tocarás",
+          "el/ella": "tocará",
+          "nosotros": "tocaremos",
+          "ellos": "tocarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "toque",
+          "tu": "toques",
+          "el/ella": "toque",
+          "nosotros": "toquemos",
+          "ellos": "toquen"
+        }
+      }
+    },
+    {
+      "category": "家事・住まい",
+      "es": "lavar",
+      "ja": "洗う",
+      "en": "to wash",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "lavado",
+          "tu": "lavando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "lavo",
+          "tu": "lavas",
+          "el/ella": "lava",
+          "nosotros": "lavamos",
+          "ellos": "lavan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "lavé",
+          "tu": "lavaste",
+          "el/ella": "lavó",
+          "nosotros": "lavamos",
+          "ellos": "lavaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "lavaba",
+          "tu": "lavabas",
+          "el/ella": "lavaba",
+          "nosotros": "lavábamos",
+          "ellos": "lavaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "lavaré",
+          "tu": "lavarás",
+          "el/ella": "lavará",
+          "nosotros": "lavaremos",
+          "ellos": "lavarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "lave",
+          "tu": "laves",
+          "el/ella": "lave",
+          "nosotros": "lavemos",
+          "ellos": "laven"
+        }
+      }
+    },
+    {
+      "category": "家事・住まい",
+      "es": "secar",
+      "ja": "乾かす",
+      "en": "to dry",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "secado",
+          "tu": "secando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "seco",
+          "tu": "secas",
+          "el/ella": "seca",
+          "nosotros": "secamos",
+          "ellos": "secan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "sequé",
+          "tu": "secaste",
+          "el/ella": "secó",
+          "nosotros": "secamos",
+          "ellos": "secaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "secaba",
+          "tu": "secabas",
+          "el/ella": "secaba",
+          "nosotros": "secábamos",
+          "ellos": "secaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "secaré",
+          "tu": "secarás",
+          "el/ella": "secará",
+          "nosotros": "secaremos",
+          "ellos": "secarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "seque",
+          "tu": "seques",
+          "el/ella": "seque",
+          "nosotros": "sequemos",
+          "ellos": "sequen"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "cortar",
+      "ja": "切る",
+      "en": "to cut",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "cortado",
+          "tu": "cortando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "corto",
+          "tu": "cortas",
+          "el/ella": "corta",
+          "nosotros": "cortamos",
+          "ellos": "cortan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "corté",
+          "tu": "cortaste",
+          "el/ella": "cortó",
+          "nosotros": "cortamos",
+          "ellos": "cortaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "cortaba",
+          "tu": "cortabas",
+          "el/ella": "cortaba",
+          "nosotros": "cortábamos",
+          "ellos": "cortaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "cortaré",
+          "tu": "cortarás",
+          "el/ella": "cortará",
+          "nosotros": "cortaremos",
+          "ellos": "cortarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "corte",
+          "tu": "cortes",
+          "el/ella": "corte",
+          "nosotros": "cortemos",
+          "ellos": "corten"
+        }
+      }
+    },
+    {
+      "category": "身体動作・運動",
+      "es": "tirar",
+      "ja": "投げる、引っ張る",
+      "en": "to throw, to pull",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "tirado",
+          "tu": "tirando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "tiro",
+          "tu": "tiras",
+          "el/ella": "tira",
+          "nosotros": "tiramos",
+          "ellos": "tiran"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "tiré",
+          "tu": "tiraste",
+          "el/ella": "tiró",
+          "nosotros": "tiramos",
+          "ellos": "tiraron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "tiraba",
+          "tu": "tirabas",
+          "el/ella": "tiraba",
+          "nosotros": "tirábamos",
+          "ellos": "tiraban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "tiraré",
+          "tu": "tirarás",
+          "el/ella": "tirará",
+          "nosotros": "tiraremos",
+          "ellos": "tirarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "tire",
+          "tu": "tires",
+          "el/ella": "tire",
+          "nosotros": "tiremos",
+          "ellos": "tiren"
+        }
+      }
+    },
+    {
+      "category": "身体動作・運動",
+      "es": "empujar",
+      "ja": "押す",
+      "en": "to push",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "empujado",
+          "tu": "empujando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "empujo",
+          "tu": "empujas",
+          "el/ella": "empuja",
+          "nosotros": "empujamos",
+          "ellos": "empujan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "empujé",
+          "tu": "empujaste",
+          "el/ella": "empujó",
+          "nosotros": "empujamos",
+          "ellos": "empujaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "empujaba",
+          "tu": "empujabas",
+          "el/ella": "empujaba",
+          "nosotros": "empujábamos",
+          "ellos": "empujaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "empujaré",
+          "tu": "empujarás",
+          "el/ella": "empujará",
+          "nosotros": "empujaremos",
+          "ellos": "empujarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "empuje",
+          "tu": "empujes",
+          "el/ella": "empuje",
+          "nosotros": "empujemos",
+          "ellos": "empujen"
+        }
+      }
+    },
+    {
+      "category": "身体動作・運動",
+      "es": "jalar",
+      "ja": "引く（ラ米）",
+      "en": "to pull",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "jalado",
+          "tu": "jalando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "jalo",
+          "tu": "jalas",
+          "el/ella": "jala",
+          "nosotros": "jalamos",
+          "ellos": "jalan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "jalé",
+          "tu": "jalaste",
+          "el/ella": "jaló",
+          "nosotros": "jalamos",
+          "ellos": "jalaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "jalaba",
+          "tu": "jalabas",
+          "el/ella": "jalaba",
+          "nosotros": "jalábamos",
+          "ellos": "jalaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "jalaré",
+          "tu": "jalarás",
+          "el/ella": "jalará",
+          "nosotros": "jalaremos",
+          "ellos": "jalarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "jale",
+          "tu": "jales",
+          "el/ella": "jale",
+          "nosotros": "jalemos",
+          "ellos": "jalen"
+        }
+      }
+    },
+    {
+      "category": "身体動作・運動",
+      "es": "saltar",
+      "ja": "跳ぶ",
+      "en": "to jump",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "saltado",
+          "tu": "saltando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "salto",
+          "tu": "saltas",
+          "el/ella": "salta",
+          "nosotros": "saltamos",
+          "ellos": "saltan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "salté",
+          "tu": "saltaste",
+          "el/ella": "saltó",
+          "nosotros": "saltamos",
+          "ellos": "saltaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "saltaba",
+          "tu": "saltabas",
+          "el/ella": "saltaba",
+          "nosotros": "saltábamos",
+          "ellos": "saltaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "saltaré",
+          "tu": "saltarás",
+          "el/ella": "saltará",
+          "nosotros": "saltaremos",
+          "ellos": "saltarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "salte",
+          "tu": "saltes",
+          "el/ella": "salte",
+          "nosotros": "saltemos",
+          "ellos": "salten"
+        }
+      }
+    },
+    {
+      "category": "移動・運搬",
+      "es": "volar",
+      "ja": "飛ぶ",
+      "en": "to fly",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "volado",
+          "tu": "volando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "vuelo",
+          "tu": "vuelas",
+          "el/ella": "vuela",
+          "nosotros": "volamos",
+          "ellos": "vuelan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "volé",
+          "tu": "volaste",
+          "el/ella": "voló",
+          "nosotros": "volamos",
+          "ellos": "volaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "volaba",
+          "tu": "volabas",
+          "el/ella": "volaba",
+          "nosotros": "volábamos",
+          "ellos": "volaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "volaré",
+          "tu": "volarás",
+          "el/ella": "volará",
+          "nosotros": "volaremos",
+          "ellos": "volarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "vuele",
+          "tu": "vueles",
+          "el/ella": "vuele",
+          "nosotros": "volemos",
+          "ellos": "vuelen"
+        }
+      }
+    },
+    {
+      "category": "生活・生命",
+      "es": "crecer",
+      "ja": "成長する",
+      "en": "to grow",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "crecido",
+          "tu": "creciendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "crezco",
+          "tu": "creces",
+          "el/ella": "crece",
+          "nosotros": "crecemos",
+          "ellos": "crecen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "crecí",
+          "tu": "creciste",
+          "el/ella": "creció",
+          "nosotros": "crecimos",
+          "ellos": "crecieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "crecía",
+          "tu": "crecías",
+          "el/ella": "crecía",
+          "nosotros": "crecíamos",
+          "ellos": "crecían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "creceré",
+          "tu": "crecerás",
+          "el/ella": "crecerá",
+          "nosotros": "creceremos",
+          "ellos": "crecerán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "crezca",
+          "tu": "crezcas",
+          "el/ella": "crezca",
+          "nosotros": "crezcamos",
+          "ellos": "crezcan"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "romper",
+      "ja": "壊す、割る",
+      "en": "to break",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "roto",
+          "tu": "rompiendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "rompo",
+          "tu": "rompes",
+          "el/ella": "rompe",
+          "nosotros": "rompemos",
+          "ellos": "rompen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "rompí",
+          "tu": "rompiste",
+          "el/ella": "rompió",
+          "nosotros": "rompimos",
+          "ellos": "rompieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "rompía",
+          "tu": "rompías",
+          "el/ella": "rompía",
+          "nosotros": "rompíamos",
+          "ellos": "rompían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "romperé",
+          "tu": "romperás",
+          "el/ella": "romperá",
+          "nosotros": "romperemos",
+          "ellos": "romperán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "rompa",
+          "tu": "rompas",
+          "el/ella": "rompa",
+          "nosotros": "rompamos",
+          "ellos": "rompan"
+        }
+      }
+    },
+    {
+      "category": "趣味・娯楽",
+      "es": "dibujar",
+      "ja": "描く",
+      "en": "to draw",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "dibujado",
+          "tu": "dibujando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "dibujo",
+          "tu": "dibujas",
+          "el/ella": "dibuja",
+          "nosotros": "dibujamos",
+          "ellos": "dibujan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "dibujé",
+          "tu": "dibujaste",
+          "el/ella": "dibujó",
+          "nosotros": "dibujamos",
+          "ellos": "dibujaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "dibujaba",
+          "tu": "dibujabas",
+          "el/ella": "dibujaba",
+          "nosotros": "dibujábamos",
+          "ellos": "dibujaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "dibujaré",
+          "tu": "dibujarás",
+          "el/ella": "dibujará",
+          "nosotros": "dibujaremos",
+          "ellos": "dibujarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "dibuje",
+          "tu": "dibujes",
+          "el/ella": "dibuje",
+          "nosotros": "dibujemos",
+          "ellos": "dibujen"
+        }
+      }
+    },
+    {
+      "category": "趣味・娯楽",
+      "es": "pintar",
+      "ja": "塗る、絵を描く",
+      "en": "to paint",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "pintado",
+          "tu": "pintando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "pinto",
+          "tu": "pintas",
+          "el/ella": "pinta",
+          "nosotros": "pintamos",
+          "ellos": "pintan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "pinté",
+          "tu": "pintaste",
+          "el/ella": "pintó",
+          "nosotros": "pintamos",
+          "ellos": "pintaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "pintaba",
+          "tu": "pintabas",
+          "el/ella": "pintaba",
+          "nosotros": "pintábamos",
+          "ellos": "pintaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "pintaré",
+          "tu": "pintarás",
+          "el/ella": "pintará",
+          "nosotros": "pintaremos",
+          "ellos": "pintarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "pinte",
+          "tu": "pintes",
+          "el/ella": "pinte",
+          "nosotros": "pintemos",
+          "ellos": "pinten"
+        }
+      }
+    },
+    {
+      "category": "家事・住まい",
+      "es": "coser",
+      "ja": "縫う",
+      "en": "to sew",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "cosido",
+          "tu": "cosiendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "coso",
+          "tu": "coses",
+          "el/ella": "cose",
+          "nosotros": "cosemos",
+          "ellos": "cosen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "cosí",
+          "tu": "cosiste",
+          "el/ella": "cosió",
+          "nosotros": "cosimos",
+          "ellos": "cosieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "cosía",
+          "tu": "cosías",
+          "el/ella": "cosía",
+          "nosotros": "cosíamos",
+          "ellos": "cosían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "coseré",
+          "tu": "coserás",
+          "el/ella": "coserá",
+          "nosotros": "coseremos",
+          "ellos": "coserán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "cosa",
+          "tu": "cosas",
+          "el/ella": "cosa",
+          "nosotros": "cosamos",
+          "ellos": "cosan"
+        }
+      }
+    },
+    {
+      "category": "家事・住まい",
+      "es": "tejer",
+      "ja": "編む、織る",
+      "en": "to knit, to weave",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "tejido",
+          "tu": "tejiendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "tejo",
+          "tu": "tejes",
+          "el/ella": "teje",
+          "nosotros": "tejemos",
+          "ellos": "tejen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "tejí",
+          "tu": "tejiste",
+          "el/ella": "tejió",
+          "nosotros": "tejimos",
+          "ellos": "tejieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "tejía",
+          "tu": "tejías",
+          "el/ella": "tejía",
+          "nosotros": "tejíamos",
+          "ellos": "tejían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "tejeré",
+          "tu": "tejerás",
+          "el/ella": "tejerá",
+          "nosotros": "tejeremos",
+          "ellos": "tejerán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "teja",
+          "tu": "tejas",
+          "el/ella": "teja",
+          "nosotros": "tejamos",
+          "ellos": "tejan"
+        }
+      }
+    },
+    {
+      "category": "飲食",
+      "es": "hornear",
+      "ja": "オーブンで焼く",
+      "en": "to bake",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "horneado",
+          "tu": "horneando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "horneo",
+          "tu": "horneas",
+          "el/ella": "hornea",
+          "nosotros": "horneamos",
+          "ellos": "hornean"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "horneé",
+          "tu": "horneaste",
+          "el/ella": "horneó",
+          "nosotros": "horneamos",
+          "ellos": "hornearon"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "horneaba",
+          "tu": "horneabas",
+          "el/ella": "horneaba",
+          "nosotros": "horneábamos",
+          "ellos": "horneaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "hornearé",
+          "tu": "hornearás",
+          "el/ella": "horneará",
+          "nosotros": "hornearemos",
+          "ellos": "hornearán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "hornee",
+          "tu": "hornees",
+          "el/ella": "hornee",
+          "nosotros": "horneemos",
+          "ellos": "horneen"
+        }
+      }
+    },
+    {
+      "category": "飲食",
+      "es": "freír",
+      "ja": "揚げる、炒める",
+      "en": "to fry",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "frito",
+          "tu": "friendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "frío",
+          "tu": "fríes",
+          "el/ella": "fríe",
+          "nosotros": "freímos",
+          "ellos": "fríen"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "freí",
+          "tu": "freíste",
+          "el/ella": "frió",
+          "nosotros": "freímos",
+          "ellos": "frieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "freía",
+          "tu": "freías",
+          "el/ella": "freía",
+          "nosotros": "freíamos",
+          "ellos": "freían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "freiré",
+          "tu": "freirás",
+          "el/ella": "freirá",
+          "nosotros": "freiremos",
+          "ellos": "freirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "fría",
+          "tu": "frías",
+          "el/ella": "fría",
+          "nosotros": "friamos",
+          "ellos": "frían"
+        }
+      }
+    },
+    {
+      "category": "飲食",
+      "es": "hervir",
+      "ja": "沸かす、茹でる",
+      "en": "to boil",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "hervido",
+          "tu": "hirviendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "hiervo",
+          "tu": "hierves",
+          "el/ella": "hierve",
+          "nosotros": "hervimos",
+          "ellos": "hierven"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "herví",
+          "tu": "herviste",
+          "el/ella": "hirvió",
+          "nosotros": "hervimos",
+          "ellos": "hirvieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "hervía",
+          "tu": "hervías",
+          "el/ella": "hervía",
+          "nosotros": "hervíamos",
+          "ellos": "hervían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "herviré",
+          "tu": "hervirás",
+          "el/ella": "hervirá",
+          "nosotros": "herviremos",
+          "ellos": "hervirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "hierva",
+          "tu": "hiervas",
+          "el/ella": "hierva",
+          "nosotros": "hirvamos",
+          "ellos": "hiervan"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "mezclar",
+      "ja": "混ぜる",
+      "en": "to mix",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "mezclado",
+          "tu": "mezclando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "mezclo",
+          "tu": "mezclas",
+          "el/ella": "mezcla",
+          "nosotros": "mezclamos",
+          "ellos": "mezclan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "mezclé",
+          "tu": "mezclaste",
+          "el/ella": "mezcló",
+          "nosotros": "mezclamos",
+          "ellos": "mezclaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "mezclaba",
+          "tu": "mezclabas",
+          "el/ella": "mezclaba",
+          "nosotros": "mezclábamos",
+          "ellos": "mezclaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "mezclaré",
+          "tu": "mezclarás",
+          "el/ella": "mezclará",
+          "nosotros": "mezclaremos",
+          "ellos": "mezclarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "mezcle",
+          "tu": "mezcles",
+          "el/ella": "mezcle",
+          "nosotros": "mezclemos",
+          "ellos": "mezclen"
+        }
+      }
+    },
+    {
+      "category": "飲食",
+      "es": "servir",
+      "ja": "給仕する、役立つ",
+      "en": "to serve",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "servido",
+          "tu": "sirviendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "sirvo",
+          "tu": "sirves",
+          "el/ella": "sirve",
+          "nosotros": "servimos",
+          "ellos": "sirven"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "serví",
+          "tu": "serviste",
+          "el/ella": "sirvió",
+          "nosotros": "servimos",
+          "ellos": "sirvieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "servía",
+          "tu": "servías",
+          "el/ella": "servía",
+          "nosotros": "servíamos",
+          "ellos": "servían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "serviré",
+          "tu": "servirás",
+          "el/ella": "servirá",
+          "nosotros": "serviremos",
+          "ellos": "servirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "sirva",
+          "tu": "sirvas",
+          "el/ella": "sirva",
+          "nosotros": "sirvamos",
+          "ellos": "sirvan"
+        }
+      }
+    },
+    {
+      "category": "依頼・社交",
+      "es": "celebrar",
+      "ja": "祝う",
+      "en": "to celebrate",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "celebrado",
+          "tu": "celebrando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "celebro",
+          "tu": "celebras",
+          "el/ella": "celebra",
+          "nosotros": "celebramos",
+          "ellos": "celebran"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "celebré",
+          "tu": "celebraste",
+          "el/ella": "celebró",
+          "nosotros": "celebramos",
+          "ellos": "celebraron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "celebraba",
+          "tu": "celebrabas",
+          "el/ella": "celebraba",
+          "nosotros": "celebrábamos",
+          "ellos": "celebraban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "celebraré",
+          "tu": "celebrarás",
+          "el/ella": "celebrará",
+          "nosotros": "celebraremos",
+          "ellos": "celebrarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "celebre",
+          "tu": "celebres",
+          "el/ella": "celebre",
+          "nosotros": "celebremos",
+          "ellos": "celebren"
+        }
+      }
+    },
+    {
+      "category": "授受・受け渡し",
+      "es": "regalar",
+      "ja": "プレゼントする",
+      "en": "to give (as a gift)",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "regalado",
+          "tu": "regalando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "regalo",
+          "tu": "regalas",
+          "el/ella": "regala",
+          "nosotros": "regalamos",
+          "ellos": "regalan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "regalé",
+          "tu": "regalaste",
+          "el/ella": "regaló",
+          "nosotros": "regalamos",
+          "ellos": "regalaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "regalaba",
+          "tu": "regalabas",
+          "el/ella": "regalaba",
+          "nosotros": "regalábamos",
+          "ellos": "regalaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "regalaré",
+          "tu": "regalarás",
+          "el/ella": "regalará",
+          "nosotros": "regalaremos",
+          "ellos": "regalarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "regale",
+          "tu": "regales",
+          "el/ella": "regale",
+          "nosotros": "regalemos",
+          "ellos": "regalen"
+        }
+      }
+    },
+    {
+      "category": "感情・好み",
+      "es": "abrazar",
+      "ja": "抱きしめる",
+      "en": "to hug",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "abrazado",
+          "tu": "abrazando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "abrazo",
+          "tu": "abrazas",
+          "el/ella": "abraza",
+          "nosotros": "abrazamos",
+          "ellos": "abrazan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "abracé",
+          "tu": "abrazaste",
+          "el/ella": "abrazó",
+          "nosotros": "abrazamos",
+          "ellos": "abrazaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "abrazaba",
+          "tu": "abrazabas",
+          "el/ella": "abrazaba",
+          "nosotros": "abrazábamos",
+          "ellos": "abrazaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "abrazaré",
+          "tu": "abrazarás",
+          "el/ella": "abrazará",
+          "nosotros": "abrazaremos",
+          "ellos": "abrazarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "abrace",
+          "tu": "abraces",
+          "el/ella": "abrace",
+          "nosotros": "abracemos",
+          "ellos": "abracen"
+        }
+      }
+    },
+    {
+      "category": "感情・好み",
+      "es": "besar",
+      "ja": "キスする",
+      "en": "to kiss",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "besado",
+          "tu": "besando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "beso",
+          "tu": "besas",
+          "el/ella": "besa",
+          "nosotros": "besamos",
+          "ellos": "besan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "besé",
+          "tu": "besaste",
+          "el/ella": "besó",
+          "nosotros": "besamos",
+          "ellos": "besaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "besaba",
+          "tu": "besabas",
+          "el/ella": "besaba",
+          "nosotros": "besábamos",
+          "ellos": "besaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "besaré",
+          "tu": "besarás",
+          "el/ella": "besará",
+          "nosotros": "besaremos",
+          "ellos": "besarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "bese",
+          "tu": "beses",
+          "el/ella": "bese",
+          "nosotros": "besemos",
+          "ellos": "besen"
+        }
+      }
+    },
+    {
+      "category": "趣味・娯楽",
+      "es": "patinar",
+      "ja": "スケートする",
+      "en": "to skate",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "patinado",
+          "tu": "patinando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "patino",
+          "tu": "patinas",
+          "el/ella": "patina",
+          "nosotros": "patinamos",
+          "ellos": "patinan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "patiné",
+          "tu": "patinaste",
+          "el/ella": "patinó",
+          "nosotros": "patinamos",
+          "ellos": "patinaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "patinaba",
+          "tu": "patinabas",
+          "el/ella": "patinaba",
+          "nosotros": "patinábamos",
+          "ellos": "patinaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "patinaré",
+          "tu": "patinarás",
+          "el/ella": "patinará",
+          "nosotros": "patinaremos",
+          "ellos": "patinarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "patine",
+          "tu": "patines",
+          "el/ella": "patine",
+          "nosotros": "patinemos",
+          "ellos": "patinen"
+        }
+      }
+    },
+    {
+      "category": "趣味・娯楽",
+      "es": "esquiar",
+      "ja": "スキーをする",
+      "en": "to ski",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "esquiado",
+          "tu": "esquiando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "esquío",
+          "tu": "esquías",
+          "el/ella": "esquía",
+          "nosotros": "esquiamos",
+          "ellos": "esquían"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "esquié",
+          "tu": "esquiaste",
+          "el/ella": "esquió",
+          "nosotros": "esquiamos",
+          "ellos": "esquiaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "esquiaba",
+          "tu": "esquiabas",
+          "el/ella": "esquiaba",
+          "nosotros": "esquiábamos",
+          "ellos": "esquiaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "esquiaré",
+          "tu": "esquiarás",
+          "el/ella": "esquiará",
+          "nosotros": "esquiaremos",
+          "ellos": "esquiarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "esquíe",
+          "tu": "esquíes",
+          "el/ella": "esquíe",
+          "nosotros": "esquiemos",
+          "ellos": "esquíen"
+        }
+      }
+    },
+    {
+      "category": "趣味・娯楽",
+      "es": "pescar",
+      "ja": "釣りをする",
+      "en": "to fish",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "pescado",
+          "tu": "pescando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "pesco",
+          "tu": "pescas",
+          "el/ella": "pesca",
+          "nosotros": "pescamos",
+          "ellos": "pescan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "pesqué",
+          "tu": "pescaste",
+          "el/ella": "pescó",
+          "nosotros": "pescamos",
+          "ellos": "pescaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "pescaba",
+          "tu": "pescabas",
+          "el/ella": "pescaba",
+          "nosotros": "pescábamos",
+          "ellos": "pescaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "pescaré",
+          "tu": "pescarás",
+          "el/ella": "pescará",
+          "nosotros": "pescaremos",
+          "ellos": "pescarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "pesque",
+          "tu": "pesques",
+          "el/ella": "pesque",
+          "nosotros": "pesquemos",
+          "ellos": "pesquen"
+        }
+      }
+    },
+    {
+      "category": "趣味・娯楽",
+      "es": "cazar",
+      "ja": "狩りをする",
+      "en": "to hunt",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "cazado",
+          "tu": "cazando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "cazo",
+          "tu": "cazas",
+          "el/ella": "caza",
+          "nosotros": "cazamos",
+          "ellos": "cazan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "cacé",
+          "tu": "cazaste",
+          "el/ella": "cazó",
+          "nosotros": "cazamos",
+          "ellos": "cazaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "cazaba",
+          "tu": "cazabas",
+          "el/ella": "cazaba",
+          "nosotros": "cazábamos",
+          "ellos": "cazaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "cazaré",
+          "tu": "cazarás",
+          "el/ella": "cazará",
+          "nosotros": "cazaremos",
+          "ellos": "cazarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "cace",
+          "tu": "caces",
+          "el/ella": "cace",
+          "nosotros": "cacemos",
+          "ellos": "cacen"
+        }
+      }
+    },
+    {
+      "category": "移動・交通",
+      "es": "montar",
+      "ja": "乗る、組み立てる",
+      "en": "to ride, to mount",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "montado",
+          "tu": "montando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "monto",
+          "tu": "montas",
+          "el/ella": "monta",
+          "nosotros": "montamos",
+          "ellos": "montan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "monté",
+          "tu": "montaste",
+          "el/ella": "montó",
+          "nosotros": "montamos",
+          "ellos": "montaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "montaba",
+          "tu": "montabas",
+          "el/ella": "montaba",
+          "nosotros": "montábamos",
+          "ellos": "montaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "montaré",
+          "tu": "montarás",
+          "el/ella": "montará",
+          "nosotros": "montaremos",
+          "ellos": "montarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "monte",
+          "tu": "montes",
+          "el/ella": "monte",
+          "nosotros": "montemos",
+          "ellos": "monten"
+        }
+      }
+    },
+    {
+      "category": "飲食",
+      "es": "calentar",
+      "ja": "温める",
+      "en": "to heat",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "calentado",
+          "tu": "calentando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "caliento",
+          "tu": "calientas",
+          "el/ella": "calienta",
+          "nosotros": "calentamos",
+          "ellos": "calientan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "calenté",
+          "tu": "calentaste",
+          "el/ella": "calentó",
+          "nosotros": "calentamos",
+          "ellos": "calentaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "calentaba",
+          "tu": "calentabas",
+          "el/ella": "calentaba",
+          "nosotros": "calentábamos",
+          "ellos": "calentaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "calentaré",
+          "tu": "calentarás",
+          "el/ella": "calentará",
+          "nosotros": "calentaremos",
+          "ellos": "calentarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "caliente",
+          "tu": "calientes",
+          "el/ella": "caliente",
+          "nosotros": "calentemos",
+          "ellos": "calienten"
+        }
+      }
+    },
+    {
+      "category": "飲食",
+      "es": "enfriar",
+      "ja": "冷やす",
+      "en": "to cool",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "enfriado",
+          "tu": "enfriando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "enfrío",
+          "tu": "enfrías",
+          "el/ella": "enfría",
+          "nosotros": "enfriamos",
+          "ellos": "enfrían"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "enfrié",
+          "tu": "enfriaste",
+          "el/ella": "enfrió",
+          "nosotros": "enfriamos",
+          "ellos": "enfriaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "enfriaba",
+          "tu": "enfriabas",
+          "el/ella": "enfriaba",
+          "nosotros": "enfriábamos",
+          "ellos": "enfriaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "enfriaré",
+          "tu": "enfriarás",
+          "el/ella": "enfriará",
+          "nosotros": "enfriaremos",
+          "ellos": "enfriarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "enfríe",
+          "tu": "enfríes",
+          "el/ella": "enfríe",
+          "nosotros": "enfriemos",
+          "ellos": "enfríen"
+        }
+      }
+    },
+    {
+      "category": "飲食",
+      "es": "congelar",
+      "ja": "凍らせる",
+      "en": "to freeze",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "congelado",
+          "tu": "congelando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "congelo",
+          "tu": "congelas",
+          "el/ella": "congela",
+          "nosotros": "congelamos",
+          "ellos": "congelan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "congelé",
+          "tu": "congelaste",
+          "el/ella": "congeló",
+          "nosotros": "congelamos",
+          "ellos": "congelaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "congelaba",
+          "tu": "congelabas",
+          "el/ella": "congelaba",
+          "nosotros": "congelábamos",
+          "ellos": "congelaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "congelaré",
+          "tu": "congelarás",
+          "el/ella": "congelará",
+          "nosotros": "congelaremos",
+          "ellos": "congelarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "congele",
+          "tu": "congeles",
+          "el/ella": "congele",
+          "nosotros": "congelemos",
+          "ellos": "congelen"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "derretir",
+      "ja": "溶かす",
+      "en": "to melt",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "derretido",
+          "tu": "derritiendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "derrito",
+          "tu": "derrites",
+          "el/ella": "derrite",
+          "nosotros": "derretimos",
+          "ellos": "derriten"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "derretí",
+          "tu": "derretiste",
+          "el/ella": "derritió",
+          "nosotros": "derretimos",
+          "ellos": "derritieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "derretía",
+          "tu": "derretías",
+          "el/ella": "derretía",
+          "nosotros": "derretíamos",
+          "ellos": "derretían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "derretiré",
+          "tu": "derretirás",
+          "el/ella": "derretirá",
+          "nosotros": "derretiremos",
+          "ellos": "derretirán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "derrita",
+          "tu": "derritas",
+          "el/ella": "derrita",
+          "nosotros": "derritamos",
+          "ellos": "derritan"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "mojar",
+      "ja": "濡らす",
+      "en": "to wet",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "mojado",
+          "tu": "mojando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "mojo",
+          "tu": "mojas",
+          "el/ella": "moja",
+          "nosotros": "mojamos",
+          "ellos": "mojan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "mojé",
+          "tu": "mojaste",
+          "el/ella": "mojó",
+          "nosotros": "mojamos",
+          "ellos": "mojaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "mojaba",
+          "tu": "mojabas",
+          "el/ella": "mojaba",
+          "nosotros": "mojábamos",
+          "ellos": "mojaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "mojaré",
+          "tu": "mojarás",
+          "el/ella": "mojará",
+          "nosotros": "mojaremos",
+          "ellos": "mojarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "moje",
+          "tu": "mojes",
+          "el/ella": "moje",
+          "nosotros": "mojemos",
+          "ellos": "mojen"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "llenar",
+      "ja": "満たす、いっぱいにする",
+      "en": "to fill",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "llenado",
+          "tu": "llenando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "lleno",
+          "tu": "llenas",
+          "el/ella": "llena",
+          "nosotros": "llenamos",
+          "ellos": "llenan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "llené",
+          "tu": "llenaste",
+          "el/ella": "llenó",
+          "nosotros": "llenamos",
+          "ellos": "llenaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "llenaba",
+          "tu": "llenabas",
+          "el/ella": "llenaba",
+          "nosotros": "llenábamos",
+          "ellos": "llenaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "llenaré",
+          "tu": "llenarás",
+          "el/ella": "llenará",
+          "nosotros": "llenaremos",
+          "ellos": "llenarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "llene",
+          "tu": "llenes",
+          "el/ella": "llene",
+          "nosotros": "llenemos",
+          "ellos": "llenen"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "vaciar",
+      "ja": "空にする",
+      "en": "to empty",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "vaciado",
+          "tu": "vaciando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "vacío",
+          "tu": "vacías",
+          "el/ella": "vacía",
+          "nosotros": "vaciamos",
+          "ellos": "vacían"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "vacié",
+          "tu": "vaciaste",
+          "el/ella": "vació",
+          "nosotros": "vaciamos",
+          "ellos": "vaciaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "vaciaba",
+          "tu": "vaciabas",
+          "el/ella": "vaciaba",
+          "nosotros": "vaciábamos",
+          "ellos": "vaciaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "vaciaré",
+          "tu": "vaciarás",
+          "el/ella": "vaciará",
+          "nosotros": "vaciaremos",
+          "ellos": "vaciarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "vacíe",
+          "tu": "vacíes",
+          "el/ella": "vacíe",
+          "nosotros": "vaciemos",
+          "ellos": "vacíen"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "encender",
+      "ja": "つける、点火する",
+      "en": "to turn on, to light",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "encendido",
+          "tu": "encendiendo",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "enciendo",
+          "tu": "enciendes",
+          "el/ella": "enciende",
+          "nosotros": "encendemos",
+          "ellos": "encienden"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "encendí",
+          "tu": "encendiste",
+          "el/ella": "encendió",
+          "nosotros": "encendimos",
+          "ellos": "encendieron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "encendía",
+          "tu": "encendías",
+          "el/ella": "encendía",
+          "nosotros": "encendíamos",
+          "ellos": "encendían"
+        },
+        "未来形 (Futuro)": {
+          "yo": "encenderé",
+          "tu": "encenderás",
+          "el/ella": "encenderá",
+          "nosotros": "encenderemos",
+          "ellos": "encenderán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "encienda",
+          "tu": "enciendas",
+          "el/ella": "encienda",
+          "nosotros": "encendamos",
+          "ellos": "enciendan"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "apagar",
+      "ja": "消す",
+      "en": "to turn off",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "apagado",
+          "tu": "apagando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "apago",
+          "tu": "apagas",
+          "el/ella": "apaga",
+          "nosotros": "apagamos",
+          "ellos": "apagan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "apagué",
+          "tu": "apagaste",
+          "el/ella": "apagó",
+          "nosotros": "apagamos",
+          "ellos": "apagaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "apagaba",
+          "tu": "apagabas",
+          "el/ella": "apagaba",
+          "nosotros": "apagábamos",
+          "ellos": "apagaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "apagaré",
+          "tu": "apagarás",
+          "el/ella": "apagará",
+          "nosotros": "apagaremos",
+          "ellos": "apagarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "apague",
+          "tu": "apagues",
+          "el/ella": "apague",
+          "nosotros": "apaguemos",
+          "ellos": "apaguen"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "funcionar",
+      "ja": "機能する、動く",
+      "en": "to work, to function",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "funcionado",
+          "tu": "funcionando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "funciono",
+          "tu": "funcionas",
+          "el/ella": "funciona",
+          "nosotros": "funcionamos",
+          "ellos": "funcionan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "funcioné",
+          "tu": "funcionaste",
+          "el/ella": "funcionó",
+          "nosotros": "funcionamos",
+          "ellos": "funcionaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "funcionaba",
+          "tu": "funcionabas",
+          "el/ella": "funcionaba",
+          "nosotros": "funcionábamos",
+          "ellos": "funcionaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "funcionaré",
+          "tu": "funcionarás",
+          "el/ella": "funcionará",
+          "nosotros": "funcionaremos",
+          "ellos": "funcionarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "funcione",
+          "tu": "funciones",
+          "el/ella": "funcione",
+          "nosotros": "funcionemos",
+          "ellos": "funcionen"
+        }
+      }
+    },
+    {
+      "category": "操作・使用",
+      "es": "fallar",
+      "ja": "失敗する、故障する",
+      "en": "to fail",
+      "conjugations": {
+        "現在・過去分詞": {
+          "yo": "fallado",
+          "tu": "fallando",
+          "el/ella": "-",
+          "nosotros": "-",
+          "ellos": "-"
+        },
+        "現在形 (Presente)": {
+          "yo": "fallo",
+          "tu": "fallas",
+          "el/ella": "falla",
+          "nosotros": "fallamos",
+          "ellos": "fallan"
+        },
+        "点過去 (Indefinido)": {
+          "yo": "fallé",
+          "tu": "fallaste",
+          "el/ella": "falló",
+          "nosotros": "fallamos",
+          "ellos": "fallaron"
+        },
+        "線過去 (Imperfecto)": {
+          "yo": "fallaba",
+          "tu": "fallabas",
+          "el/ella": "fallaba",
+          "nosotros": "fallábamos",
+          "ellos": "fallaban"
+        },
+        "未来形 (Futuro)": {
+          "yo": "fallaré",
+          "tu": "fallarás",
+          "el/ella": "fallará",
+          "nosotros": "fallaremos",
+          "ellos": "fallarán"
+        },
+        "接続法現在 (Subjuntivo)": {
+          "yo": "falle",
+          "tu": "falles",
+          "el/ella": "falle",
+          "nosotros": "fallemos",
+          "ellos": "fallen"
+        }
+      }
     }
   ]
 };
 
 const genresInfo = [
-  { id: "verbs", label: "動詞", enLabel: "Verbs", icon: "🏃", color: "#073B4C" },
   { id: "nouns", label: "名詞", enLabel: "Nouns", icon: "🏷️", color: "#FF6B6B" },
+  { id: "verbs", label: "動詞", enLabel: "Verbs", icon: "🏃", color: "#3B82F6" },
   { id: "adjectives", label: "形容詞", enLabel: "Adjectives", icon: "✨", color: "#4ECDC4" },
   { id: "adverbs", label: "副詞", enLabel: "Adverbs", icon: "⏱️", color: "#FFD166" },
-  { id: "prepositions", label: "前置詞ほか", enLabel: "Prepositions", icon: "🔗", color: "#118AB2" }
+  { id: "prepositions", label: "その他", enLabel: "Others", icon: "🔗", color: "#8B5CF6" }
 ];
