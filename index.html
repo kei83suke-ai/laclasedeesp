@@ -35,6 +35,25 @@
       left: auto !important;
       right: 12px !important; /* 反転の裏返しを計算して、左下にピタッと固定 */
     }
+        /* ↓↓ パターン1：活用表の横スクロール対応 ↓↓ */
+    .conjugation-table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: 1rem;
+    }
+    .conj-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 300px; 
+    }
+    .conj-table th, 
+    .conj-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+      white-space: nowrap; 
+    }
   </style>
 </head>
 <body>

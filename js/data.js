@@ -11707,6 +11707,13 @@ const db = {
           "el/ella": "sea",
           "nosotros": "seamos",
           "ellos": "sean"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "sé",
+          "usted": "sea",
+          "nosotros": "seamos",
+          "ustedes": "sean",
+          "negativo_tu": "no seas"
         }
       }
     },
@@ -11757,6 +11764,13 @@ const db = {
           "el/ella": "esté",
           "nosotros": "estemos",
           "ellos": "estén"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "está",
+          "usted": "esté",
+          "nosotros": "estemos",
+          "ustedes": "estén",
+          "negativo_tu": "no estés"
         }
       }
     },
@@ -11807,6 +11821,13 @@ const db = {
           "el/ella": "haya",
           "nosotros": "hayamos",
           "ellos": "hayan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "he",
+          "usted": "haya",
+          "nosotros": "hayamos",
+          "ustedes": "hayan",
+          "negativo_tu": "no hayas"
         }
       }
     },
@@ -11857,6 +11878,13 @@ const db = {
           "el/ella": "tenga",
           "nosotros": "tengamos",
           "ellos": "tengan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "ten",
+          "usted": "tenga",
+          "nosotros": "tengamos",
+          "ustedes": "tengan",
+          "negativo_tu": "no tengas"
         }
       }
     },
@@ -11907,6 +11935,13 @@ const db = {
           "el/ella": "haga",
           "nosotros": "hagamos",
           "ellos": "hagan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "haz",
+          "usted": "haga",
+          "nosotros": "hagamos",
+          "ustedes": "hagan",
+          "negativo_tu": "no hagas"
         }
       }
     },
@@ -11957,6 +11992,13 @@ const db = {
           "el/ella": "vaya",
           "nosotros": "vayamos",
           "ellos": "vayan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "ve",
+          "usted": "vaya",
+          "nosotros": "vayamos",
+          "ustedes": "vayan",
+          "negativo_tu": "no vayas"
         }
       }
     },
@@ -12007,6 +12049,13 @@ const db = {
           "el/ella": "venga",
           "nosotros": "vengamos",
           "ellos": "vengan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "ven",
+          "usted": "venga",
+          "nosotros": "vengamos",
+          "ustedes": "vengan",
+          "negativo_tu": "no vengas"
         }
       }
     },
@@ -12057,6 +12106,13 @@ const db = {
           "el/ella": "vea",
           "nosotros": "veamos",
           "ellos": "vean"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "ve",
+          "usted": "vea",
+          "nosotros": "veamos",
+          "ustedes": "vean",
+          "negativo_tu": "no veas"
         }
       }
     },
@@ -12107,6 +12163,13 @@ const db = {
           "el/ella": "ponga",
           "nosotros": "pongamos",
           "ellos": "pongan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "pon",
+          "usted": "ponga",
+          "nosotros": "pongamos",
+          "ustedes": "pongan",
+          "negativo_tu": "no pongas"
         }
       }
     },
@@ -12157,6 +12220,13 @@ const db = {
           "el/ella": "salga",
           "nosotros": "salgamos",
           "ellos": "salgan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "sal",
+          "usted": "salga",
+          "nosotros": "salgamos",
+          "ustedes": "salgan",
+          "negativo_tu": "no salgas"
         }
       }
     },
@@ -12207,6 +12277,13 @@ const db = {
           "el/ella": "llegue",
           "nosotros": "lleguemos",
           "ellos": "lleguen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "llega",
+          "usted": "llegue",
+          "nosotros": "lleguemos",
+          "ustedes": "lleguen",
+          "negativo_tu": "no llegues"
         }
       }
     },
@@ -12257,6 +12334,13 @@ const db = {
           "el/ella": "quede",
           "nosotros": "quedemos",
           "ellos": "queden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "queda",
+          "usted": "quede",
+          "nosotros": "quedemos",
+          "ustedes": "queden",
+          "negativo_tu": "no quedes"
         }
       }
     },
@@ -12307,6 +12391,13 @@ const db = {
           "el/ella": "lleve",
           "nosotros": "llevemos",
           "ellos": "lleven"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "lleva",
+          "usted": "lleve",
+          "nosotros": "llevemos",
+          "ustedes": "lleven",
+          "negativo_tu": "no lleves"
         }
       }
     },
@@ -12357,6 +12448,13 @@ const db = {
           "el/ella": "traiga",
           "nosotros": "traigamos",
           "ellos": "traigan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "trae",
+          "usted": "traiga",
+          "nosotros": "traigamos",
+          "ustedes": "traigan",
+          "negativo_tu": "no traigas"
         }
       }
     },
@@ -12407,6 +12505,13 @@ const db = {
           "el/ella": "tome",
           "nosotros": "tomemos",
           "ellos": "tomen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "toma",
+          "usted": "tome",
+          "nosotros": "tomemos",
+          "ustedes": "tomen",
+          "negativo_tu": "no tomes"
         }
       }
     },
@@ -12457,6 +12562,13 @@ const db = {
           "el/ella": "dé",
           "nosotros": "demos",
           "ellos": "den"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "da",
+          "usted": "dé",
+          "nosotros": "demos",
+          "ustedes": "den",
+          "negativo_tu": "no des"
         }
       }
     },
@@ -12507,6 +12619,13 @@ const db = {
           "el/ella": "reciba",
           "nosotros": "recibamos",
           "ellos": "reciban"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "recibe",
+          "usted": "reciba",
+          "nosotros": "recibamos",
+          "ustedes": "reciban",
+          "negativo_tu": "no recibas"
         }
       }
     },
@@ -12557,6 +12676,13 @@ const db = {
           "el/ella": "deje",
           "nosotros": "dejemos",
           "ellos": "dejen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "deja",
+          "usted": "deje",
+          "nosotros": "dejemos",
+          "ustedes": "dejen",
+          "negativo_tu": "no dejes"
         }
       }
     },
@@ -12607,6 +12733,13 @@ const db = {
           "el/ella": "guarde",
           "nosotros": "guardemos",
           "ellos": "guarden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "guarda",
+          "usted": "guarde",
+          "nosotros": "guardemos",
+          "ustedes": "guarden",
+          "negativo_tu": "no guardes"
         }
       }
     },
@@ -12657,6 +12790,13 @@ const db = {
           "el/ella": "use",
           "nosotros": "usemos",
           "ellos": "usen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "usa",
+          "usted": "use",
+          "nosotros": "usemos",
+          "ustedes": "usen",
+          "negativo_tu": "no uses"
         }
       }
     },
@@ -12707,6 +12847,13 @@ const db = {
           "el/ella": "abra",
           "nosotros": "abramos",
           "ellos": "abran"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "abre",
+          "usted": "abra",
+          "nosotros": "abramos",
+          "ustedes": "abran",
+          "negativo_tu": "no abras"
         }
       }
     },
@@ -12757,6 +12904,13 @@ const db = {
           "el/ella": "cierre",
           "nosotros": "cerremos",
           "ellos": "cierren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "cierra",
+          "usted": "cierre",
+          "nosotros": "cerremos",
+          "ustedes": "cierren",
+          "negativo_tu": "no cierres"
         }
       }
     },
@@ -12807,6 +12961,13 @@ const db = {
           "el/ella": "empiece",
           "nosotros": "empecemos",
           "ellos": "empiecen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "empieza",
+          "usted": "empiece",
+          "nosotros": "empecemos",
+          "ustedes": "empiecen",
+          "negativo_tu": "no empieces"
         }
       }
     },
@@ -12857,6 +13018,13 @@ const db = {
           "el/ella": "termine",
           "nosotros": "terminemos",
           "ellos": "terminen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "termina",
+          "usted": "termine",
+          "nosotros": "terminemos",
+          "ustedes": "terminen",
+          "negativo_tu": "no termines"
         }
       }
     },
@@ -12907,6 +13075,13 @@ const db = {
           "el/ella": "siga",
           "nosotros": "sigamos",
           "ellos": "sigan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "sigue",
+          "usted": "siga",
+          "nosotros": "sigamos",
+          "ustedes": "sigan",
+          "negativo_tu": "no sigas"
         }
       }
     },
@@ -12957,6 +13132,13 @@ const db = {
           "el/ella": "cambie",
           "nosotros": "cambiemos",
           "ellos": "cambien"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "cambia",
+          "usted": "cambie",
+          "nosotros": "cambiemos",
+          "ustedes": "cambien",
+          "negativo_tu": "no cambies"
         }
       }
     },
@@ -13007,6 +13189,13 @@ const db = {
           "el/ella": "trabaje",
           "nosotros": "trabajemos",
           "ellos": "trabajen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "trabaja",
+          "usted": "trabaje",
+          "nosotros": "trabajemos",
+          "ustedes": "trabajen",
+          "negativo_tu": "no trabajes"
         }
       }
     },
@@ -13057,6 +13246,13 @@ const db = {
           "el/ella": "estudie",
           "nosotros": "estudiemos",
           "ellos": "estudien"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "estudia",
+          "usted": "estudie",
+          "nosotros": "estudiemos",
+          "ustedes": "estudien",
+          "negativo_tu": "no estudies"
         }
       }
     },
@@ -13107,6 +13303,13 @@ const db = {
           "el/ella": "ayude",
           "nosotros": "ayudemos",
           "ellos": "ayuden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "ayuda",
+          "usted": "ayude",
+          "nosotros": "ayudemos",
+          "ustedes": "ayuden",
+          "negativo_tu": "no ayudes"
         }
       }
     },
@@ -13157,6 +13360,13 @@ const db = {
           "el/ella": "espere",
           "nosotros": "esperemos",
           "ellos": "esperen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "espera",
+          "usted": "espere",
+          "nosotros": "esperemos",
+          "ustedes": "esperen",
+          "negativo_tu": "no esperes"
         }
       }
     },
@@ -13207,6 +13417,13 @@ const db = {
           "el/ella": "busque",
           "nosotros": "busquemos",
           "ellos": "busquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "busca",
+          "usted": "busque",
+          "nosotros": "busquemos",
+          "ustedes": "busquen",
+          "negativo_tu": "no busques"
         }
       }
     },
@@ -13257,6 +13474,13 @@ const db = {
           "el/ella": "encuentre",
           "nosotros": "encontremos",
           "ellos": "encuentren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "encuentra",
+          "usted": "encuentre",
+          "nosotros": "encontremos",
+          "ustedes": "encuentren",
+          "negativo_tu": "no encuentres"
         }
       }
     },
@@ -13307,6 +13531,13 @@ const db = {
           "el/ella": "necesite",
           "nosotros": "necesitemos",
           "ellos": "necesiten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "necesita",
+          "usted": "necesite",
+          "nosotros": "necesitemos",
+          "ustedes": "necesiten",
+          "negativo_tu": "no necesites"
         }
       }
     },
@@ -13357,6 +13588,13 @@ const db = {
           "el/ella": "pruebe",
           "nosotros": "probemos",
           "ellos": "prueben"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "prueba",
+          "usted": "pruebe",
+          "nosotros": "probemos",
+          "ustedes": "prueben",
+          "negativo_tu": "no pruebes"
         }
       }
     },
@@ -13407,6 +13645,13 @@ const db = {
           "el/ella": "pueda",
           "nosotros": "podamos",
           "ellos": "puedan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "puede",
+          "usted": "pueda",
+          "nosotros": "podamos",
+          "ustedes": "puedan",
+          "negativo_tu": "no puedas"
         }
       }
     },
@@ -13457,6 +13702,13 @@ const db = {
           "el/ella": "quiera",
           "nosotros": "queramos",
           "ellos": "quieran"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "quiere",
+          "usted": "quiera",
+          "nosotros": "queramos",
+          "ustedes": "quieran",
+          "negativo_tu": "no quieras"
         }
       }
     },
@@ -13507,6 +13759,13 @@ const db = {
           "el/ella": "guste",
           "nosotros": "gustemos",
           "ellos": "gusten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "gusta",
+          "usted": "guste",
+          "nosotros": "gustemos",
+          "ustedes": "gusten",
+          "negativo_tu": "no gustes"
         }
       }
     },
@@ -13557,6 +13816,13 @@ const db = {
           "el/ella": "ame",
           "nosotros": "amemos",
           "ellos": "amen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "ama",
+          "usted": "ame",
+          "nosotros": "amemos",
+          "ustedes": "amen",
+          "negativo_tu": "no ames"
         }
       }
     },
@@ -13607,6 +13873,13 @@ const db = {
           "el/ella": "viva",
           "nosotros": "vivamos",
           "ellos": "vivan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "vive",
+          "usted": "viva",
+          "nosotros": "vivamos",
+          "ustedes": "vivan",
+          "negativo_tu": "no vivas"
         }
       }
     },
@@ -13657,6 +13930,13 @@ const db = {
           "el/ella": "muera",
           "nosotros": "muramos",
           "ellos": "mueran"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "muere",
+          "usted": "muera",
+          "nosotros": "muramos",
+          "ustedes": "mueran",
+          "negativo_tu": "no mueras"
         }
       }
     },
@@ -13707,6 +13987,13 @@ const db = {
           "el/ella": "nazca",
           "nosotros": "nazcamos",
           "ellos": "nazcan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "nace",
+          "usted": "nazca",
+          "nosotros": "nazcamos",
+          "ustedes": "nazcan",
+          "negativo_tu": "no nazcas"
         }
       }
     },
@@ -13757,6 +14044,13 @@ const db = {
           "el/ella": "piense",
           "nosotros": "pensemos",
           "ellos": "piensen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "piensa",
+          "usted": "piense",
+          "nosotros": "pensemos",
+          "ustedes": "piensen",
+          "negativo_tu": "no pienses"
         }
       }
     },
@@ -13807,6 +14101,13 @@ const db = {
           "el/ella": "crea",
           "nosotros": "creamos",
           "ellos": "crean"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "cree",
+          "usted": "crea",
+          "nosotros": "creamos",
+          "ustedes": "crean",
+          "negativo_tu": "no creas"
         }
       }
     },
@@ -13857,6 +14158,13 @@ const db = {
           "el/ella": "entienda",
           "nosotros": "entendamos",
           "ellos": "entiendan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "entiende",
+          "usted": "entienda",
+          "nosotros": "entendamos",
+          "ustedes": "entiendan",
+          "negativo_tu": "no entiendas"
         }
       }
     },
@@ -13907,6 +14215,13 @@ const db = {
           "el/ella": "conozca",
           "nosotros": "conozcamos",
           "ellos": "conozcan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "conoce",
+          "usted": "conozca",
+          "nosotros": "conozcamos",
+          "ustedes": "conozcan",
+          "negativo_tu": "no conozcas"
         }
       }
     },
@@ -13957,6 +14272,13 @@ const db = {
           "el/ella": "recuerde",
           "nosotros": "recordemos",
           "ellos": "recuerden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "recuerda",
+          "usted": "recuerde",
+          "nosotros": "recordemos",
+          "ustedes": "recuerden",
+          "negativo_tu": "no recuerdes"
         }
       }
     },
@@ -14007,6 +14329,13 @@ const db = {
           "el/ella": "olvide",
           "nosotros": "olvidemos",
           "ellos": "olviden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "olvida",
+          "usted": "olvide",
+          "nosotros": "olvidemos",
+          "ustedes": "olviden",
+          "negativo_tu": "no olvides"
         }
       }
     },
@@ -14057,6 +14386,13 @@ const db = {
           "el/ella": "pierda",
           "nosotros": "perdamos",
           "ellos": "pierdan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "pierde",
+          "usted": "pierda",
+          "nosotros": "perdamos",
+          "ustedes": "pierdan",
+          "negativo_tu": "no pierdas"
         }
       }
     },
@@ -14107,6 +14443,13 @@ const db = {
           "el/ella": "gane",
           "nosotros": "ganemos",
           "ellos": "ganen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "gana",
+          "usted": "gane",
+          "nosotros": "ganemos",
+          "ustedes": "ganen",
+          "negativo_tu": "no ganes"
         }
       }
     },
@@ -14157,6 +14500,13 @@ const db = {
           "el/ella": "sienta",
           "nosotros": "sintamos",
           "ellos": "sientan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "siente",
+          "usted": "sienta",
+          "nosotros": "sintamos",
+          "ustedes": "sientan",
+          "negativo_tu": "no sientas"
         }
       }
     },
@@ -14207,6 +14557,13 @@ const db = {
           "el/ella": "diga",
           "nosotros": "digamos",
           "ellos": "digan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "di",
+          "usted": "diga",
+          "nosotros": "digamos",
+          "ustedes": "digan",
+          "negativo_tu": "no digas"
         }
       }
     },
@@ -14257,6 +14614,13 @@ const db = {
           "el/ella": "hable",
           "nosotros": "hablemos",
           "ellos": "hablen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "habla",
+          "usted": "hable",
+          "nosotros": "hablemos",
+          "ustedes": "hablen",
+          "negativo_tu": "no hables"
         }
       }
     },
@@ -14307,6 +14671,13 @@ const db = {
           "el/ella": "cuente",
           "nosotros": "contemos",
           "ellos": "cuenten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "cuenta",
+          "usted": "cuente",
+          "nosotros": "contemos",
+          "ustedes": "cuenten",
+          "negativo_tu": "no cuentes"
         }
       }
     },
@@ -14357,6 +14728,13 @@ const db = {
           "el/ella": "explique",
           "nosotros": "expliquemos",
           "ellos": "expliquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "explica",
+          "usted": "explique",
+          "nosotros": "expliquemos",
+          "ustedes": "expliquen",
+          "negativo_tu": "no expliques"
         }
       }
     },
@@ -14407,6 +14785,13 @@ const db = {
           "el/ella": "comente",
           "nosotros": "comentemos",
           "ellos": "comenten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "comenta",
+          "usted": "comente",
+          "nosotros": "comentemos",
+          "ustedes": "comenten",
+          "negativo_tu": "no comentes"
         }
       }
     },
@@ -14457,6 +14842,13 @@ const db = {
           "el/ella": "pregunte",
           "nosotros": "preguntemos",
           "ellos": "pregunten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "pregunta",
+          "usted": "pregunte",
+          "nosotros": "preguntemos",
+          "ustedes": "pregunten",
+          "negativo_tu": "no preguntes"
         }
       }
     },
@@ -14507,6 +14899,13 @@ const db = {
           "el/ella": "responda",
           "nosotros": "respondamos",
           "ellos": "respondan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "responde",
+          "usted": "responda",
+          "nosotros": "respondamos",
+          "ustedes": "respondan",
+          "negativo_tu": "no respondas"
         }
       }
     },
@@ -14557,6 +14956,13 @@ const db = {
           "el/ella": "conteste",
           "nosotros": "contestemos",
           "ellos": "contesten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "contesta",
+          "usted": "conteste",
+          "nosotros": "contestemos",
+          "ustedes": "contesten",
+          "negativo_tu": "no contestes"
         }
       }
     },
@@ -14607,6 +15013,13 @@ const db = {
           "el/ella": "llame",
           "nosotros": "llamemos",
           "ellos": "llamen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "llama",
+          "usted": "llame",
+          "nosotros": "llamemos",
+          "ustedes": "llamen",
+          "negativo_tu": "no llames"
         }
       }
     },
@@ -14657,6 +15070,13 @@ const db = {
           "el/ella": "se llame",
           "nosotros": "nos llamemos",
           "ellos": "se llamen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "llámete",
+          "usted": "llámese",
+          "nosotros": "llamémonos",
+          "ustedes": "llámense",
+          "negativo_tu": "no te llames"
         }
       }
     },
@@ -14707,6 +15127,13 @@ const db = {
           "el/ella": "escuche",
           "nosotros": "escuchemos",
           "ellos": "escuchen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "escucha",
+          "usted": "escuche",
+          "nosotros": "escuchemos",
+          "ustedes": "escuchen",
+          "negativo_tu": "no escuches"
         }
       }
     },
@@ -14757,6 +15184,13 @@ const db = {
           "el/ella": "oiga",
           "nosotros": "oigamos",
           "ellos": "oigan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "oye",
+          "usted": "oiga",
+          "nosotros": "oigamos",
+          "ustedes": "oigan",
+          "negativo_tu": "no oigas"
         }
       }
     },
@@ -14807,6 +15241,13 @@ const db = {
           "el/ella": "grite",
           "nosotros": "gritemos",
           "ellos": "griten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "grita",
+          "usted": "grite",
+          "nosotros": "gritemos",
+          "ustedes": "griten",
+          "negativo_tu": "no grites"
         }
       }
     },
@@ -14857,6 +15298,13 @@ const db = {
           "el/ella": "susurre",
           "nosotros": "susurremos",
           "ellos": "susurren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "susurra",
+          "usted": "susurre",
+          "nosotros": "susurremos",
+          "ustedes": "susurren",
+          "negativo_tu": "no susurres"
         }
       }
     },
@@ -14907,6 +15355,13 @@ const db = {
           "el/ella": "discuta",
           "nosotros": "discutamos",
           "ellos": "discutan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "discute",
+          "usted": "discuta",
+          "nosotros": "discutamos",
+          "ustedes": "discutan",
+          "negativo_tu": "no discutas"
         }
       }
     },
@@ -14957,6 +15412,13 @@ const db = {
           "el/ella": "charle",
           "nosotros": "charlemos",
           "ellos": "charlen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "charla",
+          "usted": "charle",
+          "nosotros": "charlemos",
+          "ustedes": "charlen",
+          "negativo_tu": "no charles"
         }
       }
     },
@@ -15007,6 +15469,13 @@ const db = {
           "el/ella": "converse",
           "nosotros": "conversemos",
           "ellos": "conversen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "conversa",
+          "usted": "converse",
+          "nosotros": "conversemos",
+          "ustedes": "conversen",
+          "negativo_tu": "no converses"
         }
       }
     },
@@ -15057,6 +15526,13 @@ const db = {
           "el/ella": "salude",
           "nosotros": "saludemos",
           "ellos": "saluden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "saluda",
+          "usted": "salude",
+          "nosotros": "saludemos",
+          "ustedes": "saluden",
+          "negativo_tu": "no saludes"
         }
       }
     },
@@ -15107,6 +15583,13 @@ const db = {
           "el/ella": "se despeda",
           "nosotros": "nos despedamos",
           "ellos": "se despedan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "despídete",
+          "usted": "despídase",
+          "nosotros": "despidámonos",
+          "ustedes": "despídanse",
+          "negativo_tu": "no te despidas"
         }
       }
     },
@@ -15157,6 +15640,13 @@ const db = {
           "el/ella": "invite",
           "nosotros": "invitemos",
           "ellos": "inviten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "invita",
+          "usted": "invite",
+          "nosotros": "invitemos",
+          "ustedes": "inviten",
+          "negativo_tu": "no invites"
         }
       }
     },
@@ -15207,6 +15697,13 @@ const db = {
           "el/ella": "presente",
           "nosotros": "presentemos",
           "ellos": "presenten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "presenta",
+          "usted": "presente",
+          "nosotros": "presentemos",
+          "ustedes": "presenten",
+          "negativo_tu": "no presentes"
         }
       }
     },
@@ -15257,6 +15754,13 @@ const db = {
           "el/ella": "se presente",
           "nosotros": "nos presentemos",
           "ellos": "se presenten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "preséntate",
+          "usted": "preséntese",
+          "nosotros": "presentémonos",
+          "ustedes": "preséntense",
+          "negativo_tu": "no te presentes"
         }
       }
     },
@@ -15307,6 +15811,13 @@ const db = {
           "el/ella": "pida",
           "nosotros": "pidamos",
           "ellos": "pidan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "pide",
+          "usted": "pida",
+          "nosotros": "pidamos",
+          "ustedes": "pidan",
+          "negativo_tu": "no pidas"
         }
       }
     },
@@ -15357,6 +15868,13 @@ const db = {
           "el/ella": "recomende",
           "nosotros": "recomendemos",
           "ellos": "recomenden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "recomienda",
+          "usted": "recomiende",
+          "nosotros": "recomendemos",
+          "ustedes": "recomienden",
+          "negativo_tu": "no recomiendes"
         }
       }
     },
@@ -15407,6 +15925,13 @@ const db = {
           "el/ella": "prometa",
           "nosotros": "prometamos",
           "ellos": "prometan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "promete",
+          "usted": "prometa",
+          "nosotros": "prometamos",
+          "ustedes": "prometan",
+          "negativo_tu": "no prometas"
         }
       }
     },
@@ -15457,6 +15982,13 @@ const db = {
           "el/ella": "ofrezca",
           "nosotros": "ofrezcamos",
           "ellos": "ofrezcan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "ofrece",
+          "usted": "ofrezca",
+          "nosotros": "ofrezcamos",
+          "ustedes": "ofrezcan",
+          "negativo_tu": "no ofrezcas"
         }
       }
     },
@@ -15507,6 +16039,13 @@ const db = {
           "el/ella": "acepte",
           "nosotros": "aceptemos",
           "ellos": "acepten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "acepta",
+          "usted": "acepte",
+          "nosotros": "aceptemos",
+          "ustedes": "acepten",
+          "negativo_tu": "no aceptes"
         }
       }
     },
@@ -15557,6 +16096,13 @@ const db = {
           "el/ella": "rechace",
           "nosotros": "rechacemos",
           "ellos": "rechacen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "rechaza",
+          "usted": "rechace",
+          "nosotros": "rechacemos",
+          "ustedes": "rechacen",
+          "negativo_tu": "no rechaces"
         }
       }
     },
@@ -15607,6 +16153,13 @@ const db = {
           "el/ella": "agradezca",
           "nosotros": "agradezcamos",
           "ellos": "agradezcan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "agradece",
+          "usted": "agradezca",
+          "nosotros": "agradezcamos",
+          "ustedes": "agradezcan",
+          "negativo_tu": "no agradezcas"
         }
       }
     },
@@ -15657,6 +16210,13 @@ const db = {
           "el/ella": "felicite",
           "nosotros": "felicitemos",
           "ellos": "feliciten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "felicita",
+          "usted": "felicite",
+          "nosotros": "felicitemos",
+          "ustedes": "feliciten",
+          "negativo_tu": "no felicites"
         }
       }
     },
@@ -15722,6 +16282,13 @@ const db = {
           "el/ella": "mienta",
           "nosotros": "mintamos",
           "ellos": "mientan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "miente",
+          "usted": "mienta",
+          "nosotros": "mintamos",
+          "ustedes": "mientan",
+          "negativo_tu": "no mientas"
         }
       }
     },
@@ -15772,6 +16339,13 @@ const db = {
           "el/ella": "se exprese",
           "nosotros": "nos expresemos",
           "ellos": "se expresen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "exprésate",
+          "usted": "exprésese",
+          "nosotros": "expresémonos",
+          "ustedes": "exprésense",
+          "negativo_tu": "no te expreses"
         }
       }
     },
@@ -15822,6 +16396,13 @@ const db = {
           "el/ella": "opine",
           "nosotros": "opinemos",
           "ellos": "opinen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "opina",
+          "usted": "opine",
+          "nosotros": "opinemos",
+          "ustedes": "opinen",
+          "negativo_tu": "no opines"
         }
       }
     },
@@ -15872,6 +16453,13 @@ const db = {
           "el/ella": "comunique",
           "nosotros": "comuniquemos",
           "ellos": "comuniquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "comunica",
+          "usted": "comunique",
+          "nosotros": "comuniquemos",
+          "ustedes": "comuniquen",
+          "negativo_tu": "no comuniques"
         }
       }
     },
@@ -15922,6 +16510,13 @@ const db = {
           "el/ella": "avise",
           "nosotros": "avisemos",
           "ellos": "avisen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "avisa",
+          "usted": "avise",
+          "nosotros": "avisemos",
+          "ustedes": "avisen",
+          "negativo_tu": "no avises"
         }
       }
     },
@@ -15972,6 +16567,13 @@ const db = {
           "el/ella": "informe",
           "nosotros": "informemos",
           "ellos": "informen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "informa",
+          "usted": "informe",
+          "nosotros": "informemos",
+          "ustedes": "informen",
+          "negativo_tu": "no informes"
         }
       }
     },
@@ -16022,6 +16624,13 @@ const db = {
           "el/ella": "note",
           "nosotros": "notemos",
           "ellos": "noten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "nota",
+          "usted": "note",
+          "nosotros": "notemos",
+          "ustedes": "noten",
+          "negativo_tu": "no notes"
         }
       }
     },
@@ -16072,6 +16681,13 @@ const db = {
           "el/ella": "se pregunte",
           "nosotros": "nos preguntemos",
           "ellos": "se pregunten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "pregúntate",
+          "usted": "pregúntese",
+          "nosotros": "preguntémonos",
+          "ustedes": "pregúntense",
+          "negativo_tu": "no te preguntes"
         }
       }
     },
@@ -16122,6 +16738,13 @@ const db = {
           "el/ella": "aclare",
           "nosotros": "aclaremos",
           "ellos": "aclaren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "aclara",
+          "usted": "aclare",
+          "nosotros": "aclaremos",
+          "ustedes": "aclaren",
+          "negativo_tu": "no aclares"
         }
       }
     },
@@ -16172,6 +16795,13 @@ const db = {
           "el/ella": "traduzca",
           "nosotros": "traduzcamos",
           "ellos": "traduzcan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "traduce",
+          "usted": "traduzca",
+          "nosotros": "traduzcamos",
+          "ustedes": "traduzcan",
+          "negativo_tu": "no traduzcas"
         }
       }
     },
@@ -16222,6 +16852,13 @@ const db = {
           "el/ella": "repita",
           "nosotros": "repitamos",
           "ellos": "repitan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "repite",
+          "usted": "repita",
+          "nosotros": "repitamos",
+          "ustedes": "repitan",
+          "negativo_tu": "no repitas"
         }
       }
     },
@@ -16272,6 +16909,13 @@ const db = {
           "el/ella": "resuma",
           "nosotros": "resumamos",
           "ellos": "resuman"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "resume",
+          "usted": "resuma",
+          "nosotros": "resumamos",
+          "ustedes": "resuman",
+          "negativo_tu": "no resumas"
         }
       }
     },
@@ -16322,6 +16966,13 @@ const db = {
           "el/ella": "bromee",
           "nosotros": "bromeemos",
           "ellos": "bromeen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "bromea",
+          "usted": "bromee",
+          "nosotros": "bromeemos",
+          "ustedes": "bromeen",
+          "negativo_tu": "no bromees"
         }
       }
     },
@@ -16372,6 +17023,13 @@ const db = {
           "el/ella": "se queje",
           "nosotros": "nos quejemos",
           "ellos": "se quejen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "quéjate",
+          "usted": "quéjese",
+          "nosotros": "quejémonos",
+          "ustedes": "quéjense",
+          "negativo_tu": "no te quejes"
         }
       }
     },
@@ -16437,6 +17095,13 @@ const db = {
           "el/ella": "llore",
           "nosotros": "lloremos",
           "ellos": "lloren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "llora",
+          "usted": "llore",
+          "nosotros": "lloremos",
+          "ustedes": "lloren",
+          "negativo_tu": "no llores"
         }
       }
     },
@@ -16487,6 +17152,13 @@ const db = {
           "el/ella": "ría",
           "nosotros": "riamos",
           "ellos": "rían"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "ríe",
+          "usted": "ría",
+          "nosotros": "riamos",
+          "ustedes": "rían",
+          "negativo_tu": "no rías"
         }
       }
     },
@@ -16537,6 +17209,13 @@ const db = {
           "el/ella": "sonría",
           "nosotros": "sonriamos",
           "ellos": "sonrían"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "sonríe",
+          "usted": "sonría",
+          "nosotros": "sonriamos",
+          "ustedes": "sonrían",
+          "negativo_tu": "no sonrías"
         }
       }
     },
@@ -16587,6 +17266,13 @@ const db = {
           "el/ella": "encante",
           "nosotros": "encantemos",
           "ellos": "encanten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "encanta",
+          "usted": "encante",
+          "nosotros": "encantemos",
+          "ustedes": "encanten",
+          "negativo_tu": "no encantes"
         }
       }
     },
@@ -16637,6 +17323,13 @@ const db = {
           "el/ella": "importe",
           "nosotros": "importemos",
           "ellos": "importen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "importa",
+          "usted": "importe",
+          "nosotros": "importemos",
+          "ustedes": "importen",
+          "negativo_tu": "no importes"
         }
       }
     },
@@ -16687,6 +17380,13 @@ const db = {
           "el/ella": "interese",
           "nosotros": "interesemos",
           "ellos": "interesen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "interesa",
+          "usted": "interese",
+          "nosotros": "interesemos",
+          "ustedes": "interesen",
+          "negativo_tu": "no intereses"
         }
       }
     },
@@ -16737,6 +17437,13 @@ const db = {
           "el/ella": "moleste",
           "nosotros": "molestemos",
           "ellos": "molesten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "molesta",
+          "usted": "moleste",
+          "nosotros": "molestemos",
+          "ustedes": "molesten",
+          "negativo_tu": "no molestes"
         }
       }
     },
@@ -16787,6 +17494,13 @@ const db = {
           "el/ella": "odie",
           "nosotros": "odiemos",
           "ellos": "odien"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "odia",
+          "usted": "odie",
+          "nosotros": "odiemos",
+          "ustedes": "odien",
+          "negativo_tu": "no odies"
         }
       }
     },
@@ -16837,6 +17551,13 @@ const db = {
           "el/ella": "prefiera",
           "nosotros": "prefiramos",
           "ellos": "prefieran"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "prefiere",
+          "usted": "prefiera",
+          "nosotros": "prefiramos",
+          "ustedes": "prefieran",
+          "negativo_tu": "no prefieras"
         }
       }
     },
@@ -16887,6 +17608,13 @@ const db = {
           "el/ella": "desee",
           "nosotros": "deseemos",
           "ellos": "deseen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "desea",
+          "usted": "desee",
+          "nosotros": "deseemos",
+          "ustedes": "deseen",
+          "negativo_tu": "no desees"
         }
       }
     },
@@ -16937,6 +17665,13 @@ const db = {
           "el/ella": "tema",
           "nosotros": "temamos",
           "ellos": "teman"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "teme",
+          "usted": "tema",
+          "nosotros": "temamos",
+          "ustedes": "teman",
+          "negativo_tu": "no temas"
         }
       }
     },
@@ -16987,6 +17722,13 @@ const db = {
           "el/ella": "asuste",
           "nosotros": "asustemos",
           "ellos": "asusten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "asusta",
+          "usted": "asuste",
+          "nosotros": "asustemos",
+          "ustedes": "asusten",
+          "negativo_tu": "no asustes"
         }
       }
     },
@@ -17037,6 +17779,13 @@ const db = {
           "el/ella": "sorprenda",
           "nosotros": "sorprendamos",
           "ellos": "sorprendan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "sorprende",
+          "usted": "sorprenda",
+          "nosotros": "sorprendamos",
+          "ustedes": "sorprendan",
+          "negativo_tu": "no sorprendas"
         }
       }
     },
@@ -17087,6 +17836,13 @@ const db = {
           "el/ella": "aburra",
           "nosotros": "aburramos",
           "ellos": "aburran"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "aburre",
+          "usted": "aburra",
+          "nosotros": "aburramos",
+          "ustedes": "aburran",
+          "negativo_tu": "no aburras"
         }
       }
     },
@@ -17137,6 +17893,13 @@ const db = {
           "el/ella": "se aburra",
           "nosotros": "nos aburramos",
           "ellos": "se aburran"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "abúrrete",
+          "usted": "abúrrase",
+          "nosotros": "aburrámonos",
+          "ustedes": "abúrranse",
+          "negativo_tu": "no te aburras"
         }
       }
     },
@@ -17187,6 +17950,13 @@ const db = {
           "el/ella": "disfrute",
           "nosotros": "disfrutemos",
           "ellos": "disfruten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "disfruta",
+          "usted": "disfrute",
+          "nosotros": "disfrutemos",
+          "ustedes": "disfruten",
+          "negativo_tu": "no disfrutes"
         }
       }
     },
@@ -17237,6 +18007,13 @@ const db = {
           "el/ella": "imagine",
           "nosotros": "imaginemos",
           "ellos": "imaginen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "imagina",
+          "usted": "imagine",
+          "nosotros": "imaginemos",
+          "ustedes": "imaginen",
+          "negativo_tu": "no imagines"
         }
       }
     },
@@ -17287,6 +18064,13 @@ const db = {
           "el/ella": "decida",
           "nosotros": "decidamos",
           "ellos": "decidan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "decide",
+          "usted": "decida",
+          "nosotros": "decidamos",
+          "ustedes": "decidan",
+          "negativo_tu": "no decidas"
         }
       }
     },
@@ -17337,6 +18121,13 @@ const db = {
           "el/ella": "elija",
           "nosotros": "elijamos",
           "ellos": "elijan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "elige",
+          "usted": "elija",
+          "nosotros": "elijamos",
+          "ustedes": "elijan",
+          "negativo_tu": "no elijas"
         }
       }
     },
@@ -17387,6 +18178,13 @@ const db = {
           "el/ella": "planee",
           "nosotros": "planeemos",
           "ellos": "planeen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "planea",
+          "usted": "planee",
+          "nosotros": "planeemos",
+          "ustedes": "planeen",
+          "negativo_tu": "no planees"
         }
       }
     },
@@ -17437,6 +18235,13 @@ const db = {
           "el/ella": "organice",
           "nosotros": "organicemos",
           "ellos": "organicen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "organiza",
+          "usted": "organice",
+          "nosotros": "organicemos",
+          "ustedes": "organicen",
+          "negativo_tu": "no organices"
         }
       }
     },
@@ -17487,6 +18292,13 @@ const db = {
           "el/ella": "reconozca",
           "nosotros": "reconozcamos",
           "ellos": "reconozcan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "reconoce",
+          "usted": "reconozca",
+          "nosotros": "reconozcamos",
+          "ustedes": "reconozcan",
+          "negativo_tu": "no reconozcas"
         }
       }
     },
@@ -17537,6 +18349,13 @@ const db = {
           "el/ella": "dude",
           "nosotros": "dudemos",
           "ellos": "duden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "duda",
+          "usted": "dude",
+          "nosotros": "dudemos",
+          "ustedes": "duden",
+          "negativo_tu": "no dudes"
         }
       }
     },
@@ -17587,6 +18406,13 @@ const db = {
           "el/ella": "confie",
           "nosotros": "confiemos",
           "ellos": "confien"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "confía",
+          "usted": "confíe",
+          "nosotros": "confiemos",
+          "ustedes": "confíen",
+          "negativo_tu": "no confíes"
         }
       }
     },
@@ -17637,6 +18463,13 @@ const db = {
           "el/ella": "acuerde",
           "nosotros": "acordemos",
           "ellos": "acuerden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "acuerda",
+          "usted": "acuerde",
+          "nosotros": "acordemos",
+          "ustedes": "acuerden",
+          "negativo_tu": "no acuerdes"
         }
       }
     },
@@ -17687,6 +18520,13 @@ const db = {
           "el/ella": "se acuerde",
           "nosotros": "nos acordemos",
           "ellos": "se acuerden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "acuérdate",
+          "usted": "acuérdese",
+          "nosotros": "acordémonos",
+          "ustedes": "acuérdense",
+          "negativo_tu": "no te acuerdes"
         }
       }
     },
@@ -17737,6 +18577,13 @@ const db = {
           "el/ella": "se arrepenta",
           "nosotros": "nos arrepentamos",
           "ellos": "se arrepentan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "arrepiéntete",
+          "usted": "arrepiéntase",
+          "nosotros": "arrepintámonos",
+          "ustedes": "arrepiéntanse",
+          "negativo_tu": "no te arrepientas"
         }
       }
     },
@@ -17787,6 +18634,13 @@ const db = {
           "el/ella": "se preocupe",
           "nosotros": "nos preocupemos",
           "ellos": "se preocupen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "preocúpate",
+          "usted": "preocúpese",
+          "nosotros": "preocupémonos",
+          "ustedes": "preocúpense",
+          "negativo_tu": "no te preocupes"
         }
       }
     },
@@ -17837,6 +18691,13 @@ const db = {
           "el/ella": "se calme",
           "nosotros": "nos calmemos",
           "ellos": "se calmen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "cálmate",
+          "usted": "cálmese",
+          "nosotros": "calmémonos",
+          "ustedes": "cálmense",
+          "negativo_tu": "no te calmes"
         }
       }
     },
@@ -17887,6 +18748,13 @@ const db = {
           "el/ella": "se relaje",
           "nosotros": "nos relajemos",
           "ellos": "se relajen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "relájate",
+          "usted": "relájese",
+          "nosotros": "relajémonos",
+          "ustedes": "relájense",
+          "negativo_tu": "no te relajes"
         }
       }
     },
@@ -17937,6 +18805,13 @@ const db = {
           "el/ella": "se enoje",
           "nosotros": "nos enojemos",
           "ellos": "se enojen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "enójate",
+          "usted": "enójese",
+          "nosotros": "enojémonos",
+          "ustedes": "enójense",
+          "negativo_tu": "no te enojes"
         }
       }
     },
@@ -17987,6 +18862,13 @@ const db = {
           "el/ella": "se enfade",
           "nosotros": "nos enfademos",
           "ellos": "se enfaden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "enfádate",
+          "usted": "enfádese",
+          "nosotros": "enfadémonos",
+          "ustedes": "enfádense",
+          "negativo_tu": "no te enfades"
         }
       }
     },
@@ -18067,6 +18949,13 @@ const db = {
           "el/ella": "motive",
           "nosotros": "motivemos",
           "ellos": "motiven"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "motiva",
+          "usted": "motive",
+          "nosotros": "motivemos",
+          "ustedes": "motiven",
+          "negativo_tu": "no motives"
         }
       }
     },
@@ -18117,6 +19006,13 @@ const db = {
           "el/ella": "anime",
           "nosotros": "animemos",
           "ellos": "animen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "anima",
+          "usted": "anime",
+          "nosotros": "animemos",
+          "ustedes": "animen",
+          "negativo_tu": "no animes"
         }
       }
     },
@@ -18167,6 +19063,13 @@ const db = {
           "el/ella": "desanime",
           "nosotros": "desanimemos",
           "ellos": "desanimen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "desanima",
+          "usted": "desanime",
+          "nosotros": "desanimemos",
+          "ustedes": "desanimen",
+          "negativo_tu": "no desanimes"
         }
       }
     },
@@ -18217,6 +19120,13 @@ const db = {
           "el/ella": "sueñe",
           "nosotros": "soñemos",
           "ellos": "sueñen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "sueña",
+          "usted": "sueñe",
+          "nosotros": "soñemos",
+          "ustedes": "sueñen",
+          "negativo_tu": "no sueñes"
         }
       }
     },
@@ -18267,6 +19177,13 @@ const db = {
           "el/ella": "se levante",
           "nosotros": "nos levantemos",
           "ellos": "se levanten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "levántate",
+          "usted": "levántese",
+          "nosotros": "levantémonos",
+          "ustedes": "levántense",
+          "negativo_tu": "no te levantes"
         }
       }
     },
@@ -18317,6 +19234,13 @@ const db = {
           "el/ella": "se desperte",
           "nosotros": "nos despertemos",
           "ellos": "se desperten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "despiértate",
+          "usted": "despiértese",
+          "nosotros": "despertémonos",
+          "ustedes": "despiértense",
+          "negativo_tu": "no te despiertes"
         }
       }
     },
@@ -18367,6 +19291,13 @@ const db = {
           "el/ella": "duerma",
           "nosotros": "durmamos",
           "ellos": "duerman"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "duerme",
+          "usted": "duerma",
+          "nosotros": "durmamos",
+          "ustedes": "duerman",
+          "negativo_tu": "no duermas"
         }
       }
     },
@@ -18417,6 +19348,13 @@ const db = {
           "el/ella": "se acoste",
           "nosotros": "nos acostemos",
           "ellos": "se acosten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "acuéstate",
+          "usted": "acuéstese",
+          "nosotros": "acostémonos",
+          "ustedes": "acuéstense",
+          "negativo_tu": "no te acuestes"
         }
       }
     },
@@ -18467,6 +19405,13 @@ const db = {
           "el/ella": "descanse",
           "nosotros": "descansemos",
           "ellos": "descansen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "descansa",
+          "usted": "descanse",
+          "nosotros": "descansemos",
+          "ustedes": "descansen",
+          "negativo_tu": "no descanses"
         }
       }
     },
@@ -18517,6 +19462,13 @@ const db = {
           "el/ella": "practique",
           "nosotros": "practiquemos",
           "ellos": "practiquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "practica",
+          "usted": "practique",
+          "nosotros": "practiquemos",
+          "ustedes": "practiquen",
+          "negativo_tu": "no practiques"
         }
       }
     },
@@ -18567,6 +19519,13 @@ const db = {
           "el/ella": "entrene",
           "nosotros": "entrenemos",
           "ellos": "entrenen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "entrena",
+          "usted": "entrene",
+          "nosotros": "entrenemos",
+          "ustedes": "entrenen",
+          "negativo_tu": "no entrenes"
         }
       }
     },
@@ -18617,6 +19576,13 @@ const db = {
           "el/ella": "almuerce",
           "nosotros": "almorcemos",
           "ellos": "almuercen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "almuerza",
+          "usted": "almuerce",
+          "nosotros": "almorcemos",
+          "ustedes": "almuercen",
+          "negativo_tu": "no almuerces"
         }
       }
     },
@@ -18667,6 +19633,13 @@ const db = {
           "el/ella": "cene",
           "nosotros": "cenemos",
           "ellos": "cenen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "cena",
+          "usted": "cene",
+          "nosotros": "cenemos",
+          "ustedes": "cenen",
+          "negativo_tu": "no cenes"
         }
       }
     },
@@ -18717,6 +19690,13 @@ const db = {
           "el/ella": "desayune",
           "nosotros": "desayunemos",
           "ellos": "desayunen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "desayuna",
+          "usted": "desayune",
+          "nosotros": "desayunemos",
+          "ustedes": "desayunen",
+          "negativo_tu": "no desayunes"
         }
       }
     },
@@ -18767,6 +19747,13 @@ const db = {
           "el/ella": "coma",
           "nosotros": "comamos",
           "ellos": "coman"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "come",
+          "usted": "coma",
+          "nosotros": "comamos",
+          "ustedes": "coman",
+          "negativo_tu": "no comas"
         }
       }
     },
@@ -18817,6 +19804,13 @@ const db = {
           "el/ella": "beba",
           "nosotros": "bebamos",
           "ellos": "beban"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "bebe",
+          "usted": "beba",
+          "nosotros": "bebamos",
+          "ustedes": "beban",
+          "negativo_tu": "no bebas"
         }
       }
     },
@@ -18867,6 +19861,13 @@ const db = {
           "el/ella": "se duche",
           "nosotros": "nos duchemos",
           "ellos": "se duchen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "dúchate",
+          "usted": "dúchese",
+          "nosotros": "duchémonos",
+          "ustedes": "dúchense",
+          "negativo_tu": "no te duches"
         }
       }
     },
@@ -18917,6 +19918,13 @@ const db = {
           "el/ella": "se bañe",
           "nosotros": "nos bañemos",
           "ellos": "se bañen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "báñate",
+          "usted": "báñese",
+          "nosotros": "bañémonos",
+          "ustedes": "báñense",
+          "negativo_tu": "no te bañes"
         }
       }
     },
@@ -18967,6 +19975,13 @@ const db = {
           "el/ella": "se lave",
           "nosotros": "nos lavemos",
           "ellos": "se laven"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "lávate",
+          "usted": "lávese",
+          "nosotros": "lavémonos",
+          "ustedes": "lávense",
+          "negativo_tu": "no te laves"
         }
       }
     },
@@ -19017,6 +20032,13 @@ const db = {
           "el/ella": "se vista",
           "nosotros": "nos vistamos",
           "ellos": "se vistan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "vístete",
+          "usted": "vístase",
+          "nosotros": "vistámonos",
+          "ustedes": "vístanse",
+          "negativo_tu": "no te vistas"
         }
       }
     },
@@ -19067,6 +20089,13 @@ const db = {
           "el/ella": "se ponga",
           "nosotros": "nos pongamos",
           "ellos": "se pongan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "ponte",
+          "usted": "póngase",
+          "nosotros": "pongámonos",
+          "ustedes": "pónganse",
+          "negativo_tu": "no te pongas"
         }
       }
     },
@@ -19117,6 +20146,13 @@ const db = {
           "el/ella": "se quite",
           "nosotros": "nos quitemos",
           "ellos": "se quiten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "quítate",
+          "usted": "quítese",
+          "nosotros": "quitémonos",
+          "ustedes": "quítense",
+          "negativo_tu": "no te quites"
         }
       }
     },
@@ -19167,6 +20203,13 @@ const db = {
           "el/ella": "se maquille",
           "nosotros": "nos maquillemos",
           "ellos": "se maquillen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "maquíllate",
+          "usted": "maquíllese",
+          "nosotros": "maquillémonos",
+          "ustedes": "maquíllense",
+          "negativo_tu": "no te maquilles"
         }
       }
     },
@@ -19217,6 +20260,13 @@ const db = {
           "el/ella": "se afeite",
           "nosotros": "nos afeitemos",
           "ellos": "se afeiten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "aféitate",
+          "usted": "aféitese",
+          "nosotros": "afeitémonos",
+          "ustedes": "aféitense",
+          "negativo_tu": "no te afeites"
         }
       }
     },
@@ -19297,6 +20347,13 @@ const db = {
           "el/ella": "se apresure",
           "nosotros": "nos apresuremos",
           "ellos": "se apresuren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "apresúrate",
+          "usted": "apresúrese",
+          "nosotros": "apresurémonos",
+          "ustedes": "apresúrense",
+          "negativo_tu": "no te apresures"
         }
       }
     },
@@ -19377,6 +20434,13 @@ const db = {
           "el/ella": "camine",
           "nosotros": "caminemos",
           "ellos": "caminen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "camina",
+          "usted": "camine",
+          "nosotros": "caminemos",
+          "ustedes": "caminen",
+          "negativo_tu": "no camines"
         }
       }
     },
@@ -19427,6 +20491,13 @@ const db = {
           "el/ella": "corra",
           "nosotros": "corramos",
           "ellos": "corran"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "corre",
+          "usted": "corra",
+          "nosotros": "corramos",
+          "ustedes": "corran",
+          "negativo_tu": "no corras"
         }
       }
     },
@@ -19477,6 +20548,13 @@ const db = {
           "el/ella": "se sente",
           "nosotros": "nos sentemos",
           "ellos": "se senten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "siéntate",
+          "usted": "siéntese",
+          "nosotros": "sentémonos",
+          "ustedes": "siéntense",
+          "negativo_tu": "no te sientes"
         }
       }
     },
@@ -19572,6 +20650,13 @@ const db = {
           "el/ella": "cocine",
           "nosotros": "cocinemos",
           "ellos": "cocinen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "cocina",
+          "usted": "cocine",
+          "nosotros": "cocinemos",
+          "ustedes": "cocinen",
+          "negativo_tu": "no cocines"
         }
       }
     },
@@ -19682,6 +20767,13 @@ const db = {
           "el/ella": "limpie",
           "nosotros": "limpiemos",
           "ellos": "limpien"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "limpia",
+          "usted": "limpie",
+          "nosotros": "limpiemos",
+          "ustedes": "limpien",
+          "negativo_tu": "no limpies"
         }
       }
     },
@@ -19732,6 +20824,13 @@ const db = {
           "el/ella": "barra",
           "nosotros": "barramos",
           "ellos": "barran"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "barre",
+          "usted": "barra",
+          "nosotros": "barramos",
+          "ustedes": "barran",
+          "negativo_tu": "no barras"
         }
       }
     },
@@ -19782,6 +20881,13 @@ const db = {
           "el/ella": "aspire",
           "nosotros": "aspiremos",
           "ellos": "aspiren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "aspira",
+          "usted": "aspire",
+          "nosotros": "aspiremos",
+          "ustedes": "aspiren",
+          "negativo_tu": "no aspires"
         }
       }
     },
@@ -19832,6 +20938,13 @@ const db = {
           "el/ella": "ordene",
           "nosotros": "ordenemos",
           "ellos": "ordenen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "ordena",
+          "usted": "ordene",
+          "nosotros": "ordenemos",
+          "ustedes": "ordenen",
+          "negativo_tu": "no ordenes"
         }
       }
     },
@@ -19882,6 +20995,13 @@ const db = {
           "el/ella": "arregle",
           "nosotros": "arreglemos",
           "ellos": "arreglen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "arregla",
+          "usted": "arregle",
+          "nosotros": "arreglemos",
+          "ustedes": "arreglen",
+          "negativo_tu": "no arregles"
         }
       }
     },
@@ -19932,6 +21052,13 @@ const db = {
           "el/ella": "cuide",
           "nosotros": "cuidemos",
           "ellos": "cuiden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "cuida",
+          "usted": "cuide",
+          "nosotros": "cuidemos",
+          "ustedes": "cuiden",
+          "negativo_tu": "no cuides"
         }
       }
     },
@@ -19982,6 +21109,13 @@ const db = {
           "el/ella": "se cuide",
           "nosotros": "nos cuidemos",
           "ellos": "se cuiden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "cuídate",
+          "usted": "cuídese",
+          "nosotros": "cuidémonos",
+          "ustedes": "cuídense",
+          "negativo_tu": "no te cuides"
         }
       }
     },
@@ -20032,6 +21166,13 @@ const db = {
           "el/ella": "se enferme",
           "nosotros": "nos enfermemos",
           "ellos": "se enfermen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "enférmate",
+          "usted": "enférmese",
+          "nosotros": "enfermémonos",
+          "ustedes": "enférmense",
+          "negativo_tu": "no te enfermes"
         }
       }
     },
@@ -20082,6 +21223,13 @@ const db = {
           "el/ella": "sane",
           "nosotros": "sanemos",
           "ellos": "sanen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "sana",
+          "usted": "sane",
+          "nosotros": "sanemos",
+          "ustedes": "sanen",
+          "negativo_tu": "no sanes"
         }
       }
     },
@@ -20132,6 +21280,13 @@ const db = {
           "el/ella": "se recupere",
           "nosotros": "nos recuperemos",
           "ellos": "se recuperen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "recupérate",
+          "usted": "recupérese",
+          "nosotros": "recuperémonos",
+          "ustedes": "recupérense",
+          "negativo_tu": "no te recuperes"
         }
       }
     },
@@ -20182,6 +21337,13 @@ const db = {
           "el/ella": "duela",
           "nosotros": "dolamos",
           "ellos": "duelan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "duele",
+          "usted": "duela",
+          "nosotros": "dolamos",
+          "ustedes": "duelan",
+          "negativo_tu": "no duelas"
         }
       }
     },
@@ -20232,6 +21394,13 @@ const db = {
           "el/ella": "se lastime",
           "nosotros": "nos lastimemos",
           "ellos": "se lastimen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "lastímate",
+          "usted": "lastímese",
+          "nosotros": "lastimémonos",
+          "ustedes": "lastímense",
+          "negativo_tu": "no te lastimes"
         }
       }
     },
@@ -20282,6 +21451,13 @@ const db = {
           "el/ella": "se rompa",
           "nosotros": "nos rompamos",
           "ellos": "se rompan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "rómpete",
+          "usted": "rómpase",
+          "nosotros": "rompámonos",
+          "ustedes": "rómpanse",
+          "negativo_tu": "no te rompas"
         }
       }
     },
@@ -20332,6 +21508,13 @@ const db = {
           "el/ella": "respire",
           "nosotros": "respiremos",
           "ellos": "respiren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "respira",
+          "usted": "respire",
+          "nosotros": "respiremos",
+          "ustedes": "respiren",
+          "negativo_tu": "no respires"
         }
       }
     },
@@ -20382,6 +21565,13 @@ const db = {
           "el/ella": "tosa",
           "nosotros": "tosamos",
           "ellos": "tosan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "tose",
+          "usted": "tosa",
+          "nosotros": "tosamos",
+          "ustedes": "tosan",
+          "negativo_tu": "no tosas"
         }
       }
     },
@@ -20432,6 +21622,13 @@ const db = {
           "el/ella": "estornude",
           "nosotros": "estornudemos",
           "ellos": "estornuden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "estornuda",
+          "usted": "estornude",
+          "nosotros": "estornudemos",
+          "ustedes": "estornuden",
+          "negativo_tu": "no estornudes"
         }
       }
     },
@@ -20482,6 +21679,13 @@ const db = {
           "el/ella": "se estire",
           "nosotros": "nos estiremos",
           "ellos": "se estiren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "estírate",
+          "usted": "estírese",
+          "nosotros": "estirémonos",
+          "ustedes": "estírense",
+          "negativo_tu": "no te estires"
         }
       }
     },
@@ -20532,6 +21736,13 @@ const db = {
           "el/ella": "nade",
           "nosotros": "nademos",
           "ellos": "naden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "nada",
+          "usted": "nade",
+          "nosotros": "nademos",
+          "ustedes": "naden",
+          "negativo_tu": "no nades"
         }
       }
     },
@@ -20582,6 +21793,13 @@ const db = {
           "el/ella": "sude",
           "nosotros": "sudemos",
           "ellos": "suden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "suda",
+          "usted": "sude",
+          "nosotros": "sudemos",
+          "ustedes": "suden",
+          "negativo_tu": "no sudes"
         }
       }
     },
@@ -20632,6 +21850,13 @@ const db = {
           "el/ella": "se pese",
           "nosotros": "nos pesemos",
           "ellos": "se pesen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "pésate",
+          "usted": "pésese",
+          "nosotros": "pesémonos",
+          "ustedes": "pésense",
+          "negativo_tu": "no te peses"
         }
       }
     },
@@ -20682,6 +21907,13 @@ const db = {
           "el/ella": "se meda",
           "nosotros": "nos medamos",
           "ellos": "se medan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "mídete",
+          "usted": "mídase",
+          "nosotros": "midámonos",
+          "ustedes": "mídanse",
+          "negativo_tu": "no te midas"
         }
       }
     },
@@ -20747,6 +21979,13 @@ const db = {
           "el/ella": "se caa",
           "nosotros": "nos caamos",
           "ellos": "se caan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "cáete",
+          "usted": "cáigase",
+          "nosotros": "caigámonos",
+          "ustedes": "cáiganse",
+          "negativo_tu": "no te caigas"
         }
       }
     },
@@ -20797,6 +22036,13 @@ const db = {
           "el/ella": "vuelva",
           "nosotros": "volvamos",
           "ellos": "vuelvan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "vuelve",
+          "usted": "vuelva",
+          "nosotros": "volvamos",
+          "ustedes": "vuelvan",
+          "negativo_tu": "no vuelvas"
         }
       }
     },
@@ -20847,6 +22093,13 @@ const db = {
           "el/ella": "regrese",
           "nosotros": "regresemos",
           "ellos": "regresen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "regresa",
+          "usted": "regrese",
+          "nosotros": "regresemos",
+          "ustedes": "regresen",
+          "negativo_tu": "no regreses"
         }
       }
     },
@@ -20897,6 +22150,13 @@ const db = {
           "el/ella": "entre",
           "nosotros": "entremos",
           "ellos": "entren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "entra",
+          "usted": "entre",
+          "nosotros": "entremos",
+          "ustedes": "entren",
+          "negativo_tu": "no entres"
         }
       }
     },
@@ -20947,6 +22207,13 @@ const db = {
           "el/ella": "parta",
           "nosotros": "partamos",
           "ellos": "partan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "parte",
+          "usted": "parta",
+          "nosotros": "partamos",
+          "ustedes": "partan",
+          "negativo_tu": "no partas"
         }
       }
     },
@@ -20997,6 +22264,13 @@ const db = {
           "el/ella": "viaje",
           "nosotros": "viajemos",
           "ellos": "viajen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "viaja",
+          "usted": "viaje",
+          "nosotros": "viajemos",
+          "ustedes": "viajen",
+          "negativo_tu": "no viajes"
         }
       }
     },
@@ -21047,6 +22321,13 @@ const db = {
           "el/ella": "pasee",
           "nosotros": "paseemos",
           "ellos": "paseen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "pasea",
+          "usted": "pasee",
+          "nosotros": "paseemos",
+          "ustedes": "paseen",
+          "negativo_tu": "no pasees"
         }
       }
     },
@@ -21097,6 +22378,13 @@ const db = {
           "el/ella": "suba",
           "nosotros": "subamos",
           "ellos": "suban"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "sube",
+          "usted": "suba",
+          "nosotros": "subamos",
+          "ustedes": "suban",
+          "negativo_tu": "no subas"
         }
       }
     },
@@ -21147,6 +22435,13 @@ const db = {
           "el/ella": "baje",
           "nosotros": "bajemos",
           "ellos": "bajen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "baja",
+          "usted": "baje",
+          "nosotros": "bajemos",
+          "ustedes": "bajen",
+          "negativo_tu": "no bajes"
         }
       }
     },
@@ -21197,6 +22492,13 @@ const db = {
           "el/ella": "conduzca",
           "nosotros": "conduzcamos",
           "ellos": "conduzcan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "conduce",
+          "usted": "conduzca",
+          "nosotros": "conduzcamos",
+          "ustedes": "conduzcan",
+          "negativo_tu": "no conduzcas"
         }
       }
     },
@@ -21262,6 +22564,13 @@ const db = {
           "el/ella": "se pierda",
           "nosotros": "nos perdamos",
           "ellos": "se pierdan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "piérdete",
+          "usted": "piérdase",
+          "nosotros": "perdámonos",
+          "ustedes": "piérdanse",
+          "negativo_tu": "no te pierdas"
         }
       }
     },
@@ -21372,6 +22681,13 @@ const db = {
           "el/ella": "reserve",
           "nosotros": "reservemos",
           "ellos": "reserven"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "reserva",
+          "usted": "reserve",
+          "nosotros": "reservemos",
+          "ustedes": "reserven",
+          "negativo_tu": "no reserves"
         }
       }
     },
@@ -21422,6 +22738,13 @@ const db = {
           "el/ella": "se aloje",
           "nosotros": "nos alojemos",
           "ellos": "se alojen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "alójate",
+          "usted": "alójese",
+          "nosotros": "alojémonos",
+          "ustedes": "alójense",
+          "negativo_tu": "no te alojes"
         }
       }
     },
@@ -21502,6 +22825,13 @@ const db = {
           "el/ella": "visite",
           "nosotros": "visitemos",
           "ellos": "visiten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "visita",
+          "usted": "visite",
+          "nosotros": "visitemos",
+          "ustedes": "visiten",
+          "negativo_tu": "no visites"
         }
       }
     },
@@ -21627,6 +22957,13 @@ const db = {
           "el/ella": "explore",
           "nosotros": "exploremos",
           "ellos": "exploren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "explora",
+          "usted": "explore",
+          "nosotros": "exploremos",
+          "ustedes": "exploren",
+          "negativo_tu": "no explores"
         }
       }
     },
@@ -21707,6 +23044,13 @@ const db = {
           "el/ella": "empaque",
           "nosotros": "empaquemos",
           "ellos": "empaquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "empaca",
+          "usted": "empaque",
+          "nosotros": "empaquemos",
+          "ustedes": "empaquen",
+          "negativo_tu": "no empaques"
         }
       }
     },
@@ -21772,6 +23116,13 @@ const db = {
           "el/ella": "desempaque",
           "nosotros": "desempaquemos",
           "ellos": "desempaquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "desempaca",
+          "usted": "desempaque",
+          "nosotros": "desempaquemos",
+          "ustedes": "desempaquen",
+          "negativo_tu": "no desempaques"
         }
       }
     },
@@ -21852,6 +23203,13 @@ const db = {
           "el/ella": "se mude",
           "nosotros": "nos mudemos",
           "ellos": "se muden"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "múdate",
+          "usted": "múdese",
+          "nosotros": "mudémonos",
+          "ustedes": "múdense",
+          "negativo_tu": "no te mudes"
         }
       }
     },
@@ -21932,6 +23290,13 @@ const db = {
           "el/ella": "enseñe",
           "nosotros": "enseñemos",
           "ellos": "enseñen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "enseña",
+          "usted": "enseñe",
+          "nosotros": "enseñemos",
+          "ustedes": "enseñen",
+          "negativo_tu": "no enseñes"
         }
       }
     },
@@ -21982,6 +23347,13 @@ const db = {
           "el/ella": "aprenda",
           "nosotros": "aprendamos",
           "ellos": "aprendan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "aprende",
+          "usted": "aprenda",
+          "nosotros": "aprendamos",
+          "ustedes": "aprendan",
+          "negativo_tu": "no aprendas"
         }
       }
     },
@@ -22032,6 +23404,13 @@ const db = {
           "el/ella": "prepare",
           "nosotros": "preparemos",
           "ellos": "preparen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "prepara",
+          "usted": "prepare",
+          "nosotros": "preparemos",
+          "ustedes": "preparen",
+          "negativo_tu": "no prepares"
         }
       }
     },
@@ -22082,6 +23461,13 @@ const db = {
           "el/ella": "revise",
           "nosotros": "revisemos",
           "ellos": "revisen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "revisa",
+          "usted": "revise",
+          "nosotros": "revisemos",
+          "ustedes": "revisen",
+          "negativo_tu": "no revises"
         }
       }
     },
@@ -22132,6 +23518,13 @@ const db = {
           "el/ella": "investigue",
           "nosotros": "investiguemos",
           "ellos": "investiguen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "investiga",
+          "usted": "investigue",
+          "nosotros": "investiguemos",
+          "ustedes": "investiguen",
+          "negativo_tu": "no investigues"
         }
       }
     },
@@ -22182,6 +23575,13 @@ const db = {
           "el/ella": "escriba",
           "nosotros": "escribamos",
           "ellos": "escriban"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "escribe",
+          "usted": "escriba",
+          "nosotros": "escribamos",
+          "ustedes": "escriban",
+          "negativo_tu": "no escribas"
         }
       }
     },
@@ -22232,6 +23632,13 @@ const db = {
           "el/ella": "lea",
           "nosotros": "leamos",
           "ellos": "lean"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "lee",
+          "usted": "lea",
+          "nosotros": "leamos",
+          "ustedes": "lean",
+          "negativo_tu": "no leas"
         }
       }
     },
@@ -22282,6 +23689,13 @@ const db = {
           "el/ella": "subraye",
           "nosotros": "subrayemos",
           "ellos": "subrayen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "subraya",
+          "usted": "subraye",
+          "nosotros": "subrayemos",
+          "ustedes": "subrayen",
+          "negativo_tu": "no subrayes"
         }
       }
     },
@@ -22332,6 +23746,13 @@ const db = {
           "el/ella": "anote",
           "nosotros": "anotemos",
           "ellos": "anoten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "anota",
+          "usted": "anote",
+          "nosotros": "anotemos",
+          "ustedes": "anoten",
+          "negativo_tu": "no anotes"
         }
       }
     },
@@ -22382,6 +23803,13 @@ const db = {
           "el/ella": "se reuna",
           "nosotros": "nos reunamos",
           "ellos": "se reunan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "reúnete",
+          "usted": "reúnase",
+          "nosotros": "reunámonos",
+          "ustedes": "reúnanse",
+          "negativo_tu": "no te reúnas"
         }
       }
     },
@@ -22432,6 +23860,13 @@ const db = {
           "el/ella": "negocie",
           "nosotros": "negociemos",
           "ellos": "negocien"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "negocia",
+          "usted": "negocie",
+          "nosotros": "negociemos",
+          "ustedes": "negocien",
+          "negativo_tu": "no negocies"
         }
       }
     },
@@ -22482,6 +23917,13 @@ const db = {
           "el/ella": "firme",
           "nosotros": "firmemos",
           "ellos": "firmen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "firma",
+          "usted": "firme",
+          "nosotros": "firmemos",
+          "ustedes": "firmen",
+          "negativo_tu": "no firmes"
         }
       }
     },
@@ -22532,6 +23974,13 @@ const db = {
           "el/ella": "envie",
           "nosotros": "enviemos",
           "ellos": "envien"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "envía",
+          "usted": "envíe",
+          "nosotros": "enviemos",
+          "ustedes": "envíen",
+          "negativo_tu": "no envíes"
         }
       }
     },
@@ -22612,6 +24061,13 @@ const db = {
           "el/ella": "conecte",
           "nosotros": "conectemos",
           "ellos": "conecten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "conecta",
+          "usted": "conecte",
+          "nosotros": "conectemos",
+          "ustedes": "conecten",
+          "negativo_tu": "no conectes"
         }
       }
     },
@@ -22662,6 +24118,13 @@ const db = {
           "el/ella": "desconecte",
           "nosotros": "desconectemos",
           "ellos": "desconecten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "desconecta",
+          "usted": "desconecte",
+          "nosotros": "desconectemos",
+          "ustedes": "desconecten",
+          "negativo_tu": "no desconectes"
         }
       }
     },
@@ -22772,6 +24235,13 @@ const db = {
           "el/ella": "comparta",
           "nosotros": "compartamos",
           "ellos": "compartan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "comparte",
+          "usted": "comparta",
+          "nosotros": "compartamos",
+          "ustedes": "compartan",
+          "negativo_tu": "no compartas"
         }
       }
     },
@@ -22822,6 +24292,13 @@ const db = {
           "el/ella": "descargue",
           "nosotros": "descarguemos",
           "ellos": "descarguen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "descarga",
+          "usted": "descargue",
+          "nosotros": "descarguemos",
+          "ustedes": "descarguen",
+          "negativo_tu": "no descargues"
         }
       }
     },
@@ -22872,6 +24349,13 @@ const db = {
           "el/ella": "imprima",
           "nosotros": "imprimamos",
           "ellos": "impriman"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "imprime",
+          "usted": "imprima",
+          "nosotros": "imprimamos",
+          "ustedes": "impriman",
+          "negativo_tu": "no imprimas"
         }
       }
     },
@@ -22922,6 +24406,13 @@ const db = {
           "el/ella": "fotocopie",
           "nosotros": "fotocopiemos",
           "ellos": "fotocopien"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "fotocopia",
+          "usted": "fotocopie",
+          "nosotros": "fotocopiemos",
+          "ustedes": "fotocopien",
+          "negativo_tu": "no fotocopies"
         }
       }
     },
@@ -23047,6 +24538,13 @@ const db = {
           "el/ella": "participe",
           "nosotros": "participemos",
           "ellos": "participen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "participa",
+          "usted": "participe",
+          "nosotros": "participemos",
+          "ustedes": "participen",
+          "negativo_tu": "no participes"
         }
       }
     },
@@ -23097,6 +24595,13 @@ const db = {
           "el/ella": "colabore",
           "nosotros": "colaboremos",
           "ellos": "colaboren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "colabora",
+          "usted": "colabore",
+          "nosotros": "colaboremos",
+          "ustedes": "colaboren",
+          "negativo_tu": "no colabores"
         }
       }
     },
@@ -23147,6 +24652,13 @@ const db = {
           "el/ella": "dirija",
           "nosotros": "dirijamos",
           "ellos": "dirijan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "dirige",
+          "usted": "dirija",
+          "nosotros": "dirijamos",
+          "ustedes": "dirijan",
+          "negativo_tu": "no dirijas"
         }
       }
     },
@@ -23197,6 +24709,13 @@ const db = {
           "el/ella": "supervise",
           "nosotros": "supervisemos",
           "ellos": "supervisen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "supervisa",
+          "usted": "supervise",
+          "nosotros": "supervisemos",
+          "ustedes": "supervisen",
+          "negativo_tu": "no supervises"
         }
       }
     },
@@ -23247,6 +24766,13 @@ const db = {
           "el/ella": "contrate",
           "nosotros": "contratemos",
           "ellos": "contraten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "contrata",
+          "usted": "contrate",
+          "nosotros": "contratemos",
+          "ustedes": "contraten",
+          "negativo_tu": "no contrates"
         }
       }
     },
@@ -23297,6 +24823,13 @@ const db = {
           "el/ella": "despeda",
           "nosotros": "despedamos",
           "ellos": "despedan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "despide",
+          "usted": "despida",
+          "nosotros": "despidamos",
+          "ustedes": "despidan",
+          "negativo_tu": "no despidas"
         }
       }
     },
@@ -23422,6 +24955,13 @@ const db = {
           "el/ella": "deba",
           "nosotros": "debamos",
           "ellos": "deban"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "debe",
+          "usted": "deba",
+          "nosotros": "debamos",
+          "ustedes": "deban",
+          "negativo_tu": "no debas"
         }
       }
     },
@@ -23487,6 +25027,13 @@ const db = {
           "el/ella": "suela",
           "nosotros": "solamos",
           "ellos": "suelan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "suele",
+          "usted": "suela",
+          "nosotros": "solamos",
+          "ustedes": "suelan",
+          "negativo_tu": "no suelas"
         }
       }
     },
@@ -23672,6 +25219,13 @@ const db = {
           "el/ella": "intente",
           "nosotros": "intentemos",
           "ellos": "intenten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "intenta",
+          "usted": "intente",
+          "nosotros": "intentemos",
+          "ustedes": "intenten",
+          "negativo_tu": "no intentes"
         }
       }
     },
@@ -23737,6 +25291,13 @@ const db = {
           "el/ella": "permita",
           "nosotros": "permitamos",
           "ellos": "permitan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "permite",
+          "usted": "permita",
+          "nosotros": "permitamos",
+          "ustedes": "permitan",
+          "negativo_tu": "no permitas"
         }
       }
     },
@@ -23787,6 +25348,13 @@ const db = {
           "el/ella": "prohiba",
           "nosotros": "prohibamos",
           "ellos": "prohiban"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "prohíbe",
+          "usted": "prohíba",
+          "nosotros": "prohibamos",
+          "ustedes": "prohíban",
+          "negativo_tu": "no prohíbas"
         }
       }
     },
@@ -23957,6 +25525,13 @@ const db = {
           "el/ella": "evite",
           "nosotros": "evitemos",
           "ellos": "eviten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "evita",
+          "usted": "evite",
+          "nosotros": "evitemos",
+          "ustedes": "eviten",
+          "negativo_tu": "no evites"
         }
       }
     },
@@ -24217,6 +25792,13 @@ const db = {
           "el/ella": "falte",
           "nosotros": "faltemos",
           "ellos": "falten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "falta",
+          "usted": "falte",
+          "nosotros": "faltemos",
+          "ustedes": "falten",
+          "negativo_tu": "no faltes"
         }
       }
     },
@@ -24267,6 +25849,13 @@ const db = {
           "el/ella": "sobre",
           "nosotros": "sobremos",
           "ellos": "sobren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "sobra",
+          "usted": "sobre",
+          "nosotros": "sobremos",
+          "ustedes": "sobren",
+          "negativo_tu": "no sobres"
         }
       }
     },
@@ -24317,6 +25906,13 @@ const db = {
           "el/ella": "parezca",
           "nosotros": "parezcamos",
           "ellos": "parezcan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "parece",
+          "usted": "parezca",
+          "nosotros": "parezcamos",
+          "ustedes": "parezcan",
+          "negativo_tu": "no parezcas"
         }
       }
     },
@@ -24367,6 +25963,13 @@ const db = {
           "el/ella": "resulte",
           "nosotros": "resultemos",
           "ellos": "resulten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "resulta",
+          "usted": "resulte",
+          "nosotros": "resultemos",
+          "ustedes": "resulten",
+          "negativo_tu": "no resultes"
         }
       }
     },
@@ -24432,6 +26035,13 @@ const db = {
           "el/ella": "chatee",
           "nosotros": "chateemos",
           "ellos": "chateen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "chatea",
+          "usted": "chatee",
+          "nosotros": "chateemos",
+          "ustedes": "chateen",
+          "negativo_tu": "no chatees"
         }
       }
     },
@@ -24527,6 +26137,13 @@ const db = {
           "el/ella": "se desconecte",
           "nosotros": "nos desconectemos",
           "ellos": "se desconecten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "desconéctate",
+          "usted": "desconéctese",
+          "nosotros": "desconectémonos",
+          "ustedes": "desconéctense",
+          "negativo_tu": "no te desconectes"
         }
       }
     },
@@ -24637,6 +26254,13 @@ const db = {
           "el/ella": "actualice",
           "nosotros": "actualicemos",
           "ellos": "actualicen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "actualiza",
+          "usted": "actualice",
+          "nosotros": "actualicemos",
+          "ustedes": "actualicen",
+          "negativo_tu": "no actualices"
         }
       }
     },
@@ -24687,6 +26311,13 @@ const db = {
           "el/ella": "reinicie",
           "nosotros": "reiniciemos",
           "ellos": "reinicien"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "reinicia",
+          "usted": "reinicie",
+          "nosotros": "reiniciemos",
+          "ustedes": "reinicien",
+          "negativo_tu": "no reinicies"
         }
       }
     },
@@ -24737,6 +26368,13 @@ const db = {
           "el/ella": "borre",
           "nosotros": "borremos",
           "ellos": "borren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "borra",
+          "usted": "borre",
+          "nosotros": "borremos",
+          "ustedes": "borren",
+          "negativo_tu": "no borres"
         }
       }
     },
@@ -24802,6 +26440,13 @@ const db = {
           "el/ella": "grabe",
           "nosotros": "grabemos",
           "ellos": "graben"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "graba",
+          "usted": "grabe",
+          "nosotros": "grabemos",
+          "ustedes": "graben",
+          "negativo_tu": "no grabes"
         }
       }
     },
@@ -24897,6 +26542,13 @@ const db = {
           "el/ella": "publique",
           "nosotros": "publiquemos",
           "ellos": "publiquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "publica",
+          "usted": "publique",
+          "nosotros": "publiquemos",
+          "ustedes": "publiquen",
+          "negativo_tu": "no publiques"
         }
       }
     },
@@ -25007,6 +26659,13 @@ const db = {
           "el/ella": "silencie",
           "nosotros": "silenciemos",
           "ellos": "silencien"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "silencia",
+          "usted": "silencie",
+          "nosotros": "silenciemos",
+          "ustedes": "silencien",
+          "negativo_tu": "no silencies"
         }
       }
     },
@@ -25057,6 +26716,13 @@ const db = {
           "el/ella": "bloquee",
           "nosotros": "bloqueemos",
           "ellos": "bloqueen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "bloquea",
+          "usted": "bloquee",
+          "nosotros": "bloqueemos",
+          "ustedes": "bloqueen",
+          "negativo_tu": "no bloquees"
         }
       }
     },
@@ -25107,6 +26773,13 @@ const db = {
           "el/ella": "desbloquee",
           "nosotros": "desbloqueemos",
           "ellos": "desbloqueen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "desbloquea",
+          "usted": "desbloquee",
+          "nosotros": "desbloqueemos",
+          "ustedes": "desbloqueen",
+          "negativo_tu": "no desbloquees"
         }
       }
     },
@@ -25247,6 +26920,13 @@ const db = {
           "el/ella": "comience",
           "nosotros": "comencemos",
           "ellos": "comiencen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "comienza",
+          "usted": "comience",
+          "nosotros": "comencemos",
+          "ustedes": "comiencen",
+          "negativo_tu": "no comiences"
         }
       }
     },
@@ -25297,6 +26977,13 @@ const db = {
           "el/ella": "saque",
           "nosotros": "saquemos",
           "ellos": "saquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "saca",
+          "usted": "saque",
+          "nosotros": "saquemos",
+          "ustedes": "saquen",
+          "negativo_tu": "no saques"
         }
       }
     },
@@ -25347,6 +27034,13 @@ const db = {
           "el/ella": "mensajee",
           "nosotros": "mensajeemos",
           "ellos": "mensajeen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "mensajea",
+          "usted": "mensajee",
+          "nosotros": "mensajeemos",
+          "ustedes": "mensajeen",
+          "negativo_tu": "no mensajees"
         }
       }
     },
@@ -25397,6 +27091,13 @@ const db = {
           "el/ella": "disculpe",
           "nosotros": "disculpemos",
           "ellos": "disculpen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "disculpa",
+          "usted": "disculpe",
+          "nosotros": "disculpemos",
+          "ustedes": "disculpen",
+          "negativo_tu": "no disculpes"
         }
       }
     },
@@ -25447,6 +27148,13 @@ const db = {
           "el/ella": "aconseje",
           "nosotros": "aconsejemos",
           "ellos": "aconsejen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "aconseja",
+          "usted": "aconseje",
+          "nosotros": "aconsejemos",
+          "ustedes": "aconsejen",
+          "negativo_tu": "no aconsejes"
         }
       }
     },
@@ -25497,6 +27205,13 @@ const db = {
           "el/ella": "sugiera",
           "nosotros": "sugiramos",
           "ellos": "sugieran"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "sugiere",
+          "usted": "sugiera",
+          "nosotros": "sugiramos",
+          "ustedes": "sugieran",
+          "negativo_tu": "no sugieras"
         }
       }
     },
@@ -25547,6 +27262,13 @@ const db = {
           "el/ella": "proponga",
           "nosotros": "propongamos",
           "ellos": "propongan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "propón",
+          "usted": "proponga",
+          "nosotros": "propongamos",
+          "ustedes": "propongan",
+          "negativo_tu": "no propongas"
         }
       }
     },
@@ -25597,6 +27319,13 @@ const db = {
           "el/ella": "niegue",
           "nosotros": "neguemos",
           "ellos": "nieguen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "niega",
+          "usted": "niegue",
+          "nosotros": "neguemos",
+          "ustedes": "nieguen",
+          "negativo_tu": "no niegues"
         }
       }
     },
@@ -25647,6 +27376,13 @@ const db = {
           "el/ella": "confirme",
           "nosotros": "confirmemos",
           "ellos": "confirmen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "confirma",
+          "usted": "confirme",
+          "nosotros": "confirmemos",
+          "ustedes": "confirmen",
+          "negativo_tu": "no confirmes"
         }
       }
     },
@@ -25697,6 +27433,13 @@ const db = {
           "el/ella": "demuestre",
           "nosotros": "demostremos",
           "ellos": "demuestren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "demuestra",
+          "usted": "demuestre",
+          "nosotros": "demostremos",
+          "ustedes": "demuestren",
+          "negativo_tu": "no demuestres"
         }
       }
     },
@@ -25747,6 +27490,13 @@ const db = {
           "el/ella": "mencione",
           "nosotros": "mencionemos",
           "ellos": "mencionen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "menciona",
+          "usted": "mencione",
+          "nosotros": "mencionemos",
+          "ustedes": "mencionen",
+          "negativo_tu": "no menciones"
         }
       }
     },
@@ -25797,6 +27547,13 @@ const db = {
           "el/ella": "exprese",
           "nosotros": "expresemos",
           "ellos": "expresen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "expresa",
+          "usted": "exprese",
+          "nosotros": "expresemos",
+          "ustedes": "expresen",
+          "negativo_tu": "no expreses"
         }
       }
     },
@@ -25847,6 +27604,13 @@ const db = {
           "el/ella": "describa",
           "nosotros": "describamos",
           "ellos": "describan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "describe",
+          "usted": "describa",
+          "nosotros": "describamos",
+          "ustedes": "describan",
+          "negativo_tu": "no describas"
         }
       }
     },
@@ -25897,6 +27661,13 @@ const db = {
           "el/ella": "narre",
           "nosotros": "narremos",
           "ellos": "narren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "narra",
+          "usted": "narre",
+          "nosotros": "narremos",
+          "ustedes": "narren",
+          "negativo_tu": "no narres"
         }
       }
     },
@@ -25947,6 +27718,13 @@ const db = {
           "el/ella": "analice",
           "nosotros": "analicemos",
           "ellos": "analicen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "analiza",
+          "usted": "analice",
+          "nosotros": "analicemos",
+          "ustedes": "analicen",
+          "negativo_tu": "no analices"
         }
       }
     },
@@ -25997,6 +27775,13 @@ const db = {
           "el/ella": "evalúe",
           "nosotros": "evaluemos",
           "ellos": "evalúen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "evalúa",
+          "usted": "evalúe",
+          "nosotros": "evaluemos",
+          "ustedes": "evalúen",
+          "negativo_tu": "no evalúes"
         }
       }
     },
@@ -26047,6 +27832,13 @@ const db = {
           "el/ella": "compare",
           "nosotros": "comparemos",
           "ellos": "comparen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "compara",
+          "usted": "compare",
+          "nosotros": "comparemos",
+          "ustedes": "comparen",
+          "negativo_tu": "no compares"
         }
       }
     },
@@ -26097,6 +27889,13 @@ const db = {
           "el/ella": "distinga",
           "nosotros": "distingamos",
           "ellos": "distingan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "distingue",
+          "usted": "distinga",
+          "nosotros": "distingamos",
+          "ustedes": "distingan",
+          "negativo_tu": "no distingas"
         }
       }
     },
@@ -26147,6 +27946,13 @@ const db = {
           "el/ella": "identifique",
           "nosotros": "identifiquemos",
           "ellos": "identifiquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "identifica",
+          "usted": "identifique",
+          "nosotros": "identifiquemos",
+          "ustedes": "identifiquen",
+          "negativo_tu": "no identifiques"
         }
       }
     },
@@ -26197,6 +28003,13 @@ const db = {
           "el/ella": "clasifique",
           "nosotros": "clasifiquemos",
           "ellos": "clasifiquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "clasifica",
+          "usted": "clasifique",
+          "nosotros": "clasifiquemos",
+          "ustedes": "clasifiquen",
+          "negativo_tu": "no clasifiques"
         }
       }
     },
@@ -26247,6 +28060,13 @@ const db = {
           "el/ella": "planifique",
           "nosotros": "planifiquemos",
           "ellos": "planifiquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "planifica",
+          "usted": "planifique",
+          "nosotros": "planifiquemos",
+          "ustedes": "planifiquen",
+          "negativo_tu": "no planifiques"
         }
       }
     },
@@ -26297,6 +28117,13 @@ const db = {
           "el/ella": "desarrolle",
           "nosotros": "desarrollemos",
           "ellos": "desarrollen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "desarrolla",
+          "usted": "desarrolle",
+          "nosotros": "desarrollemos",
+          "ustedes": "desarrollen",
+          "negativo_tu": "no desarrolles"
         }
       }
     },
@@ -26347,6 +28174,13 @@ const db = {
           "el/ella": "mejore",
           "nosotros": "mejoremos",
           "ellos": "mejoren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "mejora",
+          "usted": "mejore",
+          "nosotros": "mejoremos",
+          "ustedes": "mejoren",
+          "negativo_tu": "no mejores"
         }
       }
     },
@@ -26397,6 +28231,13 @@ const db = {
           "el/ella": "empeore",
           "nosotros": "empeoremos",
           "ellos": "empeoren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "empeora",
+          "usted": "empeore",
+          "nosotros": "empeoremos",
+          "ustedes": "empeoren",
+          "negativo_tu": "no empeores"
         }
       }
     },
@@ -26447,6 +28288,13 @@ const db = {
           "el/ella": "resuelva",
           "nosotros": "resolvamos",
           "ellos": "resuelvan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "resuelve",
+          "usted": "resuelva",
+          "nosotros": "resolvamos",
+          "ustedes": "resuelvan",
+          "negativo_tu": "no resuelvas"
         }
       }
     },
@@ -26497,6 +28345,13 @@ const db = {
           "el/ella": "descubra",
           "nosotros": "descubramos",
           "ellos": "descubran"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "descubre",
+          "usted": "descubra",
+          "nosotros": "descubramos",
+          "ustedes": "descubran",
+          "negativo_tu": "no descubras"
         }
       }
     },
@@ -26547,6 +28402,13 @@ const db = {
           "el/ella": "invente",
           "nosotros": "inventemos",
           "ellos": "inventen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "inventa",
+          "usted": "invente",
+          "nosotros": "inventemos",
+          "ustedes": "inventen",
+          "negativo_tu": "no inventes"
         }
       }
     },
@@ -26597,6 +28459,13 @@ const db = {
           "el/ella": "cree",
           "nosotros": "creemos",
           "ellos": "creen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "crea",
+          "usted": "cree",
+          "nosotros": "creemos",
+          "ustedes": "creen",
+          "negativo_tu": "no crees"
         }
       }
     },
@@ -26647,6 +28516,13 @@ const db = {
           "el/ella": "diseñe",
           "nosotros": "diseñemos",
           "ellos": "diseñen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "diseña",
+          "usted": "diseñe",
+          "nosotros": "diseñemos",
+          "ustedes": "diseñen",
+          "negativo_tu": "no diseñes"
         }
       }
     },
@@ -26697,6 +28573,13 @@ const db = {
           "el/ella": "construya",
           "nosotros": "construyamos",
           "ellos": "construyan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "construye",
+          "usted": "construya",
+          "nosotros": "construyamos",
+          "ustedes": "construyan",
+          "negativo_tu": "no construyas"
         }
       }
     },
@@ -26747,6 +28630,13 @@ const db = {
           "el/ella": "destruya",
           "nosotros": "destruyamos",
           "ellos": "destruyan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "destruye",
+          "usted": "destruya",
+          "nosotros": "destruyamos",
+          "ustedes": "destruyan",
+          "negativo_tu": "no destruyas"
         }
       }
     },
@@ -26797,6 +28687,13 @@ const db = {
           "el/ella": "repare",
           "nosotros": "reparemos",
           "ellos": "reparen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "repara",
+          "usted": "repare",
+          "nosotros": "reparemos",
+          "ustedes": "reparen",
+          "negativo_tu": "no repares"
         }
       }
     },
@@ -26847,6 +28744,13 @@ const db = {
           "el/ella": "instale",
           "nosotros": "instalemos",
           "ellos": "instalen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "instala",
+          "usted": "instale",
+          "nosotros": "instalemos",
+          "ustedes": "instalen",
+          "negativo_tu": "no instales"
         }
       }
     },
@@ -26897,6 +28801,13 @@ const db = {
           "el/ella": "elimine",
           "nosotros": "eliminemos",
           "ellos": "eliminen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "elimina",
+          "usted": "elimine",
+          "nosotros": "eliminemos",
+          "ustedes": "eliminen",
+          "negativo_tu": "no elimines"
         }
       }
     },
@@ -26947,6 +28858,13 @@ const db = {
           "el/ella": "reduzca",
           "nosotros": "reduzcamos",
           "ellos": "reduzcan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "reduce",
+          "usted": "reduzca",
+          "nosotros": "reduzcamos",
+          "ustedes": "reduzcan",
+          "negativo_tu": "no reduzcas"
         }
       }
     },
@@ -26997,6 +28915,13 @@ const db = {
           "el/ella": "aumente",
           "nosotros": "aumentemos",
           "ellos": "aumenten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "aumenta",
+          "usted": "aumente",
+          "nosotros": "aumentemos",
+          "ustedes": "aumenten",
+          "negativo_tu": "no aumentes"
         }
       }
     },
@@ -27047,6 +28972,13 @@ const db = {
           "el/ella": "mantenga",
           "nosotros": "mantengamos",
           "ellos": "mantengan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "mantén",
+          "usted": "mantenga",
+          "nosotros": "mantengamos",
+          "ustedes": "mantengan",
+          "negativo_tu": "no mantengas"
         }
       }
     },
@@ -27097,6 +29029,13 @@ const db = {
           "el/ella": "modifique",
           "nosotros": "modifiquemos",
           "ellos": "modifiquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "modifica",
+          "usted": "modifique",
+          "nosotros": "modifiquemos",
+          "ustedes": "modifiquen",
+          "negativo_tu": "no modifiques"
         }
       }
     },
@@ -27147,6 +29086,13 @@ const db = {
           "el/ella": "transforme",
           "nosotros": "transformemos",
           "ellos": "transformen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "transforma",
+          "usted": "transforme",
+          "nosotros": "transformemos",
+          "ustedes": "transformen",
+          "negativo_tu": "no transformes"
         }
       }
     },
@@ -27197,6 +29143,13 @@ const db = {
           "el/ella": "convierta",
           "nosotros": "convirtamos",
           "ellos": "conviertan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "convierte",
+          "usted": "convierta",
+          "nosotros": "convirtamos",
+          "ustedes": "conviertan",
+          "negativo_tu": "no conviertas"
         }
       }
     },
@@ -27247,6 +29200,13 @@ const db = {
           "el/ella": "adapte",
           "nosotros": "adaptemos",
           "ellos": "adapten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "adapta",
+          "usted": "adapte",
+          "nosotros": "adaptemos",
+          "ustedes": "adapten",
+          "negativo_tu": "no adaptes"
         }
       }
     },
@@ -27297,6 +29257,13 @@ const db = {
           "el/ella": "ajuste",
           "nosotros": "ajustemos",
           "ellos": "ajusten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "ajusta",
+          "usted": "ajuste",
+          "nosotros": "ajustemos",
+          "ustedes": "ajusten",
+          "negativo_tu": "no ajustes"
         }
       }
     },
@@ -27347,6 +29314,13 @@ const db = {
           "el/ella": "controle",
           "nosotros": "controlemos",
           "ellos": "controlen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "controla",
+          "usted": "controle",
+          "nosotros": "controlemos",
+          "ustedes": "controlen",
+          "negativo_tu": "no controles"
         }
       }
     },
@@ -27397,6 +29371,13 @@ const db = {
           "el/ella": "administre",
           "nosotros": "administremos",
           "ellos": "administren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "administra",
+          "usted": "administre",
+          "nosotros": "administremos",
+          "ustedes": "administren",
+          "negativo_tu": "no administres"
         }
       }
     },
@@ -27447,6 +29428,13 @@ const db = {
           "el/ella": "maneje",
           "nosotros": "manejemos",
           "ellos": "manejen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "maneja",
+          "usted": "maneje",
+          "nosotros": "manejemos",
+          "ustedes": "manejen",
+          "negativo_tu": "no manejes"
         }
       }
     },
@@ -27497,6 +29485,13 @@ const db = {
           "el/ella": "gestione",
           "nosotros": "gestionemos",
           "ellos": "gestionen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "gestiona",
+          "usted": "gestione",
+          "nosotros": "gestionemos",
+          "ustedes": "gestionen",
+          "negativo_tu": "no gestiones"
         }
       }
     },
@@ -27547,6 +29542,13 @@ const db = {
           "el/ella": "cante",
           "nosotros": "cantemos",
           "ellos": "canten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "canta",
+          "usted": "cante",
+          "nosotros": "cantemos",
+          "ustedes": "canten",
+          "negativo_tu": "no cantes"
         }
       }
     },
@@ -27597,6 +29599,13 @@ const db = {
           "el/ella": "baile",
           "nosotros": "bailemos",
           "ellos": "bailen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "baila",
+          "usted": "baile",
+          "nosotros": "bailemos",
+          "ustedes": "bailen",
+          "negativo_tu": "no bailes"
         }
       }
     },
@@ -27647,6 +29656,13 @@ const db = {
           "el/ella": "juegue",
           "nosotros": "juguemos",
           "ellos": "jueguen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "juega",
+          "usted": "juegue",
+          "nosotros": "juguemos",
+          "ustedes": "jueguen",
+          "negativo_tu": "no juegues"
         }
       }
     },
@@ -27697,6 +29713,13 @@ const db = {
           "el/ella": "compre",
           "nosotros": "compremos",
           "ellos": "compren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "compra",
+          "usted": "compre",
+          "nosotros": "compremos",
+          "ustedes": "compren",
+          "negativo_tu": "no compres"
         }
       }
     },
@@ -27747,6 +29770,13 @@ const db = {
           "el/ella": "venda",
           "nosotros": "vendamos",
           "ellos": "vendan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "vende",
+          "usted": "venda",
+          "nosotros": "vendamos",
+          "ustedes": "vendan",
+          "negativo_tu": "no vendas"
         }
       }
     },
@@ -27797,6 +29827,13 @@ const db = {
           "el/ella": "pague",
           "nosotros": "paguemos",
           "ellos": "paguen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "paga",
+          "usted": "pague",
+          "nosotros": "paguemos",
+          "ustedes": "paguen",
+          "negativo_tu": "no pagues"
         }
       }
     },
@@ -27847,6 +29884,13 @@ const db = {
           "el/ella": "mire",
           "nosotros": "miremos",
           "ellos": "miren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "mira",
+          "usted": "mire",
+          "nosotros": "miremos",
+          "ustedes": "miren",
+          "negativo_tu": "no mires"
         }
       }
     },
@@ -27897,6 +29941,13 @@ const db = {
           "el/ella": "toque",
           "nosotros": "toquemos",
           "ellos": "toquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "toca",
+          "usted": "toque",
+          "nosotros": "toquemos",
+          "ustedes": "toquen",
+          "negativo_tu": "no toques"
         }
       }
     },
@@ -27947,6 +29998,13 @@ const db = {
           "el/ella": "lave",
           "nosotros": "lavemos",
           "ellos": "laven"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "lava",
+          "usted": "lave",
+          "nosotros": "lavemos",
+          "ustedes": "laven",
+          "negativo_tu": "no laves"
         }
       }
     },
@@ -27997,6 +30055,13 @@ const db = {
           "el/ella": "seque",
           "nosotros": "sequemos",
           "ellos": "sequen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "seca",
+          "usted": "seque",
+          "nosotros": "sequemos",
+          "ustedes": "sequen",
+          "negativo_tu": "no seques"
         }
       }
     },
@@ -28047,6 +30112,13 @@ const db = {
           "el/ella": "corte",
           "nosotros": "cortemos",
           "ellos": "corten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "corta",
+          "usted": "corte",
+          "nosotros": "cortemos",
+          "ustedes": "corten",
+          "negativo_tu": "no cortes"
         }
       }
     },
@@ -28097,6 +30169,13 @@ const db = {
           "el/ella": "tire",
           "nosotros": "tiremos",
           "ellos": "tiren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "tira",
+          "usted": "tire",
+          "nosotros": "tiremos",
+          "ustedes": "tiren",
+          "negativo_tu": "no tires"
         }
       }
     },
@@ -28147,6 +30226,13 @@ const db = {
           "el/ella": "empuje",
           "nosotros": "empujemos",
           "ellos": "empujen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "empuja",
+          "usted": "empuje",
+          "nosotros": "empujemos",
+          "ustedes": "empujen",
+          "negativo_tu": "no empujes"
         }
       }
     },
@@ -28197,6 +30283,13 @@ const db = {
           "el/ella": "jale",
           "nosotros": "jalemos",
           "ellos": "jalen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "jala",
+          "usted": "jale",
+          "nosotros": "jalemos",
+          "ustedes": "jalen",
+          "negativo_tu": "no jales"
         }
       }
     },
@@ -28247,6 +30340,13 @@ const db = {
           "el/ella": "salte",
           "nosotros": "saltemos",
           "ellos": "salten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "salta",
+          "usted": "salte",
+          "nosotros": "saltemos",
+          "ustedes": "salten",
+          "negativo_tu": "no saltes"
         }
       }
     },
@@ -28297,6 +30397,13 @@ const db = {
           "el/ella": "vuele",
           "nosotros": "volemos",
           "ellos": "vuelen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "vuela",
+          "usted": "vuele",
+          "nosotros": "volemos",
+          "ustedes": "vuelen",
+          "negativo_tu": "no vueles"
         }
       }
     },
@@ -28347,6 +30454,13 @@ const db = {
           "el/ella": "crezca",
           "nosotros": "crezcamos",
           "ellos": "crezcan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "crece",
+          "usted": "crezca",
+          "nosotros": "crezcamos",
+          "ustedes": "crezcan",
+          "negativo_tu": "no crezcas"
         }
       }
     },
@@ -28397,6 +30511,13 @@ const db = {
           "el/ella": "rompa",
           "nosotros": "rompamos",
           "ellos": "rompan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "rompe",
+          "usted": "rompa",
+          "nosotros": "rompamos",
+          "ustedes": "rompan",
+          "negativo_tu": "no rompas"
         }
       }
     },
@@ -28447,6 +30568,13 @@ const db = {
           "el/ella": "dibuje",
           "nosotros": "dibujemos",
           "ellos": "dibujen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "dibuja",
+          "usted": "dibuje",
+          "nosotros": "dibujemos",
+          "ustedes": "dibujen",
+          "negativo_tu": "no dibujes"
         }
       }
     },
@@ -28497,6 +30625,13 @@ const db = {
           "el/ella": "pinte",
           "nosotros": "pintemos",
           "ellos": "pinten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "pinta",
+          "usted": "pinte",
+          "nosotros": "pintemos",
+          "ustedes": "pinten",
+          "negativo_tu": "no pintes"
         }
       }
     },
@@ -28547,6 +30682,13 @@ const db = {
           "el/ella": "cosa",
           "nosotros": "cosamos",
           "ellos": "cosan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "cose",
+          "usted": "cosa",
+          "nosotros": "cosamos",
+          "ustedes": "cosan",
+          "negativo_tu": "no cosas"
         }
       }
     },
@@ -28597,6 +30739,13 @@ const db = {
           "el/ella": "teja",
           "nosotros": "tejamos",
           "ellos": "tejan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "teje",
+          "usted": "teja",
+          "nosotros": "tejamos",
+          "ustedes": "tejan",
+          "negativo_tu": "no tejas"
         }
       }
     },
@@ -28647,6 +30796,13 @@ const db = {
           "el/ella": "hornee",
           "nosotros": "horneemos",
           "ellos": "horneen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "hornea",
+          "usted": "hornee",
+          "nosotros": "horneemos",
+          "ustedes": "horneen",
+          "negativo_tu": "no hornees"
         }
       }
     },
@@ -28697,6 +30853,13 @@ const db = {
           "el/ella": "fría",
           "nosotros": "friamos",
           "ellos": "frían"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "fríe",
+          "usted": "fría",
+          "nosotros": "friamos",
+          "ustedes": "frían",
+          "negativo_tu": "no frías"
         }
       }
     },
@@ -28747,6 +30910,13 @@ const db = {
           "el/ella": "hierva",
           "nosotros": "hirvamos",
           "ellos": "hiervan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "hierve",
+          "usted": "hierva",
+          "nosotros": "hirvamos",
+          "ustedes": "hiervan",
+          "negativo_tu": "no hiervas"
         }
       }
     },
@@ -28797,6 +30967,13 @@ const db = {
           "el/ella": "mezcle",
           "nosotros": "mezclemos",
           "ellos": "mezclen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "mezcla",
+          "usted": "mezcle",
+          "nosotros": "mezclemos",
+          "ustedes": "mezclen",
+          "negativo_tu": "no mezcles"
         }
       }
     },
@@ -28847,6 +31024,13 @@ const db = {
           "el/ella": "sirva",
           "nosotros": "sirvamos",
           "ellos": "sirvan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "sirve",
+          "usted": "sirva",
+          "nosotros": "sirvamos",
+          "ustedes": "sirvan",
+          "negativo_tu": "no sirvas"
         }
       }
     },
@@ -28897,6 +31081,13 @@ const db = {
           "el/ella": "celebre",
           "nosotros": "celebremos",
           "ellos": "celebren"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "celebra",
+          "usted": "celebre",
+          "nosotros": "celebremos",
+          "ustedes": "celebren",
+          "negativo_tu": "no celebres"
         }
       }
     },
@@ -28947,6 +31138,13 @@ const db = {
           "el/ella": "regale",
           "nosotros": "regalemos",
           "ellos": "regalen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "regala",
+          "usted": "regale",
+          "nosotros": "regalemos",
+          "ustedes": "regalen",
+          "negativo_tu": "no regales"
         }
       }
     },
@@ -28997,6 +31195,13 @@ const db = {
           "el/ella": "abrace",
           "nosotros": "abracemos",
           "ellos": "abracen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "abraza",
+          "usted": "abrace",
+          "nosotros": "abracemos",
+          "ustedes": "abracen",
+          "negativo_tu": "no abraces"
         }
       }
     },
@@ -29047,6 +31252,13 @@ const db = {
           "el/ella": "bese",
           "nosotros": "besemos",
           "ellos": "besen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "besa",
+          "usted": "bese",
+          "nosotros": "besemos",
+          "ustedes": "besen",
+          "negativo_tu": "no beses"
         }
       }
     },
@@ -29097,6 +31309,13 @@ const db = {
           "el/ella": "patine",
           "nosotros": "patinemos",
           "ellos": "patinen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "patina",
+          "usted": "patine",
+          "nosotros": "patinemos",
+          "ustedes": "patinen",
+          "negativo_tu": "no patines"
         }
       }
     },
@@ -29147,6 +31366,13 @@ const db = {
           "el/ella": "esquíe",
           "nosotros": "esquiemos",
           "ellos": "esquíen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "esquía",
+          "usted": "esquíe",
+          "nosotros": "esquiemos",
+          "ustedes": "esquíen",
+          "negativo_tu": "no esquíes"
         }
       }
     },
@@ -29197,6 +31423,13 @@ const db = {
           "el/ella": "pesque",
           "nosotros": "pesquemos",
           "ellos": "pesquen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "pesca",
+          "usted": "pesque",
+          "nosotros": "pesquemos",
+          "ustedes": "pesquen",
+          "negativo_tu": "no pesques"
         }
       }
     },
@@ -29247,6 +31480,13 @@ const db = {
           "el/ella": "cace",
           "nosotros": "cacemos",
           "ellos": "cacen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "caza",
+          "usted": "cace",
+          "nosotros": "cacemos",
+          "ustedes": "cacen",
+          "negativo_tu": "no caces"
         }
       }
     },
@@ -29297,6 +31537,13 @@ const db = {
           "el/ella": "monte",
           "nosotros": "montemos",
           "ellos": "monten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "monta",
+          "usted": "monte",
+          "nosotros": "montemos",
+          "ustedes": "monten",
+          "negativo_tu": "no montes"
         }
       }
     },
@@ -29347,6 +31594,13 @@ const db = {
           "el/ella": "caliente",
           "nosotros": "calentemos",
           "ellos": "calienten"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "calienta",
+          "usted": "caliente",
+          "nosotros": "calentemos",
+          "ustedes": "calienten",
+          "negativo_tu": "no calientes"
         }
       }
     },
@@ -29397,6 +31651,13 @@ const db = {
           "el/ella": "enfríe",
           "nosotros": "enfriemos",
           "ellos": "enfríen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "enfría",
+          "usted": "enfríe",
+          "nosotros": "enfriemos",
+          "ustedes": "enfríen",
+          "negativo_tu": "no enfríes"
         }
       }
     },
@@ -29447,6 +31708,13 @@ const db = {
           "el/ella": "congele",
           "nosotros": "congelemos",
           "ellos": "congelen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "congela",
+          "usted": "congele",
+          "nosotros": "congelemos",
+          "ustedes": "congelen",
+          "negativo_tu": "no congeles"
         }
       }
     },
@@ -29497,6 +31765,13 @@ const db = {
           "el/ella": "derrita",
           "nosotros": "derritamos",
           "ellos": "derritan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "derrite",
+          "usted": "derrita",
+          "nosotros": "derritamos",
+          "ustedes": "derritan",
+          "negativo_tu": "no derritas"
         }
       }
     },
@@ -29547,6 +31822,13 @@ const db = {
           "el/ella": "moje",
           "nosotros": "mojemos",
           "ellos": "mojen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "moja",
+          "usted": "moje",
+          "nosotros": "mojemos",
+          "ustedes": "mojen",
+          "negativo_tu": "no mojes"
         }
       }
     },
@@ -29597,6 +31879,13 @@ const db = {
           "el/ella": "llene",
           "nosotros": "llenemos",
           "ellos": "llenen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "llena",
+          "usted": "llene",
+          "nosotros": "llenemos",
+          "ustedes": "llenen",
+          "negativo_tu": "no llenes"
         }
       }
     },
@@ -29647,6 +31936,13 @@ const db = {
           "el/ella": "vacíe",
           "nosotros": "vaciemos",
           "ellos": "vacíen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "vacía",
+          "usted": "vacíe",
+          "nosotros": "vaciemos",
+          "ustedes": "vacíen",
+          "negativo_tu": "no vacíes"
         }
       }
     },
@@ -29697,6 +31993,13 @@ const db = {
           "el/ella": "encienda",
           "nosotros": "encendamos",
           "ellos": "enciendan"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "enciende",
+          "usted": "encienda",
+          "nosotros": "encendamos",
+          "ustedes": "enciendan",
+          "negativo_tu": "no enciendas"
         }
       }
     },
@@ -29747,6 +32050,13 @@ const db = {
           "el/ella": "apague",
           "nosotros": "apaguemos",
           "ellos": "apaguen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "apaga",
+          "usted": "apague",
+          "nosotros": "apaguemos",
+          "ustedes": "apaguen",
+          "negativo_tu": "no apagues"
         }
       }
     },
@@ -29797,6 +32107,13 @@ const db = {
           "el/ella": "funcione",
           "nosotros": "funcionemos",
           "ellos": "funcionen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "funciona",
+          "usted": "funcione",
+          "nosotros": "funcionemos",
+          "ustedes": "funcionen",
+          "negativo_tu": "no funciones"
         }
       }
     },
@@ -29847,6 +32164,13 @@ const db = {
           "el/ella": "falle",
           "nosotros": "fallemos",
           "ellos": "fallen"
+        },
+        "命令形 (Imperativo)": {
+          "tu": "falla",
+          "usted": "falle",
+          "nosotros": "fallemos",
+          "ustedes": "fallen",
+          "negativo_tu": "no falles"
         }
       }
     }

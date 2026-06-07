@@ -85,7 +85,7 @@ def extract_data():
                         verbs_dict[es_str.lower()] = word_obj
                         
         # 動詞の活用
-        elif "動詞" in name_lower or "過去" in name_lower or "未来" in name_lower or "現在" in name_lower or "接続" in name_lower:
+        elif "動詞" in name_lower or "過去" in name_lower or "未来" in name_lower or "現在" in name_lower or "接続" in name_lower or "命令" in name_lower:
             tense_name = sheet_name.replace("動詞", "").replace("5-", "").strip() # 見出し用に少し整形
             print(f"活用表シート解析中: {sheet_name} -> {tense_name}")
             for row in range(2, sheet.max_row + 1):
@@ -100,6 +100,14 @@ def extract_data():
                                 "el/ella": "-",
                                 "nosotros": "-",
                                 "ellos": "-"
+                            }
+                        elif "命令" in name_lower:
+                            verbs_dict[v_base]["conjugations"][tense_name] = {
+                                "tu": str(sheet.cell(row=row, column=3).value or "-").strip(),
+                                "usted": str(sheet.cell(row=row, column=4).value or "-").strip(),
+                                "nosotros": str(sheet.cell(row=row, column=5).value or "-").strip(),
+                                "ustedes": str(sheet.cell(row=row, column=6).value or "-").strip(),
+                                "negativo_tu": str(sheet.cell(row=row, column=7).value or "-").strip()
                             }
                         else:
                             verbs_dict[v_base]["conjugations"][tense_name] = {

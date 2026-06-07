@@ -1035,26 +1035,51 @@ function renderConjugations() {
       `;
       
       for (const [tense, forms] of Object.entries(verb.conjugations)) {
+        // nullやundefined対策
+        const safeYo = forms.yo || '-';
+        const safeTu = forms.tu || '-';
+        const safeEl = forms['el/ella'] || '-';
+        const safeNosotros = forms.nosotros || '-';
+        const safeEllos = forms.ellos || '-';
+
         if (tense.includes('分詞')) {
           html += `
-            <div class="conj-table-wrap">
+            <div class="conjugation-table-wrapper">
               <h4>${tense}</h4>
               <table class="conj-table">
-                <tr><td>過去分詞 (Participio)</td><td class="es-text" onclick="playAudio('${forms.yo}')">${forms.yo}</td></tr>
-                <tr><td>現在分詞 (Gerundio)</td><td class="es-text" onclick="playAudio('${forms.tu}')">${forms.tu}</td></tr>
+                <tr><td>過去分詞 (Participio)</td><td class="es-text" onclick="playAudio('${safeYo}')">${safeYo}</td></tr>
+                <tr><td>現在分詞 (Gerundio)</td><td class="es-text" onclick="playAudio('${safeTu}')">${safeTu}</td></tr>
+              </table>
+            </div>
+          `;
+        } else if (tense.includes('命令')) {
+          const safeTuVal = forms.tu || '-';
+          const safeUstedVal = forms.usted || '-';
+          const safeNosotrosVal = forms.nosotros || '-';
+          const safeUstedesVal = forms.ustedes || '-';
+          const safeNegativoTuVal = forms.negativo_tu || '-';
+          html += `
+            <div class="conjugation-table-wrapper">
+              <h4>${tense}</h4>
+              <table class="conj-table">
+                <tr><td>tú</td><td class="es-text" onclick="playAudio('${safeTuVal}')">${safeTuVal}</td></tr>
+                <tr><td>usted</td><td class="es-text" onclick="playAudio('${safeUstedVal}')">${safeUstedVal}</td></tr>
+                <tr><td>nosotros</td><td class="es-text" onclick="playAudio('${safeNosotrosVal}')">${safeNosotrosVal}</td></tr>
+                <tr><td>ustedes</td><td class="es-text" onclick="playAudio('${safeUstedesVal}')">${safeUstedesVal}</td></tr>
+                <tr><td>tú (否定)</td><td class="es-text" onclick="playAudio('${safeNegativoTuVal}')">${safeNegativoTuVal}</td></tr>
               </table>
             </div>
           `;
         } else {
           html += `
-            <div class="conj-table-wrap">
+            <div class="conjugation-table-wrapper">
               <h4>${tense}</h4>
               <table class="conj-table">
-                <tr><td>yo</td><td class="es-text" onclick="playAudio('${forms.yo}')">${forms.yo}</td></tr>
-                <tr><td>tú</td><td class="es-text" onclick="playAudio('${forms.tu}')">${forms.tu}</td></tr>
-                <tr><td>él/ella/Ud.</td><td class="es-text" onclick="playAudio('${forms['el/ella']}')">${forms['el/ella']}</td></tr>
-                <tr><td>nosotros</td><td class="es-text" onclick="playAudio('${forms.nosotros}')">${forms.nosotros}</td></tr>
-                <tr><td>ellos/ellas/Uds.</td><td class="es-text" onclick="playAudio('${forms.ellos}')">${forms.ellos}</td></tr>
+                <tr><td>yo</td><td class="es-text" onclick="playAudio('${safeYo}')">${safeYo}</td></tr>
+                <tr><td>tú</td><td class="es-text" onclick="playAudio('${safeTu}')">${safeTu}</td></tr>
+                <tr><td>él/ella/Ud.</td><td class="es-text" onclick="playAudio('${safeEl}')">${safeEl}</td></tr>
+                <tr><td>nosotros</td><td class="es-text" onclick="playAudio('${safeNosotros}')">${safeNosotros}</td></tr>
+                <tr><td>ellos/ellas/Uds.</td><td class="es-text" onclick="playAudio('${safeEllos}')">${safeEllos}</td></tr>
               </table>
             </div>
           `;
