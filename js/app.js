@@ -428,8 +428,6 @@ function renderHome() {
     btnLearn.onclick = (e) => { e.stopPropagation(); appState.navigate('flashcards', genre.id); };
     actions.appendChild(btnLearn);
 
-
-
     const quizLabel = document.createElement('p');
     quizLabel.className = 'quiz-label';
     quizLabel.textContent = '▼ テスト形式を選ぶ ▼';
@@ -625,7 +623,6 @@ function renderFlashcards(genreId) {
 
   return div;
 }
-
 
 // 3. Quiz Screen
 function renderQuiz(genreId, mode) {
@@ -1032,6 +1029,7 @@ function renderConjugations() {
           <div class="arrow">▼</div>
         </div>
         <div class="conj-tables accordion-content">
+          <div class="conjugation-container">
       `;
       
       for (const [tense, forms] of Object.entries(verb.conjugations)) {
@@ -1057,16 +1055,19 @@ function renderConjugations() {
           const safeUstedVal = forms.usted || '-';
           const safeNosotrosVal = forms.nosotros || '-';
           const safeUstedesVal = forms.ustedes || '-';
-          const safeNegativoTuVal = forms.negativo_tu || '-';
+          // data.js のキー名が negativo_tu でも negativoTu でもうまく読み込めるように設定
+          const safeNegativoTuVal = forms.negativoTu || forms.negativo_tu || '-'; 
+          
           html += `
             <div class="conjugation-table-wrapper">
               <h4>${tense}</h4>
-              <table class="conj-table">
-                <tr><td>tú</td><td class="es-text" onclick="playAudio('${safeTuVal}')">${safeTuVal}</td></tr>
-                <tr><td>usted</td><td class="es-text" onclick="playAudio('${safeUstedVal}')">${safeUstedVal}</td></tr>
-                <tr><td>nosotros</td><td class="es-text" onclick="playAudio('${safeNosotrosVal}')">${safeNosotrosVal}</td></tr>
-                <tr><td>ustedes</td><td class="es-text" onclick="playAudio('${safeUstedesVal}')">${safeUstedesVal}</td></tr>
-                <tr><td>tú (否定)</td><td class="es-text" onclick="playAudio('${safeNegativoTuVal}')">${safeNegativoTuVal}</td></tr>
+              <table class="conj-table imperative-table">
+                <tr><th>原形</th><td>${verb.es}</td></tr>
+                <tr><th>tú (肯定)</th><td class="es-text" onclick="playAudio('${safeTuVal}')">${safeTuVal}</td></tr>
+                <tr><th>usted</th><td class="es-text" onclick="playAudio('${safeUstedVal}')">${safeUstedVal}</td></tr>
+                <tr><th>nosotros</th><td class="es-text" onclick="playAudio('${safeNosotrosVal}')">${safeNosotrosVal}</td></tr>
+                <tr><th>ustedes</th><td class="es-text" onclick="playAudio('${safeUstedesVal}')">${safeUstedesVal}</td></tr>
+                <tr class="negativo"><th>tú (否定)</th><td class="es-text" onclick="playAudio('${safeNegativoTuVal}')">${safeNegativoTuVal}</td></tr>
               </table>
             </div>
           `;
@@ -1086,7 +1087,8 @@ function renderConjugations() {
         }
       }
       
-      html += `</div>`;
+      html += `
+          </div> </div>`;
       card.innerHTML = html;
       cardsContainer.appendChild(card);
     });
@@ -1301,8 +1303,6 @@ function handleRouting() {
   updateMenuHighlight();
 }
 
-
-
 // --- Review Later Page ---
 function renderReviewLater() {
   const div = document.createElement('div');
@@ -1477,6 +1477,3 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('hashchange', handleRouting);
   handleRouting();
 });
-
-// AI Chat removed per user request
-

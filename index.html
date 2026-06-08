@@ -35,25 +35,100 @@
       left: auto !important;
       right: 12px !important; /* 反転の裏返しを計算して、左下にピタッと固定 */
     }
-        /* ↓↓ パターン1：活用表の横スクロール対応 ↓↓ */
-    .conjugation-table-wrapper {
-      width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-      margin-bottom: 1rem;
-    }
-    .conj-table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 300px; 
-    }
-    .conj-table th, 
-    .conj-table td {
-      padding: 8px 12px;
-      text-align: left;
-      border-bottom: 1px solid #eee;
-      white-space: nowrap; 
-    }
+/* 活用表コンテナ：PCで横並び、スマホで縦並び */
+.conjugation-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* 各テーブルの枠組み */
+.conjugation-table-wrapper {
+  flex: 1 1 300px; /* 最小300pxで、PCでは横に並ぶ */
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+
+/* テーブル全体の共通デザイン */
+.conj-table, .imperative-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
+}
+
+/* 見出しとセルの共通デザイン */
+.conj-table th, .conj-table td, 
+.imperative-table th, .imperative-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* 命令形専用：否定命令の強調 */
+.imperative-table .negativo th { background-color: #fff0f0; color: #d00; }
+.imperative-table .negativo td { color: #d00; background-color: #fff9f9; font-weight: bold; }
+    /* 活用表全体を画面内に収めるための共通設定 */
+.conjugation-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 10px 0 20px 0;
+}
+
+/* 命令形専用のコンパクトな縦積みレイアウト */
+.imperative-table {
+  width: 100%;
+  max-width: 450px; /* PCでも横に伸びすぎないように制限 */
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.imperative-table th {
+  background-color: #f8f8f8;
+  color: #555;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 0.9em;
+}
+
+.imperative-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 否定命令（negativo）の行を赤系で強調 */
+.imperative-table .negativo th {
+  background-color: #fff0f0;
+  color: #d00;
+}
+
+.imperative-table .negativo td {
+  color: #d00;
+  background-color: #fff9f9;
+}
+
+/* 活用表（通常版）もレスポンシブ対応 */
+.conj-table {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.conj-table td {
+  padding: 8px;
+  border: 1px solid #eee;
+  text-align: center;
+}
   </style>
 </head>
 <body>
