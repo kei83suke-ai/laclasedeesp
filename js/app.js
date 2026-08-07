@@ -54,18 +54,25 @@ const appState = {
 // Quiz History & LocalStorage Management
 const QuizHistory = {
   get() {
-    return JSON.parse(localStorage.getItem('es_quiz_history')) || [];
+    const history = AppStorage.getJSON('es_quiz_history', []);
+    return Array.isArray(history) ? history : [];
   },
   save(history) {
-    localStorage.setItem('es_quiz_history', JSON.stringify(history));
+    AppStorage.setJSON('es_quiz_history', history);
   },
-  logAttempt(word, isCorrect, mode) {
+  logAttempt(word, isCorrect, mode, genreOverride = null) {
+    const genre = appState.currentGenre === 'weak'
+      ? (word.genre || 'unknown')
+      : (genreOverride || appState.currentGenre);
+    const wordRecord = { ...word, genre };
+    const wordId = WordIdentity.key(wordRecord, genre);
     const history = this.get();
     history.push({
+      wordId,
       es: word.es,
       ja: word.ja,
       en: word.en,
-      genre: appState.currentGenre,
+      genre,
       category: word.category || 'その他',
       mode: mode,
       isCorrect: isCorrect,
@@ -75,60 +82,74 @@ const QuizHistory = {
     this.save(history);
     
     let weakWords = this.getWeakWords();
-    const key = word.es;
     if (isCorrect) {
-      weakWords = weakWords.filter(w => w.es !== key);
+      weakWords = weakWords.filter(w => WordIdentity.key(w, w.genre) !== wordId);
     } else {
-      if (!weakWords.some(w => w.es === key)) {
+      if (!weakWords.some(w => WordIdentity.key(w, w.genre) === wordId)) {
         weakWords.push({
+          wordId,
           es: word.es,
           ja: word.ja,
           en: word.en,
-          genre: appState.currentGenre,
+          genre,
           category: word.category || 'その他'
         });
       }
     }
     this.saveWeakWords(weakWords);
+    return LearningStore.recordAnswer(wordRecord, genre, isCorrect, mode);
   },
   getWeakWords() {
-    return JSON.parse(localStorage.getItem('es_weak_words')) || [];
+    const weakWords = AppStorage.getJSON('es_weak_words', []);
+    return Array.isArray(weakWords) ? weakWords : [];
   },
   saveWeakWords(words) {
-    localStorage.setItem('es_weak_words', JSON.stringify(words));
+    AppStorage.setJSON('es_weak_words', words);
   },
   clear() {
-    localStorage.removeItem('es_quiz_history');
-    localStorage.removeItem('es_weak_words');
+    AppStorage.remove('es_quiz_history');
+    AppStorage.remove('es_weak_words');
+    LearningStore.clear();
+    LearningEvents.clear();
   }
 };
 
 // Swipe Data Manager
 const SwipeManager = {
   getMemorized() {
-    return JSON.parse(localStorage.getItem('es_memorized_words') || '[]');
+    const list = AppStorage.getJSON('es_memorized_words', []);
+    return Array.isArray(list) ? list : [];
   },
   addMemorized(word) {
     const list = this.getMemorized();
-    if (!list.find(w => w.es === word.es)) {
-      list.push(word);
-      localStorage.setItem('es_memorized_words', JSON.stringify(list));
+    const wordId = WordIdentity.key(word, word.genre);
+    if (!list.find(w => WordIdentity.key(w, w.genre) === wordId)) {
+      list.push({ ...word, wordId });
+      AppStorage.setJSON('es_memorized_words', list);
     }
   },
   getReviewLater() {
-    return JSON.parse(localStorage.getItem('es_review_later') || '[]');
+    const list = AppStorage.getJSON('es_review_later', []);
+    return Array.isArray(list) ? list : [];
   },
   addReviewLater(word) {
     const list = this.getReviewLater();
-    if (!list.find(w => w.es === word.es)) {
-      list.push(word);
-      localStorage.setItem('es_review_later', JSON.stringify(list));
+    const wordId = WordIdentity.key(word, word.genre);
+    if (!list.find(w => WordIdentity.key(w, w.genre) === wordId)) {
+      list.push({ ...word, wordId });
+      AppStorage.setJSON('es_review_later', list);
     }
   },
-  removeReviewLater(wordEs) {
+  removeReviewLater(wordOrId) {
     const list = this.getReviewLater();
-    const filtered = list.filter(w => w.es !== wordEs);
-    localStorage.setItem('es_review_later', JSON.stringify(filtered));
+    const targetId = typeof wordOrId === 'object'
+      ? WordIdentity.key(wordOrId, wordOrId.genre)
+      : String(wordOrId);
+    const filtered = list.filter(word => {
+      const currentId = WordIdentity.key(word, word.genre);
+      return currentId !== targetId && word.es !== wordOrId;
+    });
+    AppStorage.setJSON('es_review_later', filtered);
   }
 };
 
@@ -223,58 +244,37 @@ function formatSpanishAudioText(text) {
   return `${mStr} ${fStr}`;
 }
 
-// グローバルなAudio要素（スマホでの音声再生制限を回避するための「いつものルール」）
-const globalAudio = new Audio();
+// ブラウザ標準の音声合成を使う。外部TTSへの依存を増やさず、ラテンアメリカ向け音声を優先する。
 let audioUnlocked = false;
 
-// スマホの初回タッチ時にAudioコンテキストをアンロックする
 function unlockAudio() {
-  if (!audioUnlocked) {
-    globalAudio.play().catch(() => {}); // 無音を再生してロック解除
-    if ('speechSynthesis' in window) {
-      const u = new SpeechSynthesisUtterance('');
-      window.speechSynthesis.speak(u);
-    }
-    audioUnlocked = true;
-    document.removeEventListener('touchstart', unlockAudio);
-    document.removeEventListener('click', unlockAudio);
-  }
+  if (audioUnlocked || !('speechSynthesis' in window) || typeof SpeechSynthesisUtterance === 'undefined') return;
+  const utterance = new SpeechSynthesisUtterance('');
+  utterance.lang = 'es-419';
+  window.speechSynthesis.speak(utterance);
+  audioUnlocked = true;
+  document.removeEventListener('touchstart', unlockAudio);
+  document.removeEventListener('click', unlockAudio);
 }
 document.addEventListener('touchstart', unlockAudio, { once: true, passive: true });
 document.addEventListener('click', unlockAudio, { once: true, passive: true });
 
 window.playAudio = function(text) {
-  if (!text) return;
-  
+  if (!text || !('speechSynthesis' in window) || typeof SpeechSynthesisUtterance === 'undefined') return;
   const cleanText = formatSpanishAudioText(text);
-  
-  // Google翻訳APIからクリアな音声を再生
-  const url = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(cleanText)}&tl=es&client=tw-ob`;
-  
-  // 同じAudioインスタンスを使い回す（スマホでの再生エラーを防ぐため）
-  globalAudio.src = url;
-  globalAudio.play().catch(e => {
-    console.error('Audio playback failed, falling back to Web Speech API:', e);
-    // ネットワークエラー等で再生できない場合は SpeechSynthesis にフォールバック
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.lang = 'es-ES';
-      utterance.rate = 0.85;
-      utterance.pitch = 1.0;
-      
-      const voices = window.speechSynthesis.getVoices();
-      const esVoices = voices.filter(v => v.lang.startsWith('es'));
-      let esVoice = esVoices.find(v => v.name.toLowerCase().includes('premium'))
-                 || esVoices.find(v => v.name.toLowerCase().includes('enhanced'))
-                 || esVoices.find(v => v.name.toLowerCase().includes('google'))
-                 || esVoices.find(v => v.lang === 'es-ES')
-                 || esVoices[0];
-                 
-      if (esVoice) utterance.voice = esVoice;
-      window.speechSynthesis.speak(utterance);
-    }
-  });
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(cleanText);
+  utterance.lang = 'es-419';
+  utterance.rate = 0.88;
+  utterance.pitch = 1.0;
+  const voices = window.speechSynthesis.getVoices ? window.speechSynthesis.getVoices() : [];
+  const esVoices = voices.filter(voice => /^es(-|_)/i.test(voice.lang));
+  const preferredVoice = esVoices.find(voice => /419|MX|CR|PA|CO|LATAM/i.test(voice.lang))
+    || esVoices.find(voice => /premium|enhanced|google/i.test(voice.name))
+    || esVoices.find(voice => /ES/i.test(voice.lang))
+    || esVoices[0];
+  if (preferredVoice) utterance.voice = preferredVoice;
+  window.speechSynthesis.speak(utterance);
 };
 
 window.playEffect = function(type) {
@@ -318,6 +318,12 @@ function render() {
     content.appendChild(renderQuiz(appState.currentGenre, appState.quizMode));
   } else if (appState.currentView === 'conjugations') {
     content.appendChild(renderConjugations());
+  } else if (appState.currentView === 'verbquiz') {
+    content.appendChild(renderVerbQuiz());
+  } else if (appState.currentView === 'study') {
+    content.appendChild(renderStudySession());
+  } else if (appState.currentView === 'practice') {
+    content.appendChild(renderConversationPractice());
   } else if (appState.currentView === 'scorecard') {
     content.appendChild(renderScorecard());
   } else if (appState.currentView === 'reviewlater') {
@@ -331,8 +337,12 @@ function updateMenuHighlight() {
   let activeId = null;
   if (appState.currentView === 'flashcards' || appState.currentView === 'quiz') {
     activeId = `menu-${appState.currentGenre}`;
-  } else if (appState.currentView === 'conjugations') {
+  } else if (appState.currentView === 'conjugations' || appState.currentView === 'verbquiz') {
     activeId = 'menu-conjugations';
+  } else if (appState.currentView === 'study') {
+    activeId = 'menu-study';
+  } else if (appState.currentView === 'practice') {
+    activeId = 'menu-practice';
   } else if (appState.currentView === 'scorecard') {
     activeId = 'menu-scorecard';
   } else if (appState.currentView === 'reviewlater') {
@@ -405,6 +415,26 @@ function renderHome() {
   topActions.appendChild(btnReviewLater);
   div.appendChild(topActions);
 
+  const allWords = Object.entries(db).flatMap(([genre, words]) => words.map(word => ({ ...word, genre })));
+  const dueCount = LearningStore.getDueWords(allWords, 20).length;
+  const summary = StudyAnalytics.getSummary(30);
+  const dailyPanel = document.createElement('section');
+  dailyPanel.className = 'daily-learning-panel';
+  dailyPanel.innerHTML = `
+    <div>
+      <p class="daily-eyebrow">PERSONAL LEARNING OS</p>
+      <h2>今日の学習</h2>
+      <p>復習 ${dueCount}語 / 今月の継続 ${summary.activeDays}日 / 推定段階 ${summary.estimatedLevel}</p>
+    </div>
+    <div class="daily-learning-actions">
+      <button class="btn btn-primary" id="start-study-btn">🎯 今日の復習を始める</button>
+      <button class="btn btn-secondary" id="start-practice-btn">💬 会話練習</button>
+    </div>
+  `;
+  dailyPanel.querySelector('#start-study-btn').onclick = () => appState.navigate('study', 'today');
+  dailyPanel.querySelector('#start-practice-btn').onclick = () => appState.navigate('practice');
+  div.appendChild(dailyPanel);
+
   const grid = document.createElement('div');
   grid.className = 'genre-grid';
 
@@ -461,6 +491,187 @@ function renderHome() {
   });
 
   div.appendChild(grid);
+  return div;
+}
+
+function escapeHtml(value) {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function getAllLearningWords() {
+  return Object.entries(db).flatMap(([genre, words]) =>
+    words.map(word => ({ ...word, genre }))
+  );
+}
+
+function renderStudySession() {
+  const div = document.createElement('div');
+  div.className = 'study-container';
+  const allWords = getAllLearningWords();
+  const queue = LearningStore.getDueWords(allWords, 20);
+  const session = LearningEvents.startSession();
+  let currentIndex = 0;
+
+  const finish = () => {
+    LearningEvents.endSession(session);
+    appState.navigate('home');
+  };
+
+  if (queue.length === 0) {
+    div.innerHTML = `
+      <div class="view-header">
+        <h2>🎯 今日の学習</h2>
+        <p>今すぐ復習する単語はありません。素晴らしい状態です。</p>
+        <button class="btn btn-outline mt-2" id="study-home-btn">← ホームへ戻る</button>
+      </div>
+    `;
+    div.querySelector('#study-home-btn').onclick = finish;
+    return div;
+  }
+
+  const renderQuestion = () => {
+    const word = queue[currentIndex];
+    const example = StudyContent.getExample(word);
+    const usage = StudyContent.getUsage(word);
+    const state = LearningStore.get(word, word.genre);
+    const exampleHtml = example
+      ? `<div class="study-example"><span class="study-label">例文</span><strong>${escapeHtml(example.es)}</strong>${example.ja ? `<span>${escapeHtml(example.ja)}</span>` : ''}</div>`
+      : `<div class="study-example study-example-empty"><span class="study-label">例文</span><span>例文はまだ登録されていません。下の練習欄で自分の文を作りましょう。</span></div>`;
+    const usageHtml = usage.length
+      ? usage.map(scene => `<span class="usage-chip">${escapeHtml(scene)}</span>`).join('')
+      : '<span class="text-mute">場面情報は準備中です。</span>';
+
+    div.innerHTML = `
+      <div class="view-header study-header">
+        <p class="daily-eyebrow">TODAY'S REVIEW</p>
+        <h2>🎯 今日の学習 <span class="study-progress">${currentIndex + 1} / ${queue.length}</span></h2>
+        <p>${escapeHtml(StudyContent.formatDueAt(state))}</p>
+        <button class="btn btn-outline mt-2" id="study-exit-btn">← 中断してホームへ</button>
+      </div>
+      <section class="study-card">
+        <div class="prompt-ja">${escapeHtml(word.ja)}</div>
+        <div class="prompt-en">${escapeHtml(word.en)}</div>
+        <button class="btn btn-primary" id="study-reveal-btn">スペイン語を思い出して表示</button>
+        <div id="study-answer-area" class="study-answer-area" hidden>
+          <div class="study-spanish">${escapeHtml(word.es)} <button class="btn-audio-icon" id="study-audio-btn" aria-label="音声を再生">🔊</button></div>
+          ${exampleHtml}
+          <div class="study-usage"><span class="study-label">使用場面</span><div class="usage-chip-list">${usageHtml}</div></div>
+          <div class="study-practice-prompt">${escapeHtml(StudyContent.getPracticePrompt(word))}</div>
+          <input id="study-input" class="spelling-input" placeholder="スペイン語で入力" autocomplete="off" autocapitalize="off" spellcheck="false">
+          <button class="btn btn-secondary" id="study-submit-btn">回答を確認</button>
+          <div id="study-feedback" class="study-feedback" hidden></div>
+          <button class="btn btn-primary" id="study-next-btn" hidden>次の単語へ →</button>
+        </div>
+      </section>
+    `;
+
+    div.querySelector('#study-exit-btn').onclick = finish;
+    const revealBtn = div.querySelector('#study-reveal-btn');
+    const answerArea = div.querySelector('#study-answer-area');
+    const input = div.querySelector('#study-input');
+    const submitBtn = div.querySelector('#study-submit-btn');
+    const feedback = div.querySelector('#study-feedback');
+    const nextBtn = div.querySelector('#study-next-btn');
+    revealBtn.onclick = () => {
+      LearningStore.markViewed(word, word.genre);
+      revealBtn.hidden = true;
+      answerArea.hidden = false;
+      input.focus();
+    };
+    div.querySelector('#study-audio-btn').onclick = () => playAudio(word.es);
+
+    const submit = () => {
+      if (submitBtn.disabled) return;
+      const isCorrect = WordIdentity.matchesAnswer(input.value, word.es);
+      const stateAfterAnswer = QuizHistory.logAttempt(word, isCorrect, 'study', word.genre);
+      input.disabled = true;
+      submitBtn.disabled = true;
+      const dueLabel = StudyContent.formatDueAt(stateAfterAnswer);
+      feedback.hidden = false;
+      feedback.className = `study-feedback ${isCorrect ? 'correct' : 'wrong'}`;
+      feedback.innerHTML = isCorrect
+        ? `🎉 正解です。<br><small>${escapeHtml(dueLabel)}</small>`
+        : `正解は <strong>${escapeHtml(word.es)}</strong> です。<br><small>${escapeHtml(dueLabel)}</small>`;
+      nextBtn.hidden = false;
+      playAudio(word.es);
+      if (isCorrect) playEffect('correct');
+      else playEffect('wrong');
+    };
+    submitBtn.onclick = submit;
+    input.onkeydown = event => {
+      if (event.key === 'Enter') submit();
+    };
+    nextBtn.onclick = () => {
+      currentIndex += 1;
+      if (currentIndex >= queue.length) finish();
+      else renderQuestion();
+    };
+  };
+
+  renderQuestion();
+  return div;
+}
+
+function renderConversationPractice() {
+  const div = document.createElement('div');
+  div.className = 'practice-container';
+  let currentIndex = Math.floor(Math.random() * ConversationScenarios.length);
+
+  const renderScenario = () => {
+    const scenario = ConversationScenarios[currentIndex];
+    div.innerHTML = `
+      <div class="view-header">
+        <p class="daily-eyebrow">REAL-LIFE SPANISH</p>
+        <h2>💬 ${escapeHtml(scenario.title)}</h2>
+        <p>${escapeHtml(scenario.context)}</p>
+        <button class="btn btn-outline mt-2" id="practice-home-btn">← ホームへ戻る</button>
+      </div>
+      <section class="scenario-card">
+        <div class="scenario-prompt">${escapeHtml(scenario.prompt)}</div>
+        <textarea id="scenario-input" class="scenario-input" rows="3" placeholder="スペイン語で答えてみましょう"></textarea>
+        <button class="btn btn-primary" id="scenario-submit-btn">回答を確認</button>
+        <div id="scenario-feedback" class="scenario-feedback" hidden></div>
+        <button class="btn btn-secondary" id="scenario-next-btn" hidden>別の場面へ →</button>
+      </section>
+    `;
+
+    const input = div.querySelector('#scenario-input');
+    const submitBtn = div.querySelector('#scenario-submit-btn');
+    const feedback = div.querySelector('#scenario-feedback');
+    const nextBtn = div.querySelector('#scenario-next-btn');
+    div.querySelector('#practice-home-btn').onclick = () => appState.navigate('home');
+    input.focus();
+    submitBtn.onclick = () => {
+      if (submitBtn.disabled) return;
+      const alternatives = [scenario.answer, ...(scenario.alternatives || [])];
+      const isCorrect = alternatives.some(answer => WordIdentity.matchesAnswer(input.value, answer));
+      input.disabled = true;
+      submitBtn.disabled = true;
+      feedback.hidden = false;
+      feedback.className = `scenario-feedback ${isCorrect ? 'correct' : 'wrong'}`;
+      feedback.innerHTML = `${isCorrect ? '🎉 とても良いです。' : '参考解答と比べてみましょう。'}<br><strong>${escapeHtml(scenario.answer)}</strong>${scenario.alternatives?.length ? `<br><small>別解: ${escapeHtml(scenario.alternatives.join(' / '))}</small>` : ''}`;
+      LearningEvents.log('scenario_answer', {
+        scenarioId: scenario.id,
+        mode: 'scenario',
+        isCorrect
+      });
+      nextBtn.hidden = false;
+    };
+    input.onkeydown = event => {
+      if ((event.metaKey || event.ctrlKey) && event.key === 'Enter') submitBtn.click();
+    };
+    nextBtn.onclick = () => {
+      currentIndex = (currentIndex + 1) % ConversationScenarios.length;
+      renderScenario();
+    };
+  };
+
+  renderScenario();
   return div;
 }
 
@@ -567,7 +778,9 @@ function renderFlashcards(genreId) {
       }
     }
 
-    const isInReview = SwipeManager.getReviewLater().some(w => w.es === word.es);
+    const wordWithGenre = { ...word, genre: genreId };
+    const wordId = WordIdentity.key(wordWithGenre, genreId);
+    const isInReview = SwipeManager.getReviewLater().some(w => WordIdentity.key(w, w.genre) === wordId);
     const reviewBtnLabel = isInReview ? '📝 復習中' : '+ 後で復習';
     const reviewBtnClass = isInReview ? 'card-review-btn in-review' : 'card-review-btn';
 
@@ -577,6 +790,7 @@ function renderFlashcards(genreId) {
 
     const card = document.createElement('div');
     card.className = 'flashcard';
+    card.dataset.wordId = wordId;
     card.innerHTML = `
       <div class="flashcard-inner">
         <div class="card-face front">
@@ -594,18 +808,21 @@ function renderFlashcards(genreId) {
 
     card.onclick = () => {
       card.classList.toggle('flipped');
-      if (card.classList.contains('flipped')) playAudio(word.es);
+      if (card.classList.contains('flipped')) {
+        LearningStore.markViewed(wordWithGenre, genreId);
+        playAudio(word.es);
+      }
     };
 
     card.querySelector('.card-review-btn').addEventListener('click', (e) => {
       e.stopPropagation();
       const btn = e.currentTarget;
-      if (SwipeManager.getReviewLater().some(w => w.es === word.es)) {
-        SwipeManager.removeReviewLater(word.es);
+      if (SwipeManager.getReviewLater().some(w => WordIdentity.key(w, w.genre) === wordId)) {
+        SwipeManager.removeReviewLater(wordId);
         btn.textContent = '+ 後で復習';
         btn.classList.remove('in-review');
       } else {
-        SwipeManager.addReviewLater({ ...word, genre: genreId });
+        SwipeManager.addReviewLater(wordWithGenre);
         btn.textContent = '📝 復習中';
         btn.classList.add('in-review');
       }
@@ -973,6 +1190,12 @@ function renderConjugations() {
     cat: appState.verbReturnCat || 'All'
   });
   header.appendChild(backBtn);
+
+  const verbQuizBtn = document.createElement('button');
+  verbQuizBtn.className = 'btn btn-secondary conj-back-btn';
+  verbQuizBtn.textContent = '🧠 活用クイズ';
+  verbQuizBtn.onclick = () => appState.navigate('verbquiz');
+  header.appendChild(verbQuizBtn);
   
   const searchContainer = document.createElement('div');
   searchContainer.className = 'search-container';
@@ -1122,6 +1345,84 @@ function renderConjugations() {
   return div;
 }
 
+function renderVerbQuiz() {
+  const div = document.createElement('div');
+  div.className = 'verb-quiz-container';
+  const tenseCandidates = [
+    '現在形 (Presente)',
+    '点過去 (Indefinido)',
+    '線過去 (Imperfecto)',
+    '未来形 (Futuro)',
+    '現在完了 (Pretérito Perfecto)'
+  ];
+  const persons = [
+    { key: 'yo', label: 'yo' },
+    { key: 'tu', label: 'tú' },
+    { key: 'el/ella', label: 'él / ella / usted' },
+    { key: 'nosotros', label: 'nosotros' },
+    { key: 'ellos', label: 'ellos / ustedes' }
+  ];
+  const verbs = db.verbs.filter(verb => tenseCandidates.some(tense => verb.conjugations?.[tense]));
+  let current = null;
+
+  const nextQuestion = () => {
+    const verb = verbs[Math.floor(Math.random() * verbs.length)];
+    const availableTenses = tenseCandidates.filter(tense => verb.conjugations?.[tense]);
+    const tense = availableTenses[Math.floor(Math.random() * availableTenses.length)];
+    const person = persons[Math.floor(Math.random() * persons.length)];
+    current = { verb, tense, person, answer: verb.conjugations[tense][person.key] || '-' };
+    div.innerHTML = `
+      <div class="view-header">
+        <p class="daily-eyebrow">VERB AUTOMATION</p>
+        <h2>🧠 活用クイズ</h2>
+        <p>動詞・時制・人称を見て、活用形を入力します。</p>
+        <button class="btn btn-outline mt-2" id="verb-quiz-home-btn">← ホームへ戻る</button>
+      </div>
+      <section class="verb-quiz-card">
+        <div class="verb-quiz-verb">${escapeHtml(current.verb.es)}</div>
+        <div class="verb-quiz-meaning">${escapeHtml(current.verb.ja)} / ${escapeHtml(current.verb.en)}</div>
+        <div class="verb-quiz-prompt">${escapeHtml(current.tense)} ・ ${escapeHtml(current.person.label)}</div>
+        <input id="verb-quiz-input" class="spelling-input" placeholder="活用形を入力" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button id="verb-quiz-submit" class="btn btn-primary">判定</button>
+        <div id="verb-quiz-feedback" class="study-feedback" hidden></div>
+        <button id="verb-quiz-next" class="btn btn-secondary" hidden>次の問題へ →</button>
+      </section>
+    `;
+    const input = div.querySelector('#verb-quiz-input');
+    const submit = div.querySelector('#verb-quiz-submit');
+    const feedback = div.querySelector('#verb-quiz-feedback');
+    div.querySelector('#verb-quiz-home-btn').onclick = () => appState.navigate('home');
+    input.focus();
+    const check = () => {
+      if (submit.disabled) return;
+      const isCorrect = WordIdentity.matchesAnswer(input.value, current.answer);
+      const state = QuizHistory.logAttempt(current.verb, isCorrect, 'verb', 'verbs');
+      input.disabled = true;
+      submit.disabled = true;
+      feedback.hidden = false;
+      feedback.className = `study-feedback ${isCorrect ? 'correct' : 'wrong'}`;
+      feedback.innerHTML = isCorrect
+        ? `🎉 正解です。<br><small>${escapeHtml(StudyContent.formatDueAt(state))}</small>`
+        : `正解は <strong>${escapeHtml(current.answer)}</strong> です。`;
+      div.querySelector('#verb-quiz-next').hidden = false;
+      if (isCorrect) playEffect('correct');
+      else playEffect('wrong');
+    };
+    submit.onclick = check;
+    input.onkeydown = event => {
+      if (event.key === 'Enter') check();
+    };
+    div.querySelector('#verb-quiz-next').onclick = nextQuestion;
+  };
+
+  if (verbs.length === 0) {
+    div.innerHTML = '<p class="empty-msg">活用クイズ用のデータがありません。</p>';
+  } else {
+    nextQuestion();
+  }
+  return div;
+}
+
 window.openFeedbackModal = function() {
   window.open('https://forms.gle/zzKM4A79kHne13bF7', '_blank');
 };
@@ -1149,15 +1450,14 @@ function renderScorecard() {
   
   const history = QuizHistory.get();
   const weakWords = QuizHistory.getWeakWords();
-  
-  const totalAttempts = history.length;
-  const correctAttempts = history.filter(h => h.isCorrect).length;
-  const accuracy = totalAttempts > 0 ? Math.round((correctAttempts / totalAttempts) * 100) : 0;
+  const analytics = StudyAnalytics.getSummary(30);
+  const totalAttempts = analytics.answers || history.length;
+  const accuracy = analytics.answers ? analytics.accuracy : (history.length ? Math.round((history.filter(h => h.isCorrect).length / history.length) * 100) : 0);
   
   const header = document.createElement('div');
   header.className = 'view-header';
   header.innerHTML = `<h2>📈 クイズ学習成績表 (Dashboard)</h2>
-    <p>あなたの学習履歴と苦手な単語の確認・再テストが行えます。</p>`;
+    <p>直近30日間の学習状況と、次に伸ばすべき分野を確認できます。</p>`;
   div.appendChild(header);
   
   const statsGrid = document.createElement('div');
@@ -1175,8 +1475,40 @@ function renderScorecard() {
       <div class="stats-num">${weakWords.length}</div>
       <div class="stats-label">要復習単語</div>
     </div>
+    <div class="stats-card card-time">
+      <div class="stats-num">${analytics.totalMinutes}<small>分</small></div>
+      <div class="stats-label">学習時間</div>
+    </div>
+    <div class="stats-card card-streak">
+      <div class="stats-num">${analytics.activeDays}<small>日</small></div>
+      <div class="stats-label">継続日数</div>
+    </div>
+    <div class="stats-card card-level">
+      <div class="stats-num">${escapeHtml(analytics.estimatedLevel)}</div>
+      <div class="stats-label">アプリ内推定段階</div>
+    </div>
   `;
   div.appendChild(statsGrid);
+
+  const categoryEntries = Object.entries(analytics.byCategory)
+    .filter(([, value]) => value.total >= 2)
+    .map(([category, value]) => ({
+      category,
+      accuracy: Math.round((value.correct / value.total) * 100),
+      total: value.total
+    }))
+    .sort((a, b) => a.accuracy - b.accuracy);
+  const weakestCategory = categoryEntries[0];
+  const analysisSection = document.createElement('div');
+  analysisSection.className = 'dashboard-section insight-section';
+  analysisSection.innerHTML = `
+    <h3>🔎 学習分析</h3>
+    <p>${weakestCategory
+      ? `「${escapeHtml(weakestCategory.category)}」の正答率が${weakestCategory.accuracy}%です。次回の復習で重点的に扱います。`
+      : 'まだ十分な解答データがありません。今日の学習を1セット試してみましょう。'}</p>
+    <p class="progress-note">習得目安: ${analytics.mastered} / ${analytics.totalWords}語（30日間の学習データから算出）</p>
+  `;
+  div.appendChild(analysisSection);
   
   const weakSection = document.createElement('div');
   weakSection.className = 'dashboard-section';
@@ -1311,14 +1643,14 @@ function renderReviewLater() {
   const header = document.createElement('div');
   header.className = 'view-header';
   header.innerHTML = `<h2>📝 後で復習 (Review Later)</h2>
-    <p>スワイプ暗記で「後で復習」に振り分けた単語のリストです。</p>
+    <p>単語カードで「後で復習」に振り分けた単語のリストです。</p>
     <button class="btn btn-outline mt-2" onclick="appState.navigate('home')">← ホームに戻る</button>`;
   div.appendChild(header);
 
   if (queue.length === 0) {
     const msg = document.createElement('p');
     msg.className = 'empty-msg';
-    msg.innerHTML = '復習リストは空です。<br>スワイプ暗記カードで「後で復習」に振り分けた単語がここに表示されます。';
+    msg.innerHTML = '復習リストは空です。<br>単語カードで「後で復習」に振り分けた単語がここに表示されます。';
     div.appendChild(msg);
     return div;
   }
@@ -1439,13 +1771,14 @@ function renderReviewLater() {
     card.onclick = () => {
       card.classList.toggle('flipped');
       if (card.classList.contains('flipped')) {
+        LearningStore.markViewed(word, genreId);
         playAudio(word.es);
       }
     };
     
     card.querySelector('.card-review-btn').onclick = (e) => {
       e.stopPropagation();
-      SwipeManager.removeReviewLater(word.es);
+      SwipeManager.removeReviewLater(WordIdentity.key(word, genreId));
       SwipeManager.addMemorized(word);
       appState.navigate('reviewlater', appState.currentGenre, null, null, { cat: appState.currentCategory });
     };
@@ -1455,22 +1788,6 @@ function renderReviewLater() {
 
   return div;
 }
-
-function unlockAudio() {
-  if (!audioUnlocked) {
-    const dummy = new Audio();
-    dummy.play().catch(() => {});
-    if ('speechSynthesis' in window) {
-      const u = new SpeechSynthesisUtterance('');
-      window.speechSynthesis.speak(u);
-    }
-    audioUnlocked = true;
-    document.removeEventListener('touchstart', unlockAudio);
-    document.removeEventListener('click', unlockAudio);
-  }
-}
-document.addEventListener('touchstart', unlockAudio, { once: true, passive: true });
-document.addEventListener('click', unlockAudio, { once: true, passive: true });
 
 // Initialize App
 document.addEventListener('DOMContentLoaded', () => {

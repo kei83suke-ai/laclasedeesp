@@ -147,7 +147,10 @@
         <a class="menu-item" id="menu-adjectives" href="#flashcards/adjectives">✨ 形容詞</a>
         <a class="menu-item" id="menu-adverbs" href="#flashcards/adverbs">⏱️ 副詞</a>
         <a class="menu-item" id="menu-prepositions" href="#flashcards/prepositions">🔗 その他</a>
+        <a class="menu-item" id="menu-phrases" href="#flashcards/phrases">💬 会話フレーズ</a>
         <a class="menu-item" id="menu-conjugations" href="#conjugations">📊 活用表</a>
+        <a class="menu-item" id="menu-study" href="#study/today">🎯 今日の学習</a>
+        <a class="menu-item" id="menu-practice" href="#practice">💬 会話練習</a>
         <a class="menu-item" id="menu-scorecard" href="#scorecard">📈 成績表</a>
         <a class="menu-item" id="menu-reviewlater" href="#reviewlater">📝 復習単語</a>
       </nav>
@@ -160,93 +163,7 @@
   </div>
 
   <script src="js/data.js"></script>
+  <script src="js/learning.js"></script>
   <script src="js/app.js"></script>
-
-  <script>
-    // 外部サーバーを使わず、スマホ・PC内蔵の音声エンジンで100%鳴らす仕組み
-    window.playAudio = function(text) {
-      if (!text) return;
-      
-      // 他の音声が鳴っていたら強制停止してリセット
-      if (window.speechSynthesis) {
-        window.speechSynthesis.cancel();
-      } else {
-        return; 
-      }
-      
-      // 1. カッコ（文字）を綺麗に消去
-      let cleanText = text.replace(/（.*?）/g, '').replace(/\(.*?\)/g, '').trim();
-      
-      // 2. 「el/la chico/chica」や「duro/dura」のようなスラッシュ混じりの単語を分解・整形
-      if (cleanText.includes('/')) {
-        cleanText = cleanText.replace(/\s*\/\s*/g, '/');
-        const words = cleanText.split(' ');
-        let sentenceM = [];
-        let sentenceF = [];
-
-        for (let w of words) {
-          if (w.includes('/')) {
-            const parts = w.split('/');
-            const first = parts[0];
-            const second = parts[1] || '';
-
-            if (first === 'el' && second === 'la') {
-              sentenceM.push('el'); sentenceF.push('la');
-            } else if (first === 'un' && second === 'una') {
-              sentenceM.push('un'); sentenceF.push('una');
-            } else if (first === 'los' && second === 'las') {
-              sentenceM.push('los'); sentenceF.push('las');
-            } else if (second.length === 1) {
-              if (first.endsWith('o')) {
-                sentenceM.push(first); sentenceF.push(first.slice(0, -1) + second);
-              } else if (first.endsWith('os')) {
-                sentenceM.push(first); sentenceF.push(first.slice(0, -2) + second);
-              } else {
-                sentenceM.push(first); sentenceF.push(first);
-              }
-            } else {
-              sentenceM.push(first); sentenceF.push(second);
-            }
-          } else {
-            sentenceM.push(w); sentenceF.push(w);
-          }
-        }
-        
-        const mStr = sentenceM.join(' ');
-        const fStr = sentenceF.join(' ');
-        
-        if (mStr !== fStr) {
-          // 1つ目（男性形）の発音設定
-          const utrM = new SpeechSynthesisUtterance(mStr);
-          utrM.lang = 'es-ES'; // スペイン語
-          utrM.rate = 0.9;     // 聴き取りやすい速度
-          
-          // 2つ目（女性形）の発音設定
-          const utrF = new SpeechSynthesisUtterance(fStr);
-          utrF.lang = 'es-ES';
-          utrF.rate = 0.9;
-          
-          // 1つ目が終わったら、0.2秒（200ms）待って2つ目を再生
-          utrM.onend = function() {
-            setTimeout(() => {
-              window.speechSynthesis.speak(utrF);
-            }, 200);
-          };
-          
-          // 再生スタート
-          window.speechSynthesis.speak(utrM);
-          return;
-        } else {
-          cleanText = mStr;
-        }
-      }
-
-      // 単一の単語（スラッシュがない普通の単語）の処理
-      const utterance = new SpeechSynthesisUtterance(cleanText);
-      utterance.lang = 'es-ES';
-      utterance.rate = 0.9;
-      window.speechSynthesis.speak(utterance);
-    };
-  </script>
 </body>
 </html>
