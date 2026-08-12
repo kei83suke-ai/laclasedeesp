@@ -25316,13 +25316,6 @@ const db = {
           "ustedes": "sean",
           "negativo_tu": "no seas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sido",
-          "tu": "has sido",
-          "el/ella": "ha sido",
-          "nosotros": "hemos sido",
-          "ellos": "han sido"
-        },
         "条件法 (Condicional)": {
           "yo": "sería",
           "tu": "serías",
@@ -25393,13 +25386,6 @@ const db = {
           "nosotros": "estemos",
           "ustedes": "estén",
           "negativo_tu": "no estés"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he estado",
-          "tu": "has estado",
-          "el/ella": "ha estado",
-          "nosotros": "hemos estado",
-          "ellos": "han estado"
         },
         "条件法 (Condicional)": {
           "yo": "estaría",
@@ -25472,13 +25458,6 @@ const db = {
           "ustedes": "hayan",
           "negativo_tu": "no hayas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he habido",
-          "tu": "has habido",
-          "el/ella": "ha habido",
-          "nosotros": "hemos habido",
-          "ellos": "han habido"
-        },
         "条件法 (Condicional)": {
           "yo": "habría",
           "tu": "habrías",
@@ -25549,13 +25528,6 @@ const db = {
           "nosotros": "tengamos",
           "ustedes": "tengan",
           "negativo_tu": "no tengas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tenido",
-          "tu": "has tenido",
-          "el/ella": "ha tenido",
-          "nosotros": "hemos tenido",
-          "ellos": "han tenido"
         },
         "条件法 (Condicional)": {
           "yo": "tendría",
@@ -25628,13 +25600,6 @@ const db = {
           "ustedes": "hagan",
           "negativo_tu": "no hagas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he hecho",
-          "tu": "has hecho",
-          "el/ella": "ha hecho",
-          "nosotros": "hemos hecho",
-          "ellos": "han hecho"
-        },
         "条件法 (Condicional)": {
           "yo": "haría",
           "tu": "harías",
@@ -25705,13 +25670,6 @@ const db = {
           "nosotros": "vayamos",
           "ustedes": "vayan",
           "negativo_tu": "no vayas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he ido",
-          "tu": "has ido",
-          "el/ella": "ha ido",
-          "nosotros": "hemos ido",
-          "ellos": "han ido"
         },
         "条件法 (Condicional)": {
           "yo": "iría",
@@ -25784,13 +25742,6 @@ const db = {
           "ustedes": "vengan",
           "negativo_tu": "no vengas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he venido",
-          "tu": "has venido",
-          "el/ella": "ha venido",
-          "nosotros": "hemos venido",
-          "ellos": "han venido"
-        },
         "条件法 (Condicional)": {
           "yo": "vendría",
           "tu": "vendrías",
@@ -25861,13 +25812,6 @@ const db = {
           "nosotros": "veamos",
           "ustedes": "vean",
           "negativo_tu": "no veas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he visto",
-          "tu": "has visto",
-          "el/ella": "ha visto",
-          "nosotros": "hemos visto",
-          "ellos": "han visto"
         },
         "条件法 (Condicional)": {
           "yo": "vería",
@@ -25940,13 +25884,6 @@ const db = {
           "ustedes": "pongan",
           "negativo_tu": "no pongas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he puesto",
-          "tu": "has puesto",
-          "el/ella": "ha puesto",
-          "nosotros": "hemos puesto",
-          "ellos": "han puesto"
-        },
         "条件法 (Condicional)": {
           "yo": "pondría",
           "tu": "pondrías",
@@ -26017,13 +25954,6 @@ const db = {
           "nosotros": "salgamos",
           "ustedes": "salgan",
           "negativo_tu": "no salgas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he salido",
-          "tu": "has salido",
-          "el/ella": "ha salido",
-          "nosotros": "hemos salido",
-          "ellos": "han salido"
         },
         "条件法 (Condicional)": {
           "yo": "saldría",
@@ -26096,13 +26026,6 @@ const db = {
           "ustedes": "lleguen",
           "negativo_tu": "no llegues"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he llegado",
-          "tu": "has llegado",
-          "el/ella": "ha llegado",
-          "nosotros": "hemos llegado",
-          "ellos": "han llegado"
-        },
         "条件法 (Condicional)": {
           "yo": "llegaría",
           "tu": "llegarías",
@@ -26173,13 +26096,6 @@ const db = {
           "nosotros": "quedemos",
           "ustedes": "queden",
           "negativo_tu": "no quedes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he quedado",
-          "tu": "has quedado",
-          "el/ella": "ha quedado",
-          "nosotros": "hemos quedado",
-          "ellos": "han quedado"
         },
         "条件法 (Condicional)": {
           "yo": "quedaría",
@@ -26252,13 +26168,6 @@ const db = {
           "ustedes": "lleven",
           "negativo_tu": "no lleves"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he llevado",
-          "tu": "has llevado",
-          "el/ella": "ha llevado",
-          "nosotros": "hemos llevado",
-          "ellos": "han llevado"
-        },
         "条件法 (Condicional)": {
           "yo": "llevaría",
           "tu": "llevarías",
@@ -26329,13 +26238,6 @@ const db = {
           "nosotros": "traigamos",
           "ustedes": "traigan",
           "negativo_tu": "no traigas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he traído",
-          "tu": "has traído",
-          "el/ella": "ha traído",
-          "nosotros": "hemos traído",
-          "ellos": "han traído"
         },
         "条件法 (Condicional)": {
           "yo": "traería",
@@ -26408,13 +26310,6 @@ const db = {
           "ustedes": "tomen",
           "negativo_tu": "no tomes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tomado",
-          "tu": "has tomado",
-          "el/ella": "ha tomado",
-          "nosotros": "hemos tomado",
-          "ellos": "han tomado"
-        },
         "条件法 (Condicional)": {
           "yo": "tomaría",
           "tu": "tomarías",
@@ -26485,13 +26380,6 @@ const db = {
           "nosotros": "demos",
           "ustedes": "den",
           "negativo_tu": "no des"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dado",
-          "tu": "has dado",
-          "el/ella": "ha dado",
-          "nosotros": "hemos dado",
-          "ellos": "han dado"
         },
         "条件法 (Condicional)": {
           "yo": "daría",
@@ -26564,13 +26452,6 @@ const db = {
           "ustedes": "reciban",
           "negativo_tu": "no recibas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he recibido",
-          "tu": "has recibido",
-          "el/ella": "ha recibido",
-          "nosotros": "hemos recibido",
-          "ellos": "han recibido"
-        },
         "条件法 (Condicional)": {
           "yo": "recibiría",
           "tu": "recibirías",
@@ -26641,13 +26522,6 @@ const db = {
           "nosotros": "dejemos",
           "ustedes": "dejen",
           "negativo_tu": "no dejes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dejado",
-          "tu": "has dejado",
-          "el/ella": "ha dejado",
-          "nosotros": "hemos dejado",
-          "ellos": "han dejado"
         },
         "条件法 (Condicional)": {
           "yo": "dejaría",
@@ -26720,13 +26594,6 @@ const db = {
           "ustedes": "guarden",
           "negativo_tu": "no guardes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he guardado",
-          "tu": "has guardado",
-          "el/ella": "ha guardado",
-          "nosotros": "hemos guardado",
-          "ellos": "han guardado"
-        },
         "条件法 (Condicional)": {
           "yo": "guardaría",
           "tu": "guardarías",
@@ -26797,13 +26664,6 @@ const db = {
           "nosotros": "usemos",
           "ustedes": "usen",
           "negativo_tu": "no uses"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he usado",
-          "tu": "has usado",
-          "el/ella": "ha usado",
-          "nosotros": "hemos usado",
-          "ellos": "han usado"
         },
         "条件法 (Condicional)": {
           "yo": "usaría",
@@ -26876,13 +26736,6 @@ const db = {
           "ustedes": "abran",
           "negativo_tu": "no abras"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he abierto",
-          "tu": "has abierto",
-          "el/ella": "ha abierto",
-          "nosotros": "hemos abierto",
-          "ellos": "han abierto"
-        },
         "条件法 (Condicional)": {
           "yo": "abriría",
           "tu": "abrirías",
@@ -26953,13 +26806,6 @@ const db = {
           "nosotros": "cerremos",
           "ustedes": "cierren",
           "negativo_tu": "no cierres"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cerrado",
-          "tu": "has cerrado",
-          "el/ella": "ha cerrado",
-          "nosotros": "hemos cerrado",
-          "ellos": "han cerrado"
         },
         "条件法 (Condicional)": {
           "yo": "cerraría",
@@ -27032,13 +26878,6 @@ const db = {
           "ustedes": "empiecen",
           "negativo_tu": "no empieces"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he empezado",
-          "tu": "has empezado",
-          "el/ella": "ha empezado",
-          "nosotros": "hemos empezado",
-          "ellos": "han empezado"
-        },
         "条件法 (Condicional)": {
           "yo": "empezaría",
           "tu": "empezarías",
@@ -27109,13 +26948,6 @@ const db = {
           "nosotros": "terminemos",
           "ustedes": "terminen",
           "negativo_tu": "no termines"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he terminado",
-          "tu": "has terminado",
-          "el/ella": "ha terminado",
-          "nosotros": "hemos terminado",
-          "ellos": "han terminado"
         },
         "条件法 (Condicional)": {
           "yo": "terminaría",
@@ -27188,13 +27020,6 @@ const db = {
           "ustedes": "sigan",
           "negativo_tu": "no sigas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he seguido",
-          "tu": "has seguido",
-          "el/ella": "ha seguido",
-          "nosotros": "hemos seguido",
-          "ellos": "han seguido"
-        },
         "条件法 (Condicional)": {
           "yo": "seguiría",
           "tu": "seguirías",
@@ -27265,13 +27090,6 @@ const db = {
           "nosotros": "cambiemos",
           "ustedes": "cambien",
           "negativo_tu": "no cambies"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cambiado",
-          "tu": "has cambiado",
-          "el/ella": "ha cambiado",
-          "nosotros": "hemos cambiado",
-          "ellos": "han cambiado"
         },
         "条件法 (Condicional)": {
           "yo": "cambiaría",
@@ -27344,13 +27162,6 @@ const db = {
           "ustedes": "trabajen",
           "negativo_tu": "no trabajes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he trabajado",
-          "tu": "has trabajado",
-          "el/ella": "ha trabajado",
-          "nosotros": "hemos trabajado",
-          "ellos": "han trabajado"
-        },
         "条件法 (Condicional)": {
           "yo": "trabajaría",
           "tu": "trabajarías",
@@ -27421,13 +27232,6 @@ const db = {
           "nosotros": "estudiemos",
           "ustedes": "estudien",
           "negativo_tu": "no estudies"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he estudiado",
-          "tu": "has estudiado",
-          "el/ella": "ha estudiado",
-          "nosotros": "hemos estudiado",
-          "ellos": "han estudiado"
         },
         "条件法 (Condicional)": {
           "yo": "estudiaría",
@@ -27500,13 +27304,6 @@ const db = {
           "ustedes": "ayuden",
           "negativo_tu": "no ayudes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he ayudado",
-          "tu": "has ayudado",
-          "el/ella": "ha ayudado",
-          "nosotros": "hemos ayudado",
-          "ellos": "han ayudado"
-        },
         "条件法 (Condicional)": {
           "yo": "ayudaría",
           "tu": "ayudarías",
@@ -27577,13 +27374,6 @@ const db = {
           "nosotros": "esperemos",
           "ustedes": "esperen",
           "negativo_tu": "no esperes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he esperado",
-          "tu": "has esperado",
-          "el/ella": "ha esperado",
-          "nosotros": "hemos esperado",
-          "ellos": "han esperado"
         },
         "条件法 (Condicional)": {
           "yo": "esperaría",
@@ -27656,13 +27446,6 @@ const db = {
           "ustedes": "busquen",
           "negativo_tu": "no busques"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he buscado",
-          "tu": "has buscado",
-          "el/ella": "ha buscado",
-          "nosotros": "hemos buscado",
-          "ellos": "han buscado"
-        },
         "条件法 (Condicional)": {
           "yo": "buscaría",
           "tu": "buscarías",
@@ -27733,13 +27516,6 @@ const db = {
           "nosotros": "encontremos",
           "ustedes": "encuentren",
           "negativo_tu": "no encuentres"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he encontrado",
-          "tu": "has encontrado",
-          "el/ella": "ha encontrado",
-          "nosotros": "hemos encontrado",
-          "ellos": "han encontrado"
         },
         "条件法 (Condicional)": {
           "yo": "encontraría",
@@ -27812,13 +27588,6 @@ const db = {
           "ustedes": "necesiten",
           "negativo_tu": "no necesites"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he necesitado",
-          "tu": "has necesitado",
-          "el/ella": "ha necesitado",
-          "nosotros": "hemos necesitado",
-          "ellos": "han necesitado"
-        },
         "条件法 (Condicional)": {
           "yo": "necesitaría",
           "tu": "necesitarías",
@@ -27889,13 +27658,6 @@ const db = {
           "nosotros": "probemos",
           "ustedes": "prueben",
           "negativo_tu": "no pruebes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he probado",
-          "tu": "has probado",
-          "el/ella": "ha probado",
-          "nosotros": "hemos probado",
-          "ellos": "han probado"
         },
         "条件法 (Condicional)": {
           "yo": "probaría",
@@ -27968,13 +27730,6 @@ const db = {
           "ustedes": "puedan",
           "negativo_tu": "no puedas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he podido",
-          "tu": "has podido",
-          "el/ella": "ha podido",
-          "nosotros": "hemos podido",
-          "ellos": "han podido"
-        },
         "条件法 (Condicional)": {
           "yo": "podría",
           "tu": "podrías",
@@ -28045,13 +27800,6 @@ const db = {
           "nosotros": "queramos",
           "ustedes": "quieran",
           "negativo_tu": "no quieras"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he querido",
-          "tu": "has querido",
-          "el/ella": "ha querido",
-          "nosotros": "hemos querido",
-          "ellos": "han querido"
         },
         "条件法 (Condicional)": {
           "yo": "querría",
@@ -28124,13 +27872,6 @@ const db = {
           "ustedes": "gusten",
           "negativo_tu": "no gustes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he gustado",
-          "tu": "has gustado",
-          "el/ella": "ha gustado",
-          "nosotros": "hemos gustado",
-          "ellos": "han gustado"
-        },
         "条件法 (Condicional)": {
           "yo": "gustaría",
           "tu": "gustarías",
@@ -28201,13 +27942,6 @@ const db = {
           "nosotros": "amemos",
           "ustedes": "amen",
           "negativo_tu": "no ames"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he amado",
-          "tu": "has amado",
-          "el/ella": "ha amado",
-          "nosotros": "hemos amado",
-          "ellos": "han amado"
         },
         "条件法 (Condicional)": {
           "yo": "amaría",
@@ -28280,13 +28014,6 @@ const db = {
           "ustedes": "vivan",
           "negativo_tu": "no vivas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he vivido",
-          "tu": "has vivido",
-          "el/ella": "ha vivido",
-          "nosotros": "hemos vivido",
-          "ellos": "han vivido"
-        },
         "条件法 (Condicional)": {
           "yo": "viviría",
           "tu": "vivirías",
@@ -28357,13 +28084,6 @@ const db = {
           "nosotros": "muramos",
           "ustedes": "mueran",
           "negativo_tu": "no mueras"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he muerto",
-          "tu": "has muerto",
-          "el/ella": "ha muerto",
-          "nosotros": "hemos muerto",
-          "ellos": "han muerto"
         },
         "条件法 (Condicional)": {
           "yo": "moriría",
@@ -28436,13 +28156,6 @@ const db = {
           "ustedes": "nazcan",
           "negativo_tu": "no nazcas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he nacido",
-          "tu": "has nacido",
-          "el/ella": "ha nacido",
-          "nosotros": "hemos nacido",
-          "ellos": "han nacido"
-        },
         "条件法 (Condicional)": {
           "yo": "nacería",
           "tu": "nacerías",
@@ -28513,13 +28226,6 @@ const db = {
           "nosotros": "pensemos",
           "ustedes": "piensen",
           "negativo_tu": "no pienses"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he pensado",
-          "tu": "has pensado",
-          "el/ella": "ha pensado",
-          "nosotros": "hemos pensado",
-          "ellos": "han pensado"
         },
         "条件法 (Condicional)": {
           "yo": "pensaría",
@@ -28592,13 +28298,6 @@ const db = {
           "ustedes": "crean",
           "negativo_tu": "no creas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he creído",
-          "tu": "has creído",
-          "el/ella": "ha creído",
-          "nosotros": "hemos creído",
-          "ellos": "han creído"
-        },
         "条件法 (Condicional)": {
           "yo": "creería",
           "tu": "creerías",
@@ -28669,13 +28368,6 @@ const db = {
           "nosotros": "entendamos",
           "ustedes": "entiendan",
           "negativo_tu": "no entiendas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he entendido",
-          "tu": "has entendido",
-          "el/ella": "ha entendido",
-          "nosotros": "hemos entendido",
-          "ellos": "han entendido"
         },
         "条件法 (Condicional)": {
           "yo": "entendería",
@@ -28748,13 +28440,6 @@ const db = {
           "ustedes": "conozcan",
           "negativo_tu": "no conozcas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he conocido",
-          "tu": "has conocido",
-          "el/ella": "ha conocido",
-          "nosotros": "hemos conocido",
-          "ellos": "han conocido"
-        },
         "条件法 (Condicional)": {
           "yo": "conocería",
           "tu": "conocerías",
@@ -28825,13 +28510,6 @@ const db = {
           "nosotros": "recordemos",
           "ustedes": "recuerden",
           "negativo_tu": "no recuerdes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he recordado",
-          "tu": "has recordado",
-          "el/ella": "ha recordado",
-          "nosotros": "hemos recordado",
-          "ellos": "han recordado"
         },
         "条件法 (Condicional)": {
           "yo": "recordaría",
@@ -28904,13 +28582,6 @@ const db = {
           "ustedes": "olviden",
           "negativo_tu": "no olvides"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he olvidado",
-          "tu": "has olvidado",
-          "el/ella": "ha olvidado",
-          "nosotros": "hemos olvidado",
-          "ellos": "han olvidado"
-        },
         "条件法 (Condicional)": {
           "yo": "olvidaría",
           "tu": "olvidarías",
@@ -28981,13 +28652,6 @@ const db = {
           "nosotros": "perdamos",
           "ustedes": "pierdan",
           "negativo_tu": "no pierdas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he perdido",
-          "tu": "has perdido",
-          "el/ella": "ha perdido",
-          "nosotros": "hemos perdido",
-          "ellos": "han perdido"
         },
         "条件法 (Condicional)": {
           "yo": "perdería",
@@ -29060,13 +28724,6 @@ const db = {
           "ustedes": "ganen",
           "negativo_tu": "no ganes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he ganado",
-          "tu": "has ganado",
-          "el/ella": "ha ganado",
-          "nosotros": "hemos ganado",
-          "ellos": "han ganado"
-        },
         "条件法 (Condicional)": {
           "yo": "ganaría",
           "tu": "ganarías",
@@ -29137,13 +28794,6 @@ const db = {
           "nosotros": "sintamos",
           "ustedes": "sientan",
           "negativo_tu": "no sientas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sentido",
-          "tu": "has sentido",
-          "el/ella": "ha sentido",
-          "nosotros": "hemos sentido",
-          "ellos": "han sentido"
         },
         "条件法 (Condicional)": {
           "yo": "sentiría",
@@ -29216,13 +28866,6 @@ const db = {
           "ustedes": "digan",
           "negativo_tu": "no digas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dicho",
-          "tu": "has dicho",
-          "el/ella": "ha dicho",
-          "nosotros": "hemos dicho",
-          "ellos": "han dicho"
-        },
         "条件法 (Condicional)": {
           "yo": "diría",
           "tu": "dirías",
@@ -29293,13 +28936,6 @@ const db = {
           "nosotros": "hablemos",
           "ustedes": "hablen",
           "negativo_tu": "no hables"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he hablado",
-          "tu": "has hablado",
-          "el/ella": "ha hablado",
-          "nosotros": "hemos hablado",
-          "ellos": "han hablado"
         },
         "条件法 (Condicional)": {
           "yo": "hablaría",
@@ -29372,13 +29008,6 @@ const db = {
           "ustedes": "cuenten",
           "negativo_tu": "no cuentes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he contado",
-          "tu": "has contado",
-          "el/ella": "ha contado",
-          "nosotros": "hemos contado",
-          "ellos": "han contado"
-        },
         "条件法 (Condicional)": {
           "yo": "contaría",
           "tu": "contarías",
@@ -29449,13 +29078,6 @@ const db = {
           "nosotros": "expliquemos",
           "ustedes": "expliquen",
           "negativo_tu": "no expliques"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he explicado",
-          "tu": "has explicado",
-          "el/ella": "ha explicado",
-          "nosotros": "hemos explicado",
-          "ellos": "han explicado"
         },
         "条件法 (Condicional)": {
           "yo": "explicaría",
@@ -29528,13 +29150,6 @@ const db = {
           "ustedes": "comenten",
           "negativo_tu": "no comentes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he comentado",
-          "tu": "has comentado",
-          "el/ella": "ha comentado",
-          "nosotros": "hemos comentado",
-          "ellos": "han comentado"
-        },
         "条件法 (Condicional)": {
           "yo": "comentaría",
           "tu": "comentarías",
@@ -29605,13 +29220,6 @@ const db = {
           "nosotros": "preguntemos",
           "ustedes": "pregunten",
           "negativo_tu": "no preguntes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he preguntado",
-          "tu": "has preguntado",
-          "el/ella": "ha preguntado",
-          "nosotros": "hemos preguntado",
-          "ellos": "han preguntado"
         },
         "条件法 (Condicional)": {
           "yo": "preguntaría",
@@ -29684,13 +29292,6 @@ const db = {
           "ustedes": "respondan",
           "negativo_tu": "no respondas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he respondido",
-          "tu": "has respondido",
-          "el/ella": "ha respondido",
-          "nosotros": "hemos respondido",
-          "ellos": "han respondido"
-        },
         "条件法 (Condicional)": {
           "yo": "respondería",
           "tu": "responderías",
@@ -29761,13 +29362,6 @@ const db = {
           "nosotros": "contestemos",
           "ustedes": "contesten",
           "negativo_tu": "no contestes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he contestado",
-          "tu": "has contestado",
-          "el/ella": "ha contestado",
-          "nosotros": "hemos contestado",
-          "ellos": "han contestado"
         },
         "条件法 (Condicional)": {
           "yo": "contestaría",
@@ -29840,13 +29434,6 @@ const db = {
           "ustedes": "llamen",
           "negativo_tu": "no llames"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he llamado",
-          "tu": "has llamado",
-          "el/ella": "ha llamado",
-          "nosotros": "hemos llamado",
-          "ellos": "han llamado"
-        },
         "条件法 (Condicional)": {
           "yo": "llamaría",
           "tu": "llamarías",
@@ -29917,13 +29504,6 @@ const db = {
           "nosotros": "llamémonos",
           "ustedes": "llámense",
           "negativo_tu": "no te llames"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he llamado",
-          "tu": "has llamado",
-          "el/ella": "ha llamado",
-          "nosotros": "hemos llamado",
-          "ellos": "han llamado"
         },
         "条件法 (Condicional)": {
           "yo": "me llamaría",
@@ -29996,13 +29576,6 @@ const db = {
           "ustedes": "escuchen",
           "negativo_tu": "no escuches"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he escuchado",
-          "tu": "has escuchado",
-          "el/ella": "ha escuchado",
-          "nosotros": "hemos escuchado",
-          "ellos": "han escuchado"
-        },
         "条件法 (Condicional)": {
           "yo": "escucharía",
           "tu": "escucharías",
@@ -30073,13 +29646,6 @@ const db = {
           "nosotros": "oigamos",
           "ustedes": "oigan",
           "negativo_tu": "no oigas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he oído",
-          "tu": "has oído",
-          "el/ella": "ha oído",
-          "nosotros": "hemos oído",
-          "ellos": "han oído"
         },
         "条件法 (Condicional)": {
           "yo": "oiría",
@@ -30152,13 +29718,6 @@ const db = {
           "ustedes": "griten",
           "negativo_tu": "no grites"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he gritado",
-          "tu": "has gritado",
-          "el/ella": "ha gritado",
-          "nosotros": "hemos gritado",
-          "ellos": "han gritado"
-        },
         "条件法 (Condicional)": {
           "yo": "gritaría",
           "tu": "gritarías",
@@ -30229,13 +29788,6 @@ const db = {
           "nosotros": "susurremos",
           "ustedes": "susurren",
           "negativo_tu": "no susurres"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he susurrado",
-          "tu": "has susurrado",
-          "el/ella": "ha susurrado",
-          "nosotros": "hemos susurrado",
-          "ellos": "han susurrado"
         },
         "条件法 (Condicional)": {
           "yo": "susurraría",
@@ -30308,13 +29860,6 @@ const db = {
           "ustedes": "discutan",
           "negativo_tu": "no discutas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he discutido",
-          "tu": "has discutido",
-          "el/ella": "ha discutido",
-          "nosotros": "hemos discutido",
-          "ellos": "han discutido"
-        },
         "条件法 (Condicional)": {
           "yo": "discutiría",
           "tu": "discutirías",
@@ -30385,13 +29930,6 @@ const db = {
           "nosotros": "charlemos",
           "ustedes": "charlen",
           "negativo_tu": "no charles"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he charlado",
-          "tu": "has charlado",
-          "el/ella": "ha charlado",
-          "nosotros": "hemos charlado",
-          "ellos": "han charlado"
         },
         "条件法 (Condicional)": {
           "yo": "charlaría",
@@ -30464,13 +30002,6 @@ const db = {
           "ustedes": "conversen",
           "negativo_tu": "no converses"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he conversado",
-          "tu": "has conversado",
-          "el/ella": "ha conversado",
-          "nosotros": "hemos conversado",
-          "ellos": "han conversado"
-        },
         "条件法 (Condicional)": {
           "yo": "conversaría",
           "tu": "conversarías",
@@ -30541,13 +30072,6 @@ const db = {
           "nosotros": "saludemos",
           "ustedes": "saluden",
           "negativo_tu": "no saludes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he saludado",
-          "tu": "has saludado",
-          "el/ella": "ha saludado",
-          "nosotros": "hemos saludado",
-          "ellos": "han saludado"
         },
         "条件法 (Condicional)": {
           "yo": "saludaría",
@@ -30620,13 +30144,6 @@ const db = {
           "ustedes": "despídanse",
           "negativo_tu": "no te despidas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he despedido",
-          "tu": "has despedido",
-          "el/ella": "ha despedido",
-          "nosotros": "hemos despedido",
-          "ellos": "han despedido"
-        },
         "条件法 (Condicional)": {
           "yo": "me despediría",
           "tu": "te despedirías",
@@ -30697,13 +30214,6 @@ const db = {
           "nosotros": "invitemos",
           "ustedes": "inviten",
           "negativo_tu": "no invites"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he invitado",
-          "tu": "has invitado",
-          "el/ella": "ha invitado",
-          "nosotros": "hemos invitado",
-          "ellos": "han invitado"
         },
         "条件法 (Condicional)": {
           "yo": "invitaría",
@@ -30776,13 +30286,6 @@ const db = {
           "ustedes": "presenten",
           "negativo_tu": "no presentes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he presentado",
-          "tu": "has presentado",
-          "el/ella": "ha presentado",
-          "nosotros": "hemos presentado",
-          "ellos": "han presentado"
-        },
         "条件法 (Condicional)": {
           "yo": "presentaría",
           "tu": "presentarías",
@@ -30853,13 +30356,6 @@ const db = {
           "nosotros": "presentémonos",
           "ustedes": "preséntense",
           "negativo_tu": "no te presentes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he presentado",
-          "tu": "has presentado",
-          "el/ella": "ha presentado",
-          "nosotros": "hemos presentado",
-          "ellos": "han presentado"
         },
         "条件法 (Condicional)": {
           "yo": "me presentaría",
@@ -30932,13 +30428,6 @@ const db = {
           "ustedes": "pidan",
           "negativo_tu": "no pidas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he pedido",
-          "tu": "has pedido",
-          "el/ella": "ha pedido",
-          "nosotros": "hemos pedido",
-          "ellos": "han pedido"
-        },
         "条件法 (Condicional)": {
           "yo": "pediría",
           "tu": "pedirías",
@@ -31009,13 +30498,6 @@ const db = {
           "nosotros": "recomendemos",
           "ustedes": "recomienden",
           "negativo_tu": "no recomiendes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he recomendado",
-          "tu": "has recomendado",
-          "el/ella": "ha recomendado",
-          "nosotros": "hemos recomendado",
-          "ellos": "han recomendado"
         },
         "条件法 (Condicional)": {
           "yo": "recomendaría",
@@ -31088,13 +30570,6 @@ const db = {
           "ustedes": "prometan",
           "negativo_tu": "no prometas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he prometido",
-          "tu": "has prometido",
-          "el/ella": "ha prometido",
-          "nosotros": "hemos prometido",
-          "ellos": "han prometido"
-        },
         "条件法 (Condicional)": {
           "yo": "prometería",
           "tu": "prometerías",
@@ -31165,13 +30640,6 @@ const db = {
           "nosotros": "ofrezcamos",
           "ustedes": "ofrezcan",
           "negativo_tu": "no ofrezcas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he ofrecido",
-          "tu": "has ofrecido",
-          "el/ella": "ha ofrecido",
-          "nosotros": "hemos ofrecido",
-          "ellos": "han ofrecido"
         },
         "条件法 (Condicional)": {
           "yo": "ofrecería",
@@ -31244,13 +30712,6 @@ const db = {
           "ustedes": "acepten",
           "negativo_tu": "no aceptes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he aceptado",
-          "tu": "has aceptado",
-          "el/ella": "ha aceptado",
-          "nosotros": "hemos aceptado",
-          "ellos": "han aceptado"
-        },
         "条件法 (Condicional)": {
           "yo": "aceptaría",
           "tu": "aceptarías",
@@ -31321,13 +30782,6 @@ const db = {
           "nosotros": "rechacemos",
           "ustedes": "rechacen",
           "negativo_tu": "no rechaces"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he rechazado",
-          "tu": "has rechazado",
-          "el/ella": "ha rechazado",
-          "nosotros": "hemos rechazado",
-          "ellos": "han rechazado"
         },
         "条件法 (Condicional)": {
           "yo": "rechazaría",
@@ -31400,13 +30854,6 @@ const db = {
           "ustedes": "agradezcan",
           "negativo_tu": "no agradezcas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he agradecido",
-          "tu": "has agradecido",
-          "el/ella": "ha agradecido",
-          "nosotros": "hemos agradecido",
-          "ellos": "han agradecido"
-        },
         "条件法 (Condicional)": {
           "yo": "agradecería",
           "tu": "agradecerías",
@@ -31478,13 +30925,6 @@ const db = {
           "ustedes": "feliciten",
           "negativo_tu": "no felicites"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he felicidado",
-          "tu": "has felicidado",
-          "el/ella": "ha felicidado",
-          "nosotros": "hemos felicidado",
-          "ellos": "han felicidado"
-        },
         "条件法 (Condicional)": {
           "yo": "felicitaría",
           "tu": "felicitarías",
@@ -31513,13 +30953,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he pedido perdón",
-          "tu": "has pedido perdón",
-          "el/ella": "ha pedido perdón",
-          "nosotros": "hemos pedido perdón",
-          "ellos": "han pedido perdón"
         },
         "条件法 (Condicional)": {
           "yo": "pediría perdón",
@@ -31592,13 +31025,6 @@ const db = {
           "ustedes": "mientan",
           "negativo_tu": "no mientas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he mentido",
-          "tu": "has mentido",
-          "el/ella": "ha mentido",
-          "nosotros": "hemos mentido",
-          "ellos": "han mentido"
-        },
         "条件法 (Condicional)": {
           "yo": "mentiría",
           "tu": "mentirías",
@@ -31669,13 +31095,6 @@ const db = {
           "nosotros": "expresémonos",
           "ustedes": "exprésense",
           "negativo_tu": "no te expreses"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he expresado",
-          "tu": "has expresado",
-          "el/ella": "ha expresado",
-          "nosotros": "hemos expresado",
-          "ellos": "han expresado"
         },
         "条件法 (Condicional)": {
           "yo": "me expresaría",
@@ -31748,13 +31167,6 @@ const db = {
           "ustedes": "opinen",
           "negativo_tu": "no opines"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he opinado",
-          "tu": "has opinado",
-          "el/ella": "ha opinado",
-          "nosotros": "hemos opinado",
-          "ellos": "han opinado"
-        },
         "条件法 (Condicional)": {
           "yo": "opinaría",
           "tu": "opinarías",
@@ -31825,13 +31237,6 @@ const db = {
           "nosotros": "comuniquemos",
           "ustedes": "comuniquen",
           "negativo_tu": "no comuniques"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he comunicado",
-          "tu": "has comunicado",
-          "el/ella": "ha comunicado",
-          "nosotros": "hemos comunicado",
-          "ellos": "han comunicado"
         },
         "条件法 (Condicional)": {
           "yo": "comunicaría",
@@ -31904,13 +31309,6 @@ const db = {
           "ustedes": "avisen",
           "negativo_tu": "no avises"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he avisado",
-          "tu": "has avisado",
-          "el/ella": "ha avisado",
-          "nosotros": "hemos avisado",
-          "ellos": "han avisado"
-        },
         "条件法 (Condicional)": {
           "yo": "avisaría",
           "tu": "avisarías",
@@ -31981,13 +31379,6 @@ const db = {
           "nosotros": "informemos",
           "ustedes": "informen",
           "negativo_tu": "no informes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he informado",
-          "tu": "has informado",
-          "el/ella": "ha informado",
-          "nosotros": "hemos informado",
-          "ellos": "han informado"
         },
         "条件法 (Condicional)": {
           "yo": "informaría",
@@ -32060,13 +31451,6 @@ const db = {
           "ustedes": "noten",
           "negativo_tu": "no notes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he notado",
-          "tu": "has notado",
-          "el/ella": "ha notado",
-          "nosotros": "hemos notado",
-          "ellos": "han notado"
-        },
         "条件法 (Condicional)": {
           "yo": "notaría",
           "tu": "notarías",
@@ -32137,13 +31521,6 @@ const db = {
           "nosotros": "preguntémonos",
           "ustedes": "pregúntense",
           "negativo_tu": "no te preguntes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he preguntado",
-          "tu": "has preguntado",
-          "el/ella": "ha preguntado",
-          "nosotros": "hemos preguntado",
-          "ellos": "han preguntado"
         },
         "条件法 (Condicional)": {
           "yo": "me preguntaría",
@@ -32216,13 +31593,6 @@ const db = {
           "ustedes": "aclaren",
           "negativo_tu": "no aclares"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he aclarado",
-          "tu": "has aclarado",
-          "el/ella": "ha aclarado",
-          "nosotros": "hemos aclarado",
-          "ellos": "han aclarado"
-        },
         "条件法 (Condicional)": {
           "yo": "aclararía",
           "tu": "aclararías",
@@ -32293,13 +31663,6 @@ const db = {
           "nosotros": "traduzcamos",
           "ustedes": "traduzcan",
           "negativo_tu": "no traduzcas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he traducido",
-          "tu": "has traducido",
-          "el/ella": "ha traducido",
-          "nosotros": "hemos traducido",
-          "ellos": "han traducido"
         },
         "条件法 (Condicional)": {
           "yo": "traduciría",
@@ -32372,13 +31735,6 @@ const db = {
           "ustedes": "repitan",
           "negativo_tu": "no repitas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he repetido",
-          "tu": "has repetido",
-          "el/ella": "ha repetido",
-          "nosotros": "hemos repetido",
-          "ellos": "han repetido"
-        },
         "条件法 (Condicional)": {
           "yo": "repetiría",
           "tu": "repetirías",
@@ -32449,13 +31805,6 @@ const db = {
           "nosotros": "resumamos",
           "ustedes": "resuman",
           "negativo_tu": "no resumas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he resumido",
-          "tu": "has resumido",
-          "el/ella": "ha resumido",
-          "nosotros": "hemos resumido",
-          "ellos": "han resumido"
         },
         "条件法 (Condicional)": {
           "yo": "resumiría",
@@ -32528,13 +31877,6 @@ const db = {
           "ustedes": "bromeen",
           "negativo_tu": "no bromees"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he bromeado",
-          "tu": "has bromeado",
-          "el/ella": "ha bromeado",
-          "nosotros": "hemos bromeado",
-          "ellos": "han bromeado"
-        },
         "条件法 (Condicional)": {
           "yo": "bromearía",
           "tu": "bromearías",
@@ -32606,13 +31948,6 @@ const db = {
           "ustedes": "quéjense",
           "negativo_tu": "no te quejes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he quejado",
-          "tu": "has quejado",
-          "el/ella": "ha quejado",
-          "nosotros": "hemos quejado",
-          "ellos": "han quejado"
-        },
         "条件法 (Condicional)": {
           "yo": "me quejaría",
           "tu": "te quejarías",
@@ -32641,13 +31976,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he expresado agradecimiento",
-          "tu": "has expresado agradecimiento",
-          "el/ella": "ha expresado agradecimiento",
-          "nosotros": "hemos expresado agradecimiento",
-          "ellos": "han expresado agradecimiento"
         },
         "条件法 (Condicional)": {
           "yo": "expresaría agradecimiento",
@@ -32720,13 +32048,6 @@ const db = {
           "ustedes": "lloren",
           "negativo_tu": "no llores"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he llorado",
-          "tu": "has llorado",
-          "el/ella": "ha llorado",
-          "nosotros": "hemos llorado",
-          "ellos": "han llorado"
-        },
         "条件法 (Condicional)": {
           "yo": "lloraría",
           "tu": "llorarías",
@@ -32797,13 +32118,6 @@ const db = {
           "nosotros": "riamos",
           "ustedes": "rían",
           "negativo_tu": "no rías"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he reído",
-          "tu": "has reído",
-          "el/ella": "ha reído",
-          "nosotros": "hemos reído",
-          "ellos": "han reído"
         },
         "条件法 (Condicional)": {
           "yo": "reiría",
@@ -32876,13 +32190,6 @@ const db = {
           "ustedes": "sonrían",
           "negativo_tu": "no sonrías"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sonreído",
-          "tu": "has sonreído",
-          "el/ella": "ha sonreído",
-          "nosotros": "hemos sonreído",
-          "ellos": "han sonreído"
-        },
         "条件法 (Condicional)": {
           "yo": "sonreiría",
           "tu": "sonreirías",
@@ -32953,13 +32260,6 @@ const db = {
           "nosotros": "encantemos",
           "ustedes": "encanten",
           "negativo_tu": "no encantes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he encantado",
-          "tu": "has encantado",
-          "el/ella": "ha encantado",
-          "nosotros": "hemos encantado",
-          "ellos": "han encantado"
         },
         "条件法 (Condicional)": {
           "yo": "encantaría",
@@ -33032,13 +32332,6 @@ const db = {
           "ustedes": "importen",
           "negativo_tu": "no importes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he importado",
-          "tu": "has importado",
-          "el/ella": "ha importado",
-          "nosotros": "hemos importado",
-          "ellos": "han importado"
-        },
         "条件法 (Condicional)": {
           "yo": "importaría",
           "tu": "importarías",
@@ -33109,13 +32402,6 @@ const db = {
           "nosotros": "interesemos",
           "ustedes": "interesen",
           "negativo_tu": "no intereses"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he interesado",
-          "tu": "has interesado",
-          "el/ella": "ha interesado",
-          "nosotros": "hemos interesado",
-          "ellos": "han interesado"
         },
         "条件法 (Condicional)": {
           "yo": "interesaría",
@@ -33188,13 +32474,6 @@ const db = {
           "ustedes": "molesten",
           "negativo_tu": "no molestes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he molestado",
-          "tu": "has molestado",
-          "el/ella": "ha molestado",
-          "nosotros": "hemos molestado",
-          "ellos": "han molestado"
-        },
         "条件法 (Condicional)": {
           "yo": "molestaría",
           "tu": "molestarías",
@@ -33265,13 +32544,6 @@ const db = {
           "nosotros": "odiemos",
           "ustedes": "odien",
           "negativo_tu": "no odies"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he odiado",
-          "tu": "has odiado",
-          "el/ella": "ha odiado",
-          "nosotros": "hemos odiado",
-          "ellos": "han odiado"
         },
         "条件法 (Condicional)": {
           "yo": "odiaría",
@@ -33344,13 +32616,6 @@ const db = {
           "ustedes": "prefieran",
           "negativo_tu": "no prefieras"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he preferido",
-          "tu": "has preferido",
-          "el/ella": "ha preferido",
-          "nosotros": "hemos preferido",
-          "ellos": "han preferido"
-        },
         "条件法 (Condicional)": {
           "yo": "preferiría",
           "tu": "preferirías",
@@ -33421,13 +32686,6 @@ const db = {
           "nosotros": "deseemos",
           "ustedes": "deseen",
           "negativo_tu": "no desees"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he deseado",
-          "tu": "has deseado",
-          "el/ella": "ha deseado",
-          "nosotros": "hemos deseado",
-          "ellos": "han deseado"
         },
         "条件法 (Condicional)": {
           "yo": "desearía",
@@ -33500,13 +32758,6 @@ const db = {
           "ustedes": "teman",
           "negativo_tu": "no temas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he temido",
-          "tu": "has temido",
-          "el/ella": "ha temido",
-          "nosotros": "hemos temido",
-          "ellos": "han temido"
-        },
         "条件法 (Condicional)": {
           "yo": "temería",
           "tu": "temerías",
@@ -33577,13 +32828,6 @@ const db = {
           "nosotros": "asustemos",
           "ustedes": "asusten",
           "negativo_tu": "no asustes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he asustado",
-          "tu": "has asustado",
-          "el/ella": "ha asustado",
-          "nosotros": "hemos asustado",
-          "ellos": "han asustado"
         },
         "条件法 (Condicional)": {
           "yo": "asustaría",
@@ -33656,13 +32900,6 @@ const db = {
           "ustedes": "sorprendan",
           "negativo_tu": "no sorprendas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sorprendido",
-          "tu": "has sorprendido",
-          "el/ella": "ha sorprendido",
-          "nosotros": "hemos sorprendido",
-          "ellos": "han sorprendido"
-        },
         "条件法 (Condicional)": {
           "yo": "sorprendería",
           "tu": "sorprenderías",
@@ -33733,13 +32970,6 @@ const db = {
           "nosotros": "aburramos",
           "ustedes": "aburran",
           "negativo_tu": "no aburras"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he aburrido",
-          "tu": "has aburrido",
-          "el/ella": "ha aburrido",
-          "nosotros": "hemos aburrido",
-          "ellos": "han aburrido"
         },
         "条件法 (Condicional)": {
           "yo": "aburriría",
@@ -33812,13 +33042,6 @@ const db = {
           "ustedes": "abúrranse",
           "negativo_tu": "no te aburras"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he aburrido",
-          "tu": "has aburrido",
-          "el/ella": "ha aburrido",
-          "nosotros": "hemos aburrido",
-          "ellos": "han aburrido"
-        },
         "条件法 (Condicional)": {
           "yo": "me aburriría",
           "tu": "te aburrirías",
@@ -33889,13 +33112,6 @@ const db = {
           "nosotros": "disfrutemos",
           "ustedes": "disfruten",
           "negativo_tu": "no disfrutes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he disfrutado",
-          "tu": "has disfrutado",
-          "el/ella": "ha disfrutado",
-          "nosotros": "hemos disfrutado",
-          "ellos": "han disfrutado"
         },
         "条件法 (Condicional)": {
           "yo": "disfrutaría",
@@ -33968,13 +33184,6 @@ const db = {
           "ustedes": "imaginen",
           "negativo_tu": "no imagines"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he imaginado",
-          "tu": "has imaginado",
-          "el/ella": "ha imaginado",
-          "nosotros": "hemos imaginado",
-          "ellos": "han imaginado"
-        },
         "条件法 (Condicional)": {
           "yo": "imaginaría",
           "tu": "imaginarías",
@@ -34045,13 +33254,6 @@ const db = {
           "nosotros": "decidamos",
           "ustedes": "decidan",
           "negativo_tu": "no decidas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he decidido",
-          "tu": "has decidido",
-          "el/ella": "ha decidido",
-          "nosotros": "hemos decidido",
-          "ellos": "han decidido"
         },
         "条件法 (Condicional)": {
           "yo": "decidiría",
@@ -34124,13 +33326,6 @@ const db = {
           "ustedes": "elijan",
           "negativo_tu": "no elijas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he elegido",
-          "tu": "has elegido",
-          "el/ella": "ha elegido",
-          "nosotros": "hemos elegido",
-          "ellos": "han elegido"
-        },
         "条件法 (Condicional)": {
           "yo": "elegiría",
           "tu": "elegirías",
@@ -34201,13 +33396,6 @@ const db = {
           "nosotros": "planeemos",
           "ustedes": "planeen",
           "negativo_tu": "no planees"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he planeado",
-          "tu": "has planeado",
-          "el/ella": "ha planeado",
-          "nosotros": "hemos planeado",
-          "ellos": "han planeado"
         },
         "条件法 (Condicional)": {
           "yo": "planearía",
@@ -34280,13 +33468,6 @@ const db = {
           "ustedes": "organicen",
           "negativo_tu": "no organices"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he organizado",
-          "tu": "has organizado",
-          "el/ella": "ha organizado",
-          "nosotros": "hemos organizado",
-          "ellos": "han organizado"
-        },
         "条件法 (Condicional)": {
           "yo": "organizaría",
           "tu": "organizarías",
@@ -34357,13 +33538,6 @@ const db = {
           "nosotros": "reconozcamos",
           "ustedes": "reconozcan",
           "negativo_tu": "no reconozcas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he reconocido",
-          "tu": "has reconocido",
-          "el/ella": "ha reconocido",
-          "nosotros": "hemos reconocido",
-          "ellos": "han reconocido"
         },
         "条件法 (Condicional)": {
           "yo": "reconocería",
@@ -34436,13 +33610,6 @@ const db = {
           "ustedes": "duden",
           "negativo_tu": "no dudes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dudado",
-          "tu": "has dudado",
-          "el/ella": "ha dudado",
-          "nosotros": "hemos dudado",
-          "ellos": "han dudado"
-        },
         "条件法 (Condicional)": {
           "yo": "dudaría",
           "tu": "dudarías",
@@ -34513,13 +33680,6 @@ const db = {
           "nosotros": "confiemos",
           "ustedes": "confíen",
           "negativo_tu": "no confíes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he confiado",
-          "tu": "has confiado",
-          "el/ella": "ha confiado",
-          "nosotros": "hemos confiado",
-          "ellos": "han confiado"
         },
         "条件法 (Condicional)": {
           "yo": "confiaría",
@@ -34592,13 +33752,6 @@ const db = {
           "ustedes": "acuerden",
           "negativo_tu": "no acuerdes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he acordado",
-          "tu": "has acordado",
-          "el/ella": "ha acordado",
-          "nosotros": "hemos acordado",
-          "ellos": "han acordado"
-        },
         "条件法 (Condicional)": {
           "yo": "acordaría",
           "tu": "acordarías",
@@ -34669,13 +33822,6 @@ const db = {
           "nosotros": "acordémonos",
           "ustedes": "acuérdense",
           "negativo_tu": "no te acuerdes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he acordado",
-          "tu": "has acordado",
-          "el/ella": "ha acordado",
-          "nosotros": "hemos acordado",
-          "ellos": "han acordado"
         },
         "条件法 (Condicional)": {
           "yo": "me acordaría",
@@ -34748,13 +33894,6 @@ const db = {
           "ustedes": "arrepiéntanse",
           "negativo_tu": "no te arrepientas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he arrepentido",
-          "tu": "has arrepentido",
-          "el/ella": "ha arrepentido",
-          "nosotros": "hemos arrepentido",
-          "ellos": "han arrepentido"
-        },
         "条件法 (Condicional)": {
           "yo": "me arrepentiría",
           "tu": "te arrepentirías",
@@ -34825,13 +33964,6 @@ const db = {
           "nosotros": "preocupémonos",
           "ustedes": "preocúpense",
           "negativo_tu": "no te preocupes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he preocupado",
-          "tu": "has preocupado",
-          "el/ella": "ha preocupado",
-          "nosotros": "hemos preocupado",
-          "ellos": "han preocupado"
         },
         "条件法 (Condicional)": {
           "yo": "me preocuparía",
@@ -34904,13 +34036,6 @@ const db = {
           "ustedes": "cálmense",
           "negativo_tu": "no te calmes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he calmado",
-          "tu": "has calmado",
-          "el/ella": "ha calmado",
-          "nosotros": "hemos calmado",
-          "ellos": "han calmado"
-        },
         "条件法 (Condicional)": {
           "yo": "me calmaría",
           "tu": "te calmarías",
@@ -34981,13 +34106,6 @@ const db = {
           "nosotros": "relajémonos",
           "ustedes": "relájense",
           "negativo_tu": "no te relajes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he relajado",
-          "tu": "has relajado",
-          "el/ella": "ha relajado",
-          "nosotros": "hemos relajado",
-          "ellos": "han relajado"
         },
         "条件法 (Condicional)": {
           "yo": "me relajaría",
@@ -35060,13 +34178,6 @@ const db = {
           "ustedes": "enójense",
           "negativo_tu": "no te enojes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he enojado",
-          "tu": "has enojado",
-          "el/ella": "ha enojado",
-          "nosotros": "hemos enojado",
-          "ellos": "han enojado"
-        },
         "条件法 (Condicional)": {
           "yo": "me enojaría",
           "tu": "te enojarías",
@@ -35138,13 +34249,6 @@ const db = {
           "ustedes": "enfádense",
           "negativo_tu": "no te enfades"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he enfadado",
-          "tu": "has enfadado",
-          "el/ella": "ha enfadado",
-          "nosotros": "hemos enfadado",
-          "ellos": "han enfadado"
-        },
         "条件法 (Condicional)": {
           "yo": "me enfadaría",
           "tu": "te enfadarías",
@@ -35174,13 +34278,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sentido bien",
-          "tu": "has sentido bien",
-          "el/ella": "ha sentido bien",
-          "nosotros": "hemos sentido bien",
-          "ellos": "han sentido bien"
-        },
         "条件法 (Condicional)": {
           "yo": "me sentiría bien",
           "tu": "te sentirías bien",
@@ -35209,13 +34306,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sentido mal",
-          "tu": "has sentido mal",
-          "el/ella": "ha sentido mal",
-          "nosotros": "hemos sentido mal",
-          "ellos": "han sentido mal"
         },
         "条件法 (Condicional)": {
           "yo": "me sentiría mal",
@@ -35288,13 +34378,6 @@ const db = {
           "ustedes": "motiven",
           "negativo_tu": "no motives"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he motivado",
-          "tu": "has motivado",
-          "el/ella": "ha motivado",
-          "nosotros": "hemos motivado",
-          "ellos": "han motivado"
-        },
         "条件法 (Condicional)": {
           "yo": "motivaría",
           "tu": "motivarías",
@@ -35365,13 +34448,6 @@ const db = {
           "nosotros": "animemos",
           "ustedes": "animen",
           "negativo_tu": "no animes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he animado",
-          "tu": "has animado",
-          "el/ella": "ha animado",
-          "nosotros": "hemos animado",
-          "ellos": "han animado"
         },
         "条件法 (Condicional)": {
           "yo": "animaría",
@@ -35444,13 +34520,6 @@ const db = {
           "ustedes": "desanimen",
           "negativo_tu": "no desanimes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he desanimado",
-          "tu": "has desanimado",
-          "el/ella": "ha desanimado",
-          "nosotros": "hemos desanimado",
-          "ellos": "han desanimado"
-        },
         "条件法 (Condicional)": {
           "yo": "desanimaría",
           "tu": "desanimarías",
@@ -35521,13 +34590,6 @@ const db = {
           "nosotros": "soñemos",
           "ustedes": "sueñen",
           "negativo_tu": "no sueñes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he soñado",
-          "tu": "has soñado",
-          "el/ella": "ha soñado",
-          "nosotros": "hemos soñado",
-          "ellos": "han soñado"
         },
         "条件法 (Condicional)": {
           "yo": "soñaría",
@@ -35600,13 +34662,6 @@ const db = {
           "ustedes": "levántense",
           "negativo_tu": "no te levantes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he levantado",
-          "tu": "has levantado",
-          "el/ella": "ha levantado",
-          "nosotros": "hemos levantado",
-          "ellos": "han levantado"
-        },
         "条件法 (Condicional)": {
           "yo": "me levantaría",
           "tu": "te levantarías",
@@ -35677,13 +34732,6 @@ const db = {
           "nosotros": "despertémonos",
           "ustedes": "despiértense",
           "negativo_tu": "no te despiertes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he despertado",
-          "tu": "has despertado",
-          "el/ella": "ha despertado",
-          "nosotros": "hemos despertado",
-          "ellos": "han despertado"
         },
         "条件法 (Condicional)": {
           "yo": "me despertaría",
@@ -35756,13 +34804,6 @@ const db = {
           "ustedes": "duerman",
           "negativo_tu": "no duermas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dormido",
-          "tu": "has dormido",
-          "el/ella": "ha dormido",
-          "nosotros": "hemos dormido",
-          "ellos": "han dormido"
-        },
         "条件法 (Condicional)": {
           "yo": "dormiría",
           "tu": "dormirías",
@@ -35833,13 +34874,6 @@ const db = {
           "nosotros": "acostémonos",
           "ustedes": "acuéstense",
           "negativo_tu": "no te acuestes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he acostado",
-          "tu": "has acostado",
-          "el/ella": "ha acostado",
-          "nosotros": "hemos acostado",
-          "ellos": "han acostado"
         },
         "条件法 (Condicional)": {
           "yo": "me acostaría",
@@ -35912,13 +34946,6 @@ const db = {
           "ustedes": "descansen",
           "negativo_tu": "no descanses"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he descansado",
-          "tu": "has descansado",
-          "el/ella": "ha descansado",
-          "nosotros": "hemos descansado",
-          "ellos": "han descansado"
-        },
         "条件法 (Condicional)": {
           "yo": "descansaría",
           "tu": "descansarías",
@@ -35989,13 +35016,6 @@ const db = {
           "nosotros": "practiquemos",
           "ustedes": "practiquen",
           "negativo_tu": "no practiques"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he practicado",
-          "tu": "has practicado",
-          "el/ella": "ha practicado",
-          "nosotros": "hemos practicado",
-          "ellos": "han practicado"
         },
         "条件法 (Condicional)": {
           "yo": "practicaría",
@@ -36068,13 +35088,6 @@ const db = {
           "ustedes": "entrenen",
           "negativo_tu": "no entrenes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he entrenado",
-          "tu": "has entrenado",
-          "el/ella": "ha entrenado",
-          "nosotros": "hemos entrenado",
-          "ellos": "han entrenado"
-        },
         "条件法 (Condicional)": {
           "yo": "entrenaría",
           "tu": "entrenarías",
@@ -36145,13 +35158,6 @@ const db = {
           "nosotros": "almorcemos",
           "ustedes": "almuercen",
           "negativo_tu": "no almuerces"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he almorzado",
-          "tu": "has almorzado",
-          "el/ella": "ha almorzado",
-          "nosotros": "hemos almorzado",
-          "ellos": "han almorzado"
         },
         "条件法 (Condicional)": {
           "yo": "almorzaría",
@@ -36224,13 +35230,6 @@ const db = {
           "ustedes": "cenen",
           "negativo_tu": "no cenes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cenado",
-          "tu": "has cenado",
-          "el/ella": "ha cenado",
-          "nosotros": "hemos cenado",
-          "ellos": "han cenado"
-        },
         "条件法 (Condicional)": {
           "yo": "cenaría",
           "tu": "cenarías",
@@ -36301,13 +35300,6 @@ const db = {
           "nosotros": "desayunemos",
           "ustedes": "desayunen",
           "negativo_tu": "no desayunes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he desayunado",
-          "tu": "has desayunado",
-          "el/ella": "ha desayunado",
-          "nosotros": "hemos desayunado",
-          "ellos": "han desayunado"
         },
         "条件法 (Condicional)": {
           "yo": "desayunaría",
@@ -36380,13 +35372,6 @@ const db = {
           "ustedes": "coman",
           "negativo_tu": "no comas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he comido",
-          "tu": "has comido",
-          "el/ella": "ha comido",
-          "nosotros": "hemos comido",
-          "ellos": "han comido"
-        },
         "条件法 (Condicional)": {
           "yo": "comería",
           "tu": "comerías",
@@ -36457,13 +35442,6 @@ const db = {
           "nosotros": "bebamos",
           "ustedes": "beban",
           "negativo_tu": "no bebas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he bebido",
-          "tu": "has bebido",
-          "el/ella": "ha bebido",
-          "nosotros": "hemos bebido",
-          "ellos": "han bebido"
         },
         "条件法 (Condicional)": {
           "yo": "bebería",
@@ -36536,13 +35514,6 @@ const db = {
           "ustedes": "dúchense",
           "negativo_tu": "no te duches"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he duchado",
-          "tu": "has duchado",
-          "el/ella": "ha duchado",
-          "nosotros": "hemos duchado",
-          "ellos": "han duchado"
-        },
         "条件法 (Condicional)": {
           "yo": "me ducharía",
           "tu": "te ducharías",
@@ -36613,13 +35584,6 @@ const db = {
           "nosotros": "bañémonos",
           "ustedes": "báñense",
           "negativo_tu": "no te bañes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he bañado",
-          "tu": "has bañado",
-          "el/ella": "ha bañado",
-          "nosotros": "hemos bañado",
-          "ellos": "han bañado"
         },
         "条件法 (Condicional)": {
           "yo": "me bañaría",
@@ -36692,13 +35656,6 @@ const db = {
           "ustedes": "lávense",
           "negativo_tu": "no te laves"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he lavado",
-          "tu": "has lavado",
-          "el/ella": "ha lavado",
-          "nosotros": "hemos lavado",
-          "ellos": "han lavado"
-        },
         "条件法 (Condicional)": {
           "yo": "me lavaría",
           "tu": "te lavarías",
@@ -36769,13 +35726,6 @@ const db = {
           "nosotros": "vistámonos",
           "ustedes": "vístanse",
           "negativo_tu": "no te vistas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he vestido",
-          "tu": "has vestido",
-          "el/ella": "ha vestido",
-          "nosotros": "hemos vestido",
-          "ellos": "han vestido"
         },
         "条件法 (Condicional)": {
           "yo": "me vestiría",
@@ -36848,13 +35798,6 @@ const db = {
           "ustedes": "pónganse",
           "negativo_tu": "no te pongas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he puesto",
-          "tu": "has puesto",
-          "el/ella": "ha puesto",
-          "nosotros": "hemos puesto",
-          "ellos": "han puesto"
-        },
         "条件法 (Condicional)": {
           "yo": "me pondría",
           "tu": "te pondrías",
@@ -36925,13 +35868,6 @@ const db = {
           "nosotros": "quitémonos",
           "ustedes": "quítense",
           "negativo_tu": "no te quites"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he quitado",
-          "tu": "has quitado",
-          "el/ella": "ha quitado",
-          "nosotros": "hemos quitado",
-          "ellos": "han quitado"
         },
         "条件法 (Condicional)": {
           "yo": "me quitaría",
@@ -37004,13 +35940,6 @@ const db = {
           "ustedes": "maquíllense",
           "negativo_tu": "no te maquilles"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he maquillado",
-          "tu": "has maquillado",
-          "el/ella": "ha maquillado",
-          "nosotros": "hemos maquillado",
-          "ellos": "han maquillado"
-        },
         "条件法 (Condicional)": {
           "yo": "me maquillaría",
           "tu": "te maquillarías",
@@ -37082,13 +36011,6 @@ const db = {
           "ustedes": "aféitense",
           "negativo_tu": "no te afeites"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he afeitado",
-          "tu": "has afeitado",
-          "el/ella": "ha afeitado",
-          "nosotros": "hemos afeitado",
-          "ellos": "han afeitado"
-        },
         "条件法 (Condicional)": {
           "yo": "me afeitaría",
           "tu": "te afeitarías",
@@ -37118,13 +36040,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he empezado a trabajar",
-          "tu": "has empezado a trabajar",
-          "el/ella": "ha empezado a trabajar",
-          "nosotros": "hemos empezado a trabajar",
-          "ellos": "han empezado a trabajar"
-        },
         "条件法 (Condicional)": {
           "yo": "empezaría a trabajar",
           "tu": "empezarías a trabajar",
@@ -37153,13 +36068,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he terminado de trabajar",
-          "tu": "has terminado de trabajar",
-          "el/ella": "ha terminado de trabajar",
-          "nosotros": "hemos terminado de trabajar",
-          "ellos": "han terminado de trabajar"
         },
         "条件法 (Condicional)": {
           "yo": "terminaría de trabajar",
@@ -37232,13 +36140,6 @@ const db = {
           "ustedes": "apresúrense",
           "negativo_tu": "no te apresures"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he apresurado",
-          "tu": "has apresurado",
-          "el/ella": "ha apresurado",
-          "nosotros": "hemos apresurado",
-          "ellos": "han apresurado"
-        },
         "条件法 (Condicional)": {
           "yo": "me apresuraría",
           "tu": "te apresurarías",
@@ -37268,13 +36169,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he apagado la alarma",
-          "tu": "has apagado la alarma",
-          "el/ella": "ha apagado la alarma",
-          "nosotros": "hemos apagado la alarma",
-          "ellos": "han apagado la alarma"
-        },
         "条件法 (Condicional)": {
           "yo": "apagaría la alarma",
           "tu": "apagarías la alarma",
@@ -37303,13 +36197,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he hecho ejercicio",
-          "tu": "has hecho ejercicio",
-          "el/ella": "ha hecho ejercicio",
-          "nosotros": "hemos hecho ejercicio",
-          "ellos": "han hecho ejercicio"
         },
         "条件法 (Condicional)": {
           "yo": "haría ejercicio",
@@ -37382,13 +36269,6 @@ const db = {
           "ustedes": "caminen",
           "negativo_tu": "no camines"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he caminado",
-          "tu": "has caminado",
-          "el/ella": "ha caminado",
-          "nosotros": "hemos caminado",
-          "ellos": "han caminado"
-        },
         "条件法 (Condicional)": {
           "yo": "caminaría",
           "tu": "caminarías",
@@ -37459,13 +36339,6 @@ const db = {
           "nosotros": "corramos",
           "ustedes": "corran",
           "negativo_tu": "no corras"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he corrido",
-          "tu": "has corrido",
-          "el/ella": "ha corrido",
-          "nosotros": "hemos corrido",
-          "ellos": "han corrido"
         },
         "条件法 (Condicional)": {
           "yo": "correría",
@@ -37538,13 +36411,6 @@ const db = {
           "ustedes": "siéntense",
           "negativo_tu": "no te sientes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sentado",
-          "tu": "has sentado",
-          "el/ella": "ha sentado",
-          "nosotros": "hemos sentado",
-          "ellos": "han sentado"
-        },
         "条件法 (Condicional)": {
           "yo": "me sentaría",
           "tu": "te sentarías",
@@ -37573,13 +36439,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he quedado en casa",
-          "tu": "has quedado en casa",
-          "el/ella": "ha quedado en casa",
-          "nosotros": "hemos quedado en casa",
-          "ellos": "han quedado en casa"
         },
         "条件法 (Condicional)": {
           "yo": "me quedaría en casa",
@@ -37610,13 +36469,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he pasado tiempo con la familia",
-          "tu": "has pasado tiempo con la familia",
-          "el/ella": "ha pasado tiempo con la familia",
-          "nosotros": "hemos pasado tiempo con la familia",
-          "ellos": "han pasado tiempo con la familia"
-        },
         "条件法 (Condicional)": {
           "yo": "pasaría tiempo con la familia",
           "tu": "pasarías tiempo con la familia",
@@ -37645,13 +36497,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he acostumbrado a",
-          "tu": "has acostumbrado a",
-          "el/ella": "ha acostumbrado a",
-          "nosotros": "hemos acostumbrado a",
-          "ellos": "han acostumbrado a"
         },
         "条件法 (Condicional)": {
           "yo": "me acostumbraría a",
@@ -37724,13 +36569,6 @@ const db = {
           "ustedes": "cocinen",
           "negativo_tu": "no cocines"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cocinado",
-          "tu": "has cocinado",
-          "el/ella": "ha cocinado",
-          "nosotros": "hemos cocinado",
-          "ellos": "han cocinado"
-        },
         "条件法 (Condicional)": {
           "yo": "cocinaría",
           "tu": "cocinarías",
@@ -37759,13 +36597,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he fregado los platos",
-          "tu": "has fregado los platos",
-          "el/ella": "ha fregado los platos",
-          "nosotros": "hemos fregado los platos",
-          "ellos": "han fregado los platos"
         },
         "条件法 (Condicional)": {
           "yo": "fregaría los platos",
@@ -37796,13 +36627,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he lavado la ropa",
-          "tu": "has lavado la ropa",
-          "el/ella": "ha lavado la ropa",
-          "nosotros": "hemos lavado la ropa",
-          "ellos": "han lavado la ropa"
-        },
         "条件法 (Condicional)": {
           "yo": "lavaría la ropa",
           "tu": "lavarías la ropa",
@@ -37832,13 +36656,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tendido la ropa",
-          "tu": "has tendido la ropa",
-          "el/ella": "ha tendido la ropa",
-          "nosotros": "hemos tendido la ropa",
-          "ellos": "han tendido la ropa"
-        },
         "条件法 (Condicional)": {
           "yo": "tendería la ropa",
           "tu": "tenderías la ropa",
@@ -37867,13 +36684,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he doblado la ropa",
-          "tu": "has doblado la ropa",
-          "el/ella": "ha doblado la ropa",
-          "nosotros": "hemos doblado la ropa",
-          "ellos": "han doblado la ropa"
         },
         "条件法 (Condicional)": {
           "yo": "doblaría la ropa",
@@ -37946,13 +36756,6 @@ const db = {
           "ustedes": "limpien",
           "negativo_tu": "no limpies"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he limpiado",
-          "tu": "has limpiado",
-          "el/ella": "ha limpiado",
-          "nosotros": "hemos limpiado",
-          "ellos": "han limpiado"
-        },
         "条件法 (Condicional)": {
           "yo": "limpiaría",
           "tu": "limpiarías",
@@ -38023,13 +36826,6 @@ const db = {
           "nosotros": "barramos",
           "ustedes": "barran",
           "negativo_tu": "no barras"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he barrrido",
-          "tu": "has barrrido",
-          "el/ella": "ha barrrido",
-          "nosotros": "hemos barrrido",
-          "ellos": "han barrrido"
         },
         "条件法 (Condicional)": {
           "yo": "barrería",
@@ -38102,13 +36898,6 @@ const db = {
           "ustedes": "aspiren",
           "negativo_tu": "no aspires"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he aspirado",
-          "tu": "has aspirado",
-          "el/ella": "ha aspirado",
-          "nosotros": "hemos aspirado",
-          "ellos": "han aspirado"
-        },
         "条件法 (Condicional)": {
           "yo": "aspiraría",
           "tu": "aspirarías",
@@ -38179,13 +36968,6 @@ const db = {
           "nosotros": "ordenemos",
           "ustedes": "ordenen",
           "negativo_tu": "no ordenes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he ordenado",
-          "tu": "has ordenado",
-          "el/ella": "ha ordenado",
-          "nosotros": "hemos ordenado",
-          "ellos": "han ordenado"
         },
         "条件法 (Condicional)": {
           "yo": "ordenaría",
@@ -38258,13 +37040,6 @@ const db = {
           "ustedes": "arreglen",
           "negativo_tu": "no arregles"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he arreglado",
-          "tu": "has arreglado",
-          "el/ella": "ha arreglado",
-          "nosotros": "hemos arreglado",
-          "ellos": "han arreglado"
-        },
         "条件法 (Condicional)": {
           "yo": "arreglaría",
           "tu": "arreglarías",
@@ -38335,13 +37110,6 @@ const db = {
           "nosotros": "cuidemos",
           "ustedes": "cuiden",
           "negativo_tu": "no cuides"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cuidado",
-          "tu": "has cuidado",
-          "el/ella": "ha cuidado",
-          "nosotros": "hemos cuidado",
-          "ellos": "han cuidado"
         },
         "条件法 (Condicional)": {
           "yo": "cuidaría",
@@ -38414,13 +37182,6 @@ const db = {
           "ustedes": "cuídense",
           "negativo_tu": "no te cuides"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cuidado",
-          "tu": "has cuidado",
-          "el/ella": "ha cuidado",
-          "nosotros": "hemos cuidado",
-          "ellos": "han cuidado"
-        },
         "条件法 (Condicional)": {
           "yo": "me cuidaría",
           "tu": "te cuidarías",
@@ -38491,13 +37252,6 @@ const db = {
           "nosotros": "enfermémonos",
           "ustedes": "enférmense",
           "negativo_tu": "no te enfermes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he enfermado",
-          "tu": "has enfermado",
-          "el/ella": "ha enfermado",
-          "nosotros": "hemos enfermado",
-          "ellos": "han enfermado"
         },
         "条件法 (Condicional)": {
           "yo": "me enfermaría",
@@ -38570,13 +37324,6 @@ const db = {
           "ustedes": "sanen",
           "negativo_tu": "no sanes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sanado",
-          "tu": "has sanado",
-          "el/ella": "ha sanado",
-          "nosotros": "hemos sanado",
-          "ellos": "han sanado"
-        },
         "条件法 (Condicional)": {
           "yo": "sanaría",
           "tu": "sanarías",
@@ -38647,13 +37394,6 @@ const db = {
           "nosotros": "recuperémonos",
           "ustedes": "recupérense",
           "negativo_tu": "no te recuperes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he recuperado",
-          "tu": "has recuperado",
-          "el/ella": "ha recuperado",
-          "nosotros": "hemos recuperado",
-          "ellos": "han recuperado"
         },
         "条件法 (Condicional)": {
           "yo": "me recuperaría",
@@ -38726,13 +37466,6 @@ const db = {
           "ustedes": "duelan",
           "negativo_tu": "no duelas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dolido",
-          "tu": "has dolido",
-          "el/ella": "ha dolido",
-          "nosotros": "hemos dolido",
-          "ellos": "han dolido"
-        },
         "条件法 (Condicional)": {
           "yo": "dolería",
           "tu": "dolerías",
@@ -38803,13 +37536,6 @@ const db = {
           "nosotros": "lastimémonos",
           "ustedes": "lastímense",
           "negativo_tu": "no te lastimes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he lastimado",
-          "tu": "has lastimado",
-          "el/ella": "ha lastimado",
-          "nosotros": "hemos lastimado",
-          "ellos": "han lastimado"
         },
         "条件法 (Condicional)": {
           "yo": "me lastimaría",
@@ -38882,13 +37608,6 @@ const db = {
           "ustedes": "rómpanse",
           "negativo_tu": "no te rompas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he roto",
-          "tu": "has roto",
-          "el/ella": "ha roto",
-          "nosotros": "hemos roto",
-          "ellos": "han roto"
-        },
         "条件法 (Condicional)": {
           "yo": "me rompería",
           "tu": "te romperías",
@@ -38959,13 +37678,6 @@ const db = {
           "nosotros": "respiremos",
           "ustedes": "respiren",
           "negativo_tu": "no respires"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he respirado",
-          "tu": "has respirado",
-          "el/ella": "ha respirado",
-          "nosotros": "hemos respirado",
-          "ellos": "han respirado"
         },
         "条件法 (Condicional)": {
           "yo": "respiraría",
@@ -39038,13 +37750,6 @@ const db = {
           "ustedes": "tosan",
           "negativo_tu": "no tosas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tosido",
-          "tu": "has tosido",
-          "el/ella": "ha tosido",
-          "nosotros": "hemos tosido",
-          "ellos": "han tosido"
-        },
         "条件法 (Condicional)": {
           "yo": "tosería",
           "tu": "toserías",
@@ -39115,13 +37820,6 @@ const db = {
           "nosotros": "estornudemos",
           "ustedes": "estornuden",
           "negativo_tu": "no estornudes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he estornudado",
-          "tu": "has estornudado",
-          "el/ella": "ha estornudado",
-          "nosotros": "hemos estornudado",
-          "ellos": "han estornudado"
         },
         "条件法 (Condicional)": {
           "yo": "estornudaría",
@@ -39194,13 +37892,6 @@ const db = {
           "ustedes": "estírense",
           "negativo_tu": "no te estires"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he estirado",
-          "tu": "has estirado",
-          "el/ella": "ha estirado",
-          "nosotros": "hemos estirado",
-          "ellos": "han estirado"
-        },
         "条件法 (Condicional)": {
           "yo": "me estiraría",
           "tu": "te estirarías",
@@ -39271,13 +37962,6 @@ const db = {
           "nosotros": "nademos",
           "ustedes": "naden",
           "negativo_tu": "no nades"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he nadado",
-          "tu": "has nadado",
-          "el/ella": "ha nadado",
-          "nosotros": "hemos nadado",
-          "ellos": "han nadado"
         },
         "条件法 (Condicional)": {
           "yo": "nadaría",
@@ -39350,13 +38034,6 @@ const db = {
           "ustedes": "suden",
           "negativo_tu": "no sudes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sudado",
-          "tu": "has sudado",
-          "el/ella": "ha sudado",
-          "nosotros": "hemos sudado",
-          "ellos": "han sudado"
-        },
         "条件法 (Condicional)": {
           "yo": "sudaría",
           "tu": "sudarías",
@@ -39427,13 +38104,6 @@ const db = {
           "nosotros": "pesémonos",
           "ustedes": "pésense",
           "negativo_tu": "no te peses"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he pesado",
-          "tu": "has pesado",
-          "el/ella": "ha pesado",
-          "nosotros": "hemos pesado",
-          "ellos": "han pesado"
         },
         "条件法 (Condicional)": {
           "yo": "me pesaría",
@@ -39506,13 +38176,6 @@ const db = {
           "ustedes": "mídanse",
           "negativo_tu": "no te midas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he medido",
-          "tu": "has medido",
-          "el/ella": "ha medido",
-          "nosotros": "hemos medido",
-          "ellos": "han medido"
-        },
         "条件法 (Condicional)": {
           "yo": "me mediría",
           "tu": "te medirías",
@@ -39541,13 +38204,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he parado",
-          "tu": "has parado",
-          "el/ella": "ha parado",
-          "nosotros": "hemos parado",
-          "ellos": "han parado"
         },
         "条件法 (Condicional)": {
           "yo": "me pararía (LA)",
@@ -39620,13 +38276,6 @@ const db = {
           "ustedes": "cáiganse",
           "negativo_tu": "no te caigas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he caído",
-          "tu": "has caído",
-          "el/ella": "ha caído",
-          "nosotros": "hemos caído",
-          "ellos": "han caído"
-        },
         "条件法 (Condicional)": {
           "yo": "me caería",
           "tu": "te caerías",
@@ -39697,13 +38346,6 @@ const db = {
           "nosotros": "volvamos",
           "ustedes": "vuelvan",
           "negativo_tu": "no vuelvas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he vuelto",
-          "tu": "has vuelto",
-          "el/ella": "ha vuelto",
-          "nosotros": "hemos vuelto",
-          "ellos": "han vuelto"
         },
         "条件法 (Condicional)": {
           "yo": "volvería",
@@ -39776,13 +38418,6 @@ const db = {
           "ustedes": "regresen",
           "negativo_tu": "no regreses"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he regresado",
-          "tu": "has regresado",
-          "el/ella": "ha regresado",
-          "nosotros": "hemos regresado",
-          "ellos": "han regresado"
-        },
         "条件法 (Condicional)": {
           "yo": "regresaría",
           "tu": "regresarías",
@@ -39853,13 +38488,6 @@ const db = {
           "nosotros": "entremos",
           "ustedes": "entren",
           "negativo_tu": "no entres"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he entrado",
-          "tu": "has entrado",
-          "el/ella": "ha entrado",
-          "nosotros": "hemos entrado",
-          "ellos": "han entrado"
         },
         "条件法 (Condicional)": {
           "yo": "entraría",
@@ -39932,13 +38560,6 @@ const db = {
           "ustedes": "partan",
           "negativo_tu": "no partas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he partido",
-          "tu": "has partido",
-          "el/ella": "ha partido",
-          "nosotros": "hemos partido",
-          "ellos": "han partido"
-        },
         "条件法 (Condicional)": {
           "yo": "partiría",
           "tu": "partirías",
@@ -40009,13 +38630,6 @@ const db = {
           "nosotros": "viajemos",
           "ustedes": "viajen",
           "negativo_tu": "no viajes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he viajado",
-          "tu": "has viajado",
-          "el/ella": "ha viajado",
-          "nosotros": "hemos viajado",
-          "ellos": "han viajado"
         },
         "条件法 (Condicional)": {
           "yo": "viajaría",
@@ -40088,13 +38702,6 @@ const db = {
           "ustedes": "paseen",
           "negativo_tu": "no pasees"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he paseado",
-          "tu": "has paseado",
-          "el/ella": "ha paseado",
-          "nosotros": "hemos paseado",
-          "ellos": "han paseado"
-        },
         "条件法 (Condicional)": {
           "yo": "pasearía",
           "tu": "pasearías",
@@ -40165,13 +38772,6 @@ const db = {
           "nosotros": "subamos",
           "ustedes": "suban",
           "negativo_tu": "no subas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he subido",
-          "tu": "has subido",
-          "el/ella": "ha subido",
-          "nosotros": "hemos subido",
-          "ellos": "han subido"
         },
         "条件法 (Condicional)": {
           "yo": "subiría",
@@ -40244,13 +38844,6 @@ const db = {
           "ustedes": "bajen",
           "negativo_tu": "no bajes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he bajado",
-          "tu": "has bajado",
-          "el/ella": "ha bajado",
-          "nosotros": "hemos bajado",
-          "ellos": "han bajado"
-        },
         "条件法 (Condicional)": {
           "yo": "bajaría",
           "tu": "bajarías",
@@ -40322,13 +38915,6 @@ const db = {
           "ustedes": "conduzcan",
           "negativo_tu": "no conduzcas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he conducido",
-          "tu": "has conducido",
-          "el/ella": "ha conducido",
-          "nosotros": "hemos conducido",
-          "ellos": "han conducido"
-        },
         "条件法 (Condicional)": {
           "yo": "conduciría",
           "tu": "conducirías",
@@ -40357,13 +38943,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he manejado",
-          "tu": "has manejado",
-          "el/ella": "ha manejado",
-          "nosotros": "hemos manejado",
-          "ellos": "han manejado"
         },
         "条件法 (Condicional)": {
           "yo": "manejaría (LA)",
@@ -40436,13 +39015,6 @@ const db = {
           "ustedes": "piérdanse",
           "negativo_tu": "no te pierdas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he perdido",
-          "tu": "has perdido",
-          "el/ella": "ha perdido",
-          "nosotros": "hemos perdido",
-          "ellos": "han perdido"
-        },
         "条件法 (Condicional)": {
           "yo": "me perdería",
           "tu": "te perderías",
@@ -40471,13 +39043,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he encontrado el camino",
-          "tu": "has encontrado el camino",
-          "el/ella": "ha encontrado el camino",
-          "nosotros": "hemos encontrado el camino",
-          "ellos": "han encontrado el camino"
         },
         "条件法 (Condicional)": {
           "yo": "encontraría el camino",
@@ -40508,13 +39073,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cruzado la calle",
-          "tu": "has cruzado la calle",
-          "el/ella": "ha cruzado la calle",
-          "nosotros": "hemos cruzado la calle",
-          "ellos": "han cruzado la calle"
-        },
         "条件法 (Condicional)": {
           "yo": "cruzaría la calle",
           "tu": "cruzarías la calle",
@@ -40544,13 +39102,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he esperado el bus",
-          "tu": "has esperado el bus",
-          "el/ella": "ha esperado el bus",
-          "nosotros": "hemos esperado el bus",
-          "ellos": "han esperado el bus"
-        },
         "条件法 (Condicional)": {
           "yo": "esperaría el bus",
           "tu": "esperarías el bus",
@@ -40579,13 +39130,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he hecho cola",
-          "tu": "has hecho cola",
-          "el/ella": "ha hecho cola",
-          "nosotros": "hemos hecho cola",
-          "ellos": "han hecho cola"
         },
         "条件法 (Condicional)": {
           "yo": "haría cola",
@@ -40658,13 +39202,6 @@ const db = {
           "ustedes": "reserven",
           "negativo_tu": "no reserves"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he reservado",
-          "tu": "has reservado",
-          "el/ella": "ha reservado",
-          "nosotros": "hemos reservado",
-          "ellos": "han reservado"
-        },
         "条件法 (Condicional)": {
           "yo": "reservaría",
           "tu": "reservarías",
@@ -40736,13 +39273,6 @@ const db = {
           "ustedes": "alójense",
           "negativo_tu": "no te alojes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he alojado",
-          "tu": "has alojado",
-          "el/ella": "ha alojado",
-          "nosotros": "hemos alojado",
-          "ellos": "han alojado"
-        },
         "条件法 (Condicional)": {
           "yo": "me alojaría",
           "tu": "te alojarías",
@@ -40772,13 +39302,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he quedado en un hotel",
-          "tu": "has quedado en un hotel",
-          "el/ella": "ha quedado en un hotel",
-          "nosotros": "hemos quedado en un hotel",
-          "ellos": "han quedado en un hotel"
-        },
         "条件法 (Condicional)": {
           "yo": "me quedaría en un hotel",
           "tu": "te quedarías en un hotel",
@@ -40807,13 +39330,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he alquilado un coche",
-          "tu": "has alquilado un coche",
-          "el/ella": "ha alquilado un coche",
-          "nosotros": "hemos alquilado un coche",
-          "ellos": "han alquilado un coche"
         },
         "条件法 (Condicional)": {
           "yo": "alquilaría un coche",
@@ -40886,13 +39402,6 @@ const db = {
           "ustedes": "visiten",
           "negativo_tu": "no visites"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he visitado",
-          "tu": "has visitado",
-          "el/ella": "ha visitado",
-          "nosotros": "hemos visitado",
-          "ellos": "han visitado"
-        },
         "条件法 (Condicional)": {
           "yo": "visitaría",
           "tu": "visitarías",
@@ -40921,13 +39430,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he conocido un lugar",
-          "tu": "has conocido un lugar",
-          "el/ella": "ha conocido un lugar",
-          "nosotros": "hemos conocido un lugar",
-          "ellos": "han conocido un lugar"
         },
         "条件法 (Condicional)": {
           "yo": "conocería un lugar",
@@ -40958,13 +39460,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sacado fotos",
-          "tu": "has sacado fotos",
-          "el/ella": "ha sacado fotos",
-          "nosotros": "hemos sacado fotos",
-          "ellos": "han sacado fotos"
-        },
         "条件法 (Condicional)": {
           "yo": "sacaría fotos",
           "tu": "sacarías fotos",
@@ -40993,13 +39488,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he grabadо videos",
-          "tu": "has grabadо videos",
-          "el/ella": "ha grabadо videos",
-          "nosotros": "hemos grabadо videos",
-          "ellos": "han grabadо videos"
         },
         "条件法 (Condicional)": {
           "yo": "grabaría videos",
@@ -41030,13 +39518,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he perdido el vuelo",
-          "tu": "has perdido el vuelo",
-          "el/ella": "ha perdido el vuelo",
-          "nosotros": "hemos perdido el vuelo",
-          "ellos": "han perdido el vuelo"
-        },
         "条件法 (Condicional)": {
           "yo": "perdería el vuelo",
           "tu": "perderías el vuelo",
@@ -41065,13 +39546,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he hecho turismo",
-          "tu": "has hecho turismo",
-          "el/ella": "ha hecho turismo",
-          "nosotros": "hemos hecho turismo",
-          "ellos": "han hecho turismo"
         },
         "条件法 (Condicional)": {
           "yo": "haría turismo",
@@ -41144,13 +39618,6 @@ const db = {
           "ustedes": "exploren",
           "negativo_tu": "no explores"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he explorado",
-          "tu": "has explorado",
-          "el/ella": "ha explorado",
-          "nosotros": "hemos explorado",
-          "ellos": "han explorado"
-        },
         "条件法 (Condicional)": {
           "yo": "exploraría",
           "tu": "explorarías",
@@ -41180,13 +39647,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he caminado por la ciudad",
-          "tu": "has caminado por la ciudad",
-          "el/ella": "ha caminado por la ciudad",
-          "nosotros": "hemos caminado por la ciudad",
-          "ellos": "han caminado por la ciudad"
-        },
         "条件法 (Condicional)": {
           "yo": "caminaría por la ciudad",
           "tu": "caminarías por la ciudad",
@@ -41215,13 +39675,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he salido de viaje",
-          "tu": "has salido de viaje",
-          "el/ella": "ha salido de viaje",
-          "nosotros": "hemos salido de viaje",
-          "ellos": "han salido de viaje"
         },
         "条件法 (Condicional)": {
           "yo": "saldría de viaje",
@@ -41294,13 +39747,6 @@ const db = {
           "ustedes": "empaquen",
           "negativo_tu": "no empaques"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he empacado",
-          "tu": "has empacado",
-          "el/ella": "ha empacado",
-          "nosotros": "hemos empacado",
-          "ellos": "han empacado"
-        },
         "条件法 (Condicional)": {
           "yo": "empacaría",
           "tu": "empacarías",
@@ -41329,13 +39775,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he hecho la maleta",
-          "tu": "has hecho la maleta",
-          "el/ella": "ha hecho la maleta",
-          "nosotros": "hemos hecho la maleta",
-          "ellos": "han hecho la maleta"
         },
         "条件法 (Condicional)": {
           "yo": "haría la maleta",
@@ -41408,13 +39847,6 @@ const db = {
           "ustedes": "desempaquen",
           "negativo_tu": "no desempaques"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he desempacado",
-          "tu": "has desempacado",
-          "el/ella": "ha desempacado",
-          "nosotros": "hemos desempacado",
-          "ellos": "han desempacado"
-        },
         "条件法 (Condicional)": {
           "yo": "desempacaría",
           "tu": "desempacarías",
@@ -41444,13 +39876,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he perdido la maleta",
-          "tu": "has perdido la maleta",
-          "el/ella": "ha perdido la maleta",
-          "nosotros": "hemos perdido la maleta",
-          "ellos": "han perdido la maleta"
-        },
         "条件法 (Condicional)": {
           "yo": "perdería la maleta",
           "tu": "perderías la maleta",
@@ -41479,13 +39904,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he encontrado alojamiento",
-          "tu": "has encontrado alojamiento",
-          "el/ella": "ha encontrado alojamiento",
-          "nosotros": "hemos encontrado alojamiento",
-          "ellos": "han encontrado alojamiento"
         },
         "条件法 (Condicional)": {
           "yo": "encontraría alojamiento",
@@ -41558,13 +39976,6 @@ const db = {
           "ustedes": "múdense",
           "negativo_tu": "no te mudes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he mudado",
-          "tu": "has mudado",
-          "el/ella": "ha mudado",
-          "nosotros": "hemos mudado",
-          "ellos": "han mudado"
-        },
         "条件法 (Condicional)": {
           "yo": "me mudaría",
           "tu": "te mudarías",
@@ -41594,13 +40005,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he salido a comer",
-          "tu": "has salido a comer",
-          "el/ella": "ha salido a comer",
-          "nosotros": "hemos salido a comer",
-          "ellos": "han salido a comer"
-        },
         "条件法 (Condicional)": {
           "yo": "saldría a comer",
           "tu": "saldrías a comer",
@@ -41629,13 +40033,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he salido de noche",
-          "tu": "has salido de noche",
-          "el/ella": "ha salido de noche",
-          "nosotros": "hemos salido de noche",
-          "ellos": "han salido de noche"
         },
         "条件法 (Condicional)": {
           "yo": "saldría de noche",
@@ -41708,13 +40105,6 @@ const db = {
           "ustedes": "enseñen",
           "negativo_tu": "no enseñes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he enseñado",
-          "tu": "has enseñado",
-          "el/ella": "ha enseñado",
-          "nosotros": "hemos enseñado",
-          "ellos": "han enseñado"
-        },
         "条件法 (Condicional)": {
           "yo": "enseñaría",
           "tu": "enseñarías",
@@ -41785,13 +40175,6 @@ const db = {
           "nosotros": "aprendamos",
           "ustedes": "aprendan",
           "negativo_tu": "no aprendas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he aprendido",
-          "tu": "has aprendido",
-          "el/ella": "ha aprendido",
-          "nosotros": "hemos aprendido",
-          "ellos": "han aprendido"
         },
         "条件法 (Condicional)": {
           "yo": "aprendería",
@@ -41864,13 +40247,6 @@ const db = {
           "ustedes": "preparen",
           "negativo_tu": "no prepares"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he preparado",
-          "tu": "has preparado",
-          "el/ella": "ha preparado",
-          "nosotros": "hemos preparado",
-          "ellos": "han preparado"
-        },
         "条件法 (Condicional)": {
           "yo": "prepararía",
           "tu": "prepararías",
@@ -41941,13 +40317,6 @@ const db = {
           "nosotros": "revisemos",
           "ustedes": "revisen",
           "negativo_tu": "no revises"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he revisado",
-          "tu": "has revisado",
-          "el/ella": "ha revisado",
-          "nosotros": "hemos revisado",
-          "ellos": "han revisado"
         },
         "条件法 (Condicional)": {
           "yo": "revisaría",
@@ -42020,13 +40389,6 @@ const db = {
           "ustedes": "investiguen",
           "negativo_tu": "no investigues"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he investigado",
-          "tu": "has investigado",
-          "el/ella": "ha investigado",
-          "nosotros": "hemos investigado",
-          "ellos": "han investigado"
-        },
         "条件法 (Condicional)": {
           "yo": "investigaría",
           "tu": "investigarías",
@@ -42097,13 +40459,6 @@ const db = {
           "nosotros": "escribamos",
           "ustedes": "escriban",
           "negativo_tu": "no escribas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he escrito",
-          "tu": "has escrito",
-          "el/ella": "ha escrito",
-          "nosotros": "hemos escrito",
-          "ellos": "han escrito"
         },
         "条件法 (Condicional)": {
           "yo": "escribiría",
@@ -42176,13 +40531,6 @@ const db = {
           "ustedes": "lean",
           "negativo_tu": "no leas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he leído",
-          "tu": "has leído",
-          "el/ella": "ha leído",
-          "nosotros": "hemos leído",
-          "ellos": "han leído"
-        },
         "条件法 (Condicional)": {
           "yo": "leería",
           "tu": "leerías",
@@ -42253,13 +40601,6 @@ const db = {
           "nosotros": "subrayemos",
           "ustedes": "subrayen",
           "negativo_tu": "no subrayes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he subrayado",
-          "tu": "has subrayado",
-          "el/ella": "ha subrayado",
-          "nosotros": "hemos subrayado",
-          "ellos": "han subrayado"
         },
         "条件法 (Condicional)": {
           "yo": "subrayaría",
@@ -42332,13 +40673,6 @@ const db = {
           "ustedes": "anoten",
           "negativo_tu": "no anotes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he anotado",
-          "tu": "has anotado",
-          "el/ella": "ha anotado",
-          "nosotros": "hemos anotado",
-          "ellos": "han anotado"
-        },
         "条件法 (Condicional)": {
           "yo": "anotaría",
           "tu": "anotarías",
@@ -42409,13 +40743,6 @@ const db = {
           "nosotros": "reunámonos",
           "ustedes": "reúnanse",
           "negativo_tu": "no te reúnas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he reunido",
-          "tu": "has reunido",
-          "el/ella": "ha reunido",
-          "nosotros": "hemos reunido",
-          "ellos": "han reunido"
         },
         "条件法 (Condicional)": {
           "yo": "me reuniría",
@@ -42488,13 +40815,6 @@ const db = {
           "ustedes": "negocien",
           "negativo_tu": "no negocies"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he negociado",
-          "tu": "has negociado",
-          "el/ella": "ha negociado",
-          "nosotros": "hemos negociado",
-          "ellos": "han negociado"
-        },
         "条件法 (Condicional)": {
           "yo": "negociaría",
           "tu": "negociarías",
@@ -42565,13 +40885,6 @@ const db = {
           "nosotros": "firmemos",
           "ustedes": "firmen",
           "negativo_tu": "no firmes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he firmado",
-          "tu": "has firmado",
-          "el/ella": "ha firmado",
-          "nosotros": "hemos firmado",
-          "ellos": "han firmado"
         },
         "条件法 (Condicional)": {
           "yo": "firmaría",
@@ -42644,13 +40957,6 @@ const db = {
           "ustedes": "envíen",
           "negativo_tu": "no envíes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he enviado",
-          "tu": "has enviado",
-          "el/ella": "ha enviado",
-          "nosotros": "hemos enviado",
-          "ellos": "han enviado"
-        },
         "条件法 (Condicional)": {
           "yo": "enviaría",
           "tu": "enviarías",
@@ -42680,13 +40986,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he contestado correos",
-          "tu": "has contestado correos",
-          "el/ella": "ha contestado correos",
-          "nosotros": "hemos contestado correos",
-          "ellos": "han contestado correos"
-        },
         "条件法 (Condicional)": {
           "yo": "contestaría correos",
           "tu": "contestarías correos",
@@ -42715,13 +41014,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he llamado por teléfono",
-          "tu": "has llamado por teléfono",
-          "el/ella": "ha llamado por teléfono",
-          "nosotros": "hemos llamado por teléfono",
-          "ellos": "han llamado por teléfono"
         },
         "条件法 (Condicional)": {
           "yo": "llamaría por teléfono",
@@ -42794,13 +41086,6 @@ const db = {
           "ustedes": "conecten",
           "negativo_tu": "no conectes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he conectado",
-          "tu": "has conectado",
-          "el/ella": "ha conectado",
-          "nosotros": "hemos conectado",
-          "ellos": "han conectado"
-        },
         "条件法 (Condicional)": {
           "yo": "conectaría",
           "tu": "conectarías",
@@ -42872,13 +41157,6 @@ const db = {
           "ustedes": "desconecten",
           "negativo_tu": "no desconectes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he desconectado",
-          "tu": "has desconectado",
-          "el/ella": "ha desconectado",
-          "nosotros": "hemos desconectado",
-          "ellos": "han desconectado"
-        },
         "条件法 (Condicional)": {
           "yo": "desconectaría",
           "tu": "desconectarías",
@@ -42907,13 +41185,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he guardado archivos",
-          "tu": "has guardado archivos",
-          "el/ella": "ha guardado archivos",
-          "nosotros": "hemos guardado archivos",
-          "ellos": "han guardado archivos"
         },
         "条件法 (Condicional)": {
           "yo": "guardaría archivos",
@@ -42944,13 +41215,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he abierto un archivo",
-          "tu": "has abierto un archivo",
-          "el/ella": "ha abierto un archivo",
-          "nosotros": "hemos abierto un archivo",
-          "ellos": "han abierto un archivo"
-        },
         "条件法 (Condicional)": {
           "yo": "abriría un archivo",
           "tu": "abrirías un archivo",
@@ -42980,13 +41244,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cerrado sesión",
-          "tu": "has cerrado sesión",
-          "el/ella": "ha cerrado sesión",
-          "nosotros": "hemos cerrado sesión",
-          "ellos": "han cerrado sesión"
-        },
         "条件法 (Condicional)": {
           "yo": "cerraría sesión",
           "tu": "cerrarías sesión",
@@ -43015,13 +41272,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he iniciado sesión",
-          "tu": "has iniciado sesión",
-          "el/ella": "ha iniciado sesión",
-          "nosotros": "hemos iniciado sesión",
-          "ellos": "han iniciado sesión"
         },
         "条件法 (Condicional)": {
           "yo": "iniciaría sesión",
@@ -43094,13 +41344,6 @@ const db = {
           "ustedes": "compartan",
           "negativo_tu": "no compartas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he compartido",
-          "tu": "has compartido",
-          "el/ella": "ha compartido",
-          "nosotros": "hemos compartido",
-          "ellos": "han compartido"
-        },
         "条件法 (Condicional)": {
           "yo": "compartiría",
           "tu": "compartirías",
@@ -43171,13 +41414,6 @@ const db = {
           "nosotros": "descarguemos",
           "ustedes": "descarguen",
           "negativo_tu": "no descargues"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he descargado",
-          "tu": "has descargado",
-          "el/ella": "ha descargado",
-          "nosotros": "hemos descargado",
-          "ellos": "han descargado"
         },
         "条件法 (Condicional)": {
           "yo": "descargaría",
@@ -43250,13 +41486,6 @@ const db = {
           "ustedes": "impriman",
           "negativo_tu": "no imprimas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he impreso",
-          "tu": "has impreso",
-          "el/ella": "ha impreso",
-          "nosotros": "hemos impreso",
-          "ellos": "han impreso"
-        },
         "条件法 (Condicional)": {
           "yo": "imprimiría",
           "tu": "imprimirías",
@@ -43328,13 +41557,6 @@ const db = {
           "ustedes": "fotocopien",
           "negativo_tu": "no fotocopies"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he fotocopiado",
-          "tu": "has fotocopiado",
-          "el/ella": "ha fotocopiado",
-          "nosotros": "hemos fotocopiado",
-          "ellos": "han fotocopiado"
-        },
         "条件法 (Condicional)": {
           "yo": "fotocopiaría",
           "tu": "fotocopiarías",
@@ -43363,13 +41585,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he asistido a clase",
-          "tu": "has asistido a clase",
-          "el/ella": "ha asistido a clase",
-          "nosotros": "hemos asistido a clase",
-          "ellos": "han asistido a clase"
         },
         "条件法 (Condicional)": {
           "yo": "asistiría a clase",
@@ -43400,13 +41615,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he faltado a clase",
-          "tu": "has faltado a clase",
-          "el/ella": "ha faltado a clase",
-          "nosotros": "hemos faltado a clase",
-          "ellos": "han faltado a clase"
-        },
         "条件法 (Condicional)": {
           "yo": "faltaría a clase",
           "tu": "faltarías a clase",
@@ -43435,13 +41643,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he aprobado un examen",
-          "tu": "has aprobado un examen",
-          "el/ella": "ha aprobado un examen",
-          "nosotros": "hemos aprobado un examen",
-          "ellos": "han aprobado un examen"
         },
         "条件法 (Condicional)": {
           "yo": "aprobaría un examen",
@@ -43472,13 +41673,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he suspendido un examen",
-          "tu": "has suspendido un examen",
-          "el/ella": "ha suspendido un examen",
-          "nosotros": "hemos suspendido un examen",
-          "ellos": "han suspendido un examen"
-        },
         "条件法 (Condicional)": {
           "yo": "suspendería un examen",
           "tu": "suspenderías un examen",
@@ -43507,13 +41701,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tomado apuntes",
-          "tu": "has tomado apuntes",
-          "el/ella": "ha tomado apuntes",
-          "nosotros": "hemos tomado apuntes",
-          "ellos": "han tomado apuntes"
         },
         "条件法 (Condicional)": {
           "yo": "tomaría apuntes",
@@ -43586,13 +41773,6 @@ const db = {
           "ustedes": "participen",
           "negativo_tu": "no participes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he participado",
-          "tu": "has participado",
-          "el/ella": "ha participado",
-          "nosotros": "hemos participado",
-          "ellos": "han participado"
-        },
         "条件法 (Condicional)": {
           "yo": "participaría",
           "tu": "participarías",
@@ -43663,13 +41843,6 @@ const db = {
           "nosotros": "colaboremos",
           "ustedes": "colaboren",
           "negativo_tu": "no colabores"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he colaborado",
-          "tu": "has colaborado",
-          "el/ella": "ha colaborado",
-          "nosotros": "hemos colaborado",
-          "ellos": "han colaborado"
         },
         "条件法 (Condicional)": {
           "yo": "colaboraría",
@@ -43742,13 +41915,6 @@ const db = {
           "ustedes": "dirijan",
           "negativo_tu": "no dirijas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dirigido",
-          "tu": "has dirigido",
-          "el/ella": "ha dirigido",
-          "nosotros": "hemos dirigido",
-          "ellos": "han dirigido"
-        },
         "条件法 (Condicional)": {
           "yo": "dirigiría",
           "tu": "dirigirías",
@@ -43819,13 +41985,6 @@ const db = {
           "nosotros": "supervisemos",
           "ustedes": "supervisen",
           "negativo_tu": "no supervises"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he supervisado",
-          "tu": "has supervisado",
-          "el/ella": "ha supervisado",
-          "nosotros": "hemos supervisado",
-          "ellos": "han supervisado"
         },
         "条件法 (Condicional)": {
           "yo": "supervisaría",
@@ -43898,13 +42057,6 @@ const db = {
           "ustedes": "contraten",
           "negativo_tu": "no contrates"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he contratado",
-          "tu": "has contratado",
-          "el/ella": "ha contratado",
-          "nosotros": "hemos contratado",
-          "ellos": "han contratado"
-        },
         "条件法 (Condicional)": {
           "yo": "contrataría",
           "tu": "contratarías",
@@ -43976,13 +42128,6 @@ const db = {
           "ustedes": "despidan",
           "negativo_tu": "no despidas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he despedido",
-          "tu": "has despedido",
-          "el/ella": "ha despedido",
-          "nosotros": "hemos despedido",
-          "ellos": "han despedido"
-        },
         "条件法 (Condicional)": {
           "yo": "despediría",
           "tu": "despedirías",
@@ -44011,13 +42156,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he ahorrado tiempo",
-          "tu": "has ahorrado tiempo",
-          "el/ella": "ha ahorrado tiempo",
-          "nosotros": "hemos ahorrado tiempo",
-          "ellos": "han ahorrado tiempo"
         },
         "条件法 (Condicional)": {
           "yo": "ahorraría tiempo",
@@ -44048,13 +42186,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he perdido tiempo",
-          "tu": "has perdido tiempo",
-          "el/ella": "ha perdido tiempo",
-          "nosotros": "hemos perdido tiempo",
-          "ellos": "han perdido tiempo"
-        },
         "条件法 (Condicional)": {
           "yo": "perdería tiempo",
           "tu": "perderías tiempo",
@@ -44083,13 +42214,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he organizado reuniones",
-          "tu": "has organizado reuniones",
-          "el/ella": "ha organizado reuniones",
-          "nosotros": "hemos organizado reuniones",
-          "ellos": "han organizado reuniones"
         },
         "条件法 (Condicional)": {
           "yo": "organizaría reuniones",
@@ -44120,13 +42244,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tomado decisiones",
-          "tu": "has tomado decisiones",
-          "el/ella": "ha tomado decisiones",
-          "nosotros": "hemos tomado decisiones",
-          "ellos": "han tomado decisiones"
-        },
         "条件法 (Condicional)": {
           "yo": "tomaría decisiones",
           "tu": "tomarías decisiones",
@@ -44155,13 +42272,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tenido que",
-          "tu": "has tenido que",
-          "el/ella": "ha tenido que",
-          "nosotros": "hemos tenido que",
-          "ellos": "han tenido que"
         },
         "条件法 (Condicional)": {
           "yo": "tendría que",
@@ -44234,13 +42344,6 @@ const db = {
           "ustedes": "deban",
           "negativo_tu": "no debas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he debido",
-          "tu": "has debido",
-          "el/ella": "ha debido",
-          "nosotros": "hemos debido",
-          "ellos": "han debido"
-        },
         "条件法 (Condicional)": {
           "yo": "debería",
           "tu": "deberías",
@@ -44269,13 +42372,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he habido que",
-          "tu": "has habido que",
-          "el/ella": "ha habido que",
-          "nosotros": "hemos habido que",
-          "ellos": "han habido que"
         },
         "条件法 (Condicional)": {
           "yo": "habría que (hay que)",
@@ -44348,13 +42444,6 @@ const db = {
           "ustedes": "suelan",
           "negativo_tu": "no suelas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he solido",
-          "tu": "has solido",
-          "el/ella": "ha solido",
-          "nosotros": "hemos solido",
-          "ellos": "han solido"
-        },
         "条件法 (Condicional)": {
           "yo": "solería",
           "tu": "solerías",
@@ -44383,13 +42472,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he idо a",
-          "tu": "has idо a",
-          "el/ella": "ha idо a",
-          "nosotros": "hemos idо a",
-          "ellos": "han idо a"
         },
         "条件法 (Condicional)": {
           "yo": "iría a",
@@ -44420,13 +42502,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he acabado de",
-          "tu": "has acabado de",
-          "el/ella": "ha acabado de",
-          "nosotros": "hemos acabado de",
-          "ellos": "han acabado de"
-        },
         "条件法 (Condicional)": {
           "yo": "acabaría de",
           "tu": "acabarías de",
@@ -44455,13 +42530,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he vuelto a",
-          "tu": "has vuelto a",
-          "el/ella": "ha vuelto a",
-          "nosotros": "hemos vuelto a",
-          "ellos": "han vuelto a"
         },
         "条件法 (Condicional)": {
           "yo": "volvería a",
@@ -44492,13 +42560,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dejado de",
-          "tu": "has dejado de",
-          "el/ella": "ha dejado de",
-          "nosotros": "hemos dejado de",
-          "ellos": "han dejado de"
-        },
         "条件法 (Condicional)": {
           "yo": "dejaría de",
           "tu": "dejarías de",
@@ -44527,13 +42588,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he empezado a",
-          "tu": "has empezado a",
-          "el/ella": "ha empezado a",
-          "nosotros": "hemos empezado a",
-          "ellos": "han empezado a"
         },
         "条件法 (Condicional)": {
           "yo": "empezaría a",
@@ -44564,13 +42618,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he seguido haciendo",
-          "tu": "has seguido haciendo",
-          "el/ella": "ha seguido haciendo",
-          "nosotros": "hemos seguido haciendo",
-          "ellos": "han seguido haciendo"
-        },
         "条件法 (Condicional)": {
           "yo": "seguiría haciendo",
           "tu": "seguirías haciendo",
@@ -44599,13 +42646,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he terminado de",
-          "tu": "has terminado de",
-          "el/ella": "ha terminado de",
-          "nosotros": "hemos terminado de",
-          "ellos": "han terminado de"
         },
         "条件法 (Condicional)": {
           "yo": "terminaría de",
@@ -44636,13 +42676,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he llegado a",
-          "tu": "has llegado a",
-          "el/ella": "ha llegado a",
-          "nosotros": "hemos llegado a",
-          "ellos": "han llegado a"
-        },
         "条件法 (Condicional)": {
           "yo": "llegaría a",
           "tu": "llegarías a",
@@ -44671,13 +42704,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he atrevido a",
-          "tu": "has atrevido a",
-          "el/ella": "ha atrevido a",
-          "nosotros": "hemos atrevido a",
-          "ellos": "han atrevido a"
         },
         "条件法 (Condicional)": {
           "yo": "me atrevería a",
@@ -44750,13 +42776,6 @@ const db = {
           "ustedes": "intenten",
           "negativo_tu": "no intentes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he intentado",
-          "tu": "has intentado",
-          "el/ella": "ha intentado",
-          "nosotros": "hemos intentado",
-          "ellos": "han intentado"
-        },
         "条件法 (Condicional)": {
           "yo": "intentaría",
           "tu": "intentarías",
@@ -44785,13 +42804,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he probado a",
-          "tu": "has probado a",
-          "el/ella": "ha probado a",
-          "nosotros": "hemos probado a",
-          "ellos": "han probado a"
         },
         "条件法 (Condicional)": {
           "yo": "probaría a",
@@ -44864,13 +42876,6 @@ const db = {
           "ustedes": "permitan",
           "negativo_tu": "no permitas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he permitido",
-          "tu": "has permitido",
-          "el/ella": "ha permitido",
-          "nosotros": "hemos permitido",
-          "ellos": "han permitido"
-        },
         "条件法 (Condicional)": {
           "yo": "permitiría",
           "tu": "permitirías",
@@ -44942,13 +42947,6 @@ const db = {
           "ustedes": "prohíban",
           "negativo_tu": "no prohíbas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he prohibido",
-          "tu": "has prohibido",
-          "el/ella": "ha prohibido",
-          "nosotros": "hemos prohibido",
-          "ellos": "han prohibido"
-        },
         "条件法 (Condicional)": {
           "yo": "prohibiría",
           "tu": "prohibirías",
@@ -44977,13 +42975,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he pensado en",
-          "tu": "has pensado en",
-          "el/ella": "ha pensado en",
-          "nosotros": "hemos pensado en",
-          "ellos": "han pensado en"
         },
         "条件法 (Condicional)": {
           "yo": "pensaría en",
@@ -45014,13 +43005,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he pensado en hacer",
-          "tu": "has pensado en hacer",
-          "el/ella": "ha pensado en hacer",
-          "nosotros": "hemos pensado en hacer",
-          "ellos": "han pensado en hacer"
-        },
         "条件法 (Condicional)": {
           "yo": "pensaría en hacer",
           "tu": "pensarías en hacer",
@@ -45049,13 +43033,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he soñado con",
-          "tu": "has soñado con",
-          "el/ella": "ha soñado con",
-          "nosotros": "hemos soñado con",
-          "ellos": "han soñado con"
         },
         "条件法 (Condicional)": {
           "yo": "soñaría con",
@@ -45086,13 +43063,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he olvidado hacer",
-          "tu": "has olvidado hacer",
-          "el/ella": "ha olvidado hacer",
-          "nosotros": "hemos olvidado hacer",
-          "ellos": "han olvidado hacer"
-        },
         "条件法 (Condicional)": {
           "yo": "olvidaría hacer",
           "tu": "olvidarías hacer",
@@ -45121,13 +43091,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he recordado hacer",
-          "tu": "has recordado hacer",
-          "el/ella": "ha recordado hacer",
-          "nosotros": "hemos recordado hacer",
-          "ellos": "han recordado hacer"
         },
         "条件法 (Condicional)": {
           "yo": "recordaría hacer",
@@ -45158,13 +43121,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he acordado de",
-          "tu": "has acordado de",
-          "el/ella": "ha acordado de",
-          "nosotros": "hemos acordado de",
-          "ellos": "han acordado de"
-        },
         "条件法 (Condicional)": {
           "yo": "me acordaría de",
           "tu": "te acordarías de",
@@ -45194,13 +43150,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he quedado en",
-          "tu": "has quedado en",
-          "el/ella": "ha quedado en",
-          "nosotros": "hemos quedado en",
-          "ellos": "han quedado en"
-        },
         "条件法 (Condicional)": {
           "yo": "me quedaría en",
           "tu": "te quedarías en",
@@ -45229,13 +43178,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tratado de",
-          "tu": "has tratado de",
-          "el/ella": "ha tratado de",
-          "nosotros": "hemos tratado de",
-          "ellos": "han tratado de"
         },
         "条件法 (Condicional)": {
           "yo": "trataría de",
@@ -45308,13 +43250,6 @@ const db = {
           "ustedes": "eviten",
           "negativo_tu": "no evites"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he evitado",
-          "tu": "has evitado",
-          "el/ella": "ha evitado",
-          "nosotros": "hemos evitado",
-          "ellos": "han evitado"
-        },
         "条件法 (Condicional)": {
           "yo": "evitaría",
           "tu": "evitarías",
@@ -45343,13 +43278,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he insistido en",
-          "tu": "has insistido en",
-          "el/ella": "ha insistido en",
-          "nosotros": "hemos insistido en",
-          "ellos": "han insistido en"
         },
         "条件法 (Condicional)": {
           "yo": "insistiría en",
@@ -45380,13 +43308,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dependido de",
-          "tu": "has dependido de",
-          "el/ella": "ha dependido de",
-          "nosotros": "hemos dependido de",
-          "ellos": "han dependido de"
-        },
         "条件法 (Condicional)": {
           "yo": "dependería de",
           "tu": "dependerías de",
@@ -45415,13 +43336,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he confiado en",
-          "tu": "has confiado en",
-          "el/ella": "ha confiado en",
-          "nosotros": "hemos confiado en",
-          "ellos": "han confiado en"
         },
         "条件法 (Condicional)": {
           "yo": "confiaría en",
@@ -45452,13 +43366,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he contado con",
-          "tu": "has contado con",
-          "el/ella": "ha contado con",
-          "nosotros": "hemos contado con",
-          "ellos": "han contado con"
-        },
         "条件法 (Condicional)": {
           "yo": "contaría con",
           "tu": "contarías con",
@@ -45487,13 +43394,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tenido ganas de",
-          "tu": "has tenido ganas de",
-          "el/ella": "ha tenido ganas de",
-          "nosotros": "hemos tenido ganas de",
-          "ellos": "han tenido ganas de"
         },
         "条件法 (Condicional)": {
           "yo": "tendría ganas de",
@@ -45524,13 +43424,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he estado a punto de",
-          "tu": "has estado a punto de",
-          "el/ella": "ha estado a punto de",
-          "nosotros": "hemos estado a punto de",
-          "ellos": "han estado a punto de"
-        },
         "条件法 (Condicional)": {
           "yo": "estaría a punto de",
           "tu": "estarías a punto de",
@@ -45559,13 +43452,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he estado listo para",
-          "tu": "has estado listo para",
-          "el/ella": "ha estado listo para",
-          "nosotros": "hemos estado listo para",
-          "ellos": "han estado listo para"
         },
         "条件法 (Condicional)": {
           "yo": "estaría listo para",
@@ -45596,13 +43482,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he estado acostumbrado a",
-          "tu": "has estado acostumbrado a",
-          "el/ella": "ha estado acostumbrado a",
-          "nosotros": "hemos estado acostumbrado a",
-          "ellos": "han estado acostumbrado a"
-        },
         "条件法 (Condicional)": {
           "yo": "estaría acostumbrado a",
           "tu": "estarías acostumbrado a",
@@ -45631,13 +43510,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he estado cansado de",
-          "tu": "has estado cansado de",
-          "el/ella": "ha estado cansado de",
-          "nosotros": "hemos estado cansado de",
-          "ellos": "han estado cansado de"
         },
         "条件法 (Condicional)": {
           "yo": "estaría cansado de",
@@ -45668,13 +43540,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sido bueno para",
-          "tu": "has sido bueno para",
-          "el/ella": "ha sido bueno para",
-          "nosotros": "hemos sido bueno para",
-          "ellos": "han sido bueno para"
-        },
         "条件法 (Condicional)": {
           "yo": "sería bueno para",
           "tu": "serías bueno para",
@@ -45703,13 +43568,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sido malo para",
-          "tu": "has sido malo para",
-          "el/ella": "ha sido malo para",
-          "nosotros": "hemos sido malo para",
-          "ellos": "han sido malo para"
         },
         "条件法 (Condicional)": {
           "yo": "sería malo para",
@@ -45740,13 +43598,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tenido miedo de",
-          "tu": "has tenido miedo de",
-          "el/ella": "ha tenido miedo de",
-          "nosotros": "hemos tenido miedo de",
-          "ellos": "han tenido miedo de"
-        },
         "条件法 (Condicional)": {
           "yo": "tendría miedo de",
           "tu": "tendrías miedo de",
@@ -45776,13 +43627,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tenido prisa",
-          "tu": "has tenido prisa",
-          "el/ella": "ha tenido prisa",
-          "nosotros": "hemos tenido prisa",
-          "ellos": "han tenido prisa"
-        },
         "条件法 (Condicional)": {
           "yo": "tendría prisa",
           "tu": "tendrías prisa",
@@ -45811,13 +43655,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tenido tiempo para",
-          "tu": "has tenido tiempo para",
-          "el/ella": "ha tenido tiempo para",
-          "nosotros": "hemos tenido tiempo para",
-          "ellos": "han tenido tiempo para"
         },
         "条件法 (Condicional)": {
           "yo": "tendría tiempo para",
@@ -45890,13 +43727,6 @@ const db = {
           "ustedes": "falten",
           "negativo_tu": "no faltes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he faltado",
-          "tu": "has faltado",
-          "el/ella": "ha faltado",
-          "nosotros": "hemos faltado",
-          "ellos": "han faltado"
-        },
         "条件法 (Condicional)": {
           "yo": "faltaría",
           "tu": "faltarías",
@@ -45967,13 +43797,6 @@ const db = {
           "nosotros": "sobremos",
           "ustedes": "sobren",
           "negativo_tu": "no sobres"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sobrado",
-          "tu": "has sobrado",
-          "el/ella": "ha sobrado",
-          "nosotros": "hemos sobrado",
-          "ellos": "han sobrado"
         },
         "条件法 (Condicional)": {
           "yo": "sobraría",
@@ -46046,13 +43869,6 @@ const db = {
           "ustedes": "parezcan",
           "negativo_tu": "no parezcas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he parecido",
-          "tu": "has parecido",
-          "el/ella": "ha parecido",
-          "nosotros": "hemos parecido",
-          "ellos": "han parecido"
-        },
         "条件法 (Condicional)": {
           "yo": "parecería",
           "tu": "parecerías",
@@ -46124,13 +43940,6 @@ const db = {
           "ustedes": "resulten",
           "negativo_tu": "no resultes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he resultado",
-          "tu": "has resultado",
-          "el/ella": "ha resultado",
-          "nosotros": "hemos resultado",
-          "ellos": "han resultado"
-        },
         "条件法 (Condicional)": {
           "yo": "resultaría",
           "tu": "resultarías",
@@ -46159,13 +43968,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he usado el celular",
-          "tu": "has usado el celular",
-          "el/ella": "ha usado el celular",
-          "nosotros": "hemos usado el celular",
-          "ellos": "han usado el celular"
         },
         "条件法 (Condicional)": {
           "yo": "usaría el celular",
@@ -46238,13 +44040,6 @@ const db = {
           "ustedes": "chateen",
           "negativo_tu": "no chatees"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he chateado",
-          "tu": "has chateado",
-          "el/ella": "ha chateado",
-          "nosotros": "hemos chateado",
-          "ellos": "han chateado"
-        },
         "条件法 (Condicional)": {
           "yo": "chatearía",
           "tu": "chatearías",
@@ -46273,13 +44068,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he mandado un mensaje",
-          "tu": "has mandado un mensaje",
-          "el/ella": "ha mandado un mensaje",
-          "nosotros": "hemos mandado un mensaje",
-          "ellos": "han mandado un mensaje"
         },
         "条件法 (Condicional)": {
           "yo": "mandaría un mensaje",
@@ -46310,13 +44098,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he respondido mensajes",
-          "tu": "has respondido mensajes",
-          "el/ella": "ha respondido mensajes",
-          "nosotros": "hemos respondido mensajes",
-          "ellos": "han respondido mensajes"
-        },
         "条件法 (Condicional)": {
           "yo": "respondería mensajes",
           "tu": "responderías mensajes",
@@ -46345,13 +44126,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he conectado a internet",
-          "tu": "has conectado a internet",
-          "el/ella": "ha conectado a internet",
-          "nosotros": "hemos conectado a internet",
-          "ellos": "han conectado a internet"
         },
         "条件法 (Condicional)": {
           "yo": "conectaría a internet",
@@ -46424,13 +44198,6 @@ const db = {
           "ustedes": "desconéctense",
           "negativo_tu": "no te desconectes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he desconectado",
-          "tu": "has desconectado",
-          "el/ella": "ha desconectado",
-          "nosotros": "hemos desconectado",
-          "ellos": "han desconectado"
-        },
         "条件法 (Condicional)": {
           "yo": "me desconectaría",
           "tu": "te desconectarías",
@@ -46459,13 +44226,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he navegado por internet",
-          "tu": "has navegado por internet",
-          "el/ella": "ha navegado por internet",
-          "nosotros": "hemos navegado por internet",
-          "ellos": "han navegado por internet"
         },
         "条件法 (Condicional)": {
           "yo": "navegaría por internet",
@@ -46496,13 +44256,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he buscado en Google",
-          "tu": "has buscado en Google",
-          "el/ella": "ha buscado en Google",
-          "nosotros": "hemos buscado en Google",
-          "ellos": "han buscado en Google"
-        },
         "条件法 (Condicional)": {
           "yo": "buscaría en Google",
           "tu": "buscarías en Google",
@@ -46532,13 +44285,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he subido (a la nube)",
-          "tu": "has subido (a la nube)",
-          "el/ella": "ha subido (a la nube)",
-          "nosotros": "hemos subido (a la nube)",
-          "ellos": "han subido (a la nube)"
-        },
         "条件法 (Condicional)": {
           "yo": "subiría (a la nube)",
           "tu": "subirías (a la nube)",
@@ -46567,13 +44313,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he instalado una app",
-          "tu": "has instalado una app",
-          "el/ella": "ha instalado una app",
-          "nosotros": "hemos instalado una app",
-          "ellos": "han instalado una app"
         },
         "条件法 (Condicional)": {
           "yo": "instalaría una app",
@@ -46646,13 +44385,6 @@ const db = {
           "ustedes": "actualicen",
           "negativo_tu": "no actualices"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he actualizado",
-          "tu": "has actualizado",
-          "el/ella": "ha actualizado",
-          "nosotros": "hemos actualizado",
-          "ellos": "han actualizado"
-        },
         "条件法 (Condicional)": {
           "yo": "actualizaría",
           "tu": "actualizarías",
@@ -46723,13 +44455,6 @@ const db = {
           "nosotros": "reiniciemos",
           "ustedes": "reinicien",
           "negativo_tu": "no reinicies"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he reiniciado",
-          "tu": "has reiniciado",
-          "el/ella": "ha reiniciado",
-          "nosotros": "hemos reiniciado",
-          "ellos": "han reiniciado"
         },
         "条件法 (Condicional)": {
           "yo": "reiniciaría",
@@ -46802,13 +44527,6 @@ const db = {
           "ustedes": "borren",
           "negativo_tu": "no borres"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he borrado",
-          "tu": "has borrado",
-          "el/ella": "ha borrado",
-          "nosotros": "hemos borrado",
-          "ellos": "han borrado"
-        },
         "条件法 (Condicional)": {
           "yo": "borraría",
           "tu": "borrarías",
@@ -46837,13 +44555,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he hecho clic",
-          "tu": "has hecho clic",
-          "el/ella": "ha hecho clic",
-          "nosotros": "hemos hecho clic",
-          "ellos": "han hecho clic"
         },
         "条件法 (Condicional)": {
           "yo": "haría clic",
@@ -46916,13 +44627,6 @@ const db = {
           "ustedes": "graben",
           "negativo_tu": "no grabes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he grabado",
-          "tu": "has grabado",
-          "el/ella": "ha grabado",
-          "nosotros": "hemos grabado",
-          "ellos": "han grabado"
-        },
         "条件法 (Condicional)": {
           "yo": "grabaría",
           "tu": "grabarías",
@@ -46951,13 +44655,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he editado fotos",
-          "tu": "has editado fotos",
-          "el/ella": "ha editado fotos",
-          "nosotros": "hemos editado fotos",
-          "ellos": "han editado fotos"
         },
         "条件法 (Condicional)": {
           "yo": "editaría fotos",
@@ -46988,13 +44685,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he editado videos",
-          "tu": "has editado videos",
-          "el/ella": "ha editado videos",
-          "nosotros": "hemos editado videos",
-          "ellos": "han editado videos"
-        },
         "条件法 (Condicional)": {
           "yo": "editaría videos",
           "tu": "editarías videos",
@@ -47023,13 +44713,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he subido fotos a Instagram",
-          "tu": "has subido fotos a Instagram",
-          "el/ella": "ha subido fotos a Instagram",
-          "nosotros": "hemos subido fotos a Instagram",
-          "ellos": "han subido fotos a Instagram"
         },
         "条件法 (Condicional)": {
           "yo": "subiría fotos a Instagram",
@@ -47102,13 +44785,6 @@ const db = {
           "ustedes": "publiquen",
           "negativo_tu": "no publiques"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he publicado",
-          "tu": "has publicado",
-          "el/ella": "ha publicado",
-          "nosotros": "hemos publicado",
-          "ellos": "han publicado"
-        },
         "条件法 (Condicional)": {
           "yo": "publicaría",
           "tu": "publicarías",
@@ -47137,13 +44813,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he compartido en redes",
-          "tu": "has compartido en redes",
-          "el/ella": "ha compartido en redes",
-          "nosotros": "hemos compartido en redes",
-          "ellos": "han compartido en redes"
         },
         "条件法 (Condicional)": {
           "yo": "compartiría en redes",
@@ -47174,13 +44843,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dado like",
-          "tu": "has dado like",
-          "el/ella": "ha dado like",
-          "nosotros": "hemos dado like",
-          "ellos": "han dado like"
-        },
         "条件法 (Condicional)": {
           "yo": "daría like",
           "tu": "darías like",
@@ -47210,13 +44872,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he seguido a alguien",
-          "tu": "has seguido a alguien",
-          "el/ella": "ha seguido a alguien",
-          "nosotros": "hemos seguido a alguien",
-          "ellos": "han seguido a alguien"
-        },
         "条件法 (Condicional)": {
           "yo": "seguiría a alguien",
           "tu": "seguirías a alguien",
@@ -47245,13 +44900,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dejado de seguir",
-          "tu": "has dejado de seguir",
-          "el/ella": "ha dejado de seguir",
-          "nosotros": "hemos dejado de seguir",
-          "ellos": "han dejado de seguir"
         },
         "条件法 (Condicional)": {
           "yo": "dejaría de seguir",
@@ -47324,13 +44972,6 @@ const db = {
           "ustedes": "silencien",
           "negativo_tu": "no silencies"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he silenciado",
-          "tu": "has silenciado",
-          "el/ella": "ha silenciado",
-          "nosotros": "hemos silenciado",
-          "ellos": "han silenciado"
-        },
         "条件法 (Condicional)": {
           "yo": "silenciaría",
           "tu": "silenciarías",
@@ -47401,13 +45042,6 @@ const db = {
           "nosotros": "bloqueemos",
           "ustedes": "bloqueen",
           "negativo_tu": "no bloquees"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he bloqueado",
-          "tu": "has bloqueado",
-          "el/ella": "ha bloqueado",
-          "nosotros": "hemos bloqueado",
-          "ellos": "han bloqueado"
         },
         "条件法 (Condicional)": {
           "yo": "bloquearía",
@@ -47480,13 +45114,6 @@ const db = {
           "ustedes": "desbloqueen",
           "negativo_tu": "no desbloquees"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he desbloqueado",
-          "tu": "has desbloqueado",
-          "el/ella": "ha desbloqueado",
-          "nosotros": "hemos desbloqueado",
-          "ellos": "han desbloqueado"
-        },
         "条件法 (Condicional)": {
           "yo": "desbloquearía",
           "tu": "desbloquearías",
@@ -47515,13 +45142,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he jugado videojuegos",
-          "tu": "has jugado videojuegos",
-          "el/ella": "ha jugado videojuegos",
-          "nosotros": "hemos jugado videojuegos",
-          "ellos": "han jugado videojuegos"
         },
         "条件法 (Condicional)": {
           "yo": "jugaría videojuegos",
@@ -47552,13 +45172,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he suscrito a un canal",
-          "tu": "has suscrito a un canal",
-          "el/ella": "ha suscrito a un canal",
-          "nosotros": "hemos suscrito a un canal",
-          "ellos": "han suscrito a un canal"
-        },
         "条件法 (Condicional)": {
           "yo": "me suscribiría a un canal",
           "tu": "te suscribirías a un canal",
@@ -47587,13 +45200,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he unido a un grupo",
-          "tu": "has unido a un grupo",
-          "el/ella": "ha unido a un grupo",
-          "nosotros": "hemos unido a un grupo",
-          "ellos": "han unido a un grupo"
         },
         "条件法 (Condicional)": {
           "yo": "me uniría a un grupo",
@@ -47624,13 +45230,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he salido del grupo",
-          "tu": "has salido del grupo",
-          "el/ella": "ha salido del grupo",
-          "nosotros": "hemos salido del grupo",
-          "ellos": "han salido del grupo"
-        },
         "条件法 (Condicional)": {
           "yo": "saldría del grupo",
           "tu": "saldrías del grupo",
@@ -47660,13 +45259,6 @@ const db = {
           "nosotros": "-",
           "ellos": "-"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he configurado la cuenta",
-          "tu": "has configurado la cuenta",
-          "el/ella": "ha configurado la cuenta",
-          "nosotros": "hemos configurado la cuenta",
-          "ellos": "han configurado la cuenta"
-        },
         "条件法 (Condicional)": {
           "yo": "configuraría la cuenta",
           "tu": "configurarías la cuenta",
@@ -47695,13 +45287,6 @@ const db = {
           "el/ella": "-",
           "nosotros": "-",
           "ellos": "-"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cambiado la contraseña",
-          "tu": "has cambiado la contraseña",
-          "el/ella": "ha cambiado la contraseña",
-          "nosotros": "hemos cambiado la contraseña",
-          "ellos": "han cambiado la contraseña"
         },
         "条件法 (Condicional)": {
           "yo": "cambiaría la contraseña",
@@ -47774,13 +45359,6 @@ const db = {
           "ustedes": "comiencen",
           "negativo_tu": "no comiences"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he comenzado",
-          "tu": "has comenzado",
-          "el/ella": "ha comenzado",
-          "nosotros": "hemos comenzado",
-          "ellos": "han comenzado"
-        },
         "条件法 (Condicional)": {
           "yo": "comenzaría",
           "tu": "comenzarías",
@@ -47851,13 +45429,6 @@ const db = {
           "nosotros": "saquemos",
           "ustedes": "saquen",
           "negativo_tu": "no saques"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sacado",
-          "tu": "has sacado",
-          "el/ella": "ha sacado",
-          "nosotros": "hemos sacado",
-          "ellos": "han sacado"
         },
         "条件法 (Condicional)": {
           "yo": "sacaría",
@@ -47930,13 +45501,6 @@ const db = {
           "ustedes": "mensajeen",
           "negativo_tu": "no mensajees"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he mensajeado",
-          "tu": "has mensajeado",
-          "el/ella": "ha mensajeado",
-          "nosotros": "hemos mensajeado",
-          "ellos": "han mensajeado"
-        },
         "条件法 (Condicional)": {
           "yo": "mensajearía",
           "tu": "mensajearías",
@@ -48007,13 +45571,6 @@ const db = {
           "nosotros": "disculpemos",
           "ustedes": "disculpen",
           "negativo_tu": "no disculpes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he disculpado",
-          "tu": "has disculpado",
-          "el/ella": "ha disculpado",
-          "nosotros": "hemos disculpado",
-          "ellos": "han disculpado"
         },
         "条件法 (Condicional)": {
           "yo": "disculparía",
@@ -48086,13 +45643,6 @@ const db = {
           "ustedes": "aconsejen",
           "negativo_tu": "no aconsejes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he aconsejado",
-          "tu": "has aconsejado",
-          "el/ella": "ha aconsejado",
-          "nosotros": "hemos aconsejado",
-          "ellos": "han aconsejado"
-        },
         "条件法 (Condicional)": {
           "yo": "aconsejaría",
           "tu": "aconsejarías",
@@ -48163,13 +45713,6 @@ const db = {
           "nosotros": "sugiramos",
           "ustedes": "sugieran",
           "negativo_tu": "no sugieras"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he sugerido",
-          "tu": "has sugerido",
-          "el/ella": "ha sugerido",
-          "nosotros": "hemos sugerido",
-          "ellos": "han sugerido"
         },
         "条件法 (Condicional)": {
           "yo": "sugeriría",
@@ -48242,13 +45785,6 @@ const db = {
           "ustedes": "propongan",
           "negativo_tu": "no propongas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he propuesto",
-          "tu": "has propuesto",
-          "el/ella": "ha propuesto",
-          "nosotros": "hemos propuesto",
-          "ellos": "han propuesto"
-        },
         "条件法 (Condicional)": {
           "yo": "propondría",
           "tu": "propondrías",
@@ -48319,13 +45855,6 @@ const db = {
           "nosotros": "neguemos",
           "ustedes": "nieguen",
           "negativo_tu": "no niegues"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he negado",
-          "tu": "has negado",
-          "el/ella": "ha negado",
-          "nosotros": "hemos negado",
-          "ellos": "han negado"
         },
         "条件法 (Condicional)": {
           "yo": "negaría",
@@ -48398,13 +45927,6 @@ const db = {
           "ustedes": "confirmen",
           "negativo_tu": "no confirmes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he confirmado",
-          "tu": "has confirmado",
-          "el/ella": "ha confirmado",
-          "nosotros": "hemos confirmado",
-          "ellos": "han confirmado"
-        },
         "条件法 (Condicional)": {
           "yo": "confirmaría",
           "tu": "confirmarías",
@@ -48475,13 +45997,6 @@ const db = {
           "nosotros": "demostremos",
           "ustedes": "demuestren",
           "negativo_tu": "no demuestres"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he demostrado",
-          "tu": "has demostrado",
-          "el/ella": "ha demostrado",
-          "nosotros": "hemos demostrado",
-          "ellos": "han demostrado"
         },
         "条件法 (Condicional)": {
           "yo": "demostraría",
@@ -48554,13 +46069,6 @@ const db = {
           "ustedes": "mencionen",
           "negativo_tu": "no menciones"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he mencionado",
-          "tu": "has mencionado",
-          "el/ella": "ha mencionado",
-          "nosotros": "hemos mencionado",
-          "ellos": "han mencionado"
-        },
         "条件法 (Condicional)": {
           "yo": "mencionaría",
           "tu": "mencionarías",
@@ -48631,13 +46139,6 @@ const db = {
           "nosotros": "expresemos",
           "ustedes": "expresen",
           "negativo_tu": "no expreses"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he expresado",
-          "tu": "has expresado",
-          "el/ella": "ha expresado",
-          "nosotros": "hemos expresado",
-          "ellos": "han expresado"
         },
         "条件法 (Condicional)": {
           "yo": "expresaría",
@@ -48710,13 +46211,6 @@ const db = {
           "ustedes": "describan",
           "negativo_tu": "no describas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he descrito",
-          "tu": "has descrito",
-          "el/ella": "ha descrito",
-          "nosotros": "hemos descrito",
-          "ellos": "han descrito"
-        },
         "条件法 (Condicional)": {
           "yo": "describiría",
           "tu": "describirías",
@@ -48787,13 +46281,6 @@ const db = {
           "nosotros": "narremos",
           "ustedes": "narren",
           "negativo_tu": "no narres"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he narrado",
-          "tu": "has narrado",
-          "el/ella": "ha narrado",
-          "nosotros": "hemos narrado",
-          "ellos": "han narrado"
         },
         "条件法 (Condicional)": {
           "yo": "narraría",
@@ -48866,13 +46353,6 @@ const db = {
           "ustedes": "analicen",
           "negativo_tu": "no analices"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he analizado",
-          "tu": "has analizado",
-          "el/ella": "ha analizado",
-          "nosotros": "hemos analizado",
-          "ellos": "han analizado"
-        },
         "条件法 (Condicional)": {
           "yo": "analizaría",
           "tu": "analizarías",
@@ -48943,13 +46423,6 @@ const db = {
           "nosotros": "evaluemos",
           "ustedes": "evalúen",
           "negativo_tu": "no evalúes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he evaluado",
-          "tu": "has evaluado",
-          "el/ella": "ha evaluado",
-          "nosotros": "hemos evaluado",
-          "ellos": "han evaluado"
         },
         "条件法 (Condicional)": {
           "yo": "evaluaría",
@@ -49022,13 +46495,6 @@ const db = {
           "ustedes": "comparen",
           "negativo_tu": "no compares"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he comparado",
-          "tu": "has comparado",
-          "el/ella": "ha comparado",
-          "nosotros": "hemos comparado",
-          "ellos": "han comparado"
-        },
         "条件法 (Condicional)": {
           "yo": "compararía",
           "tu": "compararías",
@@ -49099,13 +46565,6 @@ const db = {
           "nosotros": "distingamos",
           "ustedes": "distingan",
           "negativo_tu": "no distingas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he distinguido",
-          "tu": "has distinguido",
-          "el/ella": "ha distinguido",
-          "nosotros": "hemos distinguido",
-          "ellos": "han distinguido"
         },
         "条件法 (Condicional)": {
           "yo": "distinguiría",
@@ -49178,13 +46637,6 @@ const db = {
           "ustedes": "identifiquen",
           "negativo_tu": "no identifiques"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he identificado",
-          "tu": "has identificado",
-          "el/ella": "ha identificado",
-          "nosotros": "hemos identificado",
-          "ellos": "han identificado"
-        },
         "条件法 (Condicional)": {
           "yo": "identificaría",
           "tu": "identificarías",
@@ -49255,13 +46707,6 @@ const db = {
           "nosotros": "clasifiquemos",
           "ustedes": "clasifiquen",
           "negativo_tu": "no clasifiques"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he clasificado",
-          "tu": "has clasificado",
-          "el/ella": "ha clasificado",
-          "nosotros": "hemos clasificado",
-          "ellos": "han clasificado"
         },
         "条件法 (Condicional)": {
           "yo": "clasificaría",
@@ -49334,13 +46779,6 @@ const db = {
           "ustedes": "planifiquen",
           "negativo_tu": "no planifiques"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he planificado",
-          "tu": "has planificado",
-          "el/ella": "ha planificado",
-          "nosotros": "hemos planificado",
-          "ellos": "han planificado"
-        },
         "条件法 (Condicional)": {
           "yo": "planificaría",
           "tu": "planificarías",
@@ -49411,13 +46849,6 @@ const db = {
           "nosotros": "desarrollemos",
           "ustedes": "desarrollen",
           "negativo_tu": "no desarrolles"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he desarrollado",
-          "tu": "has desarrollado",
-          "el/ella": "ha desarrollado",
-          "nosotros": "hemos desarrollado",
-          "ellos": "han desarrollado"
         },
         "条件法 (Condicional)": {
           "yo": "desarrollaría",
@@ -49490,13 +46921,6 @@ const db = {
           "ustedes": "mejoren",
           "negativo_tu": "no mejores"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he mejorado",
-          "tu": "has mejorado",
-          "el/ella": "ha mejorado",
-          "nosotros": "hemos mejorado",
-          "ellos": "han mejorado"
-        },
         "条件法 (Condicional)": {
           "yo": "mejoraría",
           "tu": "mejorarías",
@@ -49567,13 +46991,6 @@ const db = {
           "nosotros": "empeoremos",
           "ustedes": "empeoren",
           "negativo_tu": "no empeores"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he empeorado",
-          "tu": "has empeorado",
-          "el/ella": "ha empeorado",
-          "nosotros": "hemos empeorado",
-          "ellos": "han empeorado"
         },
         "条件法 (Condicional)": {
           "yo": "empeoraría",
@@ -49646,13 +47063,6 @@ const db = {
           "ustedes": "resuelvan",
           "negativo_tu": "no resuelvas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he resuelto",
-          "tu": "has resuelto",
-          "el/ella": "ha resuelto",
-          "nosotros": "hemos resuelto",
-          "ellos": "han resuelto"
-        },
         "条件法 (Condicional)": {
           "yo": "resolvería",
           "tu": "resolverías",
@@ -49723,13 +47133,6 @@ const db = {
           "nosotros": "descubramos",
           "ustedes": "descubran",
           "negativo_tu": "no descubras"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he descubierto",
-          "tu": "has descubierto",
-          "el/ella": "ha descubierto",
-          "nosotros": "hemos descubierto",
-          "ellos": "han descubierto"
         },
         "条件法 (Condicional)": {
           "yo": "descubriría",
@@ -49802,13 +47205,6 @@ const db = {
           "ustedes": "inventen",
           "negativo_tu": "no inventes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he inventado",
-          "tu": "has inventado",
-          "el/ella": "ha inventado",
-          "nosotros": "hemos inventado",
-          "ellos": "han inventado"
-        },
         "条件法 (Condicional)": {
           "yo": "inventaría",
           "tu": "inventarías",
@@ -49879,13 +47275,6 @@ const db = {
           "nosotros": "creemos",
           "ustedes": "creen",
           "negativo_tu": "no crees"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he creado",
-          "tu": "has creado",
-          "el/ella": "ha creado",
-          "nosotros": "hemos creado",
-          "ellos": "han creado"
         },
         "条件法 (Condicional)": {
           "yo": "crearía",
@@ -49958,13 +47347,6 @@ const db = {
           "ustedes": "diseñen",
           "negativo_tu": "no diseñes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he diseñado",
-          "tu": "has diseñado",
-          "el/ella": "ha diseñado",
-          "nosotros": "hemos diseñado",
-          "ellos": "han diseñado"
-        },
         "条件法 (Condicional)": {
           "yo": "diseñaría",
           "tu": "diseñarías",
@@ -50035,13 +47417,6 @@ const db = {
           "nosotros": "construyamos",
           "ustedes": "construyan",
           "negativo_tu": "no construyas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he construido",
-          "tu": "has construido",
-          "el/ella": "ha construido",
-          "nosotros": "hemos construido",
-          "ellos": "han construido"
         },
         "条件法 (Condicional)": {
           "yo": "construiría",
@@ -50114,13 +47489,6 @@ const db = {
           "ustedes": "destruyan",
           "negativo_tu": "no destruyas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he destruido",
-          "tu": "has destruido",
-          "el/ella": "ha destruido",
-          "nosotros": "hemos destruido",
-          "ellos": "han destruido"
-        },
         "条件法 (Condicional)": {
           "yo": "destruiría",
           "tu": "destruirías",
@@ -50191,13 +47559,6 @@ const db = {
           "nosotros": "reparemos",
           "ustedes": "reparen",
           "negativo_tu": "no repares"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he reparado",
-          "tu": "has reparado",
-          "el/ella": "ha reparado",
-          "nosotros": "hemos reparado",
-          "ellos": "han reparado"
         },
         "条件法 (Condicional)": {
           "yo": "repararía",
@@ -50270,13 +47631,6 @@ const db = {
           "ustedes": "instalen",
           "negativo_tu": "no instales"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he instalado",
-          "tu": "has instalado",
-          "el/ella": "ha instalado",
-          "nosotros": "hemos instalado",
-          "ellos": "han instalado"
-        },
         "条件法 (Condicional)": {
           "yo": "instalaría",
           "tu": "instalarías",
@@ -50347,13 +47701,6 @@ const db = {
           "nosotros": "eliminemos",
           "ustedes": "eliminen",
           "negativo_tu": "no elimines"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he eliminado",
-          "tu": "has eliminado",
-          "el/ella": "ha eliminado",
-          "nosotros": "hemos eliminado",
-          "ellos": "han eliminado"
         },
         "条件法 (Condicional)": {
           "yo": "eliminaría",
@@ -50426,13 +47773,6 @@ const db = {
           "ustedes": "reduzcan",
           "negativo_tu": "no reduzcas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he reducido",
-          "tu": "has reducido",
-          "el/ella": "ha reducido",
-          "nosotros": "hemos reducido",
-          "ellos": "han reducido"
-        },
         "条件法 (Condicional)": {
           "yo": "reduciría",
           "tu": "reducirías",
@@ -50503,13 +47843,6 @@ const db = {
           "nosotros": "aumentemos",
           "ustedes": "aumenten",
           "negativo_tu": "no aumentes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he aumentado",
-          "tu": "has aumentado",
-          "el/ella": "ha aumentado",
-          "nosotros": "hemos aumentado",
-          "ellos": "han aumentado"
         },
         "条件法 (Condicional)": {
           "yo": "aumentaría",
@@ -50582,13 +47915,6 @@ const db = {
           "ustedes": "mantengan",
           "negativo_tu": "no mantengas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he mantenido",
-          "tu": "has mantenido",
-          "el/ella": "ha mantenido",
-          "nosotros": "hemos mantenido",
-          "ellos": "han mantenido"
-        },
         "条件法 (Condicional)": {
           "yo": "mantendría",
           "tu": "mantendrías",
@@ -50659,13 +47985,6 @@ const db = {
           "nosotros": "modifiquemos",
           "ustedes": "modifiquen",
           "negativo_tu": "no modifiques"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he modificado",
-          "tu": "has modificado",
-          "el/ella": "ha modificado",
-          "nosotros": "hemos modificado",
-          "ellos": "han modificado"
         },
         "条件法 (Condicional)": {
           "yo": "modificaría",
@@ -50738,13 +48057,6 @@ const db = {
           "ustedes": "transformen",
           "negativo_tu": "no transformes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he transformado",
-          "tu": "has transformado",
-          "el/ella": "ha transformado",
-          "nosotros": "hemos transformado",
-          "ellos": "han transformado"
-        },
         "条件法 (Condicional)": {
           "yo": "transformaría",
           "tu": "transformarías",
@@ -50815,13 +48127,6 @@ const db = {
           "nosotros": "convirtamos",
           "ustedes": "conviertan",
           "negativo_tu": "no conviertas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he convertido",
-          "tu": "has convertido",
-          "el/ella": "ha convertido",
-          "nosotros": "hemos convertido",
-          "ellos": "han convertido"
         },
         "条件法 (Condicional)": {
           "yo": "convertiría",
@@ -50894,13 +48199,6 @@ const db = {
           "ustedes": "adapten",
           "negativo_tu": "no adaptes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he adaptado",
-          "tu": "has adaptado",
-          "el/ella": "ha adaptado",
-          "nosotros": "hemos adaptado",
-          "ellos": "han adaptado"
-        },
         "条件法 (Condicional)": {
           "yo": "adaptaría",
           "tu": "adaptarías",
@@ -50971,13 +48269,6 @@ const db = {
           "nosotros": "ajustemos",
           "ustedes": "ajusten",
           "negativo_tu": "no ajustes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he ajustado",
-          "tu": "has ajustado",
-          "el/ella": "ha ajustado",
-          "nosotros": "hemos ajustado",
-          "ellos": "han ajustado"
         },
         "条件法 (Condicional)": {
           "yo": "ajustaría",
@@ -51050,13 +48341,6 @@ const db = {
           "ustedes": "controlen",
           "negativo_tu": "no controles"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he controlado",
-          "tu": "has controlado",
-          "el/ella": "ha controlado",
-          "nosotros": "hemos controlado",
-          "ellos": "han controlado"
-        },
         "条件法 (Condicional)": {
           "yo": "controlaría",
           "tu": "controlarías",
@@ -51127,13 +48411,6 @@ const db = {
           "nosotros": "administremos",
           "ustedes": "administren",
           "negativo_tu": "no administres"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he administrado",
-          "tu": "has administrado",
-          "el/ella": "ha administrado",
-          "nosotros": "hemos administrado",
-          "ellos": "han administrado"
         },
         "条件法 (Condicional)": {
           "yo": "administraría",
@@ -51206,13 +48483,6 @@ const db = {
           "ustedes": "manejen",
           "negativo_tu": "no manejes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he manejado",
-          "tu": "has manejado",
-          "el/ella": "ha manejado",
-          "nosotros": "hemos manejado",
-          "ellos": "han manejado"
-        },
         "条件法 (Condicional)": {
           "yo": "manejaría",
           "tu": "manejarías",
@@ -51283,13 +48553,6 @@ const db = {
           "nosotros": "gestionemos",
           "ustedes": "gestionen",
           "negativo_tu": "no gestiones"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he gestionado",
-          "tu": "has gestionado",
-          "el/ella": "ha gestionado",
-          "nosotros": "hemos gestionado",
-          "ellos": "han gestionado"
         },
         "条件法 (Condicional)": {
           "yo": "gestionaría",
@@ -51362,13 +48625,6 @@ const db = {
           "ustedes": "canten",
           "negativo_tu": "no cantes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cantado",
-          "tu": "has cantado",
-          "el/ella": "ha cantado",
-          "nosotros": "hemos cantado",
-          "ellos": "han cantado"
-        },
         "条件法 (Condicional)": {
           "yo": "cantaría",
           "tu": "cantarías",
@@ -51439,13 +48695,6 @@ const db = {
           "nosotros": "bailemos",
           "ustedes": "bailen",
           "negativo_tu": "no bailes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he bailado",
-          "tu": "has bailado",
-          "el/ella": "ha bailado",
-          "nosotros": "hemos bailado",
-          "ellos": "han bailado"
         },
         "条件法 (Condicional)": {
           "yo": "bailaría",
@@ -51518,13 +48767,6 @@ const db = {
           "ustedes": "jueguen",
           "negativo_tu": "no juegues"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he jugado",
-          "tu": "has jugado",
-          "el/ella": "ha jugado",
-          "nosotros": "hemos jugado",
-          "ellos": "han jugado"
-        },
         "条件法 (Condicional)": {
           "yo": "jugaría",
           "tu": "jugarías",
@@ -51595,13 +48837,6 @@ const db = {
           "nosotros": "compremos",
           "ustedes": "compren",
           "negativo_tu": "no compres"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he comprado",
-          "tu": "has comprado",
-          "el/ella": "ha comprado",
-          "nosotros": "hemos comprado",
-          "ellos": "han comprado"
         },
         "条件法 (Condicional)": {
           "yo": "compraría",
@@ -51674,13 +48909,6 @@ const db = {
           "ustedes": "vendan",
           "negativo_tu": "no vendas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he vendido",
-          "tu": "has vendido",
-          "el/ella": "ha vendido",
-          "nosotros": "hemos vendido",
-          "ellos": "han vendido"
-        },
         "条件法 (Condicional)": {
           "yo": "vendería",
           "tu": "venderías",
@@ -51751,13 +48979,6 @@ const db = {
           "nosotros": "paguemos",
           "ustedes": "paguen",
           "negativo_tu": "no pagues"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he pagado",
-          "tu": "has pagado",
-          "el/ella": "ha pagado",
-          "nosotros": "hemos pagado",
-          "ellos": "han pagado"
         },
         "条件法 (Condicional)": {
           "yo": "pagaría",
@@ -51830,13 +49051,6 @@ const db = {
           "ustedes": "miren",
           "negativo_tu": "no mires"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he mirado",
-          "tu": "has mirado",
-          "el/ella": "ha mirado",
-          "nosotros": "hemos mirado",
-          "ellos": "han mirado"
-        },
         "条件法 (Condicional)": {
           "yo": "miraría",
           "tu": "mirarías",
@@ -51907,13 +49121,6 @@ const db = {
           "nosotros": "toquemos",
           "ustedes": "toquen",
           "negativo_tu": "no toques"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tocado",
-          "tu": "has tocado",
-          "el/ella": "ha tocado",
-          "nosotros": "hemos tocado",
-          "ellos": "han tocado"
         },
         "条件法 (Condicional)": {
           "yo": "tocaría",
@@ -51986,13 +49193,6 @@ const db = {
           "ustedes": "laven",
           "negativo_tu": "no laves"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he lavado",
-          "tu": "has lavado",
-          "el/ella": "ha lavado",
-          "nosotros": "hemos lavado",
-          "ellos": "han lavado"
-        },
         "条件法 (Condicional)": {
           "yo": "lavaría",
           "tu": "lavarías",
@@ -52063,13 +49263,6 @@ const db = {
           "nosotros": "sequemos",
           "ustedes": "sequen",
           "negativo_tu": "no seques"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he secado",
-          "tu": "has secado",
-          "el/ella": "ha secado",
-          "nosotros": "hemos secado",
-          "ellos": "han secado"
         },
         "条件法 (Condicional)": {
           "yo": "secaría",
@@ -52142,13 +49335,6 @@ const db = {
           "ustedes": "corten",
           "negativo_tu": "no cortes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cortado",
-          "tu": "has cortado",
-          "el/ella": "ha cortado",
-          "nosotros": "hemos cortado",
-          "ellos": "han cortado"
-        },
         "条件法 (Condicional)": {
           "yo": "cortaría",
           "tu": "cortarías",
@@ -52219,13 +49405,6 @@ const db = {
           "nosotros": "tiremos",
           "ustedes": "tiren",
           "negativo_tu": "no tires"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tirado",
-          "tu": "has tirado",
-          "el/ella": "ha tirado",
-          "nosotros": "hemos tirado",
-          "ellos": "han tirado"
         },
         "条件法 (Condicional)": {
           "yo": "tiraría",
@@ -52298,13 +49477,6 @@ const db = {
           "ustedes": "empujen",
           "negativo_tu": "no empujes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he empujado",
-          "tu": "has empujado",
-          "el/ella": "ha empujado",
-          "nosotros": "hemos empujado",
-          "ellos": "han empujado"
-        },
         "条件法 (Condicional)": {
           "yo": "empujaría",
           "tu": "empujarías",
@@ -52375,13 +49547,6 @@ const db = {
           "nosotros": "jalemos",
           "ustedes": "jalen",
           "negativo_tu": "no jales"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he jalado",
-          "tu": "has jalado",
-          "el/ella": "ha jalado",
-          "nosotros": "hemos jalado",
-          "ellos": "han jalado"
         },
         "条件法 (Condicional)": {
           "yo": "jalaría",
@@ -52454,13 +49619,6 @@ const db = {
           "ustedes": "salten",
           "negativo_tu": "no saltes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he saltado",
-          "tu": "has saltado",
-          "el/ella": "ha saltado",
-          "nosotros": "hemos saltado",
-          "ellos": "han saltado"
-        },
         "条件法 (Condicional)": {
           "yo": "saltaría",
           "tu": "saltarías",
@@ -52531,13 +49689,6 @@ const db = {
           "nosotros": "volemos",
           "ustedes": "vuelen",
           "negativo_tu": "no vueles"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he volado",
-          "tu": "has volado",
-          "el/ella": "ha volado",
-          "nosotros": "hemos volado",
-          "ellos": "han volado"
         },
         "条件法 (Condicional)": {
           "yo": "volaría",
@@ -52610,13 +49761,6 @@ const db = {
           "ustedes": "crezcan",
           "negativo_tu": "no crezcas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he crecido",
-          "tu": "has crecido",
-          "el/ella": "ha crecido",
-          "nosotros": "hemos crecido",
-          "ellos": "han crecido"
-        },
         "条件法 (Condicional)": {
           "yo": "crecería",
           "tu": "crecerías",
@@ -52687,13 +49831,6 @@ const db = {
           "nosotros": "rompamos",
           "ustedes": "rompan",
           "negativo_tu": "no rompas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he roto",
-          "tu": "has roto",
-          "el/ella": "ha roto",
-          "nosotros": "hemos roto",
-          "ellos": "han roto"
         },
         "条件法 (Condicional)": {
           "yo": "rompería",
@@ -52766,13 +49903,6 @@ const db = {
           "ustedes": "dibujen",
           "negativo_tu": "no dibujes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he dibujado",
-          "tu": "has dibujado",
-          "el/ella": "ha dibujado",
-          "nosotros": "hemos dibujado",
-          "ellos": "han dibujado"
-        },
         "条件法 (Condicional)": {
           "yo": "dibujaría",
           "tu": "dibujarías",
@@ -52843,13 +49973,6 @@ const db = {
           "nosotros": "pintemos",
           "ustedes": "pinten",
           "negativo_tu": "no pintes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he pintado",
-          "tu": "has pintado",
-          "el/ella": "ha pintado",
-          "nosotros": "hemos pintado",
-          "ellos": "han pintado"
         },
         "条件法 (Condicional)": {
           "yo": "pintaría",
@@ -52922,13 +50045,6 @@ const db = {
           "ustedes": "cosan",
           "negativo_tu": "no cosas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cosido",
-          "tu": "has cosido",
-          "el/ella": "ha cosido",
-          "nosotros": "hemos cosido",
-          "ellos": "han cosido"
-        },
         "条件法 (Condicional)": {
           "yo": "cosería",
           "tu": "coserías",
@@ -52999,13 +50115,6 @@ const db = {
           "nosotros": "tejamos",
           "ustedes": "tejan",
           "negativo_tu": "no tejas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he tejido",
-          "tu": "has tejido",
-          "el/ella": "ha tejido",
-          "nosotros": "hemos tejido",
-          "ellos": "han tejido"
         },
         "条件法 (Condicional)": {
           "yo": "tejería",
@@ -53078,13 +50187,6 @@ const db = {
           "ustedes": "horneen",
           "negativo_tu": "no hornees"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he horneado",
-          "tu": "has horneado",
-          "el/ella": "ha horneado",
-          "nosotros": "hemos horneado",
-          "ellos": "han horneado"
-        },
         "条件法 (Condicional)": {
           "yo": "hornearía",
           "tu": "hornearías",
@@ -53155,13 +50257,6 @@ const db = {
           "nosotros": "friamos",
           "ustedes": "frían",
           "negativo_tu": "no frías"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he frito",
-          "tu": "has frito",
-          "el/ella": "ha frito",
-          "nosotros": "hemos frito",
-          "ellos": "han frito"
         },
         "条件法 (Condicional)": {
           "yo": "freiría",
@@ -53234,13 +50329,6 @@ const db = {
           "ustedes": "hiervan",
           "negativo_tu": "no hiervas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he hervido",
-          "tu": "has hervido",
-          "el/ella": "ha hervido",
-          "nosotros": "hemos hervido",
-          "ellos": "han hervido"
-        },
         "条件法 (Condicional)": {
           "yo": "herviría",
           "tu": "hervirías",
@@ -53311,13 +50399,6 @@ const db = {
           "nosotros": "mezclemos",
           "ustedes": "mezclen",
           "negativo_tu": "no mezcles"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he mezclado",
-          "tu": "has mezclado",
-          "el/ella": "ha mezclado",
-          "nosotros": "hemos mezclado",
-          "ellos": "han mezclado"
         },
         "条件法 (Condicional)": {
           "yo": "mezclaría",
@@ -53390,13 +50471,6 @@ const db = {
           "ustedes": "sirvan",
           "negativo_tu": "no sirvas"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he servido",
-          "tu": "has servido",
-          "el/ella": "ha servido",
-          "nosotros": "hemos servido",
-          "ellos": "han servido"
-        },
         "条件法 (Condicional)": {
           "yo": "serviría",
           "tu": "servirías",
@@ -53467,13 +50541,6 @@ const db = {
           "nosotros": "celebremos",
           "ustedes": "celebren",
           "negativo_tu": "no celebres"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he celebrado",
-          "tu": "has celebrado",
-          "el/ella": "ha celebrado",
-          "nosotros": "hemos celebrado",
-          "ellos": "han celebrado"
         },
         "条件法 (Condicional)": {
           "yo": "celebraría",
@@ -53546,13 +50613,6 @@ const db = {
           "ustedes": "regalen",
           "negativo_tu": "no regales"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he regalado",
-          "tu": "has regalado",
-          "el/ella": "ha regalado",
-          "nosotros": "hemos regalado",
-          "ellos": "han regalado"
-        },
         "条件法 (Condicional)": {
           "yo": "regalaría",
           "tu": "regalarías",
@@ -53623,13 +50683,6 @@ const db = {
           "nosotros": "abracemos",
           "ustedes": "abracen",
           "negativo_tu": "no abraces"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he abrazado",
-          "tu": "has abrazado",
-          "el/ella": "ha abrazado",
-          "nosotros": "hemos abrazado",
-          "ellos": "han abrazado"
         },
         "条件法 (Condicional)": {
           "yo": "abrazaría",
@@ -53702,13 +50755,6 @@ const db = {
           "ustedes": "besen",
           "negativo_tu": "no beses"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he besado",
-          "tu": "has besado",
-          "el/ella": "ha besado",
-          "nosotros": "hemos besado",
-          "ellos": "han besado"
-        },
         "条件法 (Condicional)": {
           "yo": "besaría",
           "tu": "besarías",
@@ -53779,13 +50825,6 @@ const db = {
           "nosotros": "patinemos",
           "ustedes": "patinen",
           "negativo_tu": "no patines"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he patinado",
-          "tu": "has patinado",
-          "el/ella": "ha patinado",
-          "nosotros": "hemos patinado",
-          "ellos": "han patinado"
         },
         "条件法 (Condicional)": {
           "yo": "patinaría",
@@ -53858,13 +50897,6 @@ const db = {
           "ustedes": "esquíen",
           "negativo_tu": "no esquíes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he esquiado",
-          "tu": "has esquiado",
-          "el/ella": "ha esquiado",
-          "nosotros": "hemos esquiado",
-          "ellos": "han esquiado"
-        },
         "条件法 (Condicional)": {
           "yo": "esquiaría",
           "tu": "esquiarías",
@@ -53935,13 +50967,6 @@ const db = {
           "nosotros": "pesquemos",
           "ustedes": "pesquen",
           "negativo_tu": "no pesques"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he pescado",
-          "tu": "has pescado",
-          "el/ella": "ha pescado",
-          "nosotros": "hemos pescado",
-          "ellos": "han pescado"
         },
         "条件法 (Condicional)": {
           "yo": "pescaría",
@@ -54014,13 +51039,6 @@ const db = {
           "ustedes": "cacen",
           "negativo_tu": "no caces"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he cazado",
-          "tu": "has cazado",
-          "el/ella": "ha cazado",
-          "nosotros": "hemos cazado",
-          "ellos": "han cazado"
-        },
         "条件法 (Condicional)": {
           "yo": "cazaría",
           "tu": "cazarías",
@@ -54091,13 +51109,6 @@ const db = {
           "nosotros": "montemos",
           "ustedes": "monten",
           "negativo_tu": "no montes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he montado",
-          "tu": "has montado",
-          "el/ella": "ha montado",
-          "nosotros": "hemos montado",
-          "ellos": "han montado"
         },
         "条件法 (Condicional)": {
           "yo": "montaría",
@@ -54170,13 +51181,6 @@ const db = {
           "ustedes": "calienten",
           "negativo_tu": "no calientes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he calentado",
-          "tu": "has calentado",
-          "el/ella": "ha calentado",
-          "nosotros": "hemos calentado",
-          "ellos": "han calentado"
-        },
         "条件法 (Condicional)": {
           "yo": "calentaría",
           "tu": "calentarías",
@@ -54247,13 +51251,6 @@ const db = {
           "nosotros": "enfriemos",
           "ustedes": "enfríen",
           "negativo_tu": "no enfríes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he enfriado",
-          "tu": "has enfriado",
-          "el/ella": "ha enfriado",
-          "nosotros": "hemos enfriado",
-          "ellos": "han enfriado"
         },
         "条件法 (Condicional)": {
           "yo": "enfriaría",
@@ -54326,13 +51323,6 @@ const db = {
           "ustedes": "congelen",
           "negativo_tu": "no congeles"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he congelado",
-          "tu": "has congelado",
-          "el/ella": "ha congelado",
-          "nosotros": "hemos congelado",
-          "ellos": "han congelado"
-        },
         "条件法 (Condicional)": {
           "yo": "congelaría",
           "tu": "congelarías",
@@ -54403,13 +51393,6 @@ const db = {
           "nosotros": "derritamos",
           "ustedes": "derritan",
           "negativo_tu": "no derritas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he derretido",
-          "tu": "has derretido",
-          "el/ella": "ha derretido",
-          "nosotros": "hemos derretido",
-          "ellos": "han derretido"
         },
         "条件法 (Condicional)": {
           "yo": "derretiría",
@@ -54482,13 +51465,6 @@ const db = {
           "ustedes": "mojen",
           "negativo_tu": "no mojes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he mojado",
-          "tu": "has mojado",
-          "el/ella": "ha mojado",
-          "nosotros": "hemos mojado",
-          "ellos": "han mojado"
-        },
         "条件法 (Condicional)": {
           "yo": "mojaría",
           "tu": "mojarías",
@@ -54559,13 +51535,6 @@ const db = {
           "nosotros": "llenemos",
           "ustedes": "llenen",
           "negativo_tu": "no llenes"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he llenado",
-          "tu": "has llenado",
-          "el/ella": "ha llenado",
-          "nosotros": "hemos llenado",
-          "ellos": "han llenado"
         },
         "条件法 (Condicional)": {
           "yo": "llenaría",
@@ -54638,13 +51607,6 @@ const db = {
           "ustedes": "vacíen",
           "negativo_tu": "no vacíes"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he vaciado",
-          "tu": "has vaciado",
-          "el/ella": "ha vaciado",
-          "nosotros": "hemos vaciado",
-          "ellos": "han vaciado"
-        },
         "条件法 (Condicional)": {
           "yo": "vaciaría",
           "tu": "vaciarías",
@@ -54715,13 +51677,6 @@ const db = {
           "nosotros": "encendamos",
           "ustedes": "enciendan",
           "negativo_tu": "no enciendas"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he encendido",
-          "tu": "has encendido",
-          "el/ella": "ha encendido",
-          "nosotros": "hemos encendido",
-          "ellos": "han encendido"
         },
         "条件法 (Condicional)": {
           "yo": "encendería",
@@ -54794,13 +51749,6 @@ const db = {
           "ustedes": "apaguen",
           "negativo_tu": "no apagues"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he apagado",
-          "tu": "has apagado",
-          "el/ella": "ha apagado",
-          "nosotros": "hemos apagado",
-          "ellos": "han apagado"
-        },
         "条件法 (Condicional)": {
           "yo": "apagaría",
           "tu": "apagarías",
@@ -54872,13 +51820,6 @@ const db = {
           "ustedes": "funcionen",
           "negativo_tu": "no funciones"
         },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he funcionado",
-          "tu": "has funcionado",
-          "el/ella": "ha funcionado",
-          "nosotros": "hemos funcionado",
-          "ellos": "han funcionado"
-        },
         "条件法 (Condicional)": {
           "yo": "funcionaría",
           "tu": "funcionarías",
@@ -54949,13 +51890,6 @@ const db = {
           "nosotros": "fallemos",
           "ustedes": "fallen",
           "negativo_tu": "no falles"
-        },
-        "現在完了 (Pretérito Perfecto)": {
-          "yo": "he fallado",
-          "tu": "has fallado",
-          "el/ella": "ha fallado",
-          "nosotros": "hemos fallado",
-          "ellos": "han fallado"
         },
         "条件法 (Condicional)": {
           "yo": "fallaría",

@@ -24,17 +24,6 @@
       display: block !important;
     }
 
-    /* ↓↓ 【ボタン反転・位置ズレの解決】CSSによる強制補正 ↓↓ */
-    .flashcard {
-      position: relative !important;
-    }
-    /* 裏面がひっくり返った時に、中のボタンが文字反転するのを防ぐ */
-    .flashcard.flipped .card-face.back .card-review-btn {
-      transform: rotateY(180deg) !important; /* カードの回転を打ち消して文字を正常に戻す */
-      transform-origin: center !important;
-      left: auto !important;
-      right: 12px !important; /* 反転の裏返しを計算して、左下にピタッと固定 */
-    }
 /* 活用表コンテナ：PCで横並び、スマホで縦並び */
 .conjugation-container {
   display: flex;
@@ -136,23 +125,17 @@
     <header class="header-wrapper">
       <div class="navbar-main">
         <div class="logo-area">
-          <div class="logo" onclick="appState.navigate('home')">🇪🇸 スペイン語教室</div>
           <a class="navbar-home-btn" href="#home">🏠 ホーム</a>
+          <div class="logo" onclick="appState.navigate('home')">🇪🇸 スペイン語教室</div>
         </div>
-        <a href="#" onclick="openFeedbackModal()" class="feedback-link">💡 訂正や追加があればここへ</a>
+        <a href="#" onclick="openFeedbackModal(); return false" class="feedback-link">訂正フォーム</a>
       </div>
       <nav class="app-menu-bar" id="app-menu-bar">
-        <a class="menu-item" id="menu-nouns" href="#flashcards/nouns">🏷️ 名詞</a>
-        <a class="menu-item" id="menu-verbs" href="#flashcards/verbs">🏃 動詞</a>
-        <a class="menu-item" id="menu-adjectives" href="#flashcards/adjectives">✨ 形容詞</a>
-        <a class="menu-item" id="menu-adverbs" href="#flashcards/adverbs">⏱️ 副詞</a>
-        <a class="menu-item" id="menu-prepositions" href="#flashcards/prepositions">🔗 その他</a>
-        <a class="menu-item" id="menu-phrases" href="#flashcards/phrases">💬 会話フレーズ</a>
+        <a class="menu-item" id="menu-flashcards" href="#flashcards">📖 単語カード</a>
         <a class="menu-item" id="menu-conjugations" href="#conjugations">📊 活用表</a>
-        <a class="menu-item" id="menu-study" href="#study/today">🎯 今日の学習</a>
-        <a class="menu-item" id="menu-practice" href="#practice">💬 会話練習</a>
-        <a class="menu-item" id="menu-scorecard" href="#scorecard">📈 成績表</a>
+        <a class="menu-item" id="menu-study" href="#study">🎯 クイズ学習</a>
         <a class="menu-item" id="menu-reviewlater" href="#reviewlater">📝 復習単語</a>
+        <a class="menu-item" id="menu-scorecard" href="#scorecard">📈 成績表</a>
       </nav>
     </header>
 

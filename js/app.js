@@ -315,15 +315,18 @@ function render() {
   } else if (appState.currentView === 'flashcards') {
     content.appendChild(renderFlashcards(appState.currentGenre));
   } else if (appState.currentView === 'quiz') {
-    content.appendChild(renderQuiz(appState.currentGenre, appState.quizMode));
+    appState.currentView = 'study';
+    content.appendChild(appState.quizMode
+      ? renderQuizLearningSession(appState.currentGenre, appState.quizMode)
+      : renderQuizLearningSetup());
   } else if (appState.currentView === 'conjugations') {
     content.appendChild(renderConjugations());
   } else if (appState.currentView === 'verbquiz') {
     content.appendChild(renderVerbQuiz());
   } else if (appState.currentView === 'study') {
-    content.appendChild(renderStudySession());
-  } else if (appState.currentView === 'practice') {
-    content.appendChild(renderConversationPractice());
+    content.appendChild(appState.quizMode
+      ? renderQuizLearningSession(appState.currentGenre, appState.quizMode)
+      : renderQuizLearningSetup());
   } else if (appState.currentView === 'scorecard') {
     content.appendChild(renderScorecard());
   } else if (appState.currentView === 'reviewlater') {
@@ -336,13 +339,11 @@ function updateMenuHighlight() {
   
   let activeId = null;
   if (appState.currentView === 'flashcards' || appState.currentView === 'quiz') {
-    activeId = `menu-${appState.currentGenre}`;
+    activeId = 'menu-flashcards';
   } else if (appState.currentView === 'conjugations' || appState.currentView === 'verbquiz') {
     activeId = 'menu-conjugations';
   } else if (appState.currentView === 'study') {
     activeId = 'menu-study';
-  } else if (appState.currentView === 'practice') {
-    activeId = 'menu-practice';
   } else if (appState.currentView === 'scorecard') {
     activeId = 'menu-scorecard';
   } else if (appState.currentView === 'reviewlater') {
@@ -362,135 +363,6 @@ function updateMenuHighlight() {
 function renderHome() {
   const div = document.createElement('div');
   div.className = 'home-container';
-  
-  const title = document.createElement('h1');
-  title.innerHTML = '学習するジャンルを選んでください';
-  div.appendChild(title);
-
-  // 活用表と成績表ボタンを配置
-  const topActions = document.createElement('div');
-  topActions.className = 'top-actions';
-  topActions.style.display = 'flex';
-  topActions.style.justifyContent = 'space-between';
-  topActions.style.alignItems = 'center';
-  topActions.style.marginBottom = '4rem';
-  topActions.style.position = 'relative';
-
-  const btnScoreTop = document.createElement('button');
-  btnScoreTop.className = 'btn btn-primary';
-  btnScoreTop.style.fontSize = '0.9rem';
-  btnScoreTop.style.padding = '0.6rem 1.2rem';
-  btnScoreTop.style.borderRadius = '12px';
-  btnScoreTop.style.background = 'linear-gradient(135deg, #FF6B6B, #FF8E8B)';
-  btnScoreTop.style.color = 'white';
-  btnScoreTop.style.border = 'none';
-  btnScoreTop.innerHTML = '📈 クイズ成績表';
-  btnScoreTop.onclick = () => appState.navigate('scorecard');
-
-  const btnConjTop = document.createElement('button');
-  btnConjTop.className = 'btn btn-primary';
-  btnConjTop.style.fontSize = '1.8rem';
-  btnConjTop.style.padding = '1.5rem 4rem';
-  btnConjTop.style.borderRadius = '30px';
-  btnConjTop.style.boxShadow = '0 15px 30px rgba(78, 205, 196, 0.3)';
-  btnConjTop.style.background = 'linear-gradient(135deg, #4ECDC4, #2ecc71)';
-  btnConjTop.style.color = 'white';
-  btnConjTop.style.border = 'none';
-  btnConjTop.style.position = 'absolute';
-  btnConjTop.style.left = '50%';
-  btnConjTop.style.transform = 'translateX(-50%)';
-  btnConjTop.innerHTML = '✨ 動詞の活用表';
-  btnConjTop.onclick = () => appState.navigate('conjugations');
-
-  const btnReviewLater = document.createElement('button');
-  btnReviewLater.className = 'btn btn-outline';
-  btnReviewLater.style.fontSize = '0.9rem';
-  btnReviewLater.style.padding = '0.6rem 1.2rem';
-  btnReviewLater.style.borderRadius = '12px';
-  btnReviewLater.innerHTML = '📝 後で復習';
-  btnReviewLater.onclick = () => appState.navigate('reviewlater');
-
-  topActions.appendChild(btnScoreTop);
-  topActions.appendChild(btnConjTop);
-  topActions.appendChild(btnReviewLater);
-  div.appendChild(topActions);
-
-  const allWords = Object.entries(db).flatMap(([genre, words]) => words.map(word => ({ ...word, genre })));
-  const dueCount = LearningStore.getDueWords(allWords, 20).length;
-  const summary = StudyAnalytics.getSummary(30);
-  const dailyPanel = document.createElement('section');
-  dailyPanel.className = 'daily-learning-panel';
-  dailyPanel.innerHTML = `
-    <div>
-      <p class="daily-eyebrow">PERSONAL LEARNING OS</p>
-      <h2>今日の学習</h2>
-      <p>復習 ${dueCount}語 / 今月の継続 ${summary.activeDays}日 / 推定段階 ${summary.estimatedLevel}</p>
-    </div>
-    <div class="daily-learning-actions">
-      <button class="btn btn-primary" id="start-study-btn">🎯 今日の復習を始める</button>
-      <button class="btn btn-secondary" id="start-practice-btn">💬 会話練習</button>
-    </div>
-  `;
-  dailyPanel.querySelector('#start-study-btn').onclick = () => appState.navigate('study', 'today');
-  dailyPanel.querySelector('#start-practice-btn').onclick = () => appState.navigate('practice');
-  div.appendChild(dailyPanel);
-
-  const grid = document.createElement('div');
-  grid.className = 'genre-grid';
-
-  genresInfo.forEach(genre => {
-    const card = document.createElement('div');
-    card.className = 'genre-card';
-    card.style.borderTop = `6px solid ${genre.color}`;
-    
-    card.innerHTML = `
-      <div class="genre-icon">${genre.icon}</div>
-      <h2>${genre.label}</h2>
-      <p>${genre.enLabel} (${db[genre.id].length}語)</p>
-    `;
-    
-    const actions = document.createElement('div');
-    actions.className = 'genre-actions';
-    
-    const btnLearn = document.createElement('button');
-    btnLearn.className = 'btn btn-outline w-full';
-    btnLearn.innerHTML = '📖 単語一覧';
-    btnLearn.onclick = (e) => { e.stopPropagation(); appState.navigate('flashcards', genre.id); };
-    actions.appendChild(btnLearn);
-
-    const quizLabel = document.createElement('p');
-    quizLabel.className = 'quiz-label';
-    quizLabel.textContent = '▼ テスト形式を選ぶ ▼';
-    actions.appendChild(quizLabel);
-
-    const quizModes = document.createElement('div');
-    quizModes.className = 'quiz-modes';
-    
-    const btn4Choice = document.createElement('button');
-    btn4Choice.className = 'btn btn-secondary btn-sm';
-    btn4Choice.textContent = '4択';
-    btn4Choice.onclick = (e) => { e.stopPropagation(); appState.navigate('quiz', genre.id, '4choice'); };
-    
-    const btnListening = document.createElement('button');
-    btnListening.className = 'btn btn-secondary btn-sm';
-    btnListening.textContent = '音声';
-    btnListening.onclick = (e) => { e.stopPropagation(); appState.navigate('quiz', genre.id, 'listening'); };
-
-    const btnSpelling = document.createElement('button');
-    btnSpelling.className = 'btn btn-secondary btn-sm';
-    btnSpelling.textContent = 'スペル';
-    btnSpelling.onclick = (e) => { e.stopPropagation(); appState.navigate('quiz', genre.id, 'spelling'); };
-
-    quizModes.appendChild(btn4Choice);
-    quizModes.appendChild(btnListening);
-    quizModes.appendChild(btnSpelling);
-    actions.appendChild(quizModes);
-    
-    card.appendChild(actions);
-    grid.appendChild(card);
-  });
-
-  div.appendChild(grid);
   return div;
 }
 
@@ -509,6 +381,164 @@ function getAllLearningWords() {
   );
 }
 
+const QUIZ_MODE_LABELS = {
+  mix: 'ミックス',
+  '4choice-es-ja': '4択（スペイン語 → 日本語）',
+  '4choice-ja-es': '4択（日本語 → スペイン語）',
+  listening: '音声',
+  spelling: 'スペル'
+};
+
+const QUIZ_FIXED_MODES = ['4choice-es-ja', '4choice-ja-es', 'listening', 'spelling'];
+
+function getQuizWords(genreId, category = 'All') {
+  const source = genreId && genreId !== 'All' && db[genreId]
+    ? db[genreId].map(word => ({ ...word, genre: genreId }))
+    : getAllLearningWords();
+  return category === 'All' ? source : source.filter(word => (word.category || 'その他') === category);
+}
+
+function getQuizCategories(genreId) {
+  return [...new Set(getQuizWords(genreId, 'All').map(word => word.category || 'その他'))]
+    .sort((a, b) => a.localeCompare(b, 'ja'));
+}
+
+function renderQuizLearningSetup() {
+  const div = document.createElement('div');
+  div.className = 'quiz-learning-container';
+  const selectedGenre = appState.currentGenre && (appState.currentGenre === 'All' || db[appState.currentGenre])
+    ? appState.currentGenre
+    : 'All';
+  const selectedCategory = appState.currentCategory || 'All';
+  const genreOptions = ['<option value="All">すべての品詞</option>']
+    .concat(genresInfo.map(genre => `<option value="${genre.id}" ${selectedGenre === genre.id ? 'selected' : ''}>${genre.icon} ${genre.label}</option>`)).join('');
+
+  div.innerHTML = `
+    <div class="view-header quiz-learning-header">
+      <p class="daily-eyebrow">PRACTICAL SPANISH</p>
+      <h2>🎯 クイズ学習</h2>
+      <p>クイズ形式・品詞・ジャンルを選んで学習を始めます。</p>
+    </div>
+    <section class="quiz-setup-card">
+      <div class="quiz-setup-block">
+        <span class="setup-label">クイズ形式</span>
+        <div class="quiz-format-grid">
+          ${Object.entries(QUIZ_MODE_LABELS).map(([mode, label]) => `<label class="quiz-format-option"><input type="radio" name="quiz-format" value="${mode}" ${mode === 'mix' ? 'checked' : ''}><span>${label}</span></label>`).join('')}
+        </div>
+      </div>
+      <div class="quiz-filter-row">
+        <label class="quiz-filter-field"><span class="setup-label">品詞</span><select id="quiz-genre-select" class="category-select">${genreOptions}</select></label>
+        <label class="quiz-filter-field"><span class="setup-label">ジャンル</span><select id="quiz-category-select" class="category-select"></select></label>
+      </div>
+      <div class="quiz-start-row">
+        <button id="start-quiz-learning" class="btn btn-primary">クイズをスタート</button>
+        <button id="start-verb-quiz" class="btn btn-secondary">🧠 動詞の活用クイズ</button>
+      </div>
+    </section>
+  `;
+
+  const genreSelect = div.querySelector('#quiz-genre-select');
+  const categorySelect = div.querySelector('#quiz-category-select');
+  const syncCategories = () => {
+    const categories = getQuizCategories(genreSelect.value);
+    categorySelect.innerHTML = ['<option value="All">すべてのジャンル</option>']
+      .concat(categories.map(category => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`)).join('');
+    if (categories.includes(selectedCategory) && genreSelect.value === selectedGenre) categorySelect.value = selectedCategory;
+  };
+  genreSelect.onchange = syncCategories;
+  syncCategories();
+  div.querySelector('#start-quiz-learning').onclick = () => {
+    const mode = div.querySelector('input[name="quiz-format"]:checked')?.value || 'mix';
+    appState.navigate('study', genreSelect.value, mode, null, { cat: categorySelect.value });
+  };
+  div.querySelector('#start-verb-quiz').onclick = () => appState.navigate('verbquiz');
+  return div;
+}
+
+function renderQuizLearningSession(genreId, selectedMode) {
+  const div = document.createElement('div');
+  div.className = 'quiz-learning-container';
+  const words = getQuizWords(genreId, appState.currentCategory || 'All');
+  let currentIndex = 0;
+  let currentMode = selectedMode === 'mix' ? null : selectedMode;
+  let answered = false;
+
+  const nextQuestion = () => {
+    answered = false;
+    currentMode = selectedMode === 'mix'
+      ? QUIZ_FIXED_MODES[Math.floor(Math.random() * QUIZ_FIXED_MODES.length)]
+      : selectedMode;
+    const target = words[Math.floor(Math.random() * words.length)];
+    if (!target) return;
+    const needChoices = currentMode !== 'spelling';
+    const choices = [target];
+    const pool = words.length >= 4 ? words : getQuizWords(genreId, 'All');
+    while (needChoices && choices.length < 4 && pool.length) {
+      const candidate = pool[Math.floor(Math.random() * pool.length)];
+      if (!choices.some(choice => choice.es === candidate.es)) choices.push(candidate);
+      if (choices.length === pool.length) break;
+    }
+    choices.sort(() => Math.random() - 0.5);
+    const questionLabel = currentMode === 'listening'
+      ? '音声を聞いて、日本語の意味を選んでください。'
+      : currentMode === '4choice-es-ja'
+        ? 'スペイン語に合う日本語を選んでください。'
+        : currentMode === '4choice-ja-es'
+          ? '日本語に合うスペイン語を選んでください。'
+          : '日本語を見て、スペイン語を入力してください。';
+    const prompt = currentMode === 'listening' ? '<button id="quiz-audio" class="btn btn-primary btn-pulse quiz-audio-button">🔊 音声を再生</button>' : `<div class="quiz-learning-prompt">${escapeHtml(currentMode === '4choice-es-ja' ? target.es : target.ja)}</div>`;
+    div.innerHTML = `
+      <div class="view-header quiz-learning-header"><p class="daily-eyebrow">QUIZ LEARNING</p><h2>🎯 クイズ学習 <span class="study-progress">${currentIndex + 1}</span></h2><p>${escapeHtml(QUIZ_MODE_LABELS[currentMode] || currentMode)} · ${escapeHtml(questionLabel)}</p></div>
+      <section class="quiz-question quiz-learning-question">${prompt}</section>
+      ${currentMode === 'spelling' ? '<div class="quiz-spelling-row"><input id="quiz-spelling-input" class="spelling-input" placeholder="スペイン語を入力" autocomplete="off" autocapitalize="off" spellcheck="false"><button id="quiz-spelling-submit" class="btn btn-primary">判定</button></div>' : `<div class="quiz-choices">${choices.map(choice => `<button class="quiz-btn" data-es="${escapeHtml(choice.es)}">${escapeHtml(currentMode === '4choice-ja-es' ? choice.es : choice.ja)}</button>`).join('')}</div>`}
+      <div id="quiz-learning-feedback" class="study-feedback" hidden></div>
+      <button id="quiz-learning-next" class="btn btn-primary" hidden>次の問題へ →</button>
+    `;
+    const feedback = div.querySelector('#quiz-learning-feedback');
+    const next = div.querySelector('#quiz-learning-next');
+    const finishAnswer = (answer, answerButton = null) => {
+      if (answered) return;
+      answered = true;
+      const isCorrect = WordIdentity.matchesAnswer(answer, target.es);
+      const state = QuizHistory.logAttempt(target, isCorrect, currentMode, target.genre);
+      if (answerButton) answerButton.classList.add(isCorrect ? 'correct' : 'wrong');
+      if (currentMode !== 'spelling') {
+        div.querySelectorAll('.quiz-btn').forEach(button => {
+          button.disabled = true;
+          if (button.dataset.es === target.es) button.classList.add('correct');
+        });
+      }
+      const english = target.en ? `<br><small class="answer-english">英語: ${escapeHtml(target.en)}</small>` : '';
+      feedback.hidden = false;
+      feedback.className = `study-feedback ${isCorrect ? 'correct' : 'wrong'}`;
+      feedback.innerHTML = isCorrect ? `🎉 正解です。${english}<br><small>${escapeHtml(StudyContent.formatDueAt(state))}</small>` : `正解は <strong>${escapeHtml(target.es)}</strong> です。${english}`;
+      next.hidden = false;
+      playAudio(target.es);
+      playEffect(isCorrect ? 'correct' : 'wrong');
+    };
+    if (currentMode === 'listening') {
+      div.querySelector('#quiz-audio').onclick = () => playAudio(target.es);
+      playAudio(target.es);
+    }
+    div.querySelectorAll('.quiz-btn').forEach(button => button.onclick = () => finishAnswer(button.dataset.es, button));
+    if (currentMode === 'spelling') {
+      const input = div.querySelector('#quiz-spelling-input');
+      const submit = div.querySelector('#quiz-spelling-submit');
+      const submitAnswer = () => { input.disabled = true; submit.disabled = true; finishAnswer(input.value); };
+      submit.onclick = submitAnswer;
+      input.onkeydown = event => { if (event.key === 'Enter') submitAnswer(); };
+      input.focus();
+    }
+    next.onclick = () => { currentIndex += 1; nextQuestion(); };
+  };
+  if (words.length < 1 || (selectedMode !== 'spelling' && words.length < 2)) {
+    div.innerHTML = '<div class="view-header"><h2>🎯 クイズ学習</h2><p>この条件では学習できる単語が不足しています。品詞またはジャンルを変更してください。</p><button class="btn btn-outline" onclick="appState.navigate(\'study\')">設定へ戻る</button></div>';
+  } else {
+    nextQuestion();
+  }
+  return div;
+}
+
 function renderStudySession() {
   const div = document.createElement('div');
   div.className = 'study-container';
@@ -525,7 +555,7 @@ function renderStudySession() {
   if (queue.length === 0) {
     div.innerHTML = `
       <div class="view-header">
-        <h2>🎯 今日の学習</h2>
+        <h2>🎯 クイズ学習</h2>
         <p>今すぐ復習する単語はありません。素晴らしい状態です。</p>
         <button class="btn btn-outline mt-2" id="study-home-btn">← ホームへ戻る</button>
       </div>
@@ -549,9 +579,9 @@ function renderStudySession() {
     div.innerHTML = `
       <div class="view-header study-header">
         <p class="daily-eyebrow">TODAY'S REVIEW</p>
-        <h2>🎯 今日の学習 <span class="study-progress">${currentIndex + 1} / ${queue.length}</span></h2>
+        <h2>🎯 クイズ学習 <span class="study-progress">${currentIndex + 1} / ${queue.length}</span></h2>
         <p>${escapeHtml(StudyContent.formatDueAt(state))}</p>
-        <button class="btn btn-outline mt-2" id="study-exit-btn">← 中断してホームへ</button>
+        <button class="btn btn-outline mt-2" id="study-exit-btn">← ホームへ戻る</button>
       </div>
       <section class="study-card">
         <div class="prompt-ja">${escapeHtml(word.ja)}</div>
@@ -676,168 +706,139 @@ function renderConversationPractice() {
 }
 
 // 2. Flashcards Screen
-function renderFlashcards(genreId) {
+function renderFlashcardsGenrePicker() {
   const div = document.createElement('div');
   div.className = 'flashcards-container';
-  
-  const genreInfo = genresInfo.find(g => g.id === genreId);
-  const allWords = db[genreId];
-  
-  // Categories
-  const categories = [...new Set(allWords.map(w => w.category || 'その他'))];
-  const hasCategories = categories.length > 1 || (categories.length === 1 && categories[0] !== 'その他');
+  const header = document.createElement('div');
+  header.className = 'view-header';
+  header.innerHTML = '<h2>📖 単語カード</h2><p>品詞を選んで単語カードを開きます。</p>';
+  div.appendChild(header);
+  const grid = document.createElement('div');
+  grid.className = 'genre-picker-grid';
+  genresInfo.forEach(genre => {
+    const button = document.createElement('button');
+    button.className = 'genre-picker-card';
+    button.style.borderTopColor = genre.color;
+    button.innerHTML = `<span class="genre-icon">${genre.icon}</span><strong>${genre.label}</strong><small>${genre.enLabel} · ${db[genre.id].length}語</small>`;
+    button.onclick = () => appState.navigate('flashcards', genre.id);
+    grid.appendChild(button);
+  });
+  div.appendChild(grid);
+  return div;
+}
 
-  const words = appState.currentCategory === 'All' 
-    ? allWords 
-    : allWords.filter(w => (w.category || 'その他') === appState.currentCategory);
+function renderFlashcards(genreId) {
+  if (!genreId || !db[genreId]) return renderFlashcardsGenrePicker();
+
+  const div = document.createElement('div');
+  div.className = 'flashcards-container';
+  const genreInfo = genresInfo.find(g => g.id === genreId);
+  const allWords = db[genreId] || [];
+  const categories = [...new Set(allWords.map(w => w.category || 'その他'))].sort((a, b) => a.localeCompare(b, 'ja'));
+  const query = String(appState.searchQuery || '').trim().toLowerCase();
+  const normalizedQuery = WordIdentity.normalizeText(query);
+  const words = allWords.filter(word => {
+    const matchesCategory = appState.currentCategory === 'All' || (word.category || 'その他') === appState.currentCategory;
+    const searchFields = [word.ja, word.es, word.en].map(value => WordIdentity.normalizeText(value));
+    return matchesCategory && (!normalizedQuery || searchFields.some(value => value.includes(normalizedQuery)));
+  });
 
   const header = document.createElement('div');
   header.className = 'view-header';
-  
-  let headerHTML = `<h2>${genreInfo.icon} ${genreInfo.label} (${genreInfo.enLabel})</h2>
-    <p>日本語・英語をタップすると、裏返ってスペイン語が発音されます。</p>`;
-  
-  header.innerHTML = headerHTML;
+  header.innerHTML = `<h2>${genreInfo.icon} ${genreInfo.label}</h2><p>タッチで裏返す</p>`;
   div.appendChild(header);
 
-  // --- Sticky Quick-Nav Bar ---
-  const quickNav = document.createElement('div');
-  quickNav.className = 'quick-nav-bar';
-  quickNav.id = 'quick-nav-bar';
+  const controls = document.createElement('div');
+  controls.className = 'flashcard-controls';
+  const categoryOptions = ['<option value="All">📂 すべてのジャンル</option>']
+    .concat(categories.map(cat => `<option value="${escapeHtml(cat)}" ${appState.currentCategory === cat ? 'selected' : ''}>${escapeHtml(cat)}</option>`)).join('');
+  controls.innerHTML = `<select id="flashcard-category" class="category-select">${categoryOptions}</select><input id="flashcard-search" class="search-input flashcard-search" type="search" placeholder="日本語・スペイン語・英語で検索" value="${escapeHtml(appState.searchQuery || '')}" autocomplete="off">`;
+  div.appendChild(controls);
 
-  let catSelectHTML = '';
-  if (hasCategories) {
-    let options = `<option value="All">📂 すべて</option>`;
-    categories.forEach(cat => {
-      options += `<option value="${cat}" ${appState.currentCategory === cat ? 'selected' : ''}>${cat}</option>`;
-    });
-    catSelectHTML = `<select id="category-select" class="quick-nav-select">${options}</select>`;
-  }
+  const paginationContainer = document.createElement('div');
+  paginationContainer.className = 'flashcard-pagination';
+  div.appendChild(paginationContainer);
 
-  quickNav.innerHTML = `
-    ${catSelectHTML}
-    <button class="quick-nav-btn quiz-nav" onclick="appState.navigate('quiz', '${genreId}', '4choice')">🤔 4択クイズ</button>
-    <button class="quick-nav-btn listen-nav" onclick="appState.navigate('quiz', '${genreId}', 'listening')">🎧 音声クイズ</button>
-    <button class="quick-nav-btn spell-nav" onclick="appState.navigate('quiz', '${genreId}', 'spelling')">✍️ スペルクイズ</button>
-  `;
-  div.appendChild(quickNav);
-
-  // Set sticky top offset dynamically based on header height
-  setTimeout(() => {
-    const headerEl = document.querySelector('.header-wrapper');
-    if (headerEl) {
-      const navBar = document.getElementById('quick-nav-bar');
-      if (navBar) navBar.style.top = `${headerEl.offsetHeight}px`;
+  const renderGrid = () => {
+    const totalPages = Math.max(1, Math.ceil(words.length / appState.itemsPerPage));
+    const page = Math.min(Math.max(appState.currentPage, 1), totalPages);
+    const currentWords = words.slice((page - 1) * appState.itemsPerPage, page * appState.itemsPerPage);
+    paginationContainer.innerHTML = '';
+    if (totalPages > 1) paginationContainer.appendChild(createPaginationDOM(page, totalPages, () => renderGrid()));
+    grid.innerHTML = '';
+    if (!currentWords.length) {
+      grid.innerHTML = '<p class="empty-msg">該当する単語がありません。</p>';
+      return;
     }
-  }, 0);
-
-  if (hasCategories) {
-    setTimeout(() => {
-      const select = document.getElementById('category-select');
-      if(select) {
-        select.onchange = (e) => {
-          appState.navigate('flashcards', genreId, null, appState.searchQuery, {
-            cat: e.target.value,
-            page: 1,
-            weakOnly: appState.weakOnly
-          });
-        };
+    currentWords.forEach(word => {
+      let genderMarker = '';
+      let backColorClass = '';
+      if (genreId === 'nouns') {
+        const esLower = word.es.toLowerCase();
+        if (esLower.includes('el/la') || esLower.includes('los/las') || esLower.includes(' un/una ')) {
+          genderMarker = '<span class="gender-mark both">m/f</span>';
+          backColorClass = 'bg-white';
+        } else if (/^(el|los|un|unos) /.test(esLower)) {
+          genderMarker = '<span class="gender-mark masculine">m</span>';
+          backColorClass = 'bg-blue';
+        } else if (/^(la|las|una|unas) /.test(esLower)) {
+          genderMarker = '<span class="gender-mark feminine">f</span>';
+          backColorClass = 'bg-pink';
+        } else backColorClass = 'bg-white';
       }
-    }, 0);
-  }
-
-  // Top Pagination
-  const totalPages = Math.ceil(words.length / appState.itemsPerPage);
-  if (totalPages > 1) {
-    div.appendChild(createPaginationDOM(appState.currentPage, totalPages));
-  }
+      const wordWithGenre = { ...word, genre: genreId };
+      const wordId = WordIdentity.key(wordWithGenre, genreId);
+      const isInReview = SwipeManager.getReviewLater().some(item => WordIdentity.key(item, item.genre) === wordId);
+      const card = document.createElement('div');
+      card.className = 'flashcard';
+      card.dataset.wordId = wordId;
+      card.innerHTML = `
+        <div class="flashcard-inner">
+          <div class="card-face front"><div class="word-ja">${escapeHtml(word.ja)}</div></div>
+          <div class="card-face back ${backColorClass}">${genderMarker}<div class="word-es ${backColorClass === 'bg-white' ? 'text-dark' : ''}">${escapeHtml(word.es)}</div><div class="word-en card-back-en">${escapeHtml(word.en)}</div>${genreId === 'verbs' ? '<button class="conj-link" type="button">Conjugación ↗</button>' : ''}</div>
+        </div>
+        <button class="card-review-btn ${isInReview ? 'in-review' : ''}" type="button">${isInReview ? '📝 復習中' : '+ 後で復習'}</button>`;
+      card.onclick = () => {
+        card.classList.toggle('flipped');
+        if (card.classList.contains('flipped')) {
+          LearningStore.markViewed(wordWithGenre, genreId);
+          playAudio(word.es);
+        }
+      };
+      card.querySelector('.card-review-btn').onclick = event => {
+        event.stopPropagation();
+        const button = event.currentTarget;
+        if (SwipeManager.getReviewLater().some(item => WordIdentity.key(item, item.genre) === wordId)) {
+          SwipeManager.removeReviewLater(wordId);
+          button.textContent = '+ 後で復習';
+          button.classList.remove('in-review');
+        } else {
+          SwipeManager.addReviewLater(wordWithGenre);
+          button.textContent = '📝 復習中';
+          button.classList.add('in-review');
+        }
+      };
+      const conjugationButton = card.querySelector('.conj-link');
+      if (conjugationButton) conjugationButton.onclick = event => {
+        event.stopPropagation();
+        appState.verbReturnPage = page;
+        appState.verbReturnCat = appState.currentCategory;
+        appState.navigate('conjugations', null, null, word.es);
+      };
+      grid.appendChild(card);
+    });
+  };
 
   const grid = document.createElement('div');
   grid.className = 'flashcard-grid';
-
-  const startIndex = (appState.currentPage - 1) * appState.itemsPerPage;
-  const currentWords = words.slice(startIndex, startIndex + appState.itemsPerPage);
-
-  currentWords.forEach(word => {
-    let genderMarker = '';
-    let backColorClass = '';
-    
-    if (genreId === 'nouns') {
-      const esLower = word.es.toLowerCase();
-      if (esLower.includes('el/la') || esLower.includes('los/las') || esLower.includes(' un/una ')) {
-        genderMarker = '<span class="gender-mark both">m/f</span>';
-        backColorClass = 'bg-white';
-      } else if (esLower.startsWith('el ') || esLower.startsWith('los ') || esLower.startsWith('un ') || esLower.startsWith('unos ')) {
-        genderMarker = '<span class="gender-mark masculine">m</span>';
-        backColorClass = 'bg-blue';
-      } else if (esLower.startsWith('la ') || esLower.startsWith('las ') || esLower.startsWith('una ') || esLower.startsWith('unas ')) {
-        genderMarker = '<span class="gender-mark feminine">f</span>';
-        backColorClass = 'bg-pink';
-      } else {
-        backColorClass = 'bg-white';
-      }
-    }
-
-    const wordWithGenre = { ...word, genre: genreId };
-    const wordId = WordIdentity.key(wordWithGenre, genreId);
-    const isInReview = SwipeManager.getReviewLater().some(w => WordIdentity.key(w, w.genre) === wordId);
-    const reviewBtnLabel = isInReview ? '📝 復習中' : '+ 後で復習';
-    const reviewBtnClass = isInReview ? 'card-review-btn in-review' : 'card-review-btn';
-
-    const conjLinkHTML = genreId === 'verbs'
-      ? `<div class="conj-link" onclick="event.stopPropagation(); appState.verbReturnPage=${appState.currentPage}; appState.verbReturnCat='${(appState.currentCategory||'All').replace(/'/g,"\\'")}'; appState.navigate('conjugations', null, null, '${word.es.replace(/'/g, "\\'")}')">Conjugación ↗</div>`
-      : '';
-
-    const card = document.createElement('div');
-    card.className = 'flashcard';
-    card.dataset.wordId = wordId;
-    card.innerHTML = `
-      <div class="flashcard-inner">
-        <div class="card-face front">
-          <div class="word-ja">${word.ja}</div>
-          <div class="word-en">${word.en}</div>
-          <button class="${reviewBtnClass}">${reviewBtnLabel}</button>
-        </div>
-        <div class="card-face back ${backColorClass}">
-          ${genderMarker}
-          <div class="word-es ${backColorClass === 'bg-white' ? 'text-dark' : ''}">${word.es}</div>
-          ${conjLinkHTML}
-        </div>
-      </div>
-    `;
-
-    card.onclick = () => {
-      card.classList.toggle('flipped');
-      if (card.classList.contains('flipped')) {
-        LearningStore.markViewed(wordWithGenre, genreId);
-        playAudio(word.es);
-      }
-    };
-
-    card.querySelector('.card-review-btn').addEventListener('click', (e) => {
-      e.stopPropagation();
-      const btn = e.currentTarget;
-      if (SwipeManager.getReviewLater().some(w => WordIdentity.key(w, w.genre) === wordId)) {
-        SwipeManager.removeReviewLater(wordId);
-        btn.textContent = '+ 後で復習';
-        btn.classList.remove('in-review');
-      } else {
-        SwipeManager.addReviewLater(wordWithGenre);
-        btn.textContent = '📝 復習中';
-        btn.classList.add('in-review');
-      }
-    });
-
-    grid.appendChild(card);
-  });
-
   div.appendChild(grid);
-
-  // Bottom Pagination
-  if (totalPages > 1) {
-    div.appendChild(createPaginationDOM(appState.currentPage, totalPages));
-  }
-
+  controls.querySelector('#flashcard-category').onchange = event => appState.navigate('flashcards', genreId, null, appState.searchQuery, { cat: event.target.value, page: 1 });
+  controls.querySelector('#flashcard-search').oninput = event => {
+    appState.currentPage = 1;
+    appState.searchQuery = event.target.value;
+    render();
+  };
+  renderGrid();
   return div;
 }
 
@@ -1181,6 +1182,15 @@ function renderConjugations() {
   header.className = 'view-header';
   header.innerHTML = `<h2>🏃 動詞の活用表 (Conjugaciones)</h2>`;
 
+  const categories = [...new Set(db.verbs.map(verb => verb.category || 'その他'))]
+    .sort((a, b) => a.localeCompare(b, 'ja'));
+  const categorySelect = document.createElement('select');
+  categorySelect.id = 'verb-category-select';
+  categorySelect.className = 'category-select verb-category-select';
+  categorySelect.innerHTML = ['<option value="All">📂 すべてのジャンル</option>']
+    .concat(categories.map(category => `<option value="${escapeHtml(category)}" ${appState.currentCategory === category ? 'selected' : ''}>${escapeHtml(category)}</option>`)).join('');
+  header.appendChild(categorySelect);
+
   // Back to verbs list button (restore page & category)
   const backBtn = document.createElement('button');
   backBtn.className = 'btn btn-outline conj-back-btn';
@@ -1214,17 +1224,28 @@ function renderConjugations() {
   div.appendChild(bottomPageNavContainer);
 
   const verbs = db.verbs;
+  const tenseOrder = [
+    '現在・過去分詞',
+    '現在形 (Presente)',
+    '点過去 (Indefinido)',
+    '線過去 (Imperfecto)',
+    '未来形 (Futuro)',
+    '条件法 (Condicional)',
+    '接続法現在 (Subjuntivo)',
+    '命令形 (Imperativo)'
+  ];
   
   const renderCards = (filterText) => {
     cardsContainer.innerHTML = '';
     topPageNavContainer.innerHTML = '';
     bottomPageNavContainer.innerHTML = '';
     
-    const filteredVerbs = verbs.filter(v => 
-      v.es.toLowerCase().includes(filterText.toLowerCase()) || 
-      v.ja.includes(filterText) ||
-      v.en.toLowerCase().includes(filterText.toLowerCase())
-    );
+    const normalizedFilter = WordIdentity.normalizeText(filterText);
+    const filteredVerbs = verbs.filter(v => {
+      const matchesCategory = appState.currentCategory === 'All' || (v.category || 'その他') === appState.currentCategory;
+      const matchesSearch = !normalizedFilter || [v.es, v.ja, v.en].some(value => WordIdentity.normalizeText(value).includes(normalizedFilter));
+      return matchesCategory && matchesSearch;
+    });
 
     const totalPages = Math.ceil(filteredVerbs.length / appState.itemsPerPage);
     if (totalPages > 1) {
@@ -1255,7 +1276,14 @@ function renderConjugations() {
           <div class="conjugation-container">
       `;
       
-      for (const [tense, forms] of Object.entries(verb.conjugations)) {
+      const orderedConjugations = Object.entries(verb.conjugations)
+        .filter(([tense]) => !tense.includes('現在完了'))
+        .sort(([firstTense], [secondTense]) => {
+          const firstIndex = tenseOrder.indexOf(firstTense);
+          const secondIndex = tenseOrder.indexOf(secondTense);
+          return (firstIndex === -1 ? 999 : firstIndex) - (secondIndex === -1 ? 999 : secondIndex);
+        });
+      for (const [tense, forms] of orderedConjugations) {
         // nullやundefined対策
         const safeYo = forms.yo || '-';
         const safeTu = forms.tu || '-';
@@ -1322,6 +1350,11 @@ function renderConjugations() {
   };
 
   setTimeout(() => {
+    categorySelect.onchange = event => {
+      appState.currentCategory = event.target.value;
+      appState.currentPage = 1;
+      renderCards(document.getElementById('verb-search')?.value || '');
+    };
     const searchInput = document.getElementById('verb-search');
     if(searchInput) {
       searchInput.addEventListener('input', (e) => {
@@ -1353,7 +1386,7 @@ function renderVerbQuiz() {
     '点過去 (Indefinido)',
     '線過去 (Imperfecto)',
     '未来形 (Futuro)',
-    '現在完了 (Pretérito Perfecto)'
+    '条件法 (Condicional)'
   ];
   const persons = [
     { key: 'yo', label: 'yo' },
@@ -1380,7 +1413,7 @@ function renderVerbQuiz() {
       </div>
       <section class="verb-quiz-card">
         <div class="verb-quiz-verb">${escapeHtml(current.verb.es)}</div>
-        <div class="verb-quiz-meaning">${escapeHtml(current.verb.ja)} / ${escapeHtml(current.verb.en)}</div>
+        <div class="verb-quiz-meaning">${escapeHtml(current.verb.ja)}</div>
         <div class="verb-quiz-prompt">${escapeHtml(current.tense)} ・ ${escapeHtml(current.person.label)}</div>
         <input id="verb-quiz-input" class="spelling-input" placeholder="活用形を入力" autocomplete="off" autocapitalize="off" spellcheck="false">
         <button id="verb-quiz-submit" class="btn btn-primary">判定</button>
@@ -1402,8 +1435,8 @@ function renderVerbQuiz() {
       feedback.hidden = false;
       feedback.className = `study-feedback ${isCorrect ? 'correct' : 'wrong'}`;
       feedback.innerHTML = isCorrect
-        ? `🎉 正解です。<br><small>${escapeHtml(StudyContent.formatDueAt(state))}</small>`
-        : `正解は <strong>${escapeHtml(current.answer)}</strong> です。`;
+        ? `🎉 正解です。<br><small>${escapeHtml(current.verb.en || '')}</small><br><small>${escapeHtml(StudyContent.formatDueAt(state))}</small>`
+        : `正解は <strong>${escapeHtml(current.answer)}</strong> です。<br><small>${escapeHtml(current.verb.en || '')}</small>`;
       div.querySelector('#verb-quiz-next').hidden = false;
       if (isCorrect) playEffect('correct');
       else playEffect('wrong');
@@ -1624,6 +1657,9 @@ function handleRouting() {
   const quizMode = segments[2] || null;
   
   appState.currentView = view;
+  if (view === 'quiz') {
+    appState.currentView = 'study';
+  }
   appState.currentGenre = genreId;
   appState.quizMode = quizMode;
   appState.currentCategory = params.cat || 'All';

@@ -19,8 +19,8 @@ assert.strictEqual(db.phrases.length, 400, 'フレーズ400件が取り込まれ
 assert.strictEqual(db.verbs.length, 438, '動詞438件が保持されている');
 assert.strictEqual(
   db.verbs.filter(verb => verb.conjugations['現在完了 (Pretérito Perfecto)']).length,
-  438,
-  '全動詞に現在完了がある'
+  0,
+  '現在完了は表示用データから削除されている'
 );
 assert.strictEqual(
   db.verbs.filter(verb => verb.conjugations['条件法 (Condicional)']).length,

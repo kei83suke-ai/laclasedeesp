@@ -136,26 +136,6 @@ def extract_data():
                                 "ellos": str(sheet.cell(row=row, column=7).value or "-").strip()
                             }
 
-    # 現在完了は、haberの現在形と各動詞の過去分詞から生成する。
-    # 元Excelに現在完了シートがなくても、既存の活用データから一貫して表示できる。
-    present_perfect_key = "現在完了 (Pretérito Perfecto)"
-    haber = verbs_dict.get("haber")
-    haber_present = (haber or {}).get("conjugations", {}).get("現在形 (Presente)", {})
-    haber_forms = {
-        "yo": haber_present.get("yo", "he"),
-        "tu": haber_present.get("tu", "has"),
-        "el/ella": haber_present.get("el/ella", "ha"),
-        "nosotros": haber_present.get("nosotros", "hemos"),
-        "ellos": haber_present.get("ellos", "han")
-    }
-    for verb in db["verbs"]:
-        participle = verb.get("conjugations", {}).get("現在・過去分詞", {}).get("yo", "-")
-        if participle and participle != "-":
-            verb.setdefault("conjugations", {})[present_perfect_key] = {
-                person: f"{auxiliary} {participle}"
-                for person, auxiliary in haber_forms.items()
-            }
-
     # 条件法は未来形の語幹を使うため、未来形の各活用語尾を条件法へ変換する。
     # これにより、規則動詞だけでなく tendría / podría / haría などの不規則語幹も保持できる。
     conditional_key = "条件法 (Condicional)"
