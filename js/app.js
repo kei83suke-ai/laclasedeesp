@@ -3,6 +3,8 @@ const appState = {
   currentView: 'home',
   currentGenre: null,
   currentCategory: 'All',
+  verbType: 'all',
+  verbCardType: 'all',
   quizMode: null,
   currentPage: 1,
   itemsPerPage: 50,
@@ -83,9 +85,9 @@ const QuizHistory = {
     
     let weakWords = this.getWeakWords();
     if (isCorrect) {
-      weakWords = weakWords.filter(w => WordIdentity.key(w, w.genre) !== wordId);
+      weakWords = weakWords.filter(w => !WordIdentity.same(w, wordRecord, genre));
     } else {
-      if (!weakWords.some(w => WordIdentity.key(w, w.genre) === wordId)) {
+      if (!weakWords.some(w => WordIdentity.same(w, wordRecord, genre))) {
         weakWords.push({
           wordId,
           es: word.es,
@@ -123,7 +125,7 @@ const SwipeManager = {
   addMemorized(word) {
     const list = this.getMemorized();
     const wordId = WordIdentity.key(word, word.genre);
-    if (!list.find(w => WordIdentity.key(w, w.genre) === wordId)) {
+    if (!list.find(w => WordIdentity.same(w, word, word.genre))) {
       list.push({ ...word, wordId });
       AppStorage.setJSON('es_memorized_words', list);
     }
@@ -135,7 +137,7 @@ const SwipeManager = {
   addReviewLater(word) {
     const list = this.getReviewLater();
     const wordId = WordIdentity.key(word, word.genre);
-    if (!list.find(w => WordIdentity.key(w, w.genre) === wordId)) {
+    if (!list.find(w => WordIdentity.same(w, word, word.genre))) {
       list.push({ ...word, wordId });
       AppStorage.setJSON('es_review_later', list);
     }
@@ -147,7 +149,8 @@ const SwipeManager = {
       : String(wordOrId);
     const filtered = list.filter(word => {
       const currentId = WordIdentity.key(word, word.genre);
-      return currentId !== targetId && word.es !== wordOrId;
+      return currentId !== targetId && word.es !== wordOrId
+        && !(typeof wordOrId === 'object' && WordIdentity.same(word, wordOrId, wordOrId.genre));
     });
     AppStorage.setJSON('es_review_later', filtered);
   }
@@ -375,6 +378,15 @@ function escapeHtml(value) {
     .replace(/'/g, '&#039;');
 }
 
+function getWordCategories(word) {
+  const categories = Array.isArray(word?.categories) ? word.categories : [word?.category || 'その他'];
+  return [...new Set(categories.filter(Boolean))];
+}
+
+function hasWordCategory(word, category) {
+  return category === 'All' || getWordCategories(word).includes(category);
+}
+
 function getAllLearningWords() {
   return Object.entries(db).flatMap(([genre, words]) =>
     words.map(word => ({ ...word, genre }))
@@ -395,11 +407,11 @@ function getQuizWords(genreId, category = 'All') {
   const source = genreId && genreId !== 'All' && db[genreId]
     ? db[genreId].map(word => ({ ...word, genre: genreId }))
     : getAllLearningWords();
-  return category === 'All' ? source : source.filter(word => (word.category || 'その他') === category);
+  return category === 'All' ? source : source.filter(word => hasWordCategory(word, category));
 }
 
 function getQuizCategories(genreId) {
-  return [...new Set(getQuizWords(genreId, 'All').map(word => word.category || 'その他'))]
+  return [...new Set(getQuizWords(genreId, 'All').flatMap(getWordCategories))]
     .sort((a, b) => a.localeCompare(b, 'ja'));
 }
 
@@ -734,13 +746,15 @@ function renderFlashcards(genreId) {
   div.className = 'flashcards-container';
   const genreInfo = genresInfo.find(g => g.id === genreId);
   const allWords = db[genreId] || [];
-  const categories = [...new Set(allWords.map(w => w.category || 'その他'))].sort((a, b) => a.localeCompare(b, 'ja'));
+  const categories = [...new Set(allWords.flatMap(getWordCategories))].sort((a, b) => a.localeCompare(b, 'ja'));
   const query = String(appState.searchQuery || '').trim().toLowerCase();
   const normalizedQuery = WordIdentity.normalizeText(query);
+  const verbTypeFilter = genreId === 'verbs' ? appState.verbCardType : 'all';
   const words = allWords.filter(word => {
-    const matchesCategory = appState.currentCategory === 'All' || (word.category || 'その他') === appState.currentCategory;
+    const matchesCategory = hasWordCategory(word, appState.currentCategory);
+    const matchesVerbType = verbTypeFilter === 'all' || word.verbType === verbTypeFilter;
     const searchFields = [word.ja, word.es, word.en].map(value => WordIdentity.normalizeText(value));
-    return matchesCategory && (!normalizedQuery || searchFields.some(value => value.includes(normalizedQuery)));
+    return matchesCategory && matchesVerbType && (!normalizedQuery || searchFields.some(value => value.includes(normalizedQuery)));
   });
 
   const header = document.createElement('div');
@@ -752,7 +766,13 @@ function renderFlashcards(genreId) {
   controls.className = 'flashcard-controls';
   const categoryOptions = ['<option value="All">📂 すべてのジャンル</option>']
     .concat(categories.map(cat => `<option value="${escapeHtml(cat)}" ${appState.currentCategory === cat ? 'selected' : ''}>${escapeHtml(cat)}</option>`)).join('');
-  controls.innerHTML = `<select id="flashcard-category" class="category-select">${categoryOptions}</select><input id="flashcard-search" class="search-input flashcard-search" type="search" placeholder="日本語・スペイン語・英語で検索" value="${escapeHtml(appState.searchQuery || '')}" autocomplete="off">`;
+  const verbTypeOptions = genreId === 'verbs' ? `
+    <select id="flashcard-verb-type" class="category-select">
+      <option value="all" ${verbTypeFilter === 'all' ? 'selected' : ''}>🔤 すべての動詞</option>
+      <option value="single" ${verbTypeFilter === 'single' ? 'selected' : ''}>単独動詞</option>
+      <option value="phrase" ${verbTypeFilter === 'phrase' ? 'selected' : ''}>動詞フレーズ</option>
+    </select>` : '';
+  controls.innerHTML = `${verbTypeOptions}<select id="flashcard-category" class="category-select">${categoryOptions}</select><input id="flashcard-search" class="search-input flashcard-search" type="search" placeholder="日本語・スペイン語・英語で検索" value="${escapeHtml(appState.searchQuery || '')}" autocomplete="off">`;
   div.appendChild(controls);
 
   const paginationContainer = document.createElement('div');
@@ -788,7 +808,7 @@ function renderFlashcards(genreId) {
       }
       const wordWithGenre = { ...word, genre: genreId };
       const wordId = WordIdentity.key(wordWithGenre, genreId);
-      const isInReview = SwipeManager.getReviewLater().some(item => WordIdentity.key(item, item.genre) === wordId);
+      const isInReview = SwipeManager.getReviewLater().some(item => WordIdentity.same(item, wordWithGenre, genreId));
       const card = document.createElement('div');
       card.className = 'flashcard';
       card.dataset.wordId = wordId;
@@ -808,7 +828,7 @@ function renderFlashcards(genreId) {
       card.querySelector('.card-review-btn').onclick = event => {
         event.stopPropagation();
         const button = event.currentTarget;
-        if (SwipeManager.getReviewLater().some(item => WordIdentity.key(item, item.genre) === wordId)) {
+        if (SwipeManager.getReviewLater().some(item => WordIdentity.same(item, wordWithGenre, genreId))) {
           SwipeManager.removeReviewLater(wordId);
           button.textContent = '+ 後で復習';
           button.classList.remove('in-review');
@@ -833,6 +853,13 @@ function renderFlashcards(genreId) {
   grid.className = 'flashcard-grid';
   div.appendChild(grid);
   controls.querySelector('#flashcard-category').onchange = event => appState.navigate('flashcards', genreId, null, appState.searchQuery, { cat: event.target.value, page: 1 });
+  const verbTypeSelect = controls.querySelector('#flashcard-verb-type');
+  if (verbTypeSelect) {
+    verbTypeSelect.onchange = event => {
+      appState.verbCardType = event.target.value;
+      appState.navigate('flashcards', genreId, null, appState.searchQuery, { cat: appState.currentCategory, page: 1 });
+    };
+  }
   controls.querySelector('#flashcard-search').oninput = event => {
     appState.currentPage = 1;
     appState.searchQuery = event.target.value;
@@ -860,11 +887,11 @@ function renderQuiz(genreId, mode) {
     words = db[genreId];
   }
   
-  const categories = [...new Set(words.map(w => w.category || 'その他'))];
+  const categories = [...new Set(words.flatMap(getWordCategories))];
   const hasCategories = categories.length > 1 || (categories.length === 1 && categories[0] !== 'その他');
 
   if (appState.currentCategory !== 'All') {
-    words = words.filter(w => (w.category || 'その他') === appState.currentCategory);
+    words = words.filter(w => hasWordCategory(w, appState.currentCategory));
   }
 
   const header = document.createElement('div');
@@ -1182,7 +1209,7 @@ function renderConjugations() {
   header.className = 'view-header';
   header.innerHTML = `<h2>🏃 動詞の活用表 (Conjugaciones)</h2>`;
 
-  const categories = [...new Set(db.verbs.map(verb => verb.category || 'その他'))]
+  const categories = [...new Set(db.verbs.flatMap(getWordCategories))]
     .sort((a, b) => a.localeCompare(b, 'ja'));
   const categorySelect = document.createElement('select');
   categorySelect.id = 'verb-category-select';
@@ -1190,6 +1217,16 @@ function renderConjugations() {
   categorySelect.innerHTML = ['<option value="All">📂 すべてのジャンル</option>']
     .concat(categories.map(category => `<option value="${escapeHtml(category)}" ${appState.currentCategory === category ? 'selected' : ''}>${escapeHtml(category)}</option>`)).join('');
   header.appendChild(categorySelect);
+
+  const typeSelect = document.createElement('select');
+  typeSelect.id = 'verb-type-select';
+  typeSelect.className = 'category-select verb-type-select';
+  typeSelect.innerHTML = `
+    <option value="all" ${appState.verbType === 'all' ? 'selected' : ''}>🔤 すべての動詞</option>
+    <option value="single" ${appState.verbType === 'single' ? 'selected' : ''}>単独動詞</option>
+    <option value="phrase" ${appState.verbType === 'phrase' ? 'selected' : ''}>動詞フレーズ</option>
+  `;
+  header.appendChild(typeSelect);
 
   // Back to verbs list button (restore page & category)
   const backBtn = document.createElement('button');
@@ -1242,9 +1279,10 @@ function renderConjugations() {
     
     const normalizedFilter = WordIdentity.normalizeText(filterText);
     const filteredVerbs = verbs.filter(v => {
-      const matchesCategory = appState.currentCategory === 'All' || (v.category || 'その他') === appState.currentCategory;
+      const matchesCategory = hasWordCategory(v, appState.currentCategory);
+      const matchesType = appState.verbType === 'all' || v.verbType === appState.verbType;
       const matchesSearch = !normalizedFilter || [v.es, v.ja, v.en].some(value => WordIdentity.normalizeText(value).includes(normalizedFilter));
-      return matchesCategory && matchesSearch;
+      return matchesCategory && matchesType && matchesSearch;
     });
 
     const totalPages = Math.ceil(filteredVerbs.length / appState.itemsPerPage);
@@ -1268,7 +1306,7 @@ function renderConjugations() {
         <div class="conj-header accordion-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.arrow').classList.toggle('up');">
           <div>
             <h3>${verb.es}</h3>
-            <p>${verb.ja} / ${verb.en}</p>
+            <p>${verb.verbType === 'phrase' ? '動詞フレーズ' : '単独動詞'} · ${verb.ja} / ${verb.en}</p>
           </div>
           <div class="arrow">▼</div>
         </div>
@@ -1352,6 +1390,11 @@ function renderConjugations() {
   setTimeout(() => {
     categorySelect.onchange = event => {
       appState.currentCategory = event.target.value;
+      appState.currentPage = 1;
+      renderCards(document.getElementById('verb-search')?.value || '');
+    };
+    typeSelect.onchange = event => {
+      appState.verbType = event.target.value;
       appState.currentPage = 1;
       renderCards(document.getElementById('verb-search')?.value || '');
     };
@@ -1704,11 +1747,11 @@ function renderReviewLater() {
   
   let filteredQueue = currentGenreFilter === 'All' ? queue : queue.filter(w => w.genre === currentGenreFilter);
   
-  const availableCategories = [...new Set(filteredQueue.map(w => w.category || 'その他'))];
+  const availableCategories = [...new Set(filteredQueue.flatMap(getWordCategories))];
   const currentCategoryFilter = appState.currentCategory || 'All';
 
   if (currentCategoryFilter !== 'All') {
-    filteredQueue = filteredQueue.filter(w => (w.category || 'その他') === currentCategoryFilter);
+    filteredQueue = filteredQueue.filter(w => hasWordCategory(w, currentCategoryFilter));
   }
 
   const filterContainer = document.createElement('div');

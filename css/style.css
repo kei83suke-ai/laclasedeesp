@@ -21,7 +21,7 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { 
-  font-family: 'Inter', 'Noto Sans JP', 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif; 
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif; 
   background: linear-gradient(135deg, #F0F4FF 0%, #E8EFF7 50%, #F0F4FF 100%);
   background-attachment: fixed;
   color: var(--dark); 
@@ -318,7 +318,7 @@ body {
   font-size: 1.5rem;
   font-weight: 900;
   opacity: 0.5;
-  font-family: 'Inter', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "Segoe UI", sans-serif;
 }
 .gender-mark.masculine { color: #0284C7; }
 .gender-mark.feminine { color: #E11D48; }

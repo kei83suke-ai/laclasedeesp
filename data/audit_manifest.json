@@ -1,0 +1,264 @@
+{
+  "schemaVersion": "2026-08-25",
+  "sourceWorkbook": "スペイン語単語　完成版.xlsx",
+  "counts": {
+    "nouns": 1170,
+    "adjectives": 378,
+    "adverbs": 238,
+    "prepositions": 155,
+    "verbs": 438,
+    "phrases": 400
+  },
+  "verbCounts": {
+    "total": 438,
+    "single": 334,
+    "phrase": 104,
+    "withAllRequestedTenses": 438,
+    "orphanActiveConjugationRows": 5,
+    "orphanActiveConjugationKeys": [
+      "configurar",
+      "depender",
+      "navegar",
+      "suscribirse",
+      "unirse"
+    ]
+  },
+  "conjugationAuditCounts": {
+    "source": 305,
+    "derived_from_base": 83,
+    "generated_regular": 50
+  },
+  "duplicateGroups": [
+    {
+      "genre": "nouns",
+      "keptId": "nouns:el-la-medico-a",
+      "canonicalEs": "el/la médico/a",
+      "removedSource": "名詞:1207",
+      "keptSource": "名詞:63"
+    },
+    {
+      "genre": "nouns",
+      "keptId": "nouns:el-la-enfermero-a",
+      "canonicalEs": "el/la enfermero/a",
+      "removedSource": "名詞:1208",
+      "keptSource": "名詞:65"
+    }
+  ],
+  "manualReviewVerbs": [
+    {
+      "id": "verbs:quejarse",
+      "es": "quejarse",
+      "baseVerb": "quejar"
+    },
+    {
+      "id": "verbs:preocuparse",
+      "es": "preocuparse",
+      "baseVerb": "preocupar"
+    },
+    {
+      "id": "verbs:calmarse",
+      "es": "calmarse",
+      "baseVerb": "calmar"
+    },
+    {
+      "id": "verbs:relajarse",
+      "es": "relajarse",
+      "baseVerb": "relajar"
+    },
+    {
+      "id": "verbs:enojarse",
+      "es": "enojarse",
+      "baseVerb": "enojar"
+    },
+    {
+      "id": "verbs:enfadarse",
+      "es": "enfadarse",
+      "baseVerb": "enfadar"
+    },
+    {
+      "id": "verbs:levantarse",
+      "es": "levantarse",
+      "baseVerb": "levantar"
+    },
+    {
+      "id": "verbs:ducharse",
+      "es": "ducharse",
+      "baseVerb": "duchar"
+    },
+    {
+      "id": "verbs:banarse",
+      "es": "bañarse",
+      "baseVerb": "bañar"
+    },
+    {
+      "id": "verbs:quitarse",
+      "es": "quitarse",
+      "baseVerb": "quitar"
+    },
+    {
+      "id": "verbs:maquillarse",
+      "es": "maquillarse",
+      "baseVerb": "maquillar"
+    },
+    {
+      "id": "verbs:afeitarse",
+      "es": "afeitarse",
+      "baseVerb": "afeitar"
+    },
+    {
+      "id": "verbs:apresurarse",
+      "es": "apresurarse",
+      "baseVerb": "apresurar"
+    },
+    {
+      "id": "verbs:pasar-tiempo-con-la-familia",
+      "es": "pasar tiempo con la familia",
+      "baseVerb": "pasar"
+    },
+    {
+      "id": "verbs:acostumbrarse-a",
+      "es": "acostumbrarse a",
+      "baseVerb": "acostumbrar"
+    },
+    {
+      "id": "verbs:doblar-la-ropa",
+      "es": "doblar la ropa",
+      "baseVerb": "doblar"
+    },
+    {
+      "id": "verbs:enfermarse",
+      "es": "enfermarse",
+      "baseVerb": "enfermar"
+    },
+    {
+      "id": "verbs:recuperarse",
+      "es": "recuperarse",
+      "baseVerb": "recuperar"
+    },
+    {
+      "id": "verbs:lastimarse",
+      "es": "lastimarse",
+      "baseVerb": "lastimar"
+    },
+    {
+      "id": "verbs:estirarse",
+      "es": "estirarse",
+      "baseVerb": "estirar"
+    },
+    {
+      "id": "verbs:pesarse",
+      "es": "pesarse",
+      "baseVerb": "pesar"
+    },
+    {
+      "id": "verbs:pararse:la",
+      "es": "pararse",
+      "baseVerb": "parar"
+    },
+    {
+      "id": "verbs:alojarse",
+      "es": "alojarse",
+      "baseVerb": "alojar"
+    },
+    {
+      "id": "verbs:alquilar-un-coche",
+      "es": "alquilar un coche",
+      "baseVerb": "alquilar"
+    },
+    {
+      "id": "verbs:mudarse",
+      "es": "mudarse",
+      "baseVerb": "mudar"
+    },
+    {
+      "id": "verbs:iniciar-sesion",
+      "es": "iniciar sesión",
+      "baseVerb": "iniciar"
+    },
+    {
+      "id": "verbs:asistir-a-clase",
+      "es": "asistir a clase",
+      "baseVerb": "asistir"
+    },
+    {
+      "id": "verbs:suspender-un-examen",
+      "es": "suspender un examen",
+      "baseVerb": "suspender"
+    },
+    {
+      "id": "verbs:ahorrar-tiempo",
+      "es": "ahorrar tiempo",
+      "baseVerb": "ahorrar"
+    },
+    {
+      "id": "verbs:acabar-de",
+      "es": "acabar de",
+      "baseVerb": "acabar"
+    },
+    {
+      "id": "verbs:atreverse-a",
+      "es": "atreverse a",
+      "baseVerb": "atrever"
+    },
+    {
+      "id": "verbs:tratar-de",
+      "es": "tratar de",
+      "baseVerb": "tratar"
+    },
+    {
+      "id": "verbs:insistir-en",
+      "es": "insistir en",
+      "baseVerb": "insistir"
+    },
+    {
+      "id": "verbs:mandar-un-mensaje",
+      "es": "mandar un mensaje",
+      "baseVerb": "mandar"
+    },
+    {
+      "id": "verbs:editar-fotos",
+      "es": "editar fotos",
+      "baseVerb": "editar"
+    },
+    {
+      "id": "verbs:editar-videos",
+      "es": "editar videos",
+      "baseVerb": "editar"
+    },
+    {
+      "id": "verbs:suscribirse-a-un-canal",
+      "es": "suscribirse a un canal",
+      "baseVerb": "suscribir"
+    },
+    {
+      "id": "verbs:unirse-a-un-grupo",
+      "es": "unirse a un grupo",
+      "baseVerb": "unir"
+    }
+  ],
+  "cefrAudit": {
+    "totalEntries": 2779,
+    "matchedToPcic": 1428,
+    "unmatched": 1351,
+    "unmatchedPolicy": "left explicit; no CEFR level guessed"
+  },
+  "translationAudit": {
+    "totalEntries": 2779,
+    "workbookRetained": 2779,
+    "requiresBilingualReview": 2779,
+    "reason": "RAE/PCIC do not provide Japanese translation validation"
+  },
+  "sources": {
+    "conjugation": "https://www.rae.es/diccionario-estudiante/docs/conjugaciones-verbales.pdf",
+    "grammar": "https://www.rae.es/gtg/conjugaci%C3%B3n",
+    "cefr": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/indice.htm",
+    "cefrA1A2": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/niveles/09_nociones_especificas_inventario_a1-a2.htm",
+    "cefrB1B2": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/niveles/09_nociones_especificas_inventario_b1-b2.htm",
+    "cefrC1C2": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/niveles/09_nociones_especificas_inventario_c1-c2.htm"
+  },
+  "notes": [
+    "The CEFR label is assigned only when the lemma matches the cached PCIC inventory; unmatched entries remain explicit rather than being guessed.",
+    "Japanese and English glosses are retained from the workbook and marked for bilingual review because RAE is a Spanish-language dictionary, not a Japanese translation authority.",
+    "The runtime dataset is self-contained and does not fetch fonts, images, dictionaries, or conjugations from the network."
+  ]
+}

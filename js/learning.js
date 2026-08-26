@@ -61,13 +61,32 @@
   window.WordIdentity = {
     key(word, genreId = null) {
       if (!word) return 'unknown';
-      if (word.wordId) return String(word.wordId);
       if (word.id) return String(word.id);
+      if (word.wordId) return String(word.wordId);
       const genre = genreId || word.genre || 'unknown';
       const category = word.category || 'その他';
       const es = word.es || '';
       const ja = word.ja || '';
       return `legacy:${genre}::${category}::${es}::${ja}`;
+    },
+    aliases(word, genreId = null) {
+      if (!word) return [];
+      const genre = genreId || word.genre || 'unknown';
+      const category = word.category || 'その他';
+      const es = word.es || '';
+      const ja = word.ja || '';
+      return [...new Set([
+        word.id,
+        ...(Array.isArray(word.legacyIds) ? word.legacyIds : []),
+        word.wordId,
+        `legacy:${genre}::${category}::${es}::${ja}`,
+        `${genre}:${word.sourceRow}:${es}`,
+        `legacy:${genre}::${es}`
+      ].filter(Boolean).map(String))];
+    },
+    same(first, second, genreId = null) {
+      const left = new Set(this.aliases(first, genreId || first?.genre));
+      return this.aliases(second, genreId || second?.genre).some(alias => left.has(alias));
     },
     normalizeText,
     matchesAnswer(answer, expected) {
@@ -79,6 +98,57 @@
     }
   };
   const WordIdentity = window.WordIdentity;
+
+  function buildStableAliasMap() {
+    const source = typeof db !== 'undefined' ? db : {};
+    const aliases = new Map();
+    Object.entries(source).forEach(([genre, words]) => {
+      if (!Array.isArray(words)) return;
+      words.forEach(word => {
+        if (!word || !word.id) return;
+        WordIdentity.aliases({ ...word, genre }, genre).forEach(alias => {
+          if (!aliases.has(alias)) aliases.set(alias, word.id);
+        });
+      });
+    });
+    return aliases;
+  }
+
+  function migrateLegacyWordIds() {
+    const aliases = buildStableAliasMap();
+    if (!aliases.size) return;
+
+    const states = safeGetJSON(STORAGE_KEYS.states, {});
+    if (states && typeof states === 'object' && !Array.isArray(states)) {
+      let changed = false;
+      Object.entries(states).forEach(([key, value]) => {
+        const stableId = aliases.get(key) || aliases.get(value?.wordId);
+        if (!stableId || stableId === key) return;
+        const existing = states[stableId];
+        states[stableId] = existing
+          ? { ...value, ...existing, wordId: stableId }
+          : { ...value, wordId: stableId };
+        delete states[key];
+        changed = true;
+      });
+      if (changed) safeSetJSON(STORAGE_KEYS.states, states);
+    }
+
+    ['es_quiz_history', 'es_weak_words', 'es_review_later', 'es_memorized_words'].forEach(storageKey => {
+      const records = safeGetJSON(storageKey, []);
+      if (!Array.isArray(records)) return;
+      let changed = false;
+      const migrated = records.map(record => {
+        if (!record || typeof record !== 'object') return record;
+        const stableId = aliases.get(record.wordId) || aliases.get(record.id)
+          || aliases.get(`legacy:${record.genre || 'unknown'}::${record.category || 'その他'}::${record.es || ''}::${record.ja || ''}`);
+        if (!stableId || record.wordId === stableId) return record;
+        changed = true;
+        return { ...record, wordId: stableId };
+      });
+      if (changed) safeSetJSON(storageKey, migrated);
+    });
+  }
 
   function defaultState(wordId) {
     return {
@@ -142,7 +212,14 @@
     get(word, genreId = null) {
       const wordId = WordIdentity.key(word, genreId);
       const states = this.getAll();
-      return states[wordId] || defaultState(wordId);
+      if (states[wordId]) return states[wordId];
+      const legacyId = WordIdentity.aliases(word, genreId).find(alias => states[alias]);
+      if (!legacyId) return defaultState(wordId);
+      const migrated = { ...states[legacyId], wordId };
+      delete states[legacyId];
+      states[wordId] = migrated;
+      this.saveAll(states);
+      return migrated;
     },
     isDue(word, genreId = null, now = Date.now()) {
       const state = this.get(word, genreId);
@@ -150,8 +227,8 @@
     },
     markViewed(word, genreId = null) {
       const wordId = WordIdentity.key(word, genreId);
+      const state = this.get(word, genreId);
       const states = this.getAll();
-      const state = states[wordId] || defaultState(wordId);
       state.seenCount += 1;
       state.updatedAt = Date.now();
       states[wordId] = state;
@@ -166,8 +243,8 @@
     recordAnswer(word, genreId, isCorrect, mode = 'study') {
       const now = Date.now();
       const wordId = WordIdentity.key(word, genreId);
+      const state = this.get(word, genreId);
       const states = this.getAll();
-      const state = states[wordId] || defaultState(wordId);
       state.seenCount += 1;
       state.lastResult = Boolean(isCorrect);
       state.lastAnsweredAt = now;
@@ -226,6 +303,8 @@
     }
   };
   const LearningStore = window.LearningStore;
+
+  migrateLegacyWordIds();
 
   window.StudyContent = {
     getExample(word) {
