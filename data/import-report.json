@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-13",
+  "source": {
+    "filename": "スペイン語学習データベース（新規版）.xlsx",
+    "sha256": "4a69337b02becffe8521422bbee1e463bf46692455ac7e8c4dde8984cbc37ec1",
+    "originalWorkbookModified": false
+  },
+  "headwords": 29813,
+  "translated": 29813,
+  "verbs": {
+    "total": 2972,
+    "withConjugations": 2971,
+    "withoutConjugations": 1,
+    "orphanActiveConjugationRows": 0
+  },
+  "forms": 109812,
+  "translationStatuses": {
+    "reviewed_core_senses": 458,
+    "existing_unreviewed": 2013,
+    "dictionary_reference": 3189,
+    "ai_reviewed": 2259,
+    "translation_review_required": 127,
+    "machine_unreviewed": 21767
+  },
+  "generatedForms": 0,
+  "stableIdsPreserved": 29813,
+  "retainedAliases": true,
+  "chunks": 32,
+  "largestFileBytes": 2435878,
+  "fullLinguisticAudit": false,
+  "githubUploaded": false
+}

@@ -1,0 +1,25 @@
+{
+  "online": {
+    "words": 29813,
+    "ja": 29813,
+    "quiz": 4730,
+    "forms": 109812,
+    "state": {
+      "wordId": "lex:es:2d6e0ba0758e3b61ab74",
+      "interval": 7,
+      "repetitions": 2,
+      "ease": 2.5
+    },
+    "review": 1
+  },
+  "offline": {
+    "words": 29813,
+    "controlled": true,
+    "horizontalOverflow": false,
+    "state": 7
+  },
+  "cachedResources": 38,
+  "pageErrors": [],
+  "device": "Chromium mobile viewport 390x844 (not physical iPhone/iPad)",
+  "githubSubpath": "/spanish-app/"
+}

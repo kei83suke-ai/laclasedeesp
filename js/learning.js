@@ -118,6 +118,14 @@
     const aliases = buildStableAliasMap();
     if (!aliases.size) return;
 
+    // Keep a recoverable pre-migration copy, including excluded phrase history.
+    const backupKey = 'es_dictionary_migration_backup_v2';
+    if (!safeGetJSON(backupKey, null)) {
+      const keys = [STORAGE_KEYS.states, STORAGE_KEYS.events, 'es_quiz_history', 'es_weak_words', 'es_review_later', 'es_memorized_words'];
+      const backup = Object.fromEntries(keys.map(key => [key, safeGetJSON(key, null)]));
+      if (!safeSetJSON(backupKey, { createdAt: Date.now(), values: backup })) return;
+    }
+
     const states = safeGetJSON(STORAGE_KEYS.states, {});
     if (states && typeof states === 'object' && !Array.isArray(states)) {
       let changed = false;
@@ -142,9 +150,9 @@
         if (!record || typeof record !== 'object') return record;
         const stableId = aliases.get(record.wordId) || aliases.get(record.id)
           || aliases.get(`legacy:${record.genre || 'unknown'}::${record.category || 'その他'}::${record.es || ''}::${record.ja || ''}`);
-        if (!stableId || record.wordId === stableId) return record;
+        if (!stableId || (record.wordId === stableId && (!record.id || record.id === stableId))) return record;
         changed = true;
-        return { ...record, wordId: stableId };
+        return { ...record, ...(record.id ? { id: stableId } : {}), wordId: stableId };
       });
       if (changed) safeSetJSON(storageKey, migrated);
     });
@@ -307,17 +315,6 @@
   migrateLegacyWordIds();
 
   window.StudyContent = {
-    getExample(word) {
-      if (Array.isArray(word.examples) && word.examples.length > 0) {
-        const example = word.examples[0];
-        if (typeof example === 'string') return { es: example, ja: '' };
-        return { es: example.es || '', ja: example.ja || example.translation || '' };
-      }
-      if (word.partOfSpeech === 'phrase' || word.genre === 'phrases') {
-        return { es: word.es, ja: word.ja, source: 'phrase' };
-      }
-      return null;
-    },
     getUsage(word) {
       if (Array.isArray(word.usageScenes) && word.usageScenes.length > 0) {
         return word.usageScenes;

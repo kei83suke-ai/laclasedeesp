@@ -1,252 +1,112 @@
 {
-  "schemaVersion": "2026-08-25",
-  "sourceWorkbook": "スペイン語単語　完成版.xlsx",
-  "counts": {
-    "nouns": 1170,
-    "adjectives": 378,
-    "adverbs": 238,
-    "prepositions": 155,
-    "verbs": 438,
-    "phrases": 400
-  },
+  "schemaVersion": 3,
+  "updatedAt": "2026-10-13",
+  "sourceSpreadsheet": "https://docs.google.com/spreadsheets/d/1vswqBk2gfX4SyqdQZLNwHK_sOzA7nqIQxSgCSxoxl10/edit",
+  "headwordCount": 29813,
   "verbCounts": {
-    "total": 438,
-    "single": 334,
-    "phrase": 104,
-    "withAllRequestedTenses": 438,
-    "orphanActiveConjugationRows": 5,
-    "orphanActiveConjugationKeys": [
-      "configurar",
-      "depender",
-      "navegar",
-      "suscribirse",
-      "unirse"
+    "total": 2972,
+    "withConjugations": 2971,
+    "withoutConjugations": 1,
+    "orphanActiveConjugationRows": 0
+  },
+  "cleanup": {
+    "before": {
+      "master": 2779,
+      "dictionary": 33677,
+      "verbs": 438,
+      "conjugations": 17520
+    },
+    "after": {
+      "headwords": 29813,
+      "withJapanese": 5460,
+      "withCategory": 2014,
+      "sourceMatchedCefr": 1333,
+      "verbHeadwords": 2972,
+      "retainedOriginalVerbs": 333,
+      "retainedConjugations": 12306,
+      "withConjugations": 2674,
+      "conjugationForms": 98923
+    },
+    "removed": {
+      "単語マスター": 718,
+      "辞書候補": 204,
+      "動詞": 104
+    },
+    "consolidatedRecords": 5187,
+    "exampleCells": 0,
+    "conjugationConflicts": [],
+    "unresolvedVerbTargets": [
+      [
+        "辞書候補",
+        33553,
+        "dict:es:a90f038c93f394305c29",
+        "írsele la onda",
+        "動詞"
+      ]
+    ],
+    "japaneseAddition": {
+      "added": 3195,
+      "source": "https://kaikki.org/jawiktionary/スペイン語/index.html",
+      "snapshot": "2026-07-03 dump / 2026-07-15 extraction (postprocessed Spanish subset)",
+      "status": "headword_and_pos_matched; bilingual_sense_alignment_pending",
+      "sourceEntries": 17750,
+      "skippedSenses": 15490
+    },
+    "conjugationAudit": {
+      "total": 98923,
+      "dictionaryFrameMatches": 10887,
+      "basePlusPronounMatches": 1405,
+      "raeCheckedForms": 14,
+      "correctedForms": 2,
+      "unmatched": 0,
+      "allRaeAudited": false,
+      "retainedPreviouslyAudited": 12306,
+      "newTwoSourceMatches": 86617
+    },
+    "fixedExpressions": {
+      "removedHeadwords": 13,
+      "removedSenses": 16,
+      "keptOtherSenses": 3
+    },
+    "continuation": {
+      "date": "2026-10-08",
+      "translatedCoreEntries": 138,
+      "newJapanese": 137,
+      "removedVerbClassifications": 81,
+      "removedHeadwords": 60,
+      "addedConjugatedVerbs": 2341,
+      "addedConjugationForms": 86617,
+      "pendingConjugations": 298,
+      "comparison": "Exact headword and 37 slots agree between English Wiktionary and fixed verbecc templates; no ML prediction, no missing slot generation",
+      "comparisonSource": "https://github.com/bretttolbert/verbecc/tree/a5cab52168cda317a358222448a8a7c5fe58657a/verbecc/data/xml",
+      "wordnetUsed": false
+    },
+    "translationBatches": [
+      {
+        "date": "2026-10-08",
+        "id": "basic-translations-114",
+        "entries": 114,
+        "newJapanese": 114,
+        "verbs": 35,
+        "peerReviewed": true,
+        "conjugationShapesChanged": 0,
+        "englishIssueFixed": "producto: remainder -> product in multiplication",
+        "allSensesAudited": false
+      }
     ]
   },
-  "conjugationAuditCounts": {
-    "source": 305,
-    "derived_from_base": 83,
-    "generated_regular": 50
-  },
-  "duplicateGroups": [
-    {
-      "genre": "nouns",
-      "keptId": "nouns:el-la-medico-a",
-      "canonicalEs": "el/la médico/a",
-      "removedSource": "名詞:1207",
-      "keptSource": "名詞:63"
-    },
-    {
-      "genre": "nouns",
-      "keptId": "nouns:el-la-enfermero-a",
-      "canonicalEs": "el/la enfermero/a",
-      "removedSource": "名詞:1208",
-      "keptSource": "名詞:65"
-    }
-  ],
-  "manualReviewVerbs": [
-    {
-      "id": "verbs:quejarse",
-      "es": "quejarse",
-      "baseVerb": "quejar"
-    },
-    {
-      "id": "verbs:preocuparse",
-      "es": "preocuparse",
-      "baseVerb": "preocupar"
-    },
-    {
-      "id": "verbs:calmarse",
-      "es": "calmarse",
-      "baseVerb": "calmar"
-    },
-    {
-      "id": "verbs:relajarse",
-      "es": "relajarse",
-      "baseVerb": "relajar"
-    },
-    {
-      "id": "verbs:enojarse",
-      "es": "enojarse",
-      "baseVerb": "enojar"
-    },
-    {
-      "id": "verbs:enfadarse",
-      "es": "enfadarse",
-      "baseVerb": "enfadar"
-    },
-    {
-      "id": "verbs:levantarse",
-      "es": "levantarse",
-      "baseVerb": "levantar"
-    },
-    {
-      "id": "verbs:ducharse",
-      "es": "ducharse",
-      "baseVerb": "duchar"
-    },
-    {
-      "id": "verbs:banarse",
-      "es": "bañarse",
-      "baseVerb": "bañar"
-    },
-    {
-      "id": "verbs:quitarse",
-      "es": "quitarse",
-      "baseVerb": "quitar"
-    },
-    {
-      "id": "verbs:maquillarse",
-      "es": "maquillarse",
-      "baseVerb": "maquillar"
-    },
-    {
-      "id": "verbs:afeitarse",
-      "es": "afeitarse",
-      "baseVerb": "afeitar"
-    },
-    {
-      "id": "verbs:apresurarse",
-      "es": "apresurarse",
-      "baseVerb": "apresurar"
-    },
-    {
-      "id": "verbs:pasar-tiempo-con-la-familia",
-      "es": "pasar tiempo con la familia",
-      "baseVerb": "pasar"
-    },
-    {
-      "id": "verbs:acostumbrarse-a",
-      "es": "acostumbrarse a",
-      "baseVerb": "acostumbrar"
-    },
-    {
-      "id": "verbs:doblar-la-ropa",
-      "es": "doblar la ropa",
-      "baseVerb": "doblar"
-    },
-    {
-      "id": "verbs:enfermarse",
-      "es": "enfermarse",
-      "baseVerb": "enfermar"
-    },
-    {
-      "id": "verbs:recuperarse",
-      "es": "recuperarse",
-      "baseVerb": "recuperar"
-    },
-    {
-      "id": "verbs:lastimarse",
-      "es": "lastimarse",
-      "baseVerb": "lastimar"
-    },
-    {
-      "id": "verbs:estirarse",
-      "es": "estirarse",
-      "baseVerb": "estirar"
-    },
-    {
-      "id": "verbs:pesarse",
-      "es": "pesarse",
-      "baseVerb": "pesar"
-    },
-    {
-      "id": "verbs:pararse:la",
-      "es": "pararse",
-      "baseVerb": "parar"
-    },
-    {
-      "id": "verbs:alojarse",
-      "es": "alojarse",
-      "baseVerb": "alojar"
-    },
-    {
-      "id": "verbs:alquilar-un-coche",
-      "es": "alquilar un coche",
-      "baseVerb": "alquilar"
-    },
-    {
-      "id": "verbs:mudarse",
-      "es": "mudarse",
-      "baseVerb": "mudar"
-    },
-    {
-      "id": "verbs:iniciar-sesion",
-      "es": "iniciar sesión",
-      "baseVerb": "iniciar"
-    },
-    {
-      "id": "verbs:asistir-a-clase",
-      "es": "asistir a clase",
-      "baseVerb": "asistir"
-    },
-    {
-      "id": "verbs:suspender-un-examen",
-      "es": "suspender un examen",
-      "baseVerb": "suspender"
-    },
-    {
-      "id": "verbs:ahorrar-tiempo",
-      "es": "ahorrar tiempo",
-      "baseVerb": "ahorrar"
-    },
-    {
-      "id": "verbs:acabar-de",
-      "es": "acabar de",
-      "baseVerb": "acabar"
-    },
-    {
-      "id": "verbs:atreverse-a",
-      "es": "atreverse a",
-      "baseVerb": "atrever"
-    },
-    {
-      "id": "verbs:tratar-de",
-      "es": "tratar de",
-      "baseVerb": "tratar"
-    },
-    {
-      "id": "verbs:insistir-en",
-      "es": "insistir en",
-      "baseVerb": "insistir"
-    },
-    {
-      "id": "verbs:mandar-un-mensaje",
-      "es": "mandar un mensaje",
-      "baseVerb": "mandar"
-    },
-    {
-      "id": "verbs:editar-fotos",
-      "es": "editar fotos",
-      "baseVerb": "editar"
-    },
-    {
-      "id": "verbs:editar-videos",
-      "es": "editar videos",
-      "baseVerb": "editar"
-    },
-    {
-      "id": "verbs:suscribirse-a-un-canal",
-      "es": "suscribirse a un canal",
-      "baseVerb": "suscribir"
-    },
-    {
-      "id": "verbs:unirse-a-un-grupo",
-      "es": "unirse a un grupo",
-      "baseVerb": "unir"
-    }
-  ],
-  "cefrAudit": {
-    "totalEntries": 2779,
-    "matchedToPcic": 1428,
-    "unmatched": 1351,
-    "unmatchedPolicy": "left explicit; no CEFR level guessed"
-  },
   "translationAudit": {
-    "totalEntries": 2779,
-    "workbookRetained": 2779,
-    "requiresBilingualReview": 2779,
-    "reason": "RAE/PCIC do not provide Japanese translation validation"
+    "withJapanese": 29813,
+    "missingJapanese": 0,
+    "statuses": {
+      "reviewed_core_senses": 458,
+      "existing_unreviewed": 2013,
+      "dictionary_reference": 3189,
+      "ai_reviewed": 2259,
+      "translation_review_required": 127,
+      "machine_unreviewed": 21767
+    },
+    "allSensesAudited": false
   },
   "sources": {
     "conjugation": "https://www.rae.es/diccionario-estudiante/docs/conjugaciones-verbales.pdf",
@@ -256,9 +116,215 @@
     "cefrB1B2": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/niveles/09_nociones_especificas_inventario_b1-b2.htm",
     "cefrC1C2": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/niveles/09_nociones_especificas_inventario_c1-c2.htm"
   },
-  "notes": [
-    "The CEFR label is assigned only when the lemma matches the cached PCIC inventory; unmatched entries remain explicit rather than being guessed.",
-    "Japanese and English glosses are retained from the workbook and marked for bilingual review because RAE is a Spanish-language dictionary, not a Japanese translation authority.",
-    "The runtime dataset is self-contained and does not fetch fonts, images, dictionaries, or conjugations from the network."
+  "licenses": [
+    {
+      "name": "Wiktionary contributors / Kaikki.org / Wiktextract (Tatu Ylonen)",
+      "url": "https://kaikki.org/dictionary/Spanish/index.html",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Filtered and grouped headwords; linked existing translations and IDs."
+    },
+    {
+      "name": "wordfreq — Robyn Speer; source credits include SUBTLEX (Marc Brysbaert et al.)",
+      "url": "https://github.com/rspeer/wordfreq/blob/master/NOTICE.md",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "name": "Japanese Wiktionary contributors / Kaikki.org / Wiktextract (Tatu Ylonen)",
+      "url": "https://kaikki.org/jawiktionary/スペイン語/index.html",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "changes": "Matched headwords and parts of speech; added reference Japanese glosses and edited five entries. Full bilingual sense alignment remains pending."
+    }
+  ],
+  "conjugationAudit": {
+    "total": 109812,
+    "allRaeAudited": false,
+    "generatedForms": 0,
+    "source": "Excel 活用表; ID and tense/person exact mapping",
+    "unregistered": [
+      "tar"
+    ],
+    "partialUnverified": [
+      {
+        "word": "culiar",
+        "withheldSlots": 12
+      }
+    ]
+  },
+  "conjugationComparison": {
+    "source": "https://github.com/bretttolbert/verbecc/tree/a5cab52168cda317a358222448a8a7c5fe58657a/verbecc/data/xml",
+    "authors": "Brett Tolbert; Sekou Diao; Pierre Sarrazin",
+    "purpose": "Validation only. Adopted forms originate from English Wiktionary. Templates and prediction runtime are not bundled in the app.",
+    "addedVerbs": 2341,
+    "addedForms": 86617,
+    "allRaeAudited": false
+  },
+  "importSource": {
+    "filename": "スペイン語学習データベース（新規版）.xlsx",
+    "sha256": "4a69337b02becffe8521422bbee1e463bf46692455ac7e8c4dde8984cbc37ec1",
+    "originalWorkbookModified": false
+  },
+  "dictionaryFiles": [
+    {
+      "path": "js/dictionary/nouns-001.js",
+      "bytes": 1177587,
+      "sha256": "b7d96f0212e1bf45990ccca0e7f0718f22160981902cfe1f32cb21db95bcef23"
+    },
+    {
+      "path": "js/dictionary/nouns-002.js",
+      "bytes": 1212821,
+      "sha256": "897ab76fcd09736aeb1f387c9702f8a7a4ddaf107fec853c214fd601fb95c548"
+    },
+    {
+      "path": "js/dictionary/nouns-003.js",
+      "bytes": 1176666,
+      "sha256": "1046a3466aefe3d93542e7398e14b257cb2a8a62108dfe2542e0973f12d3a949"
+    },
+    {
+      "path": "js/dictionary/nouns-004.js",
+      "bytes": 1147285,
+      "sha256": "0c3dc6dd3641eab40cdcb81a0f2744382746fb46de580061af22b9c062f2fbba"
+    },
+    {
+      "path": "js/dictionary/nouns-005.js",
+      "bytes": 1149160,
+      "sha256": "ce2481ca8f0b6dcda78d949a6809ac8db4e1dde322658a637af8d9e43881b09a"
+    },
+    {
+      "path": "js/dictionary/nouns-006.js",
+      "bytes": 1130912,
+      "sha256": "d7c15d02fdae342565cb05aeb682ea3bab0d870836a6e02d319c750ea2dfba87"
+    },
+    {
+      "path": "js/dictionary/nouns-007.js",
+      "bytes": 1116084,
+      "sha256": "4fc3669faeea0c8718cb06583f0619dbc8edb51a3a0e6e75efd526234f23e7da"
+    },
+    {
+      "path": "js/dictionary/nouns-008.js",
+      "bytes": 1126975,
+      "sha256": "1489f45fa44d584d004cae0199f5332eaa39d5aebfd4561837dfd465a9aed48d"
+    },
+    {
+      "path": "js/dictionary/nouns-009.js",
+      "bytes": 1098460,
+      "sha256": "83a240b9600061a9831a4ee09f572b436df53d321a629a091c55bbe5bac724ff"
+    },
+    {
+      "path": "js/dictionary/nouns-010.js",
+      "bytes": 1104029,
+      "sha256": "7f0d7c1d3ceee2ea6956bb2638a1e1c3fef9c6543e047d15e2f2088cb553b650"
+    },
+    {
+      "path": "js/dictionary/nouns-011.js",
+      "bytes": 1102823,
+      "sha256": "e1d86abb2fc2268eaea0faa5b58cdb07af4a899209e880eb48ec27e12939e881"
+    },
+    {
+      "path": "js/dictionary/nouns-012.js",
+      "bytes": 1122487,
+      "sha256": "d3f25ad8504beaf4ff3a27021af36e05bec102b34dbb85ddc0c9ae4d55add6d6"
+    },
+    {
+      "path": "js/dictionary/nouns-013.js",
+      "bytes": 1073335,
+      "sha256": "55d4b93db8b629cd127c37f39135bf77b09049ad69a481352ec2b46a4b370dc0"
+    },
+    {
+      "path": "js/dictionary/nouns-014.js",
+      "bytes": 1095997,
+      "sha256": "3342ca4906555b2bf2ba3ed7dc6dccc3996c0227e8aef9411d73962478412279"
+    },
+    {
+      "path": "js/dictionary/nouns-015.js",
+      "bytes": 1079666,
+      "sha256": "fa85db64b65b6045d451bd0f4e2e17c2f4e96433eb1a53b3a93b61ce952fddf9"
+    },
+    {
+      "path": "js/dictionary/nouns-016.js",
+      "bytes": 1072193,
+      "sha256": "f49ac7f93493b420c0075d3a5868d6b3231d4e574f7aa7cd4ccecebafa36eeb9"
+    },
+    {
+      "path": "js/dictionary/nouns-017.js",
+      "bytes": 1078601,
+      "sha256": "dd8141e3cf40675ad6ed5a8b6668f26e16c8c3cd8cd98943ae0dab36ad5624dc"
+    },
+    {
+      "path": "js/dictionary/nouns-018.js",
+      "bytes": 1071370,
+      "sha256": "db9b9e8738f9b0fc59eeac500d2d26e19539456d773e01b81ff90fa027355bd3"
+    },
+    {
+      "path": "js/dictionary/nouns-019.js",
+      "bytes": 1067315,
+      "sha256": "4d1f19fba0f67ba4ae27078efecec63f5760b4329bcae36203597823d35f0b9c"
+    },
+    {
+      "path": "js/dictionary/nouns-020.js",
+      "bytes": 1049551,
+      "sha256": "3fef69d20703542a3a1564c0a5e3835f4ccc458ae08b2cf7e7643ef57f765794"
+    },
+    {
+      "path": "js/dictionary/nouns-021.js",
+      "bytes": 779548,
+      "sha256": "86c7d998eda76f871dce97747b7be83bfc5a18b747ccf67ef6cf507609ea222c"
+    },
+    {
+      "path": "js/dictionary/verbs-001.js",
+      "bytes": 2422756,
+      "sha256": "4b888cefe1a42a910494d1d7550e28ba3006b899c66b1483f3a5b7cba62cb9b0"
+    },
+    {
+      "path": "js/dictionary/verbs-002.js",
+      "bytes": 2435878,
+      "sha256": "25c97fdaa0f494b04fc679dd0f899a1181302da55f3668929b2590280964279e"
+    },
+    {
+      "path": "js/dictionary/verbs-003.js",
+      "bytes": 2340053,
+      "sha256": "0a5359462b820fc0215fc5a4242945282d05eee889689c489e2c8f4db3b95914"
+    },
+    {
+      "path": "js/dictionary/adjectives-001.js",
+      "bytes": 1078343,
+      "sha256": "edccee37e7154870fef8f951e0a5c9b14578a3fb4e0931745eca3818d11c929f"
+    },
+    {
+      "path": "js/dictionary/adjectives-002.js",
+      "bytes": 1022633,
+      "sha256": "e03c99666f324810112a2850d63c57365df971d6d550a686ade80012cbdeadd1"
+    },
+    {
+      "path": "js/dictionary/adjectives-003.js",
+      "bytes": 1000297,
+      "sha256": "73ed2b6f1090213ef46e70f05d636404904b405af5e93c02e715927f0b1c1bfe"
+    },
+    {
+      "path": "js/dictionary/adjectives-004.js",
+      "bytes": 992257,
+      "sha256": "015bc04d06f5a46bfb98654054053fc80dbfdcad69c739e5c20071dab0a4c824"
+    },
+    {
+      "path": "js/dictionary/adjectives-005.js",
+      "bytes": 749776,
+      "sha256": "403de85960bea6ea8e047ffc5dc32149cbb4c7ecab6a19a2ecf12aed91ca4c7b"
+    },
+    {
+      "path": "js/dictionary/adverbs-001.js",
+      "bytes": 942087,
+      "sha256": "bea0f2fd4572cab531e01f96077d15a78b121aa35455d7dd406388798c01688b"
+    },
+    {
+      "path": "js/dictionary/adverbs-002.js",
+      "bytes": 59929,
+      "sha256": "3b8146f262909dab17286c80962dd12a537f828e7301b621dbffa5bd28e765f0"
+    },
+    {
+      "path": "js/dictionary/prepositions-001.js",
+      "bytes": 337794,
+      "sha256": "ae084d00dc360b017c6ec924de2cdc4c04193567b5a84b57f27c8782cf33496d"
+    }
   ]
 }

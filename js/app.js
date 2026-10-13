@@ -103,7 +103,7 @@ const QuizHistory = {
   },
   getWeakWords() {
     const weakWords = AppStorage.getJSON('es_weak_words', []);
-    return Array.isArray(weakWords) ? weakWords : [];
+    return resolveStoredWords(weakWords);
   },
   saveWeakWords(words) {
     AppStorage.setJSON('es_weak_words', words);
@@ -120,7 +120,7 @@ const QuizHistory = {
 const SwipeManager = {
   getMemorized() {
     const list = AppStorage.getJSON('es_memorized_words', []);
-    return Array.isArray(list) ? list : [];
+    return resolveStoredWords(list);
   },
   addMemorized(word) {
     const list = this.getMemorized();
@@ -132,7 +132,7 @@ const SwipeManager = {
   },
   getReviewLater() {
     const list = AppStorage.getJSON('es_review_later', []);
-    return Array.isArray(list) ? list : [];
+    return resolveStoredWords(list);
   },
   addReviewLater(word) {
     const list = this.getReviewLater();
@@ -387,10 +387,47 @@ function hasWordCategory(word, category) {
   return category === 'All' || getWordCategories(word).includes(category);
 }
 
+let dictionaryCache;
 function getAllLearningWords() {
-  return Object.entries(db).flatMap(([genre, words]) =>
-    words.map(word => ({ ...word, genre }))
-  );
+  if (!dictionaryCache) {
+    const words = Object.entries(db).flatMap(([genre, words]) => words.map(word => ({ ...word, genre })));
+    dictionaryCache = [...new Map(words.map(word => [WordIdentity.key(word, word.genre), word])).values()];
+  }
+  return dictionaryCache;
+}
+
+const genreWordCache = new Map();
+function getWordsForGenre(genreId) {
+  if (!genreWordCache.has(genreId)) {
+    const labels = { nouns: ['名詞'], verbs: ['動詞'], adjectives: ['形容詞'], adverbs: ['副詞'] };
+    const standard = Object.values(labels).flat();
+    genreWordCache.set(genreId, getAllLearningWords().filter(word => {
+      const parts = word.partsOfSpeech || [];
+      return parts.length ? (labels[genreId]
+        ? parts.some(part => labels[genreId].includes(part))
+        : genreId === 'prepositions' && parts.some(part => !standard.includes(part))) : word.genre === genreId;
+    }));
+  }
+  return genreWordCache.get(genreId);
+}
+
+let storedWordIndex;
+function resolveStoredWords(records) {
+  if (!Array.isArray(records)) return [];
+  if (!storedWordIndex) {
+    storedWordIndex = new Map();
+    getAllLearningWords().forEach(word => WordIdentity.aliases(word, word.genre).forEach(alias => {
+      if (!storedWordIndex.has(alias)) storedWordIndex.set(alias, word);
+    }));
+  }
+  const resolved = records.filter(Boolean).map(record => WordIdentity.aliases(record, record.genre)
+    .map(alias => storedWordIndex.get(alias)).find(Boolean)).filter(Boolean);
+  return [...new Map(resolved.map(word => [word.id, word])).values()];
+}
+
+function isQuizEligible(word) {
+  return Boolean(String(word?.es || '').trim() && String(word?.ja || '').trim())
+    && !['dictionary_reference', 'machine_unreviewed', 'translation_review_required', 'missing_ja'].includes(word.translationStatus);
 }
 
 const QUIZ_MODE_LABELS = {
@@ -405,9 +442,17 @@ const QUIZ_FIXED_MODES = ['4choice-es-ja', '4choice-ja-es', 'listening', 'spelli
 
 function getQuizWords(genreId, category = 'All') {
   const source = genreId && genreId !== 'All' && db[genreId]
-    ? db[genreId].map(word => ({ ...word, genre: genreId }))
+    ? getWordsForGenre(genreId)
     : getAllLearningWords();
-  return category === 'All' ? source : source.filter(word => hasWordCategory(word, category));
+  const posLabels = { nouns: ['名詞'], verbs: ['動詞'], adjectives: ['形容詞'], adverbs: ['副詞'] };
+  return source.filter(word => {
+    const translatedParts = word.translatedPartsOfSpeech || [...String(word.ja || '').matchAll(/\[([^\]]+)\]/g)]
+      .flatMap(match => match[1].split(/[・／/]/));
+    const matchesPart = !genreId || genreId === 'All' || (word.partsOfSpeech || []).length < 2
+      || (posLabels[genreId] || ['前置詞', '代名詞', '接続詞', '限定詞', '冠詞', '間投詞', '数詞', 'その他'])
+        .some(part => translatedParts.includes(part));
+    return isQuizEligible(word) && matchesPart && hasWordCategory(word, category);
+  });
 }
 
 function getQuizCategories(genreId) {
@@ -554,7 +599,7 @@ function renderQuizLearningSession(genreId, selectedMode) {
 function renderStudySession() {
   const div = document.createElement('div');
   div.className = 'study-container';
-  const allWords = getAllLearningWords();
+  const allWords = getAllLearningWords().filter(isQuizEligible);
   const queue = LearningStore.getDueWords(allWords, 20);
   const session = LearningEvents.startSession();
   let currentIndex = 0;
@@ -578,12 +623,8 @@ function renderStudySession() {
 
   const renderQuestion = () => {
     const word = queue[currentIndex];
-    const example = StudyContent.getExample(word);
     const usage = StudyContent.getUsage(word);
     const state = LearningStore.get(word, word.genre);
-    const exampleHtml = example
-      ? `<div class="study-example"><span class="study-label">例文</span><strong>${escapeHtml(example.es)}</strong>${example.ja ? `<span>${escapeHtml(example.ja)}</span>` : ''}</div>`
-      : `<div class="study-example study-example-empty"><span class="study-label">例文</span><span>例文はまだ登録されていません。下の練習欄で自分の文を作りましょう。</span></div>`;
     const usageHtml = usage.length
       ? usage.map(scene => `<span class="usage-chip">${escapeHtml(scene)}</span>`).join('')
       : '<span class="text-mute">場面情報は準備中です。</span>';
@@ -601,7 +642,6 @@ function renderStudySession() {
         <button class="btn btn-primary" id="study-reveal-btn">スペイン語を思い出して表示</button>
         <div id="study-answer-area" class="study-answer-area" hidden>
           <div class="study-spanish">${escapeHtml(word.es)} <button class="btn-audio-icon" id="study-audio-btn" aria-label="音声を再生">🔊</button></div>
-          ${exampleHtml}
           <div class="study-usage"><span class="study-label">使用場面</span><div class="usage-chip-list">${usageHtml}</div></div>
           <div class="study-practice-prompt">${escapeHtml(StudyContent.getPracticePrompt(word))}</div>
           <input id="study-input" class="spelling-input" placeholder="スペイン語で入力" autocomplete="off" autocapitalize="off" spellcheck="false">
@@ -731,7 +771,7 @@ function renderFlashcardsGenrePicker() {
     const button = document.createElement('button');
     button.className = 'genre-picker-card';
     button.style.borderTopColor = genre.color;
-    button.innerHTML = `<span class="genre-icon">${genre.icon}</span><strong>${genre.label}</strong><small>${genre.enLabel} · ${db[genre.id].length}語</small>`;
+    button.innerHTML = `<span class="genre-icon">${genre.icon}</span><strong>${genre.label}</strong><small>${genre.enLabel} · ${getWordsForGenre(genre.id).length}語</small>`;
     button.onclick = () => appState.navigate('flashcards', genre.id);
     grid.appendChild(button);
   });
@@ -745,11 +785,11 @@ function renderFlashcards(genreId) {
   const div = document.createElement('div');
   div.className = 'flashcards-container';
   const genreInfo = genresInfo.find(g => g.id === genreId);
-  const allWords = db[genreId] || [];
+  const allWords = getWordsForGenre(genreId);
   const categories = [...new Set(allWords.flatMap(getWordCategories))].sort((a, b) => a.localeCompare(b, 'ja'));
   const query = String(appState.searchQuery || '').trim().toLowerCase();
   const normalizedQuery = WordIdentity.normalizeText(query);
-  const verbTypeFilter = genreId === 'verbs' ? appState.verbCardType : 'all';
+  const verbTypeFilter = 'all';
   const words = allWords.filter(word => {
     const matchesCategory = hasWordCategory(word, appState.currentCategory);
     const matchesVerbType = verbTypeFilter === 'all' || word.verbType === verbTypeFilter;
@@ -759,19 +799,14 @@ function renderFlashcards(genreId) {
 
   const header = document.createElement('div');
   header.className = 'view-header';
-  header.innerHTML = `<h2>${genreInfo.icon} ${genreInfo.label}</h2><p>タッチで裏返す</p>`;
+  header.innerHTML = `<h2>${genreInfo.icon} ${genreInfo.label}</h2><p>タッチで裏返す</p><small class="text-mute">全語に日本語訳を収録しています。未照合の辞書訳・機械翻訳・要確認の訳はクイズ対象外です。複数の品詞に表示されても登録は1件です。</small><details class="dictionary-sources"><summary>辞書の出典・確認状況</summary><p>英語・日本語版Wiktionary contributors／Kaikki.org・Wiktextract (Tatu Ylonen)。日本語訳にはAI照合・未監査の機械翻訳を含み、英日全語義の対照は未完了です。</p><p><a href="https://kaikki.org/" target="_blank" rel="noopener">辞書データ</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>（見出しの整理・統合、日本語訳の関連付け・翻訳を実施）</p><p>頻度：wordfreq (Robyn Speer)、<a href="https://github.com/rspeer/wordfreq/blob/master/NOTICE.md" target="_blank" rel="noopener">元資料の著作者・条件</a>。全データは端末内で閲覧できます。出典リンクを開くには通信が必要です。</p><p>辞書更新日：${escapeHtml(auditManifest.updatedAt)} · ${auditManifest.headwordCount.toLocaleString()}語</p></details>`;
   div.appendChild(header);
 
   const controls = document.createElement('div');
   controls.className = 'flashcard-controls';
   const categoryOptions = ['<option value="All">📂 すべてのジャンル</option>']
     .concat(categories.map(cat => `<option value="${escapeHtml(cat)}" ${appState.currentCategory === cat ? 'selected' : ''}>${escapeHtml(cat)}</option>`)).join('');
-  const verbTypeOptions = genreId === 'verbs' ? `
-    <select id="flashcard-verb-type" class="category-select">
-      <option value="all" ${verbTypeFilter === 'all' ? 'selected' : ''}>🔤 すべての動詞</option>
-      <option value="single" ${verbTypeFilter === 'single' ? 'selected' : ''}>単独動詞</option>
-      <option value="phrase" ${verbTypeFilter === 'phrase' ? 'selected' : ''}>動詞フレーズ</option>
-    </select>` : '';
+  const verbTypeOptions = '';
   controls.innerHTML = `${verbTypeOptions}<select id="flashcard-category" class="category-select">${categoryOptions}</select><input id="flashcard-search" class="search-input flashcard-search" type="search" placeholder="日本語・スペイン語・英語で検索" value="${escapeHtml(appState.searchQuery || '')}" autocomplete="off">`;
   div.appendChild(controls);
 
@@ -814,8 +849,8 @@ function renderFlashcards(genreId) {
       card.dataset.wordId = wordId;
       card.innerHTML = `
         <div class="flashcard-inner">
-          <div class="card-face front"><div class="word-ja">${escapeHtml(word.ja)}</div></div>
-          <div class="card-face back ${backColorClass}">${genderMarker}<div class="word-es ${backColorClass === 'bg-white' ? 'text-dark' : ''}">${escapeHtml(word.es)}</div><div class="word-en card-back-en">${escapeHtml(word.en)}</div>${genreId === 'verbs' ? '<button class="conj-link" type="button">Conjugación ↗</button>' : ''}</div>
+          <div class="card-face front"><div class="word-ja">${escapeHtml(word.ja || word.es)}</div>${!word.ja ? '<small class="text-mute">日本語訳未登録</small>' : word.translationStatus === 'machine_unreviewed' ? '<small class="text-mute">機械翻訳・未監査</small>' : word.translationStatus === 'translation_review_required' ? '<small class="text-mute">訳語は要確認</small>' : ''}</div>
+          <div class="card-face back ${backColorClass}">${genderMarker}<div class="word-es ${backColorClass === 'bg-white' ? 'text-dark' : ''}">${escapeHtml(word.es)}</div><div class="word-en card-back-en">${escapeHtml(word.displayEnglish || word.en)}</div>${genreId === 'verbs' ? '<button class="conj-link" type="button">Conjugación ↗</button>' : ''}</div>
         </div>
         <button class="card-review-btn ${isInReview ? 'in-review' : ''}" type="button">${isInReview ? '📝 復習中' : '+ 後で復習'}</button>`;
       card.onclick = () => {
@@ -884,8 +919,9 @@ function renderQuiz(genreId, mode) {
       words = weakList;
     }
   } else {
-    words = db[genreId];
+    words = getQuizWords(genreId);
   }
+  words = words.filter(isQuizEligible);
   
   const categories = [...new Set(words.flatMap(getWordCategories))];
   const hasCategories = categories.length > 1 || (categories.length === 1 && categories[0] !== 'その他');
@@ -942,7 +978,8 @@ function renderQuiz(genreId, mode) {
   if (mode !== 'spelling') {
     choices = [targetWord];
     // For 4 choices, get distractors from db[genreId]
-    const distractorSource = db[genreId] && db[genreId].length >= 4 ? db[genreId] : words;
+    const eligibleDistractors = getQuizWords(genreId);
+    const distractorSource = eligibleDistractors.length >= 4 ? eligibleDistractors : words;
     while(choices.length < 4) {
       const randItem = distractorSource[Math.floor(Math.random() * distractorSource.length)];
       if (!choices.some(c => c.es === randItem.es)) {
@@ -1224,7 +1261,6 @@ function renderConjugations() {
   typeSelect.innerHTML = `
     <option value="all" ${appState.verbType === 'all' ? 'selected' : ''}>🔤 すべての動詞</option>
     <option value="single" ${appState.verbType === 'single' ? 'selected' : ''}>単独動詞</option>
-    <option value="phrase" ${appState.verbType === 'phrase' ? 'selected' : ''}>動詞フレーズ</option>
   `;
   header.appendChild(typeSelect);
 
@@ -1280,7 +1316,7 @@ function renderConjugations() {
     const normalizedFilter = WordIdentity.normalizeText(filterText);
     const filteredVerbs = verbs.filter(v => {
       const matchesCategory = hasWordCategory(v, appState.currentCategory);
-      const matchesType = appState.verbType === 'all' || v.verbType === appState.verbType;
+      const matchesType = appState.verbType !== 'single' || v.verbType === 'single';
       const matchesSearch = !normalizedFilter || [v.es, v.ja, v.en].some(value => WordIdentity.normalizeText(value).includes(normalizedFilter));
       return matchesCategory && matchesType && matchesSearch;
     });
@@ -1305,8 +1341,8 @@ function renderConjugations() {
       let html = `
         <div class="conj-header accordion-header" onclick="this.nextElementSibling.classList.toggle('expanded'); this.querySelector('.arrow').classList.toggle('up');">
           <div>
-            <h3>${verb.es}</h3>
-            <p>${verb.verbType === 'phrase' ? '動詞フレーズ' : '単独動詞'} · ${verb.ja} / ${verb.en}</p>
+            <h3>${escapeHtml(verb.es)}</h3>
+            <p>単独動詞 · ${escapeHtml(verb.ja || '日本語訳未登録')} / ${escapeHtml(verb.displayEnglish || verb.en)}</p>
           </div>
           <div class="arrow">▼</div>
         </div>
@@ -1314,13 +1350,18 @@ function renderConjugations() {
           <div class="conjugation-container">
       `;
       
-      const orderedConjugations = Object.entries(verb.conjugations)
+      const orderedConjugations = Object.entries(verb.conjugations || {})
         .filter(([tense]) => !tense.includes('現在完了'))
         .sort(([firstTense], [secondTense]) => {
           const firstIndex = tenseOrder.indexOf(firstTense);
           const secondIndex = tenseOrder.indexOf(secondTense);
           return (firstIndex === -1 ? 999 : firstIndex) - (secondIndex === -1 ? 999 : secondIndex);
         });
+      if (!orderedConjugations.length) html += '<p class="text-mute">活用は未登録です。確認できた形から追加します。</p>';
+      else html += '<p class="text-mute">新規版Excelに登録された活用を表示しています。辞書・資料・規則に基づくAI照合を含み、全形のRAE監査ではありません。「-」は未登録または用法上使用しない枠です。</p>';
+      if (['culiar', 'munir', 'acontecer', 'cilampear'].includes(verb.es)) {
+        html += `<p class="text-mute">${escapeHtml(verb.es === 'culiar' ? '語幹に強勢がある12枠は未確認のため保留しています。' : verb.es === 'munir' ? '用例を確認した過去分詞 munido のみ登録しています。' : verb.es === 'acontecer' ? '三人称専用の動詞です。usted / ustedes への呼びかけとしては使いません。' : '非人称動詞です。三人称単数相当の形のみ登録しています。')}</p>`;
+      }
       for (const [tense, forms] of orderedConjugations) {
         // nullやundefined対策
         const safeYo = forms.yo || '-';
@@ -1438,15 +1479,21 @@ function renderVerbQuiz() {
     { key: 'nosotros', label: 'nosotros' },
     { key: 'ellos', label: 'ellos / ustedes' }
   ];
-  const verbs = db.verbs.filter(verb => tenseCandidates.some(tense => verb.conjugations?.[tense]));
+  const verbs = db.verbs.filter(verb => isQuizEligible(verb)
+    && tenseCandidates.some(tense => verb.conjugations?.[tense]));
+  if (!verbs.length) {
+    div.innerHTML = '<div class="view-header"><h2>活用クイズ</h2><p>訳語と活用がそろった出題対象の動詞がありません。</p></div>';
+    return div;
+  }
   let current = null;
 
   const nextQuestion = () => {
     const verb = verbs[Math.floor(Math.random() * verbs.length)];
     const availableTenses = tenseCandidates.filter(tense => verb.conjugations?.[tense]);
     const tense = availableTenses[Math.floor(Math.random() * availableTenses.length)];
-    const person = persons[Math.floor(Math.random() * persons.length)];
-    current = { verb, tense, person, answer: verb.conjugations[tense][person.key] || '-' };
+    const availablePersons = persons.filter(person => verb.conjugations[tense][person.key] && !/^[-—]$/.test(verb.conjugations[tense][person.key]));
+    const person = availablePersons[Math.floor(Math.random() * availablePersons.length)];
+    current = { verb, tense, person, answer: verb.conjugations[tense][person.key] };
     div.innerHTML = `
       <div class="view-header">
         <p class="daily-eyebrow">VERB AUTOMATION</p>
@@ -1608,7 +1655,7 @@ function renderScorecard() {
           <div class="word-info">
             <span class="genre-badge badge-sm" style="background-color: ${gInfo.color}">${gInfo.label}</span>
             <span class="weak-es-text" onclick="playAudio('${word.es.replace(/'/g, "\\'")}')">${word.es}</span>
-            <span class="weak-meaning">${word.ja} <span class="text-mute">/ ${word.en}</span></span>
+            <span class="weak-meaning">${escapeHtml(word.ja)} <span class="text-mute">/ ${escapeHtml(word.displayEnglish || word.en)}</span></span>
           </div>
           <button class="btn btn-sm btn-outline remove-weak-btn" data-idx="${idx}">克服! ✨</button>
         </div>
@@ -1642,7 +1689,7 @@ function renderScorecard() {
             <span class="history-time">${timeStr}</span>
             <span class="genre-badge badge-sm" style="background-color: ${gInfo.color}">${gInfo.label}</span>
             <span class="history-word" onclick="playAudio('${h.es.replace(/'/g, "\\'")}')">${h.es}</span>
-            <span class="history-meaning">${h.ja}</span>
+            <span class="history-meaning">${escapeHtml(h.ja)}</span>
           </div>
           ${statusBadge}
         </div>
@@ -1836,15 +1883,15 @@ function renderReviewLater() {
     card.innerHTML = `
       <div class="flashcard-inner">
         <div class="card-face front">
-          <div class="word-ja">${word.ja}</div>
-          <div class="word-en">${word.en}</div>
-          <button class="card-review-btn in-review">覚えた! ✨</button>
+          <div class="word-ja">${escapeHtml(word.ja || word.es)}</div>
         </div>
         <div class="card-face back ${backColorClass}">
           ${genderMarker}
-          <div class="word-es ${backColorClass === 'bg-white' ? 'text-dark' : ''}">${word.es}</div>
+          <div class="word-es ${backColorClass === 'bg-white' ? 'text-dark' : ''}">${escapeHtml(word.es)}</div>
+          <div class="word-en card-back-en">${escapeHtml(word.displayEnglish || word.en)}</div>
         </div>
       </div>
+      <button class="card-review-btn in-review">覚えた! ✨</button>
     `;
     
     card.onclick = () => {

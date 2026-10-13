@@ -365,7 +365,10 @@ body {
 .word-es { font-size: clamp(1.5rem, 5vw, 2.5rem); font-weight: 800; word-break: break-word; line-height: 1.3; padding: 0 10px; }
 .word-ja { font-size: clamp(1.2rem, 5vw, 2rem); font-weight: 800; margin-bottom: 0.5rem; color: var(--dark); word-break: break-word; line-height: 1.3; }
 .word-en { font-size: clamp(1rem, 3vw, 1.2rem); opacity: 0.7; font-weight: 700; color: var(--gray); word-break: break-word; }
-.card-back-en { margin-top: 0.55rem; font-size: 0.78rem; color: currentColor; opacity: 0.58; font-weight: 600; }
+.card-back-en { margin-top: 0.55rem; font-size: 0.78rem; color: currentColor; opacity: 0.58; font-weight: 600; max-height: 5em; overflow-y: auto; overflow-wrap: anywhere; }
+.card-face .word-ja { max-height: 65%; overflow-y: auto; white-space: pre-line; }
+.dictionary-sources { margin: 0.8rem auto; max-width: 720px; text-align: left; font-size: 0.8rem; line-height: 1.6; }
+.dictionary-sources summary { cursor: pointer; }
 
 .flashcard-controls { display: grid; grid-template-columns: minmax(220px, 0.8fr) minmax(260px, 1.2fr); gap: 0.8rem; align-items: center; margin: 0 auto 1.2rem; max-width: 900px; }
 .flashcard-search { margin: 0; text-align: left; }
